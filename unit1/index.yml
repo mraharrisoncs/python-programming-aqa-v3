@@ -1,5 +1,16 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit1
-title: Unit 1
+title: Unit 1 - Inputs, Outputs and Structured Programs
+description: Getting started with input, output and structured programming
+objectives: |-
+  1. Getting started
+  2. Outputting text with print()
+  3. Inputting text with input()
+  4. Variables and data types
+  5. Structured programming
+  6. Intro to subroutines
+  7. Procedures and functions
+  8. Python functions with parameters
 lessons:
   - lesson1/index.yml
+  - lesson2/index.yml

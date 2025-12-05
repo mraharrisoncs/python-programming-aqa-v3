@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart8
+title: Programming with variables, input() and print()
+content: >+
+  ### Worked Example 1: BMI calculator
+
+
+  Your BMI (body mass index) is calculated from your weight in kilograms divided
+  by your height in metres squared. Here is the code, also in **bmi.py**
+  attached.
+
+
+  ```python
+
+  # Input height and weight, casting to floats
+
+  height = float(input("Enter your height in metres: "))
+
+  weight = float(input("Enter your weight in kilograms: "))
+
+
+  # Calculate and print BMI
+
+  bmi = weight / (height * height)
+
+  print("Your BMI is: ", bmi)
+
+  ```
+
+
+  > **Note** that we use `/` (forward slash) for divide and `*` (asterisk) for
+  multiply in Python. We will look at these, and more arithmetic operators in
+  detail in the next unit.
+
+
+  ### Worked Example 2: Favourites
+
+
+  In this program we input a number, casting it to integer, and then a string.
+  Note that input() always returns a string, there is no need to write
+  `str((input())`. 
+
+
+  ```python
+
+  fav_number = int(input("What is your favourite number? "))
+
+  fav_colour = input("What is your favourite colour? "))
+
+  print("Your favorite number is ", fav_number)
+
+  print("Your favorite colour is ", fav_colour)
+
+
+  ```
+
+
+  You can try this out in **favourites.py** attached and try the PRIMM
+  activities:
+
+
+  ## PRIMM Activities
+
+
+  1. 🤔 **Predict**: what will this code do when you run it?
+
+  2. ▶️ **Run:** what happens when you run the program, was your prediction
+  correct?
+
+  3. 🔍 **Investigate:** Why is `height * height` enclosed in parentheses or
+  round brackets, `( )` ? Why have we cast the inputs to floats?
+
+  4. ✏️ **Modify:** what happens if you change `float()` to `int()` on lines 1
+  and 2?
+
+  5. 🛠️ **Make**: Delete the code and write a new program that inputs your age
+  in years and estimates your age in days (assuming an average of 365.24 days
+  per year) and prints this with a suitable message. Can you then do minutes?
+  Seconds?
+
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart8/bmi.py
+  - course1/unit1/lesson1/lessonpart8/favourites.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Did you work out why weight and height must be floats? How did you
+          solve the Make problem?

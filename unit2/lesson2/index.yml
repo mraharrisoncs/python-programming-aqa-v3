@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: Lesson 2 - Using Arithmetic Operators in a Program
+description: This lesson consolidates the content in lesson 1 - checking your
+  knowledge and understanding - then guides you through using arithmetic
+  operators in Python.
+objectives: >-
+  * Understand and use basic arithmetic operators in a high-level language
+  (e.g., Python).
+
+  * Apply arithmetic operations in programming problems.
+
+  * Identify syntax errors and logical errors in arithmetic expressions.
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml
+  - lessonpart6.yml
+  - lessonpart7.yml
+  - lessonpart8.yml
+  - lessonpart9.yml
+  - lessonpart10.yml
+  - lessonpart11.yml
+  - lessonpart12.yml
+  - lessonpart13.yml

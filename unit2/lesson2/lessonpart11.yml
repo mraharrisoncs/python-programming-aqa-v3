@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart11
+title: Python debugging exercise 4
+content: >+
+  Our final quick-fire debugging exercise before you fly solo!
+
+
+  This program attempts to input scores repeatedly until the user enters
+  **-1** which should end the loop, and calculate and display the average score.
+  But there are many errors in the code. Can you spot and fix them all?
+
+
+  Open the Python file and complete these tasks:
+
+
+  1. Spot the error(s) in the code
+
+  2. Decide whether each is a Syntax, Logical, or Runtime error
+
+  3. Predict the outcome of attempting to run the code
+
+  4. Fix the code and test it
+     Then answer the questions below.
+
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart11/b5_debug.py

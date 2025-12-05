@@ -1,0 +1,202 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Passing parameters
+content: >
+  A subroutine that just does the same thing each time is not very useful.
+  Remember our Hello World program:
+
+
+  ```python
+
+  def hello_world():
+    print("Hello World!")
+
+  # main program
+
+  hello_world()
+
+  ```
+
+
+  We changed the greeting from "Hello World" to "Witaj świecie!" earlier by
+  editing the code. But what if we want to say both "Hello World!" and "Witaj
+  świecie!"? we *could* include both lines in the function, like this:
+
+
+  ```python
+
+  def hello_world():
+    print("Hello World!")
+    print("Witaj świecie!")
+
+  # main program
+
+  hello_world()
+
+  ```
+
+
+  Or we could do something else. We could make a general purpose function called
+  `greet()` that outputs any greeting **passed** to it as a **parameter**. Like
+  this:
+
+
+  ```python
+
+  def greet(greeting): # greeting is a 'parameter'
+    print(greeting)    # output the value of the greeting parameter
+
+  # main program
+
+  greet("Hello World!")    # "Hello World!" is passed into the parameter
+
+  greet("Witaj świecie!")  # "Witaj świecie!" is passed into the parameter
+
+  ```
+
+
+  Try this now in **greet.py** and add your own greeting to the end!
+
+
+  ## Useful functions
+
+
+  Now we can **pass parameters** and obtain **return values** we can code useful
+  functions. The word *function* comes from maths, and you will be familiar with
+  mathematical functions like **square root**. Let's code this now:
+
+
+  ```python
+
+  def square_root(x):
+    return x ** 0.5
+
+  print(square_root(9))   
+
+  ```
+
+
+  Try this out in the attached program **sq\_root.py**.&#x20;
+
+
+  > Notice we have used the mathematical property of "raise to the power of one
+  half" to find the square root. There are other ways, but this is a simple
+  method that needs no external libraries.
+
+
+  We can write a function to apply any formula. Remember the formula for body
+  mass index, `bmi = weight / (height * height)` ? We can turn that into a
+  function and use it like this:
+
+
+  ```python
+
+  def calc_bmi(height, weight):
+    return weight / (height * height)
+
+  # main program
+
+  height = float(input("Enter your height in metres: "))
+
+  weight = float(input("Enter your weight in kilograms: "))
+
+  bmi = calc_bmi(height, weight)
+
+  print("Your BMI is: ", bmi)
+
+
+  ```
+
+
+  Try this in the attached file **bmi\_calc.py**.
+
+
+  Notice that this function takes **two** parameters, height and weight. A
+  function can take *as many parameters as it needs*.
+
+
+  Now answer these questions, then try the practical activity on the next page.
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart6/sq_root.py
+  - course1/unit1/lesson2/lessonpart6/bmi_calc.py
+  - course1/unit1/lesson2/lessonpart6/greet.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: string
+        content: What do we call a variable that appears in the brackets after a
+          function identifier, which gets assigned a value by the calling
+          instruction?
+        options:
+          - id: "1"
+            value: parameter
+            explanation: A parameter is a variable in a function definition that receives a
+              value from the calling code.
+            isCorrect: true
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the parameter in the greet function?
+        options:
+          - id: "1"
+            value: greeting
+            explanation: The parameter 'greeting' is used to pass different greetings to the
+              function.
+            isCorrect: true
+          - id: "2"
+            value: print
+            explanation: Print is a function used to output text, not a parameter.
+          - id: "3"
+            value: Hello World!
+            explanation: "'Hello World!' is a value passed to the parameter, not the
+              parameter itself."
+          - id: "4"
+            value: greet
+            explanation: Greet is the name of the function, not the parameter.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which line of code will call the greet function correctly so that it
+          displays 'Goodbye!'?
+        options:
+          - id: "1"
+            value: greet('Goodbye!')
+            explanation: This line correctly passes 'Goodbye!' as a parameter to the greet
+              function.
+            isCorrect: true
+          - id: "2"
+            value: greet()
+            explanation: This line does not pass any parameter to the greet function.
+          - id: "3"
+            value: greet('Hello World!')
+            explanation: This line passes 'Hello World!' instead of 'Goodbye!' to the greet
+              function.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: multiple
+        content: What does the line bmi = calc_bmi(height, weight) do?
+        options:
+          - id: "1"
+            value: It calls the calc_bmi function with height and weight as arguments and
+              assigns the result to bmi.
+            explanation: The function calc_bmi is called with the parameters height and
+              weight, and its return value is assigned to bmi.
+            isCorrect: true
+          - id: "2"
+            value: It defines a new function named bmi that takes height and weight as
+              parameters.
+            explanation: The line does not define a new function; it calls an existing
+              function.
+          - id: "3"
+            value: It prints the values of height and weight.
+            explanation: The line does not print anything; it calls a function and assigns
+              its return value.
+          - id: "4"
+            value: It calculates the sum of height and weight and stores it in bmi.
+            explanation: The line does not calculate a sum; it calls a function to calculate
+              BMI.

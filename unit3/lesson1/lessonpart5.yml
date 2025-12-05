@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Length of a string
+content: |
+  Let's look in more detail at finding the length of a string. If we execute this code it will **assign** the string literal "Computer Science" to the variable subject:
+
+  ```python
+  >>> subject = "Computer Science"
+  ```
+
+  Under the covers, this is stored in the computer as a sequence of ASCII characters with index values, like this:
+
+  ```python
+  subject
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  | 12  | 13  | 14  | 15  | 
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  C  |  o  |  m  |  p  |  u  |  t  |  e  |  r  |     |  S  |  c  |  i  |  e  |  n  |  c  |  e  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | ASCII  |  67 | 111 | 109 | 112 | 117 | 116 | 101 | 114 |  32 |  83 |  99 | 105 | 101 | 110 |  99 | 101 | 
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+  We can use the **len()** function in Python to get the length of a string:
+
+  ```python
+  >>> subject = "Computer Science"
+  >>> print(len(subject))
+  16
+  ```
+
+  We could use `len()` on a string **literal** such as "Computer Science" or "Hello World!", or on a string **variable** like `subject` or `greeting`. We can also assign the returned value to a variable:
+
+  ```python
+  >>> print(len("Computer Science"))
+  16
+  >>> greeting = "Hello World!"
+  >>> greeting_length = len(greeting)
+  >>> print(greeting_length)
+  12
+  ```
+
+  ## Pseudocode advice
+
+  In AQA exam papers, you will see the all caps **LEN()** function used to calculate the length of a string. This behaves exactly like Python's len() function. Remember that in pseudocode we also use OUTPUT instead of print():
+
+  ```python
+   subject = "Computer Science"
+   OUTPUT LEN(subject)
+
+  16
+  ```
+
+  ## Knowledge check
+
+  Now answer these knowledge check questions:
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be output by this Python instruction?
+          print(len("squash"))
+        options:
+          - id: "1"
+            value: "5"
+            explanation: Wrong, len() counts the characters in the string.
+          - id: "2"
+            value: "6"
+            explanation: Correct, there are six characters in "squash".
+            isCorrect: true
+          - id: "3"
+            value: squash
+            explanation: Wrong, len() means length, which is an integer value.
+          - id: "4"
+            value: s
+            explanation: Wrong, len() means length, which is an integer value.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be output by this Python program?
+          length = len("green tea!")
+          print(length)
+        options:
+          - id: "1"
+            value: "8"
+            explanation: No, make sure you count spaces and punctuation!
+          - id: "2"
+            value: "9"
+            explanation: No, all characters are counted, not just letters and spaces.
+          - id: "3"
+            value: "10"
+            explanation: Yes, the string has ten characters.
+            isCorrect: true
+          - id: "4"
+            value: "11"
+            explanation: No, count again!
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be output by this Python program?
+          password = "letmein9"
+          pw_length = len(password)
+          print(pw_length)
+        options:
+          - id: "1"
+            value: letmein9
+            explanation: No, the value of pw_length is printed, not password.
+          - id: "2"
+            value: pw_length
+            explanation: No, pw_length is a variable so its contents will be printed, not
+              its identifier.
+          - id: "3"
+            value: "7"
+            explanation: No, count again!
+          - id: "4"
+            value: "8"
+            explanation: Yes, there are eight characters in the string stored in variable
+              password
+            isCorrect: true
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be output by this Python program?
+          password = "letmein9"
+          pw_length = len(password)
+          if pw_length \> 8:
+            print("good")
+          else:
+            print("bad")
+        options:
+          - id: "1"
+            value: good
+            explanation: No, the comparison operator is "greater than" and 8 is not greater
+              than 8.
+          - id: "2"
+            value: bad
+            explanation: "Yes, 8 \\> 8 is false, so the else: branch executes."
+            isCorrect: true
+          - id: "3"
+            value: "8"
+            explanation: No, the length of the string is not printed.
+          - id: "4"
+            value: '"good" then "bad"'
+            explanation: No, only one branch of the if/else statement will execute.

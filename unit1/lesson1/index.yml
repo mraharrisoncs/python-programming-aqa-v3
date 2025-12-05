@@ -1,5 +1,21 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Lesson 1
+title: Input, output and variables
+description: Writing your first program with input and output, using variables
+  and knowing data types
+objectives: |-
+  1. Getting started
+  2. Outputting text with print()
+  3. Inputting text with input()
+  4. Variables and data types
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml
+  - lessonpart6.yml
+  - lessonpart7.yml
+  - lessonpart8.yml
+  - lessonpart10.yml
+  - lessonpart9.yml

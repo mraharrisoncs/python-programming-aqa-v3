@@ -1,0 +1,193 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Why subroutines?
+content: >
+  ## Why do we need subroutines?
+
+
+  Subroutines help us organize programs into chunks that match how we think
+  about the solution to the problem. Programming is problem-solving, and the
+  first step is ***decomposition.***
+
+
+  If we decompose a problem into sub-problems, we can then write
+  a ***subroutine*** to solve each sub-problem. These subroutines come together
+  to make a larger ***program*** which solves the big problem.
+
+
+  Let's revisit the "chatbot" program:
+
+
+  ```python
+
+  name = input("What is your name? ")
+
+  print("Hello, ", name, "!")
+
+  subject = input("What is your favourite subject")
+
+  print(subject, "is a great subject!")
+
+  ```
+
+
+  To demonstrate subroutines we will break this program into chunks, one to ask
+  the users name and say hello, and another to ask favourite subject and respond
+  to that.
+
+
+  ### Python subroutine definition
+
+
+  We define a subroutine in Python with the **def** keyword, followed by a name
+  for the subroutine. Once we have defined these subroutines we need to
+  ***call*** them in the main program like this:
+
+
+  ```python
+
+  def say_hello():
+    name = input("What is your name? ")
+    print("Hello, ", name, "!")
+
+  def fav_subject():
+    subject = input("What is your favourite subject")
+    print(subject, "is a great subject!")
+
+  # main program
+
+  say_hello()
+
+  fav_subject()
+
+  ```
+
+
+  Remember that **`def`** creates and stores a subroutine for use later, it does
+  **not** execute straight away. The indented code block below the
+  `def` statement is the subroutine ***body*** which executes when the
+  subroutine is called. As soon as we stop indenting,  the definition is
+  complete. 
+
+
+  The subroutine body - the code block under the `def` statement - will run only
+  when it is called by name. For example, `say_hello()` will run the subroutine
+  defined previously with `def say_hello():` 
+
+
+  Try this now in the attached **chatbot\_sub.py**.
+
+
+  ## Another example
+
+
+  If we want to draw a square with asterisks, we could do this:
+
+
+  ```python
+
+  print("******")
+
+  print("*     ")
+
+  print("*     ")
+
+  print("*     ")
+
+  print("*     ")
+
+  print("******")
+
+  ```
+
+
+  But if we use the **computational thinking** skill of **pattern matching** to
+  notice that the first and last lines are identical, and also that the middle
+  four lines are identical, we could instead write two subrputines, and call
+  them repeatedly, like this:
+
+
+  ```python
+
+  def horizontal():
+    print("******")
+
+  def vertical():
+    print("*    *")
+
+  # main program
+
+  horizontal()
+
+  vertical()
+
+  vertical()
+
+  vertical()
+
+  vertical()
+
+  horizontal()
+
+
+  ```
+
+
+  The mechanics of printing the horizontal and vertical edges have been
+  **abstracted** away from the main program into the subroutines. You can try
+  this out in the attached **draw\_square.py** program file.
+
+
+  This might not save any lines of code in this example but:
+
+
+  * it makes the **main program** very simple to write and easy to understand -
+  we have **abstracted away** the details into the subroutines.
+
+
+  * it allows us to change the shape of the figure easily by editing the
+  subroutines, for example we can make the shape wider by just adding asterisks
+  or spaces to the print statements, while the main program stays the same.
+
+
+  * in a later unit we will see how to repeat lines of code, so we don't need to
+  code `vertical()` multiple times in our program, saving lots of coding.
+
+
+  ## PRIMM activities
+
+
+  1. 🤔 **Predict**: what will this code do when you run it?
+
+  2. ▶️ **Run:** what happens when you run the program, was your prediction
+  correct?
+
+  3. 🔍 **Investigate:** Where are the **string literals** in this code? What
+  happens when Python sees `def horizontal()`? What happens when Python sees 
+  just `horizontal()`?
+
+  4. ✏️ **Modify:** Make the shape ten asterisks wide by changing just two
+  lines. Make it ten high by adding four more lines.
+
+  5. 🛠️ **Make**: Delete the code and write a program that draws this "I" shape
+  using two subroutines.
+     ```python
+     *****
+       *
+       *
+       *
+     *****
+     ```
+
+  Reflect on how you did this below.
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart7/chatbot_sub.py
+  - course1/unit1/lesson2/lessonpart7/draw_square.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you make the changes in the Modify activity? Did you manage to
+          draw the "I" shape using subroutines?

@@ -1,0 +1,149 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart17
+title: Quiz - which operator?
+content: >+
+  Choose the arithmetic operator that makes the equation true. Use the Python
+  REPL on the right to help you if stuck! When you've worked them out, answer
+  the multiple choice quiz below.
+
+
+  1. 13 \_\_ 7 = 20
+
+  2. 5 \_\_ 4 = 20
+
+  3. 3 \_\_ 4 = 81
+
+  4. 20 \_\_ 8  = 2.5
+
+  5. 18 \_\_ 4 = 2
+
+  6. 14 \_\_ 3 = 4
+
+showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: multiple
+        content: |-
+          Choose the operator that makes the equation true:
+          13 __ 7 = 20
+        options:
+          - id: "1"
+            value: ＋
+            explanation: Correct, this is addition, and 13 + 7 = 20
+            isCorrect: true
+          - id: "2"
+            value: " /"
+            explanation: Wrong, 13 / 7 = 1.857...
+          - id: "3"
+            value: " %"
+            explanation: Wrong, this is modulus and 13 % 7 = 6
+          - id: "4"
+            value: " **"
+            explanation: Wrong, this is exponent and 13 ** 7 is a very big number!
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Choose the operator that makes the equation true:
+          5 __ 4 = 20
+        options:
+          - id: "1"
+            value: ＋
+            explanation: Wrong, 5 + 4 = 9
+          - id: "2"
+            value: ＊
+            explanation: Correct, this is multiplication and 5 * 4 = 20
+            isCorrect: true
+          - id: "3"
+            value: " /"
+            explanation: Wrong, 5 / 4 = 1.25
+          - id: "4"
+            value: " %"
+            explanation: Wrong, this is modulus and 5 % 4 = 1
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Choose the operator that makes the equation true:
+          3 __ 4 = 81
+        options:
+          - id: "1"
+            value: ＊
+            explanation: Wrong, this is multiplication and 3 * 4 = 12
+          - id: "2"
+            value: " //"
+            explanation: Wrong, this is integer division and 3 // 4 = 0
+          - id: "3"
+            value: " **"
+            explanation: Correct, ** means exponent, and 3⁴ (3 to the power 4) is 81
+            isCorrect: true
+          - id: "4"
+            value: " %"
+            explanation: Wrong, this is modulus and 3 % 4 = 3
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Choose the operator that makes the equation true:
+          20 __ 8 = 2.5
+        options:
+          - id: "1"
+            value: " /"
+            explanation: Correct, this is division, and 20 / 8 = 2.5
+            isCorrect: true
+          - id: "2"
+            value: " //"
+            explanation: Wrong, this is integer division and 20 // 8 = 2
+          - id: "3"
+            value: " %"
+            explanation: Wrong, this is modulus and 20 % 8 = 4
+          - id: "4"
+            value: ‑
+            explanation: Wrong, this is subtraction and 20 - 4 = 16
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Choose the operator that makes the equation true:
+          18 __ 4 = 2
+        options:
+          - id: "1"
+            value: " /"
+            explanation: Wrong, this is division and 18 / 4 = 4.5
+          - id: "2"
+            value: " //"
+            explanation: Wrong, this is integer division and 18 // 4 = 4
+          - id: "3"
+            value: " %"
+            explanation: Correct, this is modulus
+            isCorrect: true
+          - id: "4"
+            value: ‑
+            explanation: Wrong, this is subtraction and 18 - 4 = 14
+  - id: "6"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Choose the operator that makes the equation true:
+          14 __ 3 = 4
+        options:
+          - id: "1"
+            value: " /"
+            explanation: Wrong, this is division and 14 / 3 = 4.66666667
+          - id: "2"
+            value: " //"
+            explanation: Correct, this is integer division
+            isCorrect: true
+          - id: "3"
+            value: " %"
+            explanation: Wrong, this is modulus and 14 % 3 = 2
+          - id: "4"
+            value: ‑
+            explanation: Wrong, this is subtraction and 14 - 3 = 11

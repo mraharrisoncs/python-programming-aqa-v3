@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Programming with len() 1
+content: >+
+  Let's write a program to check the length of a password.
+
+
+  Open the attached program and try doing the following.
+
+
+  1. Change the program so that it finds and outputs the password
+  length  correctly.
+
+  2. Change the program to input a username as well as password, and output the
+  length of both strings.
+
+  3. Consider how else you could improve this code.
+
+showEditor: true
+editors:
+  - course1/unit3/lesson1/lessonpart7/a2_length_max.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you fix the code? How else did you improve the code? What else
+          could we do?

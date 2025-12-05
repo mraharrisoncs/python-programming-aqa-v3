@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Exponential
+content: >+
+  An **exponential** is an expression that includes **raising a number to the
+  power of another number**.
+
+
+  This process is known as **exponentiation** or "raising x **to the power of**
+  y".
+
+
+  **Exponentiation** is multiplying a **base** by itself a number of times, as
+  specified by the **exponent**.
+
+
+  For example, 2 raised to the power of 3 (written 2³) means 2 multiplied by
+  itself three times:
+
+
+  > **2³ = 2 \* 2 \* 2 = 8**
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is 3³ ?
+        options:
+          - id: "1"
+            value: "6"
+            explanation: Wrong, this is 3 * 2
+          - id: "2"
+            value: "9"
+            explanation: Wrong, this is 3² (3 × 3)
+          - id: "3"
+            value: "27"
+            explanation: Correct, 3³ means 3 * 3 * 3
+            isCorrect: true
+          - id: "4"
+            value: "81"
+            explanation: Wrong, this is 3 ** 4 (3 to the power of 4)

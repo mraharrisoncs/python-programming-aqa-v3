@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Pseudocode example - basic arithmetic
+content: |
+  ```
+  x ← 10
+  y ← 5
+  z ← x + y
+  OUTPUT z
+  ```
+
+  This would display the answer of 15
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: What would the Python version of this program look like?

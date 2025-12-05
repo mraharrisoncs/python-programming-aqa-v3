@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Python practical - string handling 2
+content: >+
+  ## Putting it all together, again!
+
+
+  You are now ready to tackle even more programming challenges using the string
+  handling features you have learned.
+
+
+  Open the attached Python files and try the challenges below.
+
+
+  1. Password checker - improved. Use the skeleton code in **q1.py**. Add code
+  to check the entered password is eight characters or longer, AND contains both
+  upper and lowercase characters. Hints: you can use `char = char.upper()` or
+  `char.isupper()`.
+
+  2. Password generator. Using **q2.py**, complete the code to generate a random
+  password of 12 characters, where the first eight are just letters, and the
+  final four are numbers or special characters with ASCII codes from 35 (`#`) to
+  57 (`9`), for example xcYlnqdd7%3#.
+
+  3. Vowel counter. Using **q3.py**, complete the code to count the number of
+  vowels in an input string. Vowels are "aeiou".
+
+  4. Hash generator. Complete **q4.py** to create a numeric "hash value" in the
+  range 0-99 from an input string, by adding all the ASCII codes of the
+  characters in the string, then taking the modulus 100. Hint: use `ord()` to
+  get the ASCII code, and `%` at the end to take the modulus.
+
+  5. Caesar Cipher. Starting with **q5.py** input a string and a shift value.
+  Change the input to all lower case, then encipher (encrypt) the input string
+  by shifting the letters down the alphabet by the shift entered. For example,
+  if the user enters `cat` and `5` the output should be `hfy`. Remember to wrap
+  around to the start of the alphabet if you go beyond z! Hints: use ord() to
+  get the ASCII code, then add the shift to this, if you go beyond ord('z') then
+  subtract 26, then use chr() to turn back into a letter.
+
+showEditor: true
+editors:
+  - course1/unit3/lesson2/lessonpart7/q1.py
+  - course1/unit3/lesson2/lessonpart7/q2.py
+  - course1/unit3/lesson2/lessonpart7/q3.py
+  - course1/unit3/lesson2/lessonpart7/q4.py
+  - course1/unit3/lesson2/lessonpart7/q5.py

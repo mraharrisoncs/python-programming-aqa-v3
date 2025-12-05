@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart13
+title: Recap string handling operations
+content: >+
+  ## What have we learned?
+
+
+  Let's recap all the string handling operations we have learned in this lesson:
+
+
+  | Feature       | Syntax                   |
+  Description                                                |
+  Example                  | Output     |
+
+  | ------------- | ------------------------ |
+  ---------------------------------------------------------- |
+  ------------------------ | ---------- |
+
+  | `len()`       | `len(string)`            | Returns the number of characters
+  in the string             | `len("Hello")`           | `5`        |
+
+  | Slicing       | `string[start:end]`      | Extracts part of a string (end
+  index is *excluded*)        | `"Alan Turing"[0:4]`     | `"Alan"`   |
+
+  | Concatenation | `string1 + string2`      | Joins two strings
+  together                                 | `"Bob" + "cat"`          |
+  `"Bobcat"` |
+
+  | `find()`      | `string.find(substring)` | Finds first occurrence of
+  substring, returns index or `-1` | `"Eggs".find("g")`       | `1`        |
+
+  | `in`          | `"sub" in string`        | Checks if substring exists in
+  string (Boolean result)      | `"milk" in "milk, eggs"` | `True`     |
+
+  | `ord()`       | `ord(character)`         | Converts a character to its
+  ASCII/integer code             | `ord("A")`               | `65`       |
+
+  | `chr()`       | `chr(code)`              | Converts an integer code to its
+  character                  | `chr(65)`                | `"A"`      |
+
+  | `int()`       | `int(string)`            | Converts a string to an
+  integer                            | `int("42")`              | `42`       |
+
+  | `float()`     | `float(string)`          | Converts a string to a float
+  (real number)                 | `float("3.14")`          | `3.14`     |
+
+  | `str()`       | `str(number)`            | Converts a number to a
+  string                              | `str(7 + 1)`             | `"8"`      |
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Make a note here of any string handling operations you think you need
+          more practice with. Go back and check those pages now, or visit
+          w3schools.com for more help.

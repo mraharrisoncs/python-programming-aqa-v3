@@ -1,0 +1,163 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: About data types
+content: >
+  When we stored the user's name earlier, we used a variable called **name**.
+  Because the name contains a string of characters, we call this a
+  **string** variable. Their age was a whole number, and this is called an
+  **integer.** Together, these different kinds of data are called **data
+  types.**
+
+
+  # 🔢   🧮   📜    ✅/❌
+
+
+  ***
+
+
+  ## Data types 
+
+
+  In Python, data types are essential for defining the kind of data a variable
+  can hold. Understanding these types helps us perform operations correctly and
+  avoid errors. Let's explore the "primitive" data types: **integer**,
+  **float**, **string**, and **Boolean**.
+
+
+  ### 🔢 Integer
+
+
+  An integer is a whole number without a decimal point. It can be positive,
+  negative, or zero. Integers are used in situations where fractional values are
+  not needed, such as counting items or indexing:
+
+
+  ```python
+
+  age = 25
+
+  number_of_students = 30
+
+  ```
+
+
+  ### **🧮** Float
+
+
+  A float, or real number, is a number that includes a decimal point. Floats are
+  used when precision is required, such as in scientific calculations or when
+  dealing with currency, weights and measures:
+
+
+  ```python
+
+  temperature = 36.6
+
+  price = 19.99
+
+  ```
+
+
+  ### 📜 String
+
+
+  A string is a sequence of characters enclosed in quotes. Strings are used for
+  text manipulation, such as storing names, addresses, or any other textual
+  data.
+
+
+  **Example Use Case:**
+
+
+  ```python
+
+  name = "Alice"
+
+  greeting = "Hello World!"
+
+  ```
+
+
+  ### ✅/❌Boolean
+
+
+  A Boolean represents one of two values: `True` or `False`. Booleans are used
+  in conditional statements and logical operations:
+
+
+  ```python
+
+  is_student = True
+
+  has_passed = False
+
+  ```
+
+
+  Check your understanding with the quiz below. If you get an answer wrong, you
+  will get feedback and be able to try again!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which data type stores a whole number?
+        options:
+          - id: "1"
+            value: integer
+            explanation: Yes, integers are whole numbers like 1, 445, -3
+            isCorrect: true
+          - id: "2"
+            value: float
+            explanation: No, this is a number with a fractional part such as 3.5
+          - id: "3"
+            value: string
+            explanation: No, "Hello World!" is a string
+          - id: "4"
+            value: Boolean
+            explanation: No, True and False are examples of Boolean values
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What data type is 3.14?
+        options:
+          - id: "1"
+            value: float
+            explanation: Yes, a number with a decimal part is a float
+            isCorrect: true
+          - id: "2"
+            value: integer
+            explanation: No, this is a whole number
+          - id: "3"
+            value: Boolean
+            explanation: No this is a two-state type of data
+          - id: "4"
+            value: string
+            explanation: No this is a string of characters
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which of these are Boolean values? Tick two.
+        options:
+          - id: "1"
+            value: "True"
+            explanation: Yes, in Python the Boolean values begin with a capital letter
+            isCorrect: true
+          - id: "2"
+            value: "1.7"
+            explanation: No, this is a float
+          - id: "3"
+            value: "False"
+            explanation: Yes, in Python the Boolean values are True and False
+            isCorrect: true
+          - id: "4"
+            value: "-999"
+            explanation: No, this is an integer
+          - id: "5"
+            value: '"True"'
+            explanation: No, because this is in quotes it is a string literal
+          - id: "6"
+            value: '"0"'
+            explanation: No, this is a string

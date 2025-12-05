@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart13
+title: Python example - division
+content: >
+  Python uses "/" for real division, and "//" for integer division (floor
+  division). Here are those examples again in Python syntax:
+
+
+  ```python
+
+  result = 7 / 2
+
+  print(result)
+
+
+  result = 7 // 2
+
+  print(result)
+
+  ```
+
+
+  Try this code now in the sample program, or enter the expressions directly
+  into the REPL. Then change the operands and see what happens.
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit2/lesson1/lessonpart13/a3_division.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Where might you use integer division (DIV or //) in a binary search
+          algorithm?

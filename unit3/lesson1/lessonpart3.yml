@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Key terms
+content: |+
+  Let's recap the key terms we have discussed so far...
+
+  | Key Term         | Definition                                                                       | Examples using greeting = "Hello World!" |
+  | ---------------- | -------------------------------------------------------------------------------- | ---------------------------------------- |
+  | Character        | A single letter, number, or symbol that can be used in a string.                 | "H", " ", "!"                            |
+  | String           | A sequence of characters used to represent text in programming.                  | "Hello World!"                           |
+  | Index / Position | The numerical position of a character within a string, starting from zero.       | 0, 5, 11                                 |
+  | Length           | The total number of characters in a string.                                      | 12                                       |
+  | Substring        | A sequence of characters contained within a larger string                        | "Hello", "World!"                        |
+  | Variable         | A named storage location in memory that can hold a value, such as a string.      | the memory referenced by greeting        |
+  | Identifier       | The name given to a variable or function in a program.                           | greeting                                 |
+  | Concatenation    | The operation of joining two or more strings together.                           | "Hello " + "World!"                      |
+  | ASCII            | A character encoding standard that uses numerical codes to represent characters. | "H" = 72, "!" = 33                       |
+

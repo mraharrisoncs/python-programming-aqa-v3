@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart13
+title: Capstone project - change calculator
+content: >
+  ### Capstone Project - Change Calculator
+
+
+  # 💰⛃⛂⛁⛀💸
+
+
+  You are programming the coin dispenser in a vending machine. Write a function
+  to calculate the quantity and value of each coin needed to give correct
+  change. 
+
+
+  Available coins: £1 (100p), 50p, 20p, 10p, 5p, 2p, 1p.
+
+
+  **Example input:** £3.48
+
+
+  **Example output:** `3 × £1, 2 × 20p, 1 × 5p, 1 × 2p, 1 × 1p`
+
+
+  *Hint:* Convert input to pence, then use // (DIV) to decide how many times 100
+  goes into the amount - this is the £1 coins needed - and then use % (MOD) to
+  calculate the remainder. Repeat this for every coin value!
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart13/vending.py

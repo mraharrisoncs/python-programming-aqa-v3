@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Knowledge Check
+content: >+
+  ### Retrieval Practice Questions
+
+
+  1. **What is the result of** **`7 + 3 * 2`** **in Python?**
+
+     * Consider the order of operations (PEMDAS/BODMAS) when evaluating this expression.
+
+  2. **Write a Python expression to divide 45 by 2 and round down to the nearest
+  integer.**
+
+     * Use a single arithmetic operator, and no functions, ensuring the result is an integer.
+
+  3. **What does** **`2 ** 3`** **evaluate to?**
+
+     * Recall what the `**` operator does in Python.
+
+  4. **Which operator would you use to find the remainder of 10 divided by 3?**
+
+     * Identify the operator that provides the remainder of a division operation.
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the result of 7 + 3 * 2 in Python?
+        options:
+          - id: "1"
+            value: "13"
+            explanation: The multiplication is performed first, so 3 * 2 = 6, then 7 + 6 =
+              13.
+            isCorrect: true
+          - id: "2"
+            value: "20"
+            explanation: Wrong because this adds 7 and 3 first, ignoring the order of
+              operations.
+          - id: "3"
+            value: "16"
+            explanation: Wrong, did you calculate 3 ** 2 (3 squared) instead of 3 * 2 (3 ×
+              2)?
+          - id: "4"
+            value: "12"
+            explanation: Wrong, did you calculate 7 + 3 + 2?
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Write a Python expression to divide 45 by 2 and round down to the
+          nearest integer. Use a single arithmetic operator, and no functions to
+          achieve the result.
+        options:
+          - id: "1"
+            value: 45 // 2
+            explanation: The '//' operator performs floor division, rounding down to the
+              nearest integer.
+            isCorrect: true
+          - id: "2"
+            value: 45 / 2
+            explanation: The '/' operator performs true division, resulting in a float.
+          - id: "3"
+            value: int(45 / 2)
+            explanation: This converts the result to an integer but uses a function, not a
+              single arithmetic operator.
+          - id: "4"
+            value: round(45 / 2)
+            explanation: The 'round' function rounds to the nearest integer, not necessarily
+              down, and the question required no use of functions.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does 2 ** 3 evaluate to?
+        options:
+          - id: "1"
+            value: "8"
+            explanation: Correct because 2 ** 3 means 2 raised to the power of 3 (2 cubed).
+            isCorrect: true
+          - id: "2"
+            value: "6"
+            explanation: Wrong because it's the result of 2 * 3 (2 × 3) not exponentiation.
+          - id: "3"
+            value: "9"
+            explanation: Wrong because 2 ** 3 is not the same as 3 squared.
+          - id: "4"
+            value: "5"
+            explanation: Incorrect because this is the result of 2 + 3 not 2 ** 3.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which operator would you use to find the remainder of 10 divided by 3?
+        options:
+          - id: "1"
+            value: "%"
+            explanation: "The % operator (modulus) is used to find the remainder like this:
+              10 % 3."
+            isCorrect: true
+          - id: "2"
+            value: //
+            explanation: This is integer or 'floor' division, not remainder.
+          - id: "3"
+            value: /
+            explanation: The / operator is used for division, not for finding the remainder.
+          - id: "4"
+            value: "**"
+            explanation: This is exponentiation, not finding the remainder.

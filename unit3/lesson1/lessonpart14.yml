@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart14
+title: Python practical - string handling
+content: >+
+  ## Putting it all together!
+
+
+  You are now ready to tackle some programming challenges using the string
+  handling features you have learned.
+
+
+  Open the attached Python files and try the challenges below.
+
+
+  #### 1. Username and password lengths. 
+
+  Use the skeleton code in **q1.py**. Write code to find the lengths of the
+  username and the password, add these together and return the result.
+
+
+  ***
+     
+  #### 2. Username generator. 
+
+  Using **q2.py**, complete the code to input a full name and 4-digit integer
+  year of birth, then generate a username in the format
+  `surname_first-initial_YY`, for example if the user enters "Alan Turing" and
+  1912, his username should be `Turing_A_12`.
+
+
+  ***
+
+
+  #### 3. Vowel checker. 
+
+  Using **q3.py**, complete the code to state whether an input character is a
+  vowel or not. Vowels are "aeiou". The function should return True if the
+  character is a vowel, or False if not.
+
+
+  ***
+
+
+  #### 4. ASCII string generator. 
+
+  Complete the function in **q4.py** to return a string of three characters,
+  given three ASCII values.
+
+
+  ***
+
+
+  #### 5. Sum of ASCII. 
+
+  Starting with **q5.py**, complete the function that takes a string of three
+  characters as input, calculates the ASCII values of each character, adds them
+  and returns the sum. For example, passing the string "Cat" should return 280
+  because 67 + 97 +  116 = 280. 
+
+
+  Assume the input string has exactly three characters. Hints: `string[0]` is
+  the first character, and `ord()` finds the ASCII value of a character.
+
+showEditor: true
+editors:
+  - course1/unit3/lesson1/lessonpart14/q1.py
+  - course1/unit3/lesson1/lessonpart14/q2.py
+  - course1/unit3/lesson1/lessonpart14/q3.py
+  - course1/unit3/lesson1/lessonpart14/q4.py
+  - course1/unit3/lesson1/lessonpart14/q5.py

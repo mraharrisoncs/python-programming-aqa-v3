@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Strings - under the covers
+content: |
+  &#x20;Let's quickly explore how a computer stores a string, when it executes `greeting = "Hello World!"`.
+
+  ### Variables
+
+  We want the variable *`greeting`* to store the string `"Hello World!"`. When we assign this string to the variable, the computer allocates memory to store each character in the string.
+
+  ### ASCII and Unicode
+
+  Computers use character encoding systems to represent characters as numbers. Two common encoding systems are ASCII and Unicode.
+
+  * **ASCII**: Represents characters using numbers from 0 to 127 (and in Extended ASCII, up to 255). For example, the character 'H' is represented by the number 72 in ASCII.
+
+  * **Unicode**: Extends ASCII to include characters from many languages, using numbers beyond 255. Unicode ensures that characters from different languages can be represented consistently. The first 127 characters of Unicode are mapped to the same characters as ASCII, so it is "backwards compatible". This means that Unicode data that sticks to basic English characters can be read and displayed by a computer that only has ASCII installed.
+
+  ### Character codes
+
+  Here is that *greeting* string again, showing the index or position of each character, and underneath the characters we can now see the ASCII codes:
+
+  ```python
+  greeting
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  H  |  e  |  l  |  l  |  o  |     |  W  |  o  |  r  |  l  |  d  |  !  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | ASCII  | 72  | 101 | 108 | 108 | 111 | 32  | 87  | 111 | 114 | 108 | 100 | 33  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+  You can now see what the computer is doing under the covers, in the memory reserved for the variable *`greeting`* it has stored a sequence of numbers: 72, 101, 108 etc. When you ask Python to display the variable, it will turn those numbers back into characters using the ASCII table:
+
+  ```python
+  >>> print(greeting)
+  Hello World!
+  ```
+
+  All of this happens under the covers, handled by Python and the operating system. We  just write programs using the Python string handling features, and let the language and the OS take care of everything else! 

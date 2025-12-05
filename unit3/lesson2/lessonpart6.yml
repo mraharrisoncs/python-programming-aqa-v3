@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Recap all string operations
+content: >
+  ###### Let's recap **all** the string handling operations we have learned in
+  this course...
+
+
+  | Feature         | Syntax                   |
+  Description                                                |
+  Example                     | Output        |
+
+  | --------------- | ------------------------ |
+  ---------------------------------------------------------- |
+  --------------------------- | ------------- |
+
+  | `len()`         | `len(string)`            | Returns the number of
+  characters in the string             | `len("Turing")`             |
+  `5`           |
+
+  | Slicing         | `string[start:end]`      | Extracts part of a string (end
+  index is *excluded*)        | `"keyboard"[1:4]`           | `"eyb"`       |
+
+  | Concatenation   | `string1 + string2`      | Joins two strings
+  together                                 | `"data" + "base"`           |
+  `"database"`  |
+
+  | `find()`        | `string.find(substring)` | Finds first occurrence of
+  substring, returns index or `-1` | `"banana".find("an")`       |
+  `1`           |
+
+  | `in`            | `"sub" in string`        | Checks if substring exists in
+  string (Boolean result)      | `"cat" in "educator"`       | `True`        |
+
+  | `ord()`         | `ord(character)`         | Converts a character to its
+  ASCII/integer code             | `ord("z")`                  | `122`         |
+
+  | `chr()`         | `chr(code)`              | Converts an integer code to its
+  character                  | `chr(100)`                  | `"d"`         |
+
+  | `int()`         | `int(string)`            | Converts a string to an
+  integer                            | `int("17")`                 |
+  `17`          |
+
+  | `float()`       | `float(string)`          | Converts a string to a float
+  (real number)                 | `float("2.718")`            | `2.718`       |
+
+  | `str()`         | `str(number)`            | Converts a number to a
+  string                              | `str(3.5 * 2)`              |
+  `"7.0"`       |
+
+  | `upper()`       | `string.upper()`         | Converts all letters in a
+  string to uppercase              | `"binary".upper()`          |
+  `"BINARY"`    |
+
+  | `lower()`       | `string.lower()`         | Converts all letters in a
+  string to lowercase              | `"EDUcation".lower()`       | `"education"`
+  |
+
+  | `for ch in str` | `for ch in string:`      | Iterates over each character in
+  a string                   | `for ch in "AI": print(ch)` | `A` `I`       |
+
+
+  There are many more Python string operations, you can find them all at
+  [W3Schools Python
+  Strings](https://www.w3schools.com/python/python_strings.asp).
+
+
+  Now check your knowledge, before some final programming questions!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which Python function returns the number of characters in a string?
+        options:
+          - id: "1"
+            value: len()
+            explanation: Yes, len() is a built-in Python function
+            isCorrect: true
+          - id: "2"
+            value: str()
+            explanation: No, this converts a number to a string.
+          - id: "3"
+            value: ord()
+            explanation: No, this returns the ordinal number of a character in a character
+              set such as ASCII.
+          - id: "4"
+            value: string.length()
+            explanation: No this is not Python syntax

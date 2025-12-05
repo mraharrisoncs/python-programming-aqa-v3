@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart9
+title: Common misconceptions 1
+content: |+
+  ## &#x20;
+
+  | ❌ Misconception                                | 🧪 What Students Might Do                     | ✅ Explanation / Fix                                                                                          |
+  | ---------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+  | `/ 0`, `// 0`, and `% 0` are valid             | `average = total / countmodulus = number % 0` | Causes `ZeroDivisionError`. Always check that the denominator is not zero before using `/`, `//`, or `%`.    |
+  | `x` means multiply                             | `area = length x width`                       | Python treats `x` as a variable, not an operator. Use `*` for multiplication.                                |
+  | You can add or concatenate strings and numbers | `print("Score: " + score)`                    | You can't concatenate a string and an integer with `+`. Use `str(score)` or commas: `print("Score:", score)` |
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Which of these misconceptions have you struggled with? Which have you
+          "seen in the wild"? What can you do to avoid it in the future?

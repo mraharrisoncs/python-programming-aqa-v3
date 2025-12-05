@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart12
+title: Converting characters to codes and back
+content: |
+  ### Character codes
+
+  Remember our *greeting* string, We learned how the computer really stores a number for each character using character code tables, usually the ASCII code:
+
+  ```python
+  greeting
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  H  |  e  |  l  |  l  |  o  |     |  W  |  o  |  r  |  l  |  d  |  !  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | ASCII  | 72  | 101 | 108 | 108 | 111 | 32  | 87  | 111 | 114 | 108 | 100 | 33  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+  Well, programming languages usually give you functions to convert from characters to character codes and back again.&#x20;
+
+  ## Conversion functions
+
+  In Python these conversion functions are:
+
+  * **ord()** - converts a string character to it's integer code (from the word "ordinal" meaning the position in a sequence, this quirk was inherited from programming language Pascal)
+
+  * **chr()** - converts an integer to its corresponding character
+
+  For example ord('H') returns 72, the ASCII code for capital 'H', while chr(72) goes the other way, returning 'H'. More examples are here:
+
+  ```python
+  >>> chr(87)   # give me the character with ASCII code 87
+  W
+
+  >>> ord('e')  # give me the ASCII code for the character 'e' (lower case)
+  101
+
+  >>> chr(65) + chr(100) + chr(97)  # convert these numbers to characters and concatenate them
+  Ada
+  ```
+
+  You might need an ASCII table to help with some of the questions in this course, you can search online for "ASCII table" or use the one on the [W3Schools website here](https://www.w3schools.com/charsets/ref_html_ascii.asp). 
+
+  Remember, we use the phrase "ASCII code" but usually your computer is using Unicode, it's just that the first 127 characters of both character sets are the same, so we often use the phrase "ASCII code" for convenience.
+
+  ## Pseudocode notes
+
+  In AQA exams, because we do not require our candidates to use Python, and some schools use other languages whose function names are different, you will see our pseudocode function names instead of ord() and chr(). These function names are easy to remember, they are:
+
+  * `CHAR_TO_CODE()`     # equivalent to Python **ord()**
+
+  * `CODE_TO_CHAR()`     # Equivalent to Python **chr()**
+
+  For example:
+
+  ```python
+  CHAR_TO_CODE('!')    # returns 33, the ASCII code for exclamation mark
+  CODE_TO_CHAR(114)    # returns 'r', the character with the ASCII code 114.
+  ```
+
+  Now check your knowledge on this topic below:
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the result of this expression?
+          ord('d')
+        options:
+          - id: "1"
+            value: "100"
+            explanation: Yes, 'd' has the ASCII code 100
+            isCorrect: true
+          - id: "2"
+            value: "68"
+            explanation: No, this is the ASCII code for capital D.
+          - id: "3"
+            value: "10"
+            explanation: No, did you read the index position from the table above, not the
+              ASCII value?
+          - id: "4"
+            value: Syntax Error
+            explanation: No, the syntax is fine.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: >-
+          What would this instruction output, assuming ASCII is the character
+          set being used?
+
+          print(chr(66) + chr(117) + chr(115) + '!')
+        options:
+          - id: "1"
+            value: Bus!
+            explanation: Yes, you converted the codes correctly.
+            isCorrect: true
+          - id: "2"
+            value: BUS!
+            explanation: No, chr(117) and chr(115) return lowercase letters.
+          - id: "3"
+            value: Dog
+            explanation: No, chr(66) is the letter uppercase 'B'.
+          - id: "4"
+            value: DOG!
+            explanation: No, chr(66) is the letter uppercase 'B'.
+          - id: "5"
+            value: Bus
+            explanation: No, you forgot the exclamation mark concatenated on the end.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the result of this expression?
+          ord('A') + ord('B') + ord('C')?
+        options:
+          - id: "1"
+            value: "198"
+            explanation: Yes, you added the ASCII codes correctly.
+            isCorrect: true
+          - id: "2"
+            value: "294"
+            explanation: No, did you lookup the lowercase letters?
+          - id: "3"
+            value: "'ABC'"
+            explanation: No, ord() always returns an integer.
+          - id: "4"
+            value: "'abc'"
+            explanation: No, ord() always returns an integer.

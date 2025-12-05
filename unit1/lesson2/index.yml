@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: "Lesson 2: Structured programming"
+description: Using subroutines for structured programming
+objectives: |-
+  Why structured programming?
+  Using subroutines
+  Defining functions in Python with def
+  Procedures and functions
+  Python functions with parameters
+lessonParts:
+  - lessonpart3.yml
+  - lessonpart7.yml
+  - lessonpart5.yml
+  - lessonpart6.yml
+  - lessonpart2.yml
+  - lessonpart1.yml
+  - lessonpart4.yml

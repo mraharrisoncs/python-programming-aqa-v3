@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Recap - key terms
+content: |+
+  Review this table of key terms and symbols, then take the quiz on the next page.
+
+  | Term or Symbol | Name              | Purpose                                                  |
+  |----------------|-------------------|----------------------------------------------------------|
+  | `+`            | Addition          | Add both operands                                        |
+  | `-`            | Subtraction       | Subtract second operand from first                       |
+  | `*`            | Multiplication    | Multiply two operands                                    |
+  | `/`            | (Real) Division   | Divide and return a real number (float)                 |
+  | `//`           | Integer Division  | Divide and return only the integer part                 |
+  | `%`            | Modulus           | Find the remainder after integer division               |
+  | `**`           | Exponent          | Raise to the power of                                   |
+  | Operator       | N/A               | A symbol for an operation such as `+`, `-`, `*`, `/`     |
+  | Operand        | N/A               | Terms either side of the operator, e.g. `3` and `4` in `3 + 4` |
+  | Integer        | N/A               | A whole number such as `7`, `-1`                         |
+  | Float          | N/A               | A number with a decimal part, also called Real, such as `4.0`, `3.14`, `9.999999` |
+

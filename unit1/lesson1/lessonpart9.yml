@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart9
+title: Python practical - input(), print() and variables
+content: >
+  ### 1. Area of a circle calculator
+
+
+  Using **q1.py**, write a Python program that inputs a radius then calculates
+  the area of a circle. The program should prompt the user to input the radius
+  of the circle, cast this to a float, and then calculate the area using the
+  formula: area = `3.142 * radius * radius` where 3.142 is an approximation for
+  pi. Print the result.
+
+
+  ***
+
+
+  ### 2. Simple interest calculator
+
+
+  Create a Python program in **q2.py** that calculates the simple interest
+  earned on an investment. The program should ask the user for the **principal**
+  amount, the **rate** of interest, and the **time** in whole years. Use the
+  formula:&#x20;
+
+
+  `simple interest = (principal * rate * time) / 100`
+
+
+  Remember to cast the inputs to appropriate data types (**float** or **int**). 
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit1/lesson1/lessonpart9/q1.py
+  - course1/unit1/lesson1/lessonpart9/q2.py

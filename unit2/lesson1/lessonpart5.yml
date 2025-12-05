@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Python practical - basic arithmetic
+content: >+
+  The same program in Python would look like this:
+
+  ```python
+
+  x = 10
+
+  y = 5
+
+  z = x + y
+
+  print(z)
+
+  ```
+
+  * Open the Python program on the right, run and check the output is as
+  expected.
+
+  * Change the values of x and y and try again.
+
+  * Try different operators (+, -, \*, /).
+
+showEditor: true
+editors:
+  - course1/unit2/lesson1/lessonpart5/a1_simple.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How does Python syntax differ from standard arithmetic? Think about how
+          you would write z = x * y in your Maths exercise book.

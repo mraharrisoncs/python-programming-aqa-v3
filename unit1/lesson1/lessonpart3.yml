@@ -1,0 +1,158 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Variables in Python
+content: >+
+  ### Literals
+
+
+  So far we have just printed ***literals***. As their name suggests, when you
+  print ***literals***, Python just outputs ***literally*** what you give it.
+
+
+  Anything inside a pair of quotes, such as `"Hello World!"` is a ***string
+  literal***, and a number like `5` or `3.14` is a ***numeric literal***.
+
+
+  ```python
+
+  >>> print("Hello World!")
+
+  Hello World!
+
+
+  >>> print("pi approximates to", 3.14)
+
+  pi approximates to 3.14
+
+  ```
+
+
+  This is not very useful, as we're only displaying things typed in by the
+  programmer. We really need a way of storing things and using them later.
+  That's where variables come in.
+
+
+  ### Variables are names for things
+
+
+  In programming, a ***variable*** is a ***named storage location in memory***
+  that holds a value. Think of it as a container where you can store data that
+  you want to use later in your program. Variables allow you to label and
+  manipulate data easily.
+
+
+  #### Assigning Variables
+
+
+  To create a variable in Python, you use the ***assignment*** operator
+  **`=`** like this:
+
+
+  ```python
+
+  variable_name = value
+
+  ```
+
+
+  * `variable_name` is the name you give to the variable, also called its
+  ***identifier***.
+
+
+  * `value` is the data you want to store in the variable.
+
+
+  For example, let's create a variable named `age` and assign it the value `16`:
+
+
+  ```python
+
+  age = 16
+
+  ```
+
+
+  Here, `age` is the variable name, and `16` is the value stored in it.
+
+
+  #### Printing Variables
+
+
+  You can use the `print()` function to display the value of a variable. Let's
+  print the `age` variable:
+
+
+  ```python
+
+  >>> age = 16
+
+  >>> print(age)
+
+  16
+
+  ```
+
+
+  #### Combining Variables and Literals
+
+
+  You can also print variables alongside other text (string literals) by
+  including them in the `print()` function. For example:
+
+
+  ```python
+
+  >>> age = 16
+
+  >>> name = "Alice"
+
+  >>> print("Hello, my name is", name, "and I am", age, "years old.")
+
+  Hello, my name is Alice and I am 16 years old
+
+  ```
+
+
+  This will output: `Hello, my name is Alice and I am 16 years old.`
+
+
+  By using variables, you can easily change the data in your program without
+  having to rewrite the entire code.&#x20;
+
+
+  ### PRIMM activities
+
+
+  Try experimenting with different variable names and values to see how they
+  work, using the code editor now.
+
+
+  1. **🤔 Predict** what the code does
+
+  2. **▶️ Run** and check your prediction
+
+  3. **🔍 Investigate**: what are the two variables in this program?
+
+  4. **✏️ Modify** the **assignment** statements in the program for someone
+  whose age is **15** and whose name is **Sophia**
+
+  5. 🛠️ **Make** a new program that stores the day of the week in a variable
+  called `day` and outputs a message saying what day it is. For example if it's
+  Monday, the program should say
+
+     ```
+     Today is Monday
+     ```
+
+     Make sure you use a variable in your code to store the day name, and use this variable in your `print` statement!
+
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart3/variables.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Was your prediction correct? What did you change? Did it work? What did
+          your assignment statement look like in your Make?

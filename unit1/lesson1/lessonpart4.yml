@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Input using input()
+content: >
+  Let's now gather input from users in Python using the `input()` function. This
+  is an essential part of creating interactive programs, as it allows your
+  program to respond to user data instead of "hard-coding" everything.
+
+
+  ### Understanding `input()`
+
+
+  The `input()` function in Python is used to capture user input. When you call
+  `input()`, the program will pause and wait for the user to type something and
+  press Enter. If we **assign** this to a variable we can use it later in our
+  program, like this:
+
+
+  ```python
+
+  print("Enter your name:")
+
+  name = input()
+
+  print("Hello", name, "!")
+
+  ```
+
+
+  In this example:
+
+
+  * The `print("Enter your name:")` line displays a message prompting the user
+  to enter their name.
+
+
+  * The `name = input()` line waits for the user to type their name and press
+  Enter. The entered name is stored in the variable `name`.
+
+
+  * Finally, `print("Hello, ",  name, "!")` outputs a greeting using the name
+  provided by the user.
+
+
+  ### PRIMM activities
+
+
+  Try experimenting with `input()`, `print()` and variables using the example
+  code in **input\_output.py** in the code editor now.
+
+
+  1. **🤔 Predict** what the code does
+
+  2. **▶️ Run** and check your prediction
+
+  3. **🔍 Investigate**: what are the two **assignment** statements in this
+  program? How is `input()` used to ask questions of the user?
+
+  4. **✏️ Modify** the program to add another question, input the answer and
+  output a suitable message.
+
+  5. 🛠️ **Make** a new "chatbot" program using the empty **chatbot.py** file.
+  Use input, output and variables. For example you might ask someone what pizza
+  topping they like, and respond saying I like that topping too!
+
+
+  Reflect on your activities below.
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart4/input_output.py
+  - course1/unit1/lesson1/lessonpart4/chatbot.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you get on? Did you use variables correctly in your modify and
+          make?

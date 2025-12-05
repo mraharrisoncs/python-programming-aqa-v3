@@ -1,0 +1,137 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Capstone project - quiz game
+content: >
+  Let's use this principle to write a quiz game using functions.
+
+
+  ### Capstone Project writing a quiz game
+
+
+  A maths teacher wants a game to quiz students on their times tables. The game
+  should display a question in the form of a multiplication problem, such as 4
+  \* 8 or 9 \* 3, using random integers between 1 and 10 inclusive.&#x20;
+
+
+  The user inputs their answer and the program checks the answer and adds 1 to
+  their score if correct. The quiz should ask three questions and then give a
+  score out of three and stop. 
+
+
+  We can decompose this problem into these sub-problems:
+
+
+  * generate a question in the form a \* b where a and b are random integers
+  between 1 and 10 and display it
+
+
+  * ask for the user's answer
+
+
+  * check the answer and add 1 to score if correct
+
+
+  * repeat 2 more times
+
+
+  * output the final score.
+
+
+  We won't meet repetition (iteration) until a later unit, so let's do this with
+  sequence only! You can start by writing the **main program** section like
+  this, just by giving reasonable **identifiers** (function names) to the list
+  of sub-problems we wrote above:
+
+
+  ```python
+
+  # main program
+
+  generate_question()
+
+  get_answer()
+
+  check_answer()
+
+
+  generate_question()
+
+  get_answer()
+
+  check_answer()
+
+
+  generate_question()
+
+  get_answer()
+
+  check_answer()
+
+
+  output_score()
+
+  ```
+
+
+  Note how we have not yet defined **how** to do any of these processes. But we
+  have written the outline structure of our program. We have a high-level
+  **abstraction** of the program required.&#x20;
+
+
+  But we can simplify it if we use **pattern matching** again - notice how the
+  first three function calls are executed in sequence three times? We can just
+  put these inside another function! Let's call it `ask_question`() and call it
+  three times in the main program:
+
+
+  <br />
+
+
+  ```python
+
+  def ask_question():
+    generate_question()
+    get_answer()
+    check_answer()
+
+  # main program
+
+  ask_question()
+
+  ask_question()
+
+  ask_question()
+
+  ```
+
+
+  Now all we have to do is write the functions `generate_question()`,
+  `get_answer()`, `check_answer()` and `output_score()`!
+
+
+  Here is our suggestion for `generate_question() `
+
+
+  ### generate\_question()
+
+
+  ```python
+
+  def generate_question():
+      a = random.randint(1,10)
+      b = random.randint(1,10)
+      print("what is", a, "*", b, "?")
+      return a * b
+  ```
+
+
+  This returns the correct answer, for use later in checking the user's
+  response. We need to store this in a variable in our main program, so we will
+  change the line `generate_question()` to `correct = generate_question()`.
+
+
+  Your job is to **complete the code** in the file provided,
+  **capstone\_quiz.py**
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart4/capstone_quiz.py

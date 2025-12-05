@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart15
+title: Casting - converting between data types
+content: >
+  We looked at data types in Unit 1. You will recall that sometimes we need to
+  convert data to and from the **string** data type. Converting data between
+  types is also called **casting**, and these are the basic Python functions:
+
+
+  * `int(``string``)` - converts a string to an integer, e.g. int("11") returns
+  the integer 11
+
+
+  * `float(``string``)` - converts a string to a float (real number), e.g.
+  float("4.5") returns the float 4.5
+
+
+  * `str(``numeric expression``)` - converts any number or numeric expression to
+  a string, e.g. str(3 + 2) returns the string "5".
+
+
+  ## Using conversion functions
+
+
+  In Python, **input()** always returns a string. If we want to input a number,
+  we must then cast it using `int()` or `float()`. For example:
+
+
+  ```python
+
+  age = int(input("what is your age? "))
+
+  weight = float(input("what is your weight in kg? "))
+
+  ```
+
+
+  Going the other way, we might need to combine numeric and string data, for
+  example to create a random password. This program **concatenates** a random
+  word with "##" and a random integer, but we need to **cast** the random
+  integer to a string with **str()**.
+
+
+  ```python
+
+  import random
+
+  random_word = random.choice(["dog", "cat", "bat", "cod"])
+
+  random_number = random.randint(111, 999)
+
+  password = random_word + "##" + str(random_number)
+
+  ```
+
+
+  ## Pseudocode notes
+
+
+  Again, on the AQA exam papers you won't see `int()`, `float()` or `str()`,
+  instead you will see these pseudocode versions which are
+  self-explanatory: **`STRING_TO_INT()`, `STRING_TO_REAL()`,**
+  **`INT_TO_STRING()`** and **`REAL_TO_STRING()`**
+
+
+  ## String Conversion Operations
+
+
+  | Operation             | Python Syntax   | AQA Pseudocode           | Example
+  Input | Output         |
+
+  | --------------------- | --------------- | ------------------------ |
+  ------------- | -------------- |
+
+  | String → Integer      | `int(string)`   | `STRING_TO_INT(string)`  |
+  `'16'`        | `16` (int)     |
+
+  | String → Real (float) | `float(string)` | `STRING_TO_REAL(string)` |
+  `'16.3'`      | `16.3` (float) |
+
+  | Integer → String      | `str(integer)`  | `INT_TO_STRING(integer)` |
+  `16`          | `'16'`         |
+
+  | Real → String         | `str(real)`     | `REAL_TO_STRING(real)`   |
+  `16.3`        | `'16.3'`       |
+
+
+  Now try these quiz questions!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output of this code?
+          print(int("45") + float("4.5"))
+        options:
+          - id: "1"
+            value: "49.5"
+            explanation: Correct, 45 + 4.5 is 49.5
+            isCorrect: true
+          - id: "2"
+            value: "454.5"
+            explanation: No, you have concatenated the strings but you should have converted
+              to numbers first
+          - id: "3"
+            value: "49"
+            explanation: No, did you do int(4.5) ?
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output of this code?
+          print("Pass" + str(123) + "#" + str(5 + 2))
+        options:
+          - id: "1"
+            value: Pass123#7
+            explanation: Yes, you correctly cast the numeric expressions and concatenated
+              everything!
+            isCorrect: true
+          - id: "2"
+            value: Passstr123#str52
+            explanation: No, str() is a function that converts the numeric expressions to
+              strings
+          - id: "3"
+            value: Pass123#52
+            explanation: No, 5 + 2 will be evaluated first, then the result cast to a string

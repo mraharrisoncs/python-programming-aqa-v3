@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Changing case with upper() and lower()
+content: >+
+  In Python, the **upper()** and **lower()** methods are essential for
+  manipulating string data, especially when you need consistency. These methods
+  help in standardising the case of strings, which is crucial for tasks like
+  comparing user input or storing data in a uniform format.
+
+
+  **upper()** - This method converts all lowercase letters in a string to
+  uppercase. The syntax is `string.upper()`. For example:
+
+
+  ```python
+
+  >>> greeting = "hello world"
+
+  >>> print(greeting.upper())  
+
+  HELLO WORLD
+
+  ```
+
+
+  **lower()** - This method converts all uppercase letters in a string to
+  lowercase. The syntax is `string.lower()`. For example:
+
+
+  ```python
+
+  >>> greeting = "HELLO WORLD"
+
+  >>> print(greeting.lower())  
+
+  hello world
+
+  ```
+
+
+  A string with mixed case will be converted to a single case, and any
+  non-letters will remain the same.&#x20;
+
+
+  ```python
+
+  >>> greeting = "HeLlO_WoRlD!"
+
+  >>> print(greeting.lower())  
+
+  hello_world!
+
+
+  >>> print(greeting.upper())  
+
+  HELLO_WORLD!
+
+  ```
+
+
+  Also note that the original string is **unchanged** by the upper() and lower()
+  methods, so using the above example again, greeting still
+  contains "HeLlO\_WoRlD!" at the end:
+
+
+  ```python
+
+  >>> greeting = "HeLlO_WoRlD!"
+
+  >>> print(greeting.lower())  
+
+  hello_world!
+
+
+  >>> print(greeting)
+
+  HeLlO_WoRlD!
+
+  ```
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output of this line of Python?
+          print("ada lovelace".upper())
+        options:
+          - id: "1"
+            value: '"ADA LOVELACE"'
+            explanation: Yes, upper() makes all letters uppercase
+            isCorrect: true
+          - id: "2"
+            value: '"Ada Lovelace"'
+            explanation: No, upper() makes all letters uppercase
+          - id: "3"
+            value: '"ada lovelace"'
+            explanation: No, this is unchanged, did you do lower()?
+          - id: "4"
+            value: '"AL"'
+            explanation: No, upper() always returns a string the same length as the original
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output of this code?
+          message = "ERROR 404!"
+          logged = message.lower()
+          print(message, logged)
+        options:
+          - id: "1"
+            value: ERROR 404 error 404
+            explanation: Yes, message remains in uppercase and logged is created in
+              lowercase
+            isCorrect: true
+          - id: "2"
+            value: error 404 error 404
+            explanation: No, the original variable message does not change
+          - id: "3"
+            value: error 404
+            explanation: No, the print statement prints both variables' contents
+          - id: "4"
+            value: ERROR 404 error ₄₀₄
+            explanation: No, numbers remain the same!

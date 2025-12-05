@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart11
+title: Division and Modulus
+content: >
+  Real Division (/): Performs division and returns a **floating-point integer**
+
+  Integer Division (DIV or //): Performs division and **discards the remainder**
+  returning an **integer**
+
+  Modulus (MOD or %): Returns **the remainder** after division
+
+  Example operations and their results.
+
+
+  ```python
+
+  >>> 9 / 2   
+
+  4.5   
+
+  >>> 9 // 2   
+
+  4   
+
+  >>> 9 % 2   
+
+  1
+
+  ```
+
+
+  Now calculate these expressions in your head. Use the REPL if stuck!
+showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is 14 // 3 ?
+        options:
+          - id: "1"
+            value: "4"
+            explanation: Correct, 14 // 3 performs integer division and discards the
+              remainder
+            isCorrect: true
+          - id: "2"
+            value: "4.66666666667"
+            explanation: Wrong, this is the result of real division (14 / 3)
+          - id: "3"
+            value: "2"
+            explanation: Wrong, this is unrelated to either division or modulus for 14 and 3
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is 14 % 3 ?
+        options:
+          - id: "1"
+            value: "4"
+            explanation: Wrong, 14 % 3 gives the remainder, which is 2
+          - id: "2"
+            value: "4.66666666667"
+            explanation: Wrong, this is the result of real division (14 / 3)
+          - id: "3"
+            value: "2"
+            explanation: Correct, 14 % 3 returns the remainder after division
+            isCorrect: true

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart10
+title: Common misconceptions 2
+content: |+
+  | ❌ Misconception                      | 🧪 What Students Might Do      | ✅ Explanation / Fix                                                                                              |
+  | ------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+  | Operators work left to right         | `4 + 2 * 3`Expecting `18`      | Python follows precedence: `2 * 3 = 6`, then `4 + 6 = 10`. Use brackets to override precedence if needed.        |
+  | `%` gives a percentage               | `percent = score % total`      | `%` gives the remainder, not a percentage. Use: `percent = score / total * 100`                                  |
+  | Multiple `**` evaluate left to right | `2 ** 3 ** 2`Expecting `64`    | Python evaluates exponentiation right to left: `3 ** 2 = 9`, then `2 ** 9 = 512`. Use brackets to control order. |
+  | Mixed units                          | `total = hours * 60 + seconds` | Keep units consistent. Convert all values to the same unit (e.g. minutes or seconds) before calculating.         |
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Which of these misconceptions have you struggled with? Which have you
+          "seen in the wild"? What can you do to avoid it in the future?

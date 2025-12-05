@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart12
+title: Pseudocode example - division
+content: >
+  Remember, the pseudocode symbol for real division is "/", while integer
+  division uses "DIV"
+
+
+  ```
+
+  result ← 7 / 2
+
+  OUTPUT result
+
+  ```
+
+
+  The output from this algorithm would be **3.5**
+
+
+  ```
+
+  result ← 7 DIV 2
+
+  OUTPUT result
+
+  ```
+
+
+  The output from this algorithm would be **3**
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What data type does a DIV operation always return?
+        options:
+          - id: "1"
+            value: Integer
+            explanation: DIV operation performs integer division, which always returns an
+              integer.
+            isCorrect: true
+          - id: "2"
+            value: Float
+            explanation: DIV operation does not return a float; it returns an integer.
+          - id: "3"
+            value: String
+            explanation: DIV operation does not return a string; it returns an integer.

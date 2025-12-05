@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Python debugging exercise 2
+content: |
+  Open the Python file and complete these tasks:
+  1. Spot the error(s) in the code
+  2. Decide whether each is a Syntax or Logical error
+  3. Predict the outcome of attempting to run the code
+  4. Fix the code and test it
+  Then answer the questions below.
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart6/b2_debug.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the error in this program?
+        options:
+          - id: "1"
+            value: The multiplication uses `x` instead of `*`
+            explanation: Correct, Python expects `*` for multiplication, not `x`
+            isCorrect: true
+          - id: "2"
+            value: The variable `area` is undefined
+            explanation: Wrong, `area` is defined, but the expression is invalid
+          - id: "3"
+            value: The print statement is missing a closing bracket
+            explanation: Wrong, the print syntax is correct
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What type of error is this?
+        options:
+          - id: "1"
+            value: Syntax Error
+            explanation: Correct, Python reads `x` as a variable and throws a syntax error
+            isCorrect: true
+          - id: "2"
+            value: Logical Error
+            explanation: Wrong, the program won't run at all
+          - id: "3"
+            value: Runtime Error
+            explanation: Wrong, the error is detected before execution
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What will happen when you try to run the original code?
+        options:
+          - id: "1"
+            value: The program won't start
+            explanation: Correct, Python throws a syntax error and halts
+            isCorrect: true
+          - id: "2"
+            value: "It prints `Area: 21`"
+            explanation: Wrong, the code doesn't reach the print statement
+          - id: "3"
+            value: "It prints `Area: x`"
+            explanation: Wrong, `x` is not defined and causes a syntax error
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: How should the code be fixed?
+        options:
+          - id: "1"
+            value: Replace `x` with `*`
+            explanation: Correct, `*` is the proper multiplication operator in Python
+            isCorrect: true
+          - id: "2"
+            value: Add quotation marks around `x`
+            explanation: Wrong, that would make it a string, not an operator
+          - id: "3"
+            value: Change `print` to `print()`
+            explanation: Wrong, the print syntax is already correct

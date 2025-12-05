@@ -1,0 +1,159 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Starter - data types
+content: >
+  All programming languages have basic or **primitive** data types such as
+  integer and Boolean. Here is a piece of Python code that assigns some data to
+  variables with different data types.
+
+
+  ```python
+
+  # Assigning values to variables of different data types
+
+
+  # Integer
+
+  age = 25
+
+
+  # Float
+
+  height = 5.9
+
+
+  # String
+
+  name = "Alice"
+
+
+  # Boolean
+
+  is_student = True
+
+
+  # Print the variables
+
+  print("Age:", age)
+
+  print("Height:", height)
+
+  print("Name:", name)
+
+  print("Is Student:", is_student)
+
+  ```
+
+
+  Once you have refreshed your memory by reading through the above code, try the
+  starter quiz below\...
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What data type has only two values, True and False?
+        options:
+          - id: "1"
+            value: Integer
+            explanation: No, this is a whole number like 1 or -99
+          - id: "2"
+            value: Real/float
+            explanation: No this is a real number such as 3.45
+          - id: "3"
+            value: Boolean
+            explanation: Yes, Boolean variables can take only True or False as values
+            isCorrect: true
+          - id: "4"
+            value: character
+            explanation: No this is a single letter, number or punctuation mark such as "a"
+              or "!"
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: 'Which data type does this expression have: "Hello World"?'
+        options:
+          - id: "1"
+            value: String
+            explanation: Yes, it is a sequence of characters, which is a string data type
+            isCorrect: true
+          - id: "2"
+            value: Integer
+            explanation: No, this is a whole number like 1 or -99
+          - id: "3"
+            value: Boolean
+            explanation: No, this data type represents true or false values, not sequences
+              of characters
+          - id: "4"
+            value: Real
+            explanation: A real / float data type represents decimal numbers, not sequences
+              of characters
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: "These values are a mixture of data types. Select all the real numbers
+          (floats):"
+        options:
+          - id: "1"
+            value: "3.14"
+            explanation: Yes, 3.14 is a real number represented as a float.
+            isCorrect: true
+          - id: "2"
+            value: "42"
+            explanation: No, 42 is an integer, not a float.
+          - id: "3"
+            value: "True"
+            explanation: No, True is a Boolean value, not a float.
+          - id: "4"
+            value: "-2.718"
+            explanation: Yes, -2.718 is a real number represented as a float.
+            isCorrect: true
+          - id: "5"
+            value: '"Hello"'
+            explanation: No, "Hello" is a string, not a float.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: multiple
+        content: "Select all the strings:"
+        options:
+          - id: "1"
+            value: '"Hello, World!"'
+            explanation: Yes, this is a string because it is a sequence of characters.
+            isCorrect: true
+          - id: "2"
+            value: "42"
+            explanation: No, This is an integer, not a string.
+          - id: "3"
+            value: "'Python'"
+            explanation: Yes, this is a string - we can use either double quotes or single
+              quotes, as long as they match!
+            isCorrect: true
+          - id: "4"
+            value: "True"
+            explanation: No, this is a Boolean value, not a string.
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: Some languages support the character or char data type, which stores a
+          single character. Python does not. Without the char data type, how
+          would we best store someone's first initial in Python?
+        options:
+          - id: "1"
+            value: As a string of length 1
+            explanation: Yes, Python just uses the string data type for single or multiple
+              character strings
+            isCorrect: true
+          - id: "2"
+            value: As an integer
+            explanation: No, although "under the covers" this is what happens, in our
+              program we would use a string
+          - id: "3"
+            value: As a Boolean
+            explanation: No, we could not store a letter in a Boolean variable
+          - id: "4"
+            value: You can't store a single character in a Python variable
+            explanation: Not true, we can use a string variable

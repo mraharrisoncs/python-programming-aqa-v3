@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Operators quick quiz
+content: >+
+  Now take this quiz to check your recall of operators. All the answers can be
+  found here:
+
+
+  | Addition | Subtraction | Multiplication | Division | Modulus |
+
+  |:--------:|:-----------:|:--------------:|:--------:|:-------:|
+
+  |   `+`    |     `-`     |      `*`       |   `/`    |   `%`   |
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: The _____ operator is used to calculate the total of two values.
+        options:
+          - id: "1"
+            value: +
+            explanation: The '+' operator is used for addition, which calculates the total
+              of two values.
+            isCorrect: true
+          - id: "2"
+            value: "-"
+            explanation: The '-' operator is used for subtraction, not addition.
+          - id: "3"
+            value: "*"
+            explanation: The '*' operator is used for multiplication, not addition.
+          - id: "4"
+            value: /
+            explanation: The '/' operator is used for division, not addition.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: The * symbol is used for _____ in Python.
+        options:
+          - id: "1"
+            value: multiplication
+            explanation: The * symbol is used for multiplication in Python.
+            isCorrect: true
+          - id: "2"
+            value: addition
+            explanation: The + symbol is used for addition in Python.
+          - id: "3"
+            value: division
+            explanation: The / symbol is used for division in Python.
+          - id: "4"
+            value: subtraction
+            explanation: The - symbol is used for subtraction in Python.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: The / operator performs _____ and returns the quotient.
+        options:
+          - id: "1"
+            value: division
+            explanation: The / operator is used for division and returns the quotient (the
+              result of dividing one number by another).
+            isCorrect: true
+          - id: "2"
+            value: multiplication
+            explanation: The * operator is used for multiplication, not division.
+          - id: "3"
+            value: addition
+            explanation: The + operator is used for addition, not division.
+          - id: "4"
+            value: subtraction
+            explanation: The - operator is used for subtraction, not division.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: The _____ operation finds the remainder after division, also called
+          ______.
+        options:
+          - id: "1"
+            value: "%, modulus"
+            explanation: The modulus operation, represented by %, finds the remainder after
+              division and is also known as modulo.
+            isCorrect: true
+          - id: "2"
+            value: +, addition
+            explanation: Addition is used to calculate the total of two values, not the
+              remainder after division.
+          - id: "3"
+            value: /, division
+            explanation: Division calculates the quotient, not the remainder after division.

@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart12
+title: Python practical exercises 4
+content: >+
+  Using the skeleton code provided, solve these problems:
+
+
+  ### 1. Shopping Bill
+
+
+  Complete the code in **q1.py**. Input the prices of three items.\
+
+  Calculate the total and output it.
+
+
+  ***
+
+
+  ### 2. Weekly Pay
+
+
+  Using **q2.py**, input the hourly pay rate and hours worked.\
+
+  Calculate the weekly gross pay by multiplying hourly pay rate by hours
+  worked.\
+
+  Then take off 20% for tax (or calculate 80% of the gross value, which is the
+  same thing) to get net pay.\
+
+  **Example:** If hourly rate is £14.00 and hours worked is 20, then net pay is
+  £224.00.
+
+
+  ***
+
+
+  ### 3. Movie Duration
+
+
+  Write a function in **q3.py** that takes the length of a movie in
+  minutes. Calculate the duration in hours and minutes.\
+
+  Return a string in the format `hours:minutes`.
+
+
+  ***
+
+
+  ### 4. Loan Interest
+
+
+  Using **q4.py**, input the amount borrowed, the annual interest rate (as a
+  percentage), and the number of years elapsed. Calculate simple interest using
+  the formula:\
+
+  `interest = (amount × rate × years) / 100`\
+
+  Output the interest rounded to 2 decimal places.
+
+
+  ***
+
+
+  ### 5. Energy Bill
+
+
+  In **q5.py**, input the cost per unit and units used for both cheap rate and
+  peak rate. Calculate the cost for each rate using:\
+
+  `cost = units × rate`\
+
+  Add both costs to get the total bill. Round the result to 2 decimal places.\
+
+  **Example:** `(0.15 × 245) + (0.49 × 180) = £124.95`
+
+
+  ***
+
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart12/b6_exercises.py
+  - course1/unit2/lesson2/lessonpart12/q1.py
+  - course1/unit2/lesson2/lessonpart12/q2.py
+  - course1/unit2/lesson2/lessonpart12/q3.py
+  - course1/unit2/lesson2/lessonpart12/q4.py
+  - course1/unit2/lesson2/lessonpart12/q5.py
+  - course1/unit2/lesson2/lessonpart12/q6.py

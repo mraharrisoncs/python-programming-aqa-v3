@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Programming iteration
+content: >+
+  Let's try some programming challenges now, using iteration.
+
+
+  #### 1. Count the vowels
+
+
+  Open `q1.py` and write a Python program that asks the user for a phrase. The
+  program should output the phrase with all vowels in capitals, and all
+  consonants in lower case. For example, if the user enters `"Fetch Decode
+  Execute"` the output should be `fEtch dEcOdE ExEcUtE`:
+
+
+  ```
+
+  Phrase?: Fetch Decode Execute
+
+  fEtch dEcOdE ExEcUtE
+
+  ```
+
+
+  **Hints:**
+
+
+  * **Iterate over the string**, don't use indexing.
+
+
+  * Use `... in "aeiou"` to check for vowels.
+
+
+  * Use `upper()` / `lower()` as appropriate then **concatenate** the changed
+  character to an output string.
+
+
+  * Print the output string after the loop ends.
+
+
+  ### 3. Show Uppercase Only
+
+
+  Open `q2.py` and write a program that asks the user for a phrase and prints
+  only the **uppercase letters**, in **reverse order**. For example `Ada
+  Lovelace` should become `LA`, and `Total RAM Size` becomes `SMART`!
+
+
+  ```
+
+  Phrase?: Total RAM Size
+
+  SMART
+
+  ```
+
+
+  **Hints**:
+
+
+  * Iterate over the string
+
+
+  * Check to see if each character is the same as its upper() version (or use
+  the .isupper() method)
+
+
+  * If so, concatenate **on the front** of an output variable.
+
+showEditor: true
+editors:
+  - course1/unit3/lesson2/lessonpart5/q1.py
+  - course1/unit3/lesson2/lessonpart5/q2.py

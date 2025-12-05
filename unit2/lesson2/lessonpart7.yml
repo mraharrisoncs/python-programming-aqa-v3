@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Python debugging exercise 3
+content: |
+  Open the Python file and complete these tasks:
+  1. Spot the error(s) in the code
+  2. Decide whether each is a Syntax, Logical, or Runtime error
+  3. Predict the outcome of attempting to run the code
+  4. Fix the code and test it
+  Then answer the questions below.
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart7/b3_debug.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the first issue in this program?
+        options:
+          - id: "1"
+            value: Inputs are not cast to numbers
+            explanation: Correct, input() returns strings, which causes issues later
+            isCorrect: true
+          - id: "2"
+            value: The input prompts are missing
+            explanation: Wrong, the prompts are present
+          - id: "3"
+            value: The variables are undefined
+            explanation: Wrong, num1 and num2 are defined
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What type of error does this cause?
+        options:
+          - id: "1"
+            value: Logical and Runtime Error
+            explanation: Correct, the logic is flawed and it crashes when adding strings
+            isCorrect: true
+          - id: "2"
+            value: Syntax Error
+            explanation: Wrong, the syntax is valid
+          - id: "3"
+            value: No error
+            explanation: Wrong, the program will fail at runtime
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is wrong with the calculation of total on line 4?
+        options:
+          - id: "1"
+            value: It adds num1 to itself instead of num2
+            explanation: Correct, this is a logical error
+            isCorrect: true
+          - id: "2"
+            value: It uses subtraction instead of addition
+            explanation: Wrong, the operator is +
+          - id: "3"
+            value: It multiplies instead of adds
+            explanation: Wrong, no multiplication is used
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is wrong with the average calculation?
+        options:
+          - id: "1"
+            value: Integer division // is used instead of /
+            explanation: Correct, // truncates the result
+            isCorrect: true
+          - id: "2"
+            value: The average is calculated before the total
+            explanation: Wrong, the order is fine
+          - id: "3"
+            value: The average is printed before being calculated
+            explanation: Wrong, the print correctly comes after the calculation
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is wrong with the final print statement?
+        options:
+          - id: "1"
+            value: It tries to concatenate a string and a number
+            explanation: Correct, Python can't join a string and an integer with +
+            isCorrect: true
+          - id: "2"
+            value: It uses a comma instead of a plus
+            explanation: Wrong, using a comma would actually fix the issue
+          - id: "3"
+            value: It prints the wrong variable
+            explanation: Wrong, the correct variable is printed

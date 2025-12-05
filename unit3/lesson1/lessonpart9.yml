@@ -1,0 +1,222 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart9
+title: Substrings, aka string slicing
+content: |+
+  ## String slicing
+
+  You've seen how to access individual characters in a string using their index positions. Now we're going to see how to extract substrings of more than one character. 
+
+  The basic Python syntax for substrings, also know as **string slicing**, is this:&#x20;
+
+  ```python
+  identifier[start : end]
+  ```
+
+  where **identifier** is our variable name, **start** is the starting position of the substring, and **end** is the first character we **don't want!** This seems strange at first, but you will get used to it, just make the second value **one more** than the last character you want to extract. Let's look at `subject = "Computer Science"` again:
+
+  ```python
+  subject
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  | 12  | 13  | 14  | 15  | 
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  C  |  o  |  m  |  p  |  u  |  t  |  e  |  r  |     |  S  |  c  |  i  |  e  |  n  |  c  |  e  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+  If we want the first character, "C", we can just write `subject[0]`. If we want the whole string "Computer" we specify start of 0, and end at position 8, one place after the "r":
+
+  ```python
+  >>> subject = "Computer Science"
+  >>> print(subject[0 : 8])
+  Computer
+  ```
+
+  ## Assumed end of string
+
+  We can omit the start position "0" if we want to slice from the start of the string, just type the colon and the end position like this:
+
+  ```python
+  >>> subject[:8]
+  Computer
+  ```
+
+  We can omit the end position too, if we want a slice up to the end of the string, just type the start position and a colon like this:
+
+  ```python
+  >>> subject[9:]
+  Science
+  ```
+
+  ## Indexing in reverse!
+
+  We can index from the end of the string too! Just use a negative value, starting with -1 for the last character. If you want the last seven characters - that means index -7 to -1 - then do this:
+
+  ```python
+  >>> subject[-7:-1]
+  Science
+  ```
+
+  And yes, again we can omit the start or end indices, and Python will know we mean "to end of string":
+
+  ```python
+  >>> subject[-7:]
+  Science
+
+  >>> "execute"[-4:]
+  cute
+  ```
+
+  Notice that  the string can be a string **literal** or a string **variable**, or indeed any **expression** that evaluates to a string, such as `input("name")` or `firstname + lastname` where these are two string variables. This is generally true of Python, expressions can be used almost anywhere a variable can!
+
+  ## Lots of examples
+
+  Let's see some more examples of string slicing in Python:
+
+  ```python
+  +------------------+-------------+--------------------------------------------+
+  | Slice Syntax     | Result      | Description                                |
+  +------------------+-------------+--------------------------------------------+
+  | subject[0:8]     | 'Computer'  | # First word (index 0 to 7)                |
+  | subject[9:16]    | 'Science'   | # Second word (index 9 to 15)              |
+  | subject[9:]      | 'Science'   | # From index 9 to end                      |
+  | subject[:8]      | 'Computer'  | # From start to index 7                    |
+  | subject[3:6]     | 'put'       | # Middle of "Computer"                     |
+  | subject[8:9]     | ' '         | # The space between words                  |
+  | subject[-7:]     | 'Science'   | # Last 7 characters using negative index   |
+  | subject[-7:-4]   | 'Sci'       | # First 3 letters of "Science"             |
+  | subject[-1]      | 'e'         | # Last character                           |
+  | subject[:-8]     | 'Computer'  | # Everything except the last eight chars   |
+  +------------------+-------------+--------------------------------------------+
+  ```
+
+  ## Pseudocode notes
+
+  In AQA exams we use the `SUBSTRING()` function, the syntax is **SUBSTRING(start, end, string)** and in this case the **end** value is the last index of the string we **do want**! Examples:
+
+  ```python
+  subject = "Computer Science"
+  SUBSTRING(0, 3, subject)        # returns "Comp"
+  SUBSTRING(9, 15, subject)       # returns "Science"
+  SUBSTRING(2, 5, "important")    # returns "port"
+  ```
+
+  ## Knowledge Check Quiz
+
+  Now check your understanding! All questions use this new variable assignment, hero = "Ada Lovelace"
+
+  ```python
+  hero
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index+ |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  A  |  d  |  a  |     |  L  |  o  |  v  |  e  |  l  |  a  |  c  |  e  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index- | -12 | -11 | -10 | -9  | -8  | -7  | -6  | -5  | -4  | -3  | -2  | -1  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be returned by this expression?
+          hero[0:2]
+        options:
+          - id: "1"
+            value: Ad
+            explanation: Correct, Python stops before the second index!
+            isCorrect: true
+          - id: "2"
+            value: Ada
+            explanation: Wrong, the second index gives the first character we *don't want*!
+          - id: "3"
+            value: '"Ada "'
+            explanation: Wrong, the string would be shorter than this.
+          - id: "4"
+            value: ace
+            explanation: No, did you use negative indexing?
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be returned by this expression?
+          hero[4:8]
+        options:
+          - id: "1"
+            value: Love
+            explanation: Correct! Index 4 is "L" and index 8 is "l", which we exclude.
+            isCorrect: true
+          - id: "2"
+            value: Lovel
+            explanation: Close, but Python slicing excludes the character at index 8.
+          - id: "3"
+            value: " Lov"
+            explanation: No, index 4 is "L", not the space.
+          - id: "4"
+            value: ace
+            explanation: Incorrect slice, this is from the end of the string.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does hero[-4:] return?
+        options:
+          - id: "1"
+            value: lace
+            explanation: Correct! Negative index -4 is "l", and we go to the end.
+            isCorrect: true
+          - id: "2"
+            value: ace
+            explanation: Close — that would be hero[-3:]
+          - id: "3"
+            value: Lovelace
+            explanation: Too long, this slice starts near the end.
+          - id: "4"
+            value: e
+            explanation: That's just hero[-1], the final character.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which slices give us just the space between "Ada" and "Lovelace"? Tick
+          all that are correct!
+        options:
+          - id: "1"
+            value: hero[3:4]
+            explanation: Correct! Index 3 is the space, and index 4 is "L", which we
+              exclude.
+            isCorrect: true
+          - id: "2"
+            value: hero[2:4]
+            explanation: No, that includes "a" and the space.
+          - id: "3"
+            value: hero[3]
+            explanation: Correct, we can just specify a single index if we want one
+              character.
+            isCorrect: true
+          - id: "4"
+            value: hero[-9:-8]
+            explanation: Also correct, we can index from the end of the string to the space.
+            isCorrect: true
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does hero[:3] return?
+        options:
+          - id: "1"
+            value: Ada
+            explanation: Correct! From start to index 2.
+            isCorrect: true
+          - id: "2"
+            value: "Ada "
+            explanation: No, index 3 is the space, which is excluded.
+          - id: "3"
+            value: Lovelace
+            explanation: No, that's from index 4 onward.
+          - id: "4"
+            value: A
+            explanation: Too short, this would be hero[0:1].

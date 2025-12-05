@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart8
+title: Indexing a string
+content: |
+  Remember our `greeting = "Hello World!"` example? We said that we could break this string into parts called **substrings**. In Python we do that by specifying the  **index position(s)** of the substring we want. Let's take another look at the string:
+
+  ```python
+  greeting
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Index  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  | Char   |  H  |  e  |  l  |  l  |  o  |     |  W  |  o  |  r  |  l  |  d  |  !  |
+  +--------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+  ```
+
+  Every character can be accessed by its index. We use the same syntax as when we index Python lists: square brackets around the index like this:
+
+  ```python
+  >>> greeting[0]
+  H
+  >>> greeting[1]
+  e
+  >>> greeting[11]
+  !
+  ```
+
+  Answer these quick questions before we move on, and remember that the first character has index 0!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output of this program? 
+          greeting = "Hello World!" 
+          print(greeting[4])
+        options:
+          - id: "1"
+            value: o
+            explanation: Yes, the character at index 4 in the string 'Hello World!' is 'o'.
+            isCorrect: true
+          - id: "2"
+            value: l
+            explanation: No, The character 'l' is at index 2 and 3, not 4. Remember to count
+              from zero!
+          - id: "3"
+            value: H
+            explanation: No, The character 'H' is at index 0, not 4.
+          - id: "4"
+            value: W
+            explanation: No, The character 'W' is at index 6, not 4.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: >-
+          What must be the missing index in the square brackets if the output is
+          'W'? 
+
+          greeting = 'Hello World!' 
+
+          print(greeting[?])
+        options:
+          - id: "1"
+            value: "6"
+            explanation: Yes, The character 'W' is at index 6 in the string 'Hello World!'.
+            isCorrect: true
+          - id: "2"
+            value: "5"
+            explanation: No, At index 5 we can see a space character, not 'W' (count from
+              zero remember!)
+          - id: "3"
+            value: "7"
+            explanation: No, At index 7 we can see a "o" character, not 'W' (count from zero
+              remember!)

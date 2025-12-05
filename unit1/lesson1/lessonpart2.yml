@@ -1,0 +1,138 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Output using print()
+content: >+
+  Output is a crucial part of programming, as it allows us to display
+  information to the user. We saw on the previous page that the `print()`
+  function in Python is used to output data to the console.
+
+
+  ### Examples using print()
+
+
+  Let's look at some more examples of using the `print()` function, starting
+  with simple cases and moving to more complex ones.
+
+
+  #### Hello World again
+
+
+  ```python
+
+  >>> print("Hello World!")
+
+  Hello World!
+
+  ```
+
+
+  This example prints a simple string to the console. 
+
+
+  > A note about the **REPL.**
+
+  >
+
+  > When you see `>>>` in code examples in this course, as in the example above,
+  it indicates code typed into the console, also called the Python ***REPL*** or
+  Shell. Output from the given command is shown below the code.
+
+  >
+
+  > You could type the same code into a program and run it to get the same
+  output. But sometimes it is quicker to try things out in the REPL before
+  writing them into a program.&#x20;
+
+  >
+
+  > You can open a REPL on the right of this tutorial. It will be available on
+  certain course pages, where it is useful.
+
+
+  #### Printing Multiple Strings
+
+
+  ```python
+
+  >>> print("Hello", "World", "Python", "here!")
+
+  Hello World Python here!
+
+  ```
+
+
+  Here, multiple strings are printed with a **space** between each.
+
+
+  #### Printing Numbers
+
+
+  ```python
+
+  >>> print(42, 3.14, -7)
+
+  42 3.14 -1
+
+  ```
+
+
+  Notice that the commas are **not displayed**. These are used
+  as **separators** inside the **print()** statement. Also you can see that we
+  can output any kind of data, and even mix up data types:
+
+
+  #### Outputting strings and numbers
+
+
+  ```python
+
+  print("The answer is", 42, "and pi is approximately", 3.14)
+
+  ```
+
+
+  In this example, both strings and numbers are printed together, showing how
+  `print()` can be used to output different types of data. We just separate
+  values with commas: **`,`**
+
+
+  ### PRIMM activities
+
+
+  Open the attached Python program on the right, it is called "printing.py", and
+  try these activities:
+
+
+  1. 🤔 **Predict** what the program does.
+
+  2. ▶️ **Run** it and check your prediction, were you correct?
+
+  3. 🔍 **Investigate:** why is there a space in the output of the word
+  "vegetables"?
+
+  4. ✏️ **Modify** the program so that it outputs "vegetables" as one word
+  without spaces. Then change line 3 to say "I eat 10 a day!"
+
+  5. 🛠️ **Make**: Delete the code and write a new program that outputs:
+
+     ```
+     Hello!
+     I drink 500 ml of water
+     every day
+     ```
+
+     Use a mixture of text and numbers in the `print()` statement on the second line.
+
+     Reflect on these activities below:
+
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit1/lesson1/lessonpart2/printing.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Was your prediction correct? How did you fix the gap inside
+          "vegetables"? Did you remember to use commas correctly in your Make?

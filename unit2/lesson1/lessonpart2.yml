@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Arithmetic Operators
+content: >+
+  | Symbol |       Name       | Pseudocode |
+
+  | :----: | :--------------: | :--------: |
+
+  |    +   |     Addition     |   <br />   |
+
+  |    -   |    Subtraction   |   <br />   |
+
+  |   \*   |  Multiplication  |   <br />   |
+
+  |    /   |   Real Division  |   <br />   |
+
+  |   //   | Integer Division |     DIV    |
+
+  |    %   |      Modulus     |     MOD    |
+
+  |  \*\*  |    Exponential   |   <br />   |
+
+
+  We used the operators //, % and \*\* in questions on the last page:, like
+  this:
+
+
+  ```python
+
+  11 // 4  = 2
+
+  11 % 4   = 3
+
+  6 ** 2   = 36
+
+  ```
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which Python operator performs "Integer Division", also called
+          "Quotient" and having the pseudocode keyword DIV? This operation
+          returns the whole number result of a division, excluding the
+          remainder.
+        options:
+          - id: "1"
+            value: /
+            explanation: Wrong, / gives a float result (standard division)
+          - id: "2"
+            value: //
+            explanation: Correct, // gives the whole number part of division
+            isCorrect: true
+          - id: "3"
+            value: "%"
+            explanation: Wrong, % gives the remainder (MOD)
+          - id: "4"
+            value: "**"
+            explanation: Wrong, ** is the exponentiation operator
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which Python operator performs "Modulus", also called "Modulo" and
+          having the pseudocode keyword MOD? This operation returns the
+          remainder of a division operation.
+        options:
+          - id: "1"
+            value: /
+            explanation: Wrong, / is standard division
+          - id: "2"
+            value: //
+            explanation: Wrong, // gives the whole number part of division
+          - id: "3"
+            value: "%"
+            explanation: Correct, % gives the remainder after division
+            isCorrect: true
+          - id: "4"
+            value: "**"
+            explanation: Wrong, ** is the exponentiation operator
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: The ** operator performs "Exponential" or "raise to the power of".
+          Which of these are correct evaluations? Tick all that are correct.
+        options:
+          - id: "1"
+            value: 6 ** 2 = 36
+            explanation: Correct, 6 squared is 36
+            isCorrect: true
+          - id: "2"
+            value: 2 ** 3 = 4
+            explanation: Wrong, 2 ** 3 is 8 (2 x 2 x 2)
+          - id: "3"
+            value: 3 ** 3 = 27
+            explanation: Correct, 3 cubed is 27
+            isCorrect: true
+          - id: "4"
+            value: 4 ** 3 = 64
+            explanation: Correct, 4 cubed is 64
+            isCorrect: true
+          - id: "5"
+            value: 5 ** 5 = 25
+            explanation: Wrong, 5 to the power 5 is 3125 (not 25)

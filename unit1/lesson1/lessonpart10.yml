@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart10
+title: Knowledge check quiz - input, output and variables
+content: >
+  We have learned about input, output and variables. Here is an example program
+  that we looked at.
+
+
+  ```python
+
+  # Input height and weight, casting to floats
+
+  height = float(input("Enter your height in metres: "))
+
+  weight = float(input("Enter your weight in kilograms: "))
+
+
+  # Calculate and print BMI
+
+  bmi = weight / (height * height)
+
+  print("Your BMI is: ", bmi)
+
+  ```
+
+
+  Answer some questions about this code now.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: string
+        content: State the casting function used twice in this program. (Don't include
+          the brackets)
+        options:
+          - id: "1"
+            value: float
+            explanation: Yes, height and weight are cast to floats. This allows for
+              arithmetic operations on the input values.
+            isCorrect: true
+  - id: "2"
+    questions:
+      - id: "1"
+        type: multiple
+        content: What data type does input() on its own always return?
+        options:
+          - id: "1"
+            value: string
+            explanation: Yes, input() always returns a string, which must be cast to int or
+              float before being used as a number
+            isCorrect: true
+          - id: "2"
+            value: float
+            explanation: No, input() does not return floats
+          - id: "3"
+            value: integer
+            explanation: No, input() does not return integers
+          - id: "4"
+            value: Boolean
+            explanation: No, input() does not return Booleans
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What punctuation mark is used to separate values inside a print()
+          statement?
+        options:
+          - id: "1"
+            value: comma
+            explanation: 'Yes, as in print("Your BMI is: ", bmi)'
+            isCorrect: true
+          - id: "2"
+            value: semicolon
+            explanation: 'No, look again at print("Your BMI is: ", bmi) - there are no
+              semicolons'
+          - id: "3"
+            value: colon
+            explanation: 'No, look again at print("Your BMI is: ", bmi) - the colon is
+              inside the string literal'
+          - id: "4"
+            value: quote
+            explanation: No, these wrap around string literals but are not used as
+              separators.

@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart21
+title: Python practical exercises 1
+content: >
+  You are provided with skeleton code which you must complete, solving these
+  problems:
+
+
+  ### 1. Add two numbers.
+
+
+  Complete the code in **q1.py** to input two numbers and print their sum.
+
+
+  ***
+
+
+  ### 2. Subtract a number.
+
+
+  Complete the function in **q2.py** to take two numbers and subtract the second
+  from the first and print the answer.
+
+
+  ***
+
+
+  ### 3. Multiply three numbers.
+
+
+  Complete the function in **q3.py** to take three numbers and output their
+  product (the result of multiplying them together).
+
+
+  ***
+
+
+  ### 4. Remainder.
+
+
+  Complete the function in **q4.py** to take two numbers and **return** the
+  remainder when you divide the first number by the second number.
+
+
+  ***
+
+
+  ### 5. Area of a circle.
+
+
+  Complete the function in **q5.py**  to take the radius of a circle and
+  calculate and return the area using area = πr². (Import the math  library to
+  allow the use of pi (π) as shown).
+
+
+  ***
+
+
+  ### 6. Exponentiation.
+
+
+  Complete the function in **q6.py** to input a base and output the first three
+  powers of that base starting at 0, e.g. if the user enters 2 the program
+  should output 1, 2, 4.
+showEditor: true
+editors:
+  - course1/unit2/lesson1/lessonpart21/q1.py
+  - course1/unit2/lesson1/lessonpart21/q2.py
+  - course1/unit2/lesson1/lessonpart21/q3.py
+  - course1/unit2/lesson1/lessonpart21/q4.py
+  - course1/unit2/lesson1/lessonpart21/q5.py
+  - course1/unit2/lesson1/lessonpart21/q6.py

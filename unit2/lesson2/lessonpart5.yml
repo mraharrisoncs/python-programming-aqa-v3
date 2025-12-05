@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Python debugging exercise 1
+content: >
+  Open the Python file and complete these tasks
+
+
+  1. Find the line where the error is
+
+  2. Decide whether it is a Syntax or Logical error
+
+  3. Predict the outcome of attempting to run the code (will it just not run,
+  will it run and stop, what error will be reported?)
+
+  4. Fix the code and test it.
+
+
+  Then answer the questions below.
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart5/b1_debug.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: On which line is the error?
+        options:
+          - id: "1"
+            value: "4"
+            explanation: Correct, there is a stray minus sign causing Python to expect
+              another value at the end.
+            isCorrect: true
+          - id: "2"
+            value: "3"
+            explanation: Wrong, this line is syntactically correct
+          - id: "3"
+            value: "2"
+            explanation: Wrong, this line is syntactically correct
+          - id: "4"
+            value: "5"
+            explanation: Wrong, this line is syntactically correct
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Is this a logical or syntax error?
+        options:
+          - id: "1"
+            value: Logical
+            explanation: Wrong, the logic is correct (if the error is dealt with)
+          - id: "2"
+            value: Syntax
+            explanation: Correct, the program breaks the rules of Python which is a syntax
+              error.
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: "Predict: what will happen if we try to run the code?"
+        options:
+          - id: "1"
+            value: The program won't start
+            explanation: Correct, a syntax error prevents the program starting
+            isCorrect: true
+          - id: "2"
+            value: The program will start and fail at line 3
+            explanation: Wrong, a syntax error prevents the program running
+          - id: "3"
+            value: The program will complete but with unexpected results
+            explanation: Wrong, a syntax error prevents the program running
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: How can we fix this program without changing the programmer's
+          intention?
+        options:
+          - id: "1"
+            value: Remove the stray minus sign
+            explanation: Correct
+            isCorrect: true
+          - id: "2"
+            value: Place a constant after the minus sign
+            explanation: Wrong, this would fix the syntax error but change the result
+          - id: "3"
+            value: Change the minus sign to a plus sign
+            explanation: Wrong, this would not resolve the syntax error

@@ -1,0 +1,121 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Starter - basic arithmetic
+content: |
+  **Evaluate these expressions:**
+
+  ```
+  7 + 3   = 
+  8 * 3   =
+  21 / 3  =
+  6 ** 2  =
+  11 // 4 =
+  11 % 4  =
+  ```
+
+  Now answer the multiple choice quiz below.
+
+  If stuck, move on, you will learn the unfamiliar operator symbols later.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does 7 + 3 evaluate to in Python?
+        options:
+          - id: "1"
+            value: "4"
+            explanation: Wrong, this is 7 - 3
+          - id: "2"
+            value: "10"
+            explanation: Correct, + is the sign for addition
+            isCorrect: true
+          - id: "3"
+            value: "21"
+            explanation: Wrong, this is 7 * 3 (7 multiplied by 3)
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: 8 * 3 = ?
+        options:
+          - id: "1"
+            value: "11"
+            explanation: Wrong, this is 8 + 3
+          - id: "2"
+            value: "24"
+            explanation: Correct, * is the multiplication operator
+            isCorrect: true
+          - id: "3"
+            value: "512"
+            explanation: Wrong, this is 8 ** 3 (8 cubed)
+          - id: "4"
+            value: "2.6666666667"
+            explanation: Wrong, this is 8 / 3 (division)
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: 21 / 3 = ?
+        options:
+          - id: "1"
+            value: "18"
+            explanation: Wrong, this is 21 - 3
+          - id: "2"
+            value: "7"
+            explanation: Correct, / performs standard division
+            isCorrect: true
+          - id: "3"
+            value: "3"
+            explanation: Wrong, this is 21 // 7 (floor division)
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: 6 ** 2 = ?
+        options:
+          - id: "1"
+            value: "8"
+            explanation: Wrong, this is 6 + 2
+          - id: "2"
+            value: "12"
+            explanation: Wrong, this is 6 * 2
+          - id: "3"
+            value: "36"
+            explanation: Correct, ** is the exponentiation operator
+            isCorrect: true
+          - id: "4"
+            value: "3"
+            explanation: Wrong, this is 6 / 2 or 6 // 2
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: 11 // 4 = ?
+        options:
+          - id: "1"
+            value: "2"
+            explanation: Correct, // gives the integer part of division
+            isCorrect: true
+          - id: "2"
+            value: "3"
+            explanation: Wrong, this is 11 % 4 (the remainder, not the quotient)
+          - id: "4"
+            value: "7"
+            explanation: Wrong, this is 11 - 4
+  - id: "6"
+    questions:
+      - id: "1"
+        type: choice
+        content: 11 % 4 = ?
+        options:
+          - id: "1"
+            value: "2"
+            explanation: Wrong, this is 11 // 4
+          - id: "2"
+            value: "3"
+            explanation: Correct, % gives the remainder after division
+            isCorrect: true
+          - id: "3"
+            value: "7"
+            explanation: Wrong, this is 11 - 4

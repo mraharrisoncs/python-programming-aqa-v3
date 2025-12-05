@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart15
+title: Pseudocode example - modulus
+content: >
+  Modulus (or modulo) finds the remainder.
+
+
+  ```
+
+  result ← 7 MOD 2
+
+  OUTPUT result
+
+  ```
+
+
+  The output from the above algorithm would be **1**, because 7 divided by 2
+  gives 3 **remainder 1**.
+
+
+  ```
+
+  result ← 8 MOD 2
+
+  OUTPUT result
+
+  ```
+
+
+  The output from the above algorithm would be **0,** because there is **no
+  remainder** after dividing 8 by 2.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the result of (3 * n) MOD 3 for any value of n?
+        options:
+          - id: "1"
+            value: "0"
+            explanation: Any number multiplied by 3 and then divided by 3 has no remainder.
+            isCorrect: true
+          - id: "2"
+            value: "1"
+            explanation: 1 cannot be the remainder when you divide 3n by 3.
+          - id: "3"
+            value: "2"
+            explanation: 2 cannot be the remainder when you divide 3n by 3.

@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Casting functions
+content: >
+  ### Casting Functions
+
+
+  Sometimes, you need to convert data from one type to another. Python provides
+  **casting functions** to do this:
+
+
+  **`int()`**: Converts to an integer🔢:
+
+
+  ```python
+
+  age = int("25")  # Converts string to integer
+
+  ```
+
+
+  **`float()`**: Converts to a float **🧮**:
+
+
+  ```python
+
+  temperature = float("36.6")  # Converts string to float
+
+  ```
+
+
+  **`str()`**: Converts to a string📜:
+
+
+  ```python
+
+  age_str = str(25)  # Converts integer to string
+
+  ```
+
+
+  Understanding these data types and casting functions will help you manage and
+  manipulate data effectively in your Python programs. 
+
+
+  You can try out casting functions in the REPL, then check your understanding
+  below:
+showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which casting function is required to change "22" into the integer
+          number 22?
+        options:
+          - id: "1"
+            value: int()
+            explanation: Yes, this changes strings to integers
+            isCorrect: true
+          - id: "2"
+            value: str()
+            explanation: No, this changes integers to strings
+          - id: "3"
+            value: float()
+            explanation: No, this changes strings to floats

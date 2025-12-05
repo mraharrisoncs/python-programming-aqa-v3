@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Programming with upper() and lower()
+content: >+
+  Let's try some programming challenges now, using what we learned in lesson 1
+  plus the new methods `upper()` and `lower()`
+
+
+  #### 1. Fetch Initials
+
+
+  Open `q1.py` and write a Python program that asks the user for their first
+  name and last name. The program should then output the initials of the user in
+  uppercase. For example, if the user answers 'alan' then 'turing' the output
+  should be AT like this:
+
+
+  ```
+
+  First name?: alan
+
+  Last name?: turing
+
+  AT
+
+  ```
+
+
+  **Hints:**
+
+
+  * Use the `upper()` method to convert characters to uppercase.
+
+
+  * Use string indexing to find the initials.
+
+
+  #### 2. Find and Slice
+
+
+  Open `q2.py` and write a Python program that asks the user for a **sentence**
+  and a **word**. The program should **find** the first occurrence of the word
+  in the sentence, ignoring the case of the word, and output the word **in
+  uppercase** along with its position in the sentence. If the word is not found,
+  output "Word not found". For example:
+
+
+  ```
+
+  Sentence?: Learning to program teaches you how to THINK!
+
+  Word?: program
+
+  PROGRAM found at position 4
+
+
+  Sentence?: Learning to program teaches you how to THINK!
+
+  Word?: think
+
+  THINK found at position 39
+
+
+  Sentence?: Learning to program teaches you how to THINK!
+
+  Word?: code
+
+  CODE not found
+
+  ```
+
+
+  **Hints:**
+
+
+  * Use the `find()` method to locate the position of the word, remember that
+  `-1` means "not found"
+
+
+  * Change both Sentence and Word to the same case before doing the comparison.
+
+
+  * Use the `upper()` method to convert the input word to uppercase.
+
+showEditor: true
+editors:
+  - course1/unit3/lesson2/lessonpart3/q1.py
+  - course1/unit3/lesson2/lessonpart3/q2.py

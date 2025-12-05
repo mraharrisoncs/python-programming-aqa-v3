@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart20
+title: Operator precedence - BIDMAS
+content: >
+  When evaluating an expression, Python - like all programming languages -
+  follows the rules of arithmetic, including the **operator precedence** rule,
+  often called BIDMAS or BODMAS:
+
+
+  * **BIDMAS**: Brackets, Indices, Division\*, Multiplication, Addition,
+  Subtraction
+
+
+  * **BODMAS**: Brackets, Orders, Division\*, Multiplication, Addition,
+  Subtraction
+
+
+  *\*Division includes Real Division (/), Integer Division (//) and Modulus (%)*
+
+
+  We evaluate operations in this order, remembering that **Division and
+  Multiplication** have equal precedence, as do **Addition and Subtraction.**
+  Operations are evaluated **left to right** if they have **equal** precedence.
+
+
+  For example
+
+
+  ```python
+
+  >>> 7 + 2 * 4
+
+  15
+
+  ```
+
+
+  In this example, 2 \* 4 is evaluated first to get 8, then we evaluate 7 + 8,
+  and get the result 15.
+
+
+  ```python
+
+  >>> 8 * 3 / (2 + 4)
+
+  4.0
+
+  ```
+
+
+  Here we evaluate the **brackets** first, 2 + 4 = 6. Then we are left with
+  multiplication and division, which have **equal** precedence, so we just work
+  left to right, evaluating 8 \* 3 / 6 which results in **4.0** (note that the
+  divide operation always returns a **float** in Python).
+
+
+  ```python
+
+  >>> 16 / 2 ** (12 / 4)
+
+  2.0
+
+  ```
+
+
+  Python evaluates this expression in this order using BIDMAS:
+
+
+  1. Brackets first: 12 / 4 = 3
+
+  2. Then Indices (Exponentiation or Order): 2 \*\* 3 = 8
+
+  3. Finally, Division: 16 / 8 = 2.0 (remembering the result will always be a
+  real or **float** after real division).
+
+
+  Now evaluate this expression and choose the correct answer:
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: 2 ** (6 - 2 * 4)
+        options:
+          - id: "1"
+            value: "65536"
+            explanation: Wrong, you may have done 6 - 2 = 4, then 4 * 4 = 16, then 2 ** 16 =
+              65536. But multiplication should be done before subtraction inside
+              the brackets
+          - id: "2"
+            value: "0.25"
+            explanation: Correct, 2 ** (6 - 8) = 2 ** (-2) = 1/4 = 0.25
+            isCorrect: true
+          - id: "3"
+            value: "56"
+            explanation: >
+              Wrong, you may have evaluated 2 ** 6 - (2 * 4), giving 64 - 8 =
+              56.  But the brackets must be resolved first.
+          - id: "4"
+            value: "64"
+            explanation: Wrong, this is the result of 2 ** (6 - 2) * 4. But the original
+              brackets include the multiplication,  so you should have done 2 *
+              4 first.

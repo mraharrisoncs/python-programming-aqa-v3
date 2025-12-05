@@ -1,0 +1,286 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart11
+title: Finding strings within strings
+content: >+
+  ## Finding a character
+
+
+  Sometimes we need to know where a character or substring begins in a larger
+  string. For example, if we wanted to split "Ada Lovelace" into first name and
+  last name, we could find the space, and split there.
+
+
+  We can use **`find()`** in Python to do this. The `find()` method searches for
+  a substring and returns the **index of its first occurrence**. If the
+  substring isn’t found, it returns `-1`.
+
+
+  Let’s try it with our `hero` string:
+
+
+  ```python
+
+  >>> hero = "Ada Lovelace"
+
+  >>> space_index = hero.find(" ")
+
+  >>> print(space_index)
+
+  3
+
+  ```
+
+
+  In the above example the find() function has found a space at position 3
+  (remembering to count from zero!) which means the first name ends at index 2,
+  and the last name begins at index 4. We can split accordingly now:
+
+
+  ```python
+
+  >>> first_name = hero[:space_index]
+
+  >>> last_name = hero[space_index + 1:]
+
+  >>> print(first_name)
+
+  >>> print(last_name)
+
+  Ada
+
+  Lovelace
+
+  ```
+
+
+  This code will work for any string now, splitting into two words at the first
+  space, for example:
+
+
+  ```python
+
+  >>> hero = "Alan Turing"
+
+  >>> space_index = hero.find(" ")
+
+  >>> first_name = hero[:space_index]
+
+  >>> last_name = hero[space_index + 1:]
+
+  >>> print(first_name)
+
+  >>> print(last_name)
+
+  Alan
+
+  Turing
+
+  ```
+
+
+  ## Finding longer substrings
+
+
+  We can use find() to find longer substrings, not just single characters. It
+  returns the position of the first character in the substring, but only if the
+  whole substring is found, for example:
+
+
+  ```python
+
+  >>> ingredients = "nuts, milk, flour, eggs"
+
+  >>> milk_index = ingredients.find("milk")
+
+  >>> print(milk_index)
+
+  6
+
+  ```
+
+
+  ## Using "in"
+
+
+  Sometimes we don't care where the substring starts, we just need to know if it
+  exists within the longer string. This is where **`in`** comes in! We can just
+  ask Python `substring in longer_string`, which returns a Boolean value:
+  **True** if the substring is present, **False** if not. Like this:
+
+
+  ```python
+
+  >>> ingredients = "nuts, milk, flour, eggs"
+
+  >>> print("milk" in ingredients)
+
+  True
+
+  >>> print("fish" in ingredients)
+
+  False
+
+  ```
+
+
+  ## Aside - functions v. methods v. operators!
+
+
+  The different ways we use these string handling features in Python can be a
+  little confusing. Let's recap how to use **`len()`**, **`find()`** and
+  **`in`**, and explain why the syntax varies so much. Note, You don't need to
+  know this bit for GCSE Computer Science, but if you're curious, read on! The
+  three syntax styles are:
+
+
+  ```python
+
+  len(string)             # returns the length of a string
+
+  string.find(substring)  # finds substring in string and returns its position
+  or -1 if not found
+
+  substring in string     # looks for substring in string and returns True if
+  found else False
+
+  ```
+
+
+  To find the length of a string we just write len(string), this is a standard
+  function call, where the function name is followed by parentheses containing
+  the argument, and we can do it because len() is a **built-in function.** 
+
+
+  However, we place the **find()** function *after* the string variable name,
+  dotted like this: **`string.find()`** because find() is a **method**: a
+  function that belongs to the string data type, not a **built-in
+  function** like len(). Methods are still functions, but they’re attached to
+  specific data types or data structures, rather than being part of Python’s
+  general toolbox. You access them using **dot notation**, which tells Python,
+  “use this function that’s built into this kind of data.” 
+
+
+  Finally, **in** is an **operator**, this means it sits between two
+  **operands** and performs an operation on them both. You may recall `*` and
+  `%` are **arithmetic operators**, `==` and `>=` are **comparison operators**,
+  well **`in`** is a **membership operator**, it checks whether the left-hand
+  operand exists within the right-hand operand. So now you know!
+
+
+  ## Pseudocode notes
+
+
+  In AQA exams you won't see **find()** or **in** being used, instead we use the
+  **POSITION()** pseudocode function, which finds the first occurrence of a
+  **single character** in another string. The syntax is POSITION(String, Char).
+  Here are some examples:
+
+
+  ```python
+
+  POSITION('Computer Science', 'm')  # returns 2
+
+  POSITION('Ada Lovelace', ' ')      # returns 3
+
+  ```
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does hero.find(" ") return if hero = "Ada Lovelace"?
+        options:
+          - id: "1"
+            value: ""
+            explanation: Correct! The space is at index 3.
+            isCorrect: true
+          - id: "2"
+            value: ""
+            explanation: No, index 4 is the start of "Lovelace".
+          - id: "3"
+            value: ""
+            explanation: No, -1 means the substring wasn't found.
+          - id: "4"
+            value: ""
+            explanation: No, index 2 is the final character of "Ada".
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does ingredients.find("milk") return if ingredients = "nuts, milk,
+          flour, eggs"?
+        options:
+          - id: "1"
+            value: ""
+            explanation: Correct! "milk" starts at index 6.
+            isCorrect: true
+          - id: "2"
+            value: ""
+            explanation: Close, but index 5 is the space before "milk".
+          - id: "3"
+            value: ""
+            explanation: No, index 7 is the "i" in "milk".
+          - id: "4"
+            value: ""
+            explanation: No, -1 means "milk" wasn't found.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does "milk" in ingredients return if ingredients = "nuts, milk,
+          flour, eggs"?
+        options:
+          - id: "1"
+            value: ""
+            explanation: Correct! "milk" is present in the string.
+            isCorrect: true
+          - id: "2"
+            value: ""
+            explanation: No, "milk" is clearly in the string.
+          - id: "3"
+            value: ""
+            explanation: No, that's what find() would return.
+          - id: "4"
+            value: milk
+            explanation: No, this is not a Boolean value.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which of the following are true about the find() method in Python? Tick
+          all that apply.
+        options:
+          - id: "1"
+            value: It returns the index of the first occurrence of a substring.
+            explanation: Correct! That’s its primary purpose.
+            isCorrect: true
+          - id: "2"
+            value: It returns -1 if the substring is not found.
+            explanation: Correct! This is how we check for absence.
+            isCorrect: true
+          - id: "3"
+            value: It can find multiple occurrences of a substring.
+            explanation: No, it only returns the first occurrence.
+          - id: "4"
+            value: It works only with single characters.
+            explanation: No, it works with substrings too.
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: In AQA pseudocode, what does POSITION("Ada Lovelace", " ") return?
+        options:
+          - id: "1"
+            value: ""
+            explanation: Correct! The space is at index 3.
+            isCorrect: true
+          - id: "2"
+            value: ""
+            explanation: No, index 4 is the start of "Lovelace".
+          - id: "3"
+            value: ""
+            explanation: No, POSITION doesn’t return -1.
+          - id: "4"
+            value: ""
+            explanation: No, index 0 is "A".

@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart8
+title: Python practical exercises 3
+content: >+
+  This program attempts to convert temperature values in Fahrenheit to Celsius,
+  but it contains errors The correct process for this is "subtract 32, then
+  multiply by five-ninths".
+
+
+  Open the Python file and complete these tasks:
+
+
+  ## PRIMM Activities
+
+
+  1. 🤔 **Predict:** what the code will do.
+
+  2. ▶️ **Run** and check your prediction.
+
+  3. 🔍**Investigate:** spot the error(s) in the code and decide whether each is
+  a Syntax, Logical, or Runtime error
+
+  4. ✏️**Modify:** Fix the code and test it, then answer the questions below.
+
+  5. 🛠️ **Make:** write a new function **`c_to_f`** to convert Celsius
+  temperatures to Fahrenheit.
+
+showEditor: true
+editors:
+  - course1/unit2/lesson2/lessonpart8/b4_debug.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the first error in this program?
+        options:
+          - id: "1"
+            value: The formula uses ** instead of *
+            explanation: Correct, ** is exponentiation, not multiplication
+            isCorrect: true
+          - id: "2"
+            value: The formula uses / instead of //
+            explanation: Wrong, / is correct for decimal division
+          - id: "3"
+            value: The return statement is missing
+            explanation: Wrong, the return statement is present
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the second error in this program?
+        options:
+          - id: "1"
+            value: Missing brackets around (fahrenheit - 32)
+            explanation: Correct, without brackets Python evaluates operations in the wrong
+              order
+            isCorrect: true
+          - id: "2"
+            value: The function name is invalid
+            explanation: Wrong, the function name is fine
+          - id: "3"
+            value: The subtraction uses the wrong operator
+            explanation: Wrong, the minus sign is correct
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What type of error does this cause?
+        options:
+          - id: "1"
+            value: Logical Error
+            explanation: Correct, the program runs but gives incorrect results
+            isCorrect: true
+          - id: "2"
+            value: Syntax Error
+            explanation: Wrong, the syntax is valid
+          - id: "3"
+            value: Runtime Error
+            explanation: Wrong, the program does not crash
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the correct formula for converting Fahrenheit to Celsius?
+        options:
+          - id: "1"
+            value: (fahrenheit - 32) * 5 / 9
+            explanation: Correct, this applies the correct order of operations
+            isCorrect: true
+          - id: "2"
+            value: fahrenheit - 32 * 5 / 9
+            explanation: Wrong, this multiplies before subtracting
+          - id: "3"
+            value: fahrenheit - (32 * 5 / 9)
+            explanation: Wrong, this subtracts a constant (roughly 17.8 every time!) instead
+              of scaling the difference

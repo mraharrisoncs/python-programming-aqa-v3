@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Python practical - simple expressions
+content: >+
+  Using either the **Python REPL,** or the Python program on the right to
+  evaluate these expressions. For example if you type 7 + 3 into the REPL it
+  will perform the arithmetic and output the result.
+
+
+  ```python
+
+  7 + 3 =
+
+  8 * 3 =
+
+  21 / 3 =
+
+  6 ** 2 =
+
+  11 // 4 =
+
+  11 % 4 =
+
+  ```
+
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit2/lesson1/lessonpart6/a2_simplepractice.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Did you get any syntax errors? How did you resolve them?

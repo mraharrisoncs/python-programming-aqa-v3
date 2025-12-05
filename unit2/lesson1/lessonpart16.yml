@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart16
+title: Python example - modulus/modulo
+content: >
+  Python uses "%" as the modulo operator. Here are those examples again in
+  Python syntax:
+
+
+  ```python
+
+  result = 7 % 2
+
+  print(result)
+
+
+  result = 8 % 2
+
+  print(result)
+
+  ```
+
+
+  Run the code, or type the expressions into the REPL, and check the results.
+  Try with different operands.
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit2/lesson1/lessonpart16/a4_modulo.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How can modulo be used to map an input value onto a range 0..n in a
+          Python program?

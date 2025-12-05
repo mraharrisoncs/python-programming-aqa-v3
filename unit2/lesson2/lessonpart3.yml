@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Key terms missing words quiz
+content: |
+  Complete the sentences below, on the key terms in this topic.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: string
+        content: Real division, using the / symbol, divides two numbers and returns a
+          _____ number, also called a float
+        options:
+          - id: "1"
+            value: real
+            isCorrect: true
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: The symbol // represents ________ division, also called 'floor'
+          division, because it always returns a whole number.
+        options:
+          - id: "1"
+            value: integer
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: string
+        content: The Python operator %, with pseudocode keyword MOD, finds the ________
+          after division.
+        options:
+          - id: "1"
+            value: remainder
+            isCorrect: true
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: The symbol ** is used to raise a number to the power of another number,
+          its proper name is the ________ symbol.
+        options:
+          - id: "1"
+            value: exponent
+            explanation: Yes, the operator is "exponent", the process is exponentiation.
+            isCorrect: true
+          - id: "2"
+            value: modulus
+            explanation: No, this is the remainder
+          - id: "3"
+            value: logarithm
+            explanation: No this is the opposite operation to what we need!
+          - id: "4"
+            value: root
+            explanation: No this is not the general operation we are looking for (although
+              roots are fractional powers!)
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: The terms either side of the operator, e.g. 3 and 4 in 3 + 4 are called
+          ____________.
+        options:
+          - id: "1"
+            value: operands
+            explanation: Correct, an operator takes one or more operands.
+            isCorrect: true
+          - id: "2"
+            value: operators
+            explanation: Wrong, this is the symbol in the middle.
+          - id: "3"
+            value: variables
+            explanation: Wrong, the terms in an arithmetic operation may not always be
+              variables, they can be constants or other expressions.
+          - id: "4"
+            value: constants
+            explanation: Wrong, the terms in an arithmetic operation may not always be
+              constants, they can be variables or other expressions.

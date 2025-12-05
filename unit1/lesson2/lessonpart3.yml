@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Subroutines
+content: >
+  ## What is a subroutine?
+
+
+  A ***subroutine*** is a named statement or sequence of statements that belong
+  together. Here is the "Hello World!" code rewritten as a subroutine.
+
+
+  ```python
+
+  def hello_world():
+    print("Hello World!")
+  ```
+
+
+  This gives the `print("Hello World!")` statement the name or
+  ***identifier*** of `hello_world`. Any time we want this subroutine to run and
+  output "Hello World!" we just ***call***  it by using its identifier, like
+  this:
+
+
+  ```python
+
+  hello_world()
+
+  ```
+
+
+  Notice that we write the identifier of the subroutine followed immediately by
+  a pair of brackets.  The pair of brackets, `(),` tells Python that this
+  identifier is the name of a ***subroutine***, not a variable.&#x20;
+
+
+  When Python sees `hello_world()` it will run the code defined earlier by the
+  `def hello_world()` instruction. Try this now in the attached **hello.py**
+  program.
+
+
+
+
+  ### Write once, call many times
+
+
+  We can simplify our programs with functions. Once we have written a program we
+  can call it as many times as we like. For example:
+
+
+  ```python
+
+  def hello_world():
+    print("Hello World!")
+
+  # main program
+
+  hello_world()
+
+  hello_world()
+
+  hello_world()
+
+  ```
+
+
+  Try this in the attached file **hello.py** by repeating the subroutine call
+  `hello_world()` many times.
+
+
+  ### Change one line, not many lines
+
+
+  If we wanted to change the greeting that is output by the `hello_world()
+  `  subroutine, we can do that easily:
+
+
+  ```python
+
+  def hello_world():
+    print("Witaj świecie!") # Hello World in Polish
+
+  # main program
+
+  hello_world()
+
+  hello_world()
+
+  hello_world()
+
+  ```
+
+
+  Notice that we changed the **subroutine** and left the **main program** alone.
+  If you use subroutines in your code, then code changes can be made easily to
+  individual routines, without affecting the rest of the code. Try this in the
+  attached file **hello.py** now.
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart3/hello.py

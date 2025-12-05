@@ -1,0 +1,166 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Procedures and functions
+content: >+
+  To recap, a ***subroutine***, also called a ***subprogram*** is any block of
+  code with a name or ***identifier*** that performs a single process within a
+  larger program.
+
+
+  There are two types of subroutines: ***procedures*** and ***functions***. A
+  ***function*** **returns** a value, while a ***procedure*** does not, but
+  otherwise they are the same.&#x20;
+
+
+  ## Procedures
+
+
+  The subroutines in our previous example were actually **procedures** because
+  they did not return a value:
+
+
+  ```python
+
+  def say_hello():
+    name = input("What is your name? ")
+    print("Hello", name, "!")
+
+  def fav_subject():
+    subject = input("What is your favourite subject")
+    print(subject, "is a great subject!")
+
+  # main program
+
+  say_hello()
+
+  fav_subject()
+
+  ```
+
+
+  You can try out this code in the attached **proc.py**
+
+
+  ## Functions
+
+
+  A function is a subroutine that returns a value. This means that as well as
+  performing a small process, the function passes  a value back to the calling
+  instruction, like this:
+
+
+  ```python
+
+  def get_name():
+    ans = input("What is your name? ")
+    return ans
+
+  # main program
+
+  name = get_name()
+
+  print("Hello", name, "!")
+
+  ```
+
+
+  In this example, `get_name()` is defined as a subroutine just as we did
+  before, but inside the ***body*** of the function (the indented block), we see
+  a `return` statement, meaning this is a ***function***.&#x20;
+
+
+  In the main program, `get_name()`  _**calls**_ the function. The function then
+  executes, inputting the user's name and assigning this to a variable called
+  `ans`.&#x20;
+
+
+  It then passes this value back through the `return ans` statement. In the main
+  program, `get_name()` becomes this value, which is then stored in the variable
+  `name`.
+
+
+  You can try out this code in the attached **func.py**.
+
+
+  ## Everything is a function in Python!
+
+
+  To simplify conversations about subroutines, procedures and functions, and
+  because of the way Python 3 was designed, Python programmers don't make the
+  distinction between procedures and functions at all!&#x20;
+
+
+  Every subroutine is called a **function** in Python, whether it returns a
+  value or not. Be careful, though, exam questions will need you to know the
+  difference!
+
+
+  ## Pseudocode notes
+
+
+  In AQA we use the keywords SUBROUTINE, ENDSUBROUTINE and, for functions only,
+  RETURN. Here are our above examples in pseudocode:
+
+
+  Our procedure to say hello:
+
+
+  ```python
+
+  SUBROUTINE say_hello()
+    OUTPUT "What is your name?"
+    name ← INPUT
+    OUTPUT "Hello", name, "!"
+  ENDSUBROUTINE
+
+  ```
+
+
+  and our function to get the users name and return it:
+
+
+  ```python
+
+  SUBROUTINE get_name()
+    OUTPUT "What is your name?"
+    ans ← INPUT
+    RETURN ans
+  ENDSUBROUTINE
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart5/proc.py
+  - course1/unit1/lesson2/lessonpart5/func.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What type of subroutine always returns a value?
+        options:
+          - id: "1"
+            value: Function
+            explanation: A function is a subroutine that returns a value.
+            isCorrect: true
+          - id: "2"
+            value: Procedure
+            explanation: A procedure does not return a value.
+          - id: "3"
+            value: Subroutine
+            explanation: Subroutine is a general term for both functions and procedures.
+          - id: "4"
+            value: Subprogram
+            explanation: Subprogram, like subroutine is a general term for both functions
+              and procedures.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: What type of subroutine is say_hello()?
+        options:
+          - id: "1"
+            value: procedure
+            explanation: say_hello() is a procedure because it does not return a value.
+            isCorrect: true

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart10
+title: Programming with substrings
+content: >+
+  You have now learned `len()` and string slicing with `identifier[start :
+  end]`. Let's put our knowledge to work in some real programs.
+
+
+  You’ve been given a string stored in the variable hero = "Ada Lovelace".
+
+
+  Open the Python program and add code that:
+
+
+  1. Prints the length of the string.
+
+  2. Extracts and prints the first name.
+
+  3. Extracts and prints the last name.
+
+  4. Prints the last 4 characters **using negative indexing**. 
+
+  5. Splits the string into three equal length parts and joins them in reverse
+  order, printing the result like this; "laceLoveAda ". *Hint, you will need to*
+  ***concatenate** the substrings with* ***`+`**.*
+
+showEditor: true
+editors:
+  - course1/unit3/lesson1/lessonpart10/a3_substrings.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you get on? Did you remember to count from zero? Did you
+          remember that the 'end' value should be 1 higher than the last
+          character in your substring?

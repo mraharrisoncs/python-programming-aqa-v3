@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Programming with len() 2
+content: >
+  Let's use len() in a word game! 
+
+
+  Open the attached program and try doing the following.
+
+
+  ## PRIMM Activities
+
+
+  1. **🤔 Predict** what the program does.
+
+  2. ▶️ **Run** and check your prediction, were you correct?
+
+  3. 🔍 **Investigate:** what function is used to calculate the length of the
+  string? 
+
+  4. ✏️ **Modify:** Change the program so each letter is worth eight points.
+
+     Place the scoring logic inside a function called **`word_score()`** and call it in the main program with the word "lettuce", which should now score 56. Run and test your code.
+  5. 🛠️ **Make:** a new word game that gives zero points for words of five
+  letters or less, then a point for every letter after the fifth letter in the
+  word, so "apple" scores 0 but "banana" scores 1 and "pineapple" scores 4.
+
+
+  Reflect on this exercise below.
+showEditor: true
+editors:
+  - course1/unit3/lesson1/lessonpart6/a1_length_pwd.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Was your prediction correct? How did you change the program? Why are
+          functions best practice?

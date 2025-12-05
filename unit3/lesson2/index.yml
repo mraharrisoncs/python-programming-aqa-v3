@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: Lesson 2 - Additional features and more practice.
+description: In this lesson we recap lesson 1, then learn upper(), lower() and
+  iterating over a string, and then tackle some more programming challenges.
+objectives: >-
+  Recap length, position, substring, concatenation, convert character to
+  character code, convert character code to character and string conversion
+  operations.
+
+  Understand and be able to use:
+
+  • upper()
+
+  • lower()
+
+  • iteration over a string
+
+  Practice using all these features in Python programs.
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml
+  - lessonpart6.yml
+  - lessonpart7.yml

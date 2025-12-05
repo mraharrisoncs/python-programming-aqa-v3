@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart10
+title: Key terms
+content: >+
+  **Operator:** a symbol for an operation such as +, -, \*, /, //, %, \*\*  
+
+
+  **Operand:** the terms either side of the operator, for example 3 and 4 in **3
+  + 4**
+
+
+  **Integer:** a whole number such as **7, -1**
+
+
+  **Float (floating-point):** a number with a decimal part, also called
+  **Real**, such as **4.0, 3.14, 9.999999**
+
+
+  **Expression**: Any valid combination of terms and operators that can be
+  evaluated, e.g. 
+
+
+  * 1 + 2
+
+
+  * 14 / 3
+
+
+  * (num / 7) \*\* 2
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the operator in the expression 12 // 5 ?
+        options:
+          - id: "1"
+            value: "12"
+            explanation: Wrong, this is the first operand, not the operator
+          - id: "2"
+            value: "5"
+            explanation: Wrong, this is the second operand
+          - id: "3"
+            value: //
+            explanation: Correct, // is the floor division operator
+            isCorrect: true
+          - id: "4"
+            value: /
+            explanation: Wrong, this is regular division, not floor division
+  - id: "2"
+    questions:
+      - id: "1"
+        type: multiple
+        content: What are the two operands in the expression 12 // 5 ? Tick both.
+        options:
+          - id: "1"
+            value: /
+            explanation: Wrong, this is an operator, not an operand (and it's not in the
+              expression anyway!)
+          - id: "2"
+            value: //
+            explanation: Wrong, this is the operator in the expression, not an operand
+          - id: "3"
+            value: "12"
+            explanation: Correct, 12 is the first operand
+            isCorrect: true
+          - id: "4"
+            value: "5"
+            explanation: Correct, 5 is the second operand
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which of these are integers? Select all.
+        options:
+          - id: "1"
+            value: "3"
+            explanation: Correct, 3 is a whole number
+            isCorrect: true
+          - id: "2"
+            value: "3.1"
+            explanation: Wrong, 3.1 is a decimal, not an integer
+          - id: "3"
+            value: "0"
+            explanation: Correct, 0 is an integer
+            isCorrect: true
+          - id: "4"
+            value: "-4"
+            explanation: Correct, negative whole numbers are still integers
+            isCorrect: true
+          - id: "5"
+            value: "-0.4"
+            explanation: Wrong, this is a negative decimal, not an integer

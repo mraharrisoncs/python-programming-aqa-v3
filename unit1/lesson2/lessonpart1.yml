@@ -1,0 +1,59 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Python practical - functions
+content: >+
+  ## Area of a rectangle
+
+
+  We can write a function to calculate the **area of a rectangle**, using the
+  formula `area = width * height`. This function takes **two parameters** and
+  returns the result:
+
+
+  ```python
+
+  def calc_area(width, height):
+    return width * height
+
+  # main program
+
+  w = float(input("Enter the width in metres: "))
+
+  h = float(input("Enter the height in metres: "))
+
+  area = calc_area(w, h)
+
+  print("The area is:", area, "square metres")
+
+  ```
+
+
+  Open this code from **area\_calc.py**, then try the PRIMM activities below.
+
+
+  ## PRIMM Activities
+
+
+  1. 🤔 **Predict:** What will the program output if the user enters `width = 3`
+  and `height = 4`? What happens if you enter a decimal value like `2.5`?
+
+  2. ▶️ **Run** the program with those inputs, were you correct? Try different
+  inputs. Try entering `0` or negative numbers. What do you notice?
+
+  3. 🔍**Investigate:** what does `return width * height` do? What would happen
+  if you swapped the order of the parameters?
+
+  4. ✏️**Modify:** change the function so it also prints `"Calculating area..."`
+  before returning the result. Add a third parameter called `unit` and include
+  it in the final print statement:
+
+     ```python
+     print("The area is:", area, unit)
+     ```
+  5. 🛠️ **Make** your own function in **cuboid.py** to calculate the **volume
+  of a cuboid** using `width`, `height`, and `depth`. 
+
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart1/area_calc.py
+  - course1/unit1/lesson2/lessonpart1/cuboid.py

@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart19
+title: Knowledge check quiz
+content: >
+  Now answer the quiz questions about arithmetic operators, before you tackle
+  some programming challenges!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          True or False:
+          10 % 2 = 0
+        options:
+          - id: "1"
+            value: "True"
+            explanation: Correct, 10 is divisible by 2, so the remainder is 0.
+            isCorrect: true
+          - id: "2"
+            value: "False"
+            explanation: Wrong, 10 % 2 equals 0 because 2 divides evenly into 10.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the result of 5 // 2?
+        options:
+          - id: "1"
+            value: "1"
+            explanation: Wrong, 5 % 2 = 1, did you calculate the modulus by mistake?
+          - id: "2"
+            value: "2"
+            explanation: Correct, integer division of 5 by 2 gives 2.
+            isCorrect: true
+          - id: "3"
+            value: "2.5"
+            explanation: Wrong, this is the result of real division (5 / 2).
+          - id: "4"
+            value: "3"
+            explanation: Wrong, 5 // 2 is less than 3, did you do 5 - 2?
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the result of 3 + 4 * 2 ?
+        options:
+          - id: "1"
+            value: "14"
+            explanation: Wrong, you added before multiplying.
+          - id: "2"
+            value: "11"
+            explanation: Correct, 4 * 2 = 8, then 3 + 8 = 11.
+            isCorrect: true
+          - id: "3"
+            value: "9"
+            explanation: Wrong, this result doesn’t match any valid order.
+          - id: "4"
+            value: "19"
+            explanation: Wrong, possibly confused with 3 + 4 + 2 * 3.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the exact result of 8 / 2 in Python?
+        options:
+          - id: "1"
+            value: "6.0"
+            explanation: Wrong, 8 / 2 is not 6.0
+          - id: "2"
+            value: "4"
+            explanation: Wrong, Python returns a float with a decimal part from real
+              division, even if the decimal part is zero!
+          - id: "3"
+            value: "4.0"
+            explanation: Correct, Python's / operator returns a float, in this case 4.0
+            isCorrect: true
+          - id: "4"
+            value: "0"
+            explanation: Wrong, 8 / 2 is not zero
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the result of 19 % 5 ?
+        options:
+          - id: "1"
+            value: "3"
+            explanation: Wrong, this would be 19 // 5 (integer division)
+          - id: "2"
+            value: "3.8"
+            explanation: Wrong, modulus returns an integer, not a float.
+          - id: "3"
+            value: "4"
+            explanation: Correct, 5 goes into 19 three times with a remainder of 4.
+            isCorrect: true
+          - id: "4"
+            value: "14"
+            explanation: Wrong, this is 19 - 5

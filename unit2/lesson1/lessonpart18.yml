@@ -1,0 +1,63 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart18
+title: Common misconceptions and confusions
+content: >
+  **Confusing the division operators**
+
+
+  Be careful not to confuse real division (/) with integer division (DIV or //).
+  Real division results in a real number, or floating-point number, with a
+  fractional part if necessary. Integer division discards this fractional part
+  and returns just the integer part. For example, 7 divided by 2 is 3.5, while 7
+  DIV 2 is just the integer 3.
+
+
+  ```
+
+  >>> 7 / 2   
+
+  3.5
+
+
+  >>> 7 // 2
+
+  3
+
+  ```
+
+
+  **Confusing DIV (//) and MOD (%)**
+
+
+  Both of these operators are probably new to you. Be careful not to confuse
+  them. DIV (//) performs a kind of division, that's why the pseudocode is DIV
+  and the Python symbol uses two division signs.
+
+
+  MOD is modulo, or remainder. The symbol used in Python is the ASCII percentage
+  sign, simply because it looks a bit like a division sign with extra bits! (It
+  was chosen for modulo in the C language way back in the 1970s and it's too
+  late to change it now!)&#x20;
+
+
+  7 divided by 2 gives the **result 3** and **remainder 1**, so 7 DIV 2 is the
+  result 3, while 7 MOD 2 is the remainder 1. Here's how that would look in the
+  Python Shell:
+
+
+  ```python
+
+  >>> 7 // 2
+
+  3
+
+
+  >>> 7 % 2
+
+  1
+
+  ```
+
+
+  Just remember that the % sign in Python code is the modulo or remainder, not
+  actually a percentage operation!

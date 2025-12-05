@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart9
+title: Python practical - exponential
+content: >
+  The same program in Python would look like this:
+
+
+  ```python
+
+  y = 2
+
+  result = 3 ** y
+
+  print(result) 
+
+  ```
+
+
+  Open the Python program, run it and check the output. Change the integer
+  values in the program and check the result.
+
+
+  Change line 2 to:
+
+
+  ```python
+
+  result = x ** y
+
+  ```
+
+
+  and add this at the top
+
+
+  ```python
+
+  x = 3
+
+  ```
+
+
+  Now what happens?
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit2/lesson1/lessonpart9/a3_exponential.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: |-
+          What happens when you set y = 0? 
+          y = -1 ? 
+          y = 0.5 ?

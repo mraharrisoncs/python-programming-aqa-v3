@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart14
+title: Modulus operation in more detail
+content: >+
+  The **Modulus** operation, which uses the **Modulus** or
+  **Modulo** operator...
+
+
+  * has the pseudocode keyword MOD and the Python symbol %
+
+
+  * calculates the remainder after division
+
+
+  For example, 10 MOD 3 returns 1, or in Python:
+
+
+  ```python
+
+  >>> 10 % 3
+
+  1
+
+  ```
+
+
+  This is because after dividing 10 by 3, there is a remainder 1.
+
+
+  Modulus has many uses:
+
+
+  * Check if number is even/odd, or divisible by another number
+
+
+  * Calculate time in hours, minutes, seconds from a single count value e.g.
+  seconds.
+
+
+  * Generate hash values within a given range, e.g. to store keys in a hash
+  table.
+
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which of these would be best achieved with the MOD operator?
+        options:
+          - id: "1"
+            value: Checking if a number is even or odd
+            explanation: The MOD operator can determine if a number is even or odd by
+              checking the remainder when divided by 2.
+            isCorrect: true
+          - id: "2"
+            value: Calculating the square root of a number
+            explanation: The MOD operator is not used for calculating square roots; it is
+              used for finding remainders.
+          - id: "3"
+            value: Generating hash values within the range 0 to 999
+            explanation: Yes, performing n MOD 1000 would result in a number between 0 and
+              999.
+            isCorrect: true
+          - id: "4"
+            value: Sorting a list of numbers
+            explanation: The MOD operator is not used for sorting; it is used for remainder
+              calculations.

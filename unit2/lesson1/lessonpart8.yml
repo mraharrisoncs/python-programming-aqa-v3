@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart8
+title: Pseudocode example - exponential
+content: |
+  ```
+  y ← 2
+  result ← 3 ** y
+  OUTPUT result
+  ```
+
+  This would display the answer 9.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be the output if the second line was changed to:  
+          result ← 4 ** y ?
+        options:
+          - id: "1"
+            value: "27"
+          - id: "2"
+            value: "16"
+            isCorrect: true
+          - id: "3"
+            value: "8"

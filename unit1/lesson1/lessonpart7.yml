@@ -1,0 +1,147 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: More fun with input()
+content: >
+  ### Inputting strings
+
+
+  In our chatbot program earlier, we inputted strings like this:
+
+
+  ```python
+
+  print("Enter your name:")
+
+  name = input()
+
+  print("Hello", name, "!")
+
+  print("What is your favourite subject")
+
+  subject = input()
+
+  print(subject, "is a great subject!")
+
+  ```
+
+
+  What if we wanted to ask the user their age and use that in calculations? We
+  might write this:
+
+
+  ```python
+
+  print("How old are you?: ")
+
+  age = input()
+
+  print("In five years time you will be", age + 5)
+
+  ```
+
+
+  You can run and try this out in the code file **age.py** on the right. What
+  happens?
+
+
+  ### Converting input to a number
+
+
+  The above code fails with a **TypeError.** We are unable to add 5 to
+  `age` because it is not an integer. Don't worry, we can **cast** it to an
+  integer like this:
+
+
+  ```python
+
+  print("How old are you?: ")
+
+  age = input()
+
+  age_integer = int(age) # cast to integer and save
+
+  print("In five years time you will be", age_integer + 5)
+
+  ```
+
+
+  The new variable `age_integer` contains an integer, and it can now be added to
+  5 successfully. Try this code in **age2.py**
+
+
+  ### Casting input immediately
+
+
+  In practice, if we know the input is going to be an integer, we usually save
+  some code and cast it straight away, like this:
+
+
+  ```python
+
+  print("How old are you?: ")
+
+  age = int(input()) # input age, cast to integer and save
+
+  print("In five years time you will be", age + 5)
+
+  ```
+
+
+  Try this in **age3.py** now! 
+
+
+  ### Combining print and input
+
+
+  We usually save another line of code by combining the `print()` that prompts
+  the user for input, with the `input()` statement. Python allows us to put a
+  prompt into the input statement, like this:
+
+
+  ```python
+
+  age = int(input("How old are you?: ")) 
+
+  print("In five years time you will be", age + 5)
+
+  ```
+
+
+  Try this in **age4.py** now!
+
+
+  ## PRIMM activities
+
+
+  1. 🤔 **Predict**: what will this code do when you run it?
+
+  2. ▶️ **Run:** what happens when you run the program, was your prediction
+  correct?
+
+  3. 🔍 **Investigate:** where does the output appear? Do the quotes appear in
+  the output or not? What about the exclamation mark?
+
+  4. ✏️ **Modify:** what happens if you change "Hello World!" to "Greetings,
+  People!"?&#x20;
+
+     What happens if you insert the line `print()` above the existing line?&#x20;
+
+     What happens if you delete the quote marks **`""`** ?
+  5. 🛠️ **Make**: Delete the code and write a new program that says "How",
+  "Are", "You?" on separate lines.&#x20;
+
+
+  Reflect on the PRIMM activities below
+showEditor: true
+editors:
+  - course1/unit1/lesson1/lessonpart7/age.py
+  - course1/unit1/lesson1/lessonpart7/age2.py
+  - course1/unit1/lesson1/lessonpart7/age3.py
+  - course1/unit1/lesson1/lessonpart7/age4.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Was your prediction correct? What does print() do? How did you write
+          the output on separate lines in your Make?

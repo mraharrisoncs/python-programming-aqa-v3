@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: unit2
+title: Unit 2 - Arithmetic Operations
+description: Arithmetic operations in Python.
+objectives: >-
+  Understand and use basic arithmetic operators in a high-level language (e.g.,
+  Python).
+
+  Apply arithmetic operations in programming problems.
+
+  Identify syntax errors and logical errors in arithmetic expressions.
+lessons:
+  - lesson1/index.yml
+  - lesson2/index.yml

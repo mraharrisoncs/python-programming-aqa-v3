@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson1
+title: Lesson 1 - Main string handling operations
+description: This lesson will explain the basics of string handling operations
+  and how to use them.
+objectives: |-
+  Understand and be able to use:
+  • length
+  • position
+  • substring
+  • concatenation
+  • convert character to character code
+  • convert character code to character
+  • string conversion operations.
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart4.yml
+  - lessonpart3.yml
+  - lessonpart5.yml
+  - lessonpart7.yml
+  - lessonpart6.yml
+  - lessonpart8.yml
+  - lessonpart9.yml
+  - lessonpart10.yml
+  - lessonpart11.yml
+  - lessonpart12.yml
+  - lessonpart15.yml
+  - lessonpart13.yml
+  - lessonpart14.yml

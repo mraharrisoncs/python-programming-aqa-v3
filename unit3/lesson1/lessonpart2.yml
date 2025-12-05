@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: What is a string?
+content: >
+  ### What is a String?
+
+
+  In programming, a **string** is a sequence of characters used to represent
+  text. Strings can include letters, numbers, symbols, and spaces. They are one
+  of the most commonly used data types in programming languages, including
+  Python. "Hello World!" is an example of a string.
+
+
+  In this code we assign the string **literal**, "Hello World!" to a string
+  **variable** with the identifier **greeting:**
+
+
+  ```python
+
+  greeting = "Hello World!"
+
+  ```
+
+
+  <br />
+
+
+  ### Structure of a String
+
+
+  The string above consists of a sequence of characters stored under a single
+  **identifier**, *greeting*. Within the string, each character has an
+  **index** value. Python, like most programming languages, indexes everything
+  from zero.&#x20;
+
+
+  Here is that *greeting* string again, showing the index of each character:
+
+
+  ```python
+
+  greeting
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  |  H  |  e  |  l  |  l  |  o  |     |  W  |  o  |  r  |  l  |  d  |  !  |
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  ```
+
+
+  As you can see, the 'H' in "Hello World!" has index zero, the space between
+  words has index 5, and the exclamation mark at the end has index 11. 
+
+
+  If we wanted to split this string into two words, we could split into a string
+  that goes from position 0 to position 4 giving us "Hello", and position 6 to
+  position 11 giving us "World!". These two strings are **substrings** of the
+  original string. We will find out how to do substrings later.
+
+
+  We can also join strings together using the `+` symbol, this is called
+  **concatenation**. For example:
+
+
+  ```python
+
+  >>> print("Hello " + "World!")
+
+  Hello World!
+
+  ```
+
+
+  Notice that we had to include a space at the end of Hello.
+  **Concatenation** does not add any spaces to the result. \[NB. print("Hello",
+  "World") would have inserted a space, but this is NOT concatenation!]
+
+
+  What is the **length** of the string "Hello World!"?
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the length of the string "Hello World!" ?
+        options:
+          - id: "1"
+            value: "0"
+            explanation: No, this is the length of the empty string "".
+            isCorrect: true
+          - id: "2"
+            value: "11"
+            explanation: No, the index of the last character is 11, but count how many there
+              are!
+          - id: "3"
+            value: "12"
+            explanation: Yes, there are 12 characters in the string, indexed 0 to 11.
