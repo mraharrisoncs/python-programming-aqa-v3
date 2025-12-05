@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: "Python practical: match/case"
+content: >+
+  ## Using `match-case`
+
+
+  ### 1. Animal class?
+
+
+  Starting with the code in **q1.py**, complete the function that accepts a
+  string representing an **animal name** and prints which **class** it belongs
+  to: mammal, reptile, fish or bird.
+
+
+  Use a `match-case` block to respond to the following:
+
+
+  * If the animal is `"dog"`, print `"Mammal"`
+
+
+  * If the animal is `"snake"`, print `"Reptile"`
+
+
+  * If the animal is `"carp"`, print `"Fish"`
+
+
+  * If the animal is `"eagle"`, print `"Bird"`
+
+
+  * For any other animal, print `"Unknown"`
+
+
+  ***
+
+
+  ### 2. Train ticket zone checker
+
+
+  A train station uses zones to determine ticket pricing. Starting with the code
+  in **q2.py**, write a function that accepts an integer representing the
+  **zone**, (1 - 6) and returns the ticket type.
+
+
+  Use a `match-case` block to implement the following rules:
+
+
+  * If the zone is `1` or `2` return `"Central fare"`
+
+
+  * If the zone is `3` or `4`, return `"Suburban fare"`
+
+
+  * If the zone is `5` or `6`, return `"Outer fare"`
+
+
+  * For any other zone, return `"Invalid zone"`
+
+showEditor: true
+editors:
+  - course1/unit4/lesson4/lessonpart4/q1.py
+  - course1/unit4/lesson4/lessonpart4/q2.py

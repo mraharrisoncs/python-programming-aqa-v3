@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Why Selection?
+content: >+
+  ## Sequences
+
+
+  Programs that use only sequences of operations are not very useful. Remember
+  this program?
+
+
+  ```python
+
+  colour = input("What is your favourite colour?")
+
+  print("I like", colour, "too!")
+
+  ```
+
+
+  But what if the computer's favourite colour is blue, and the user enters
+  "red"? In this case we might want the program to say "Good choice, but I like
+  blue best".
+
+
+  ## Selection
+
+
+  Here's how we do that:
+
+
+  ```python
+
+  colour = input("What is your favourite colour?")
+
+  if colour == "blue":
+    print("I like", colour, "too!")
+  else:
+    print("Good choice, but I like blue best")
+  ```
+
+
+  Python gives us the keywords `if` and `else` to control the **flow** of the
+  program. In the above example, if the user enters "blue", the program will
+  output "I like blue too!", if they enter anything else it will say "Good
+  choice..."
+
+
+  ## Try it out
+
+
+  Before we dive deeper into how this works, try it for yourself. Open the
+  attached program and...
+
+
+  1. Predict what it does.
+
+  2. Change the program so that instead of giving advice about the rain, if the
+  input is "sunny" the program says "Wear sunscreen".
+
+  3. Add another question, "Are you going to school? " and if the answer is
+  "yes" then say "Remember your books", otherwise say "Have fun!".
+
+showEditor: true
+editors:
+  - course1/unit4/lesson1/lessonpart1/weather.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you get on? Did you remember to change the name of the variable
+          from 'weather' for the 3rd task? We should always use meaningful
+          variables.

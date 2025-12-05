@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Downsides of if-elif-else
+content: >
+  As we saw in the last lesson. when coding **selection** with multiple
+  conditions, you might use an `if-elif-else` structure. But this can become
+  cumbersome and error-prone when dealing with many branches. Let's look at an
+  example:
+
+
+  ### Issues with `if-elif-else` for long conditionals
+
+
+  In an `if-elif-else` chain, you often repeat the same variable or expression
+  multiple times. This repetition can make the code harder to read and maintain.
+  Remember our food ordering menu?
+
+
+  ```python
+
+  if choice == 1:
+      starter_menu()
+  elif choice == 2:
+      maincourse_menu()
+  elif choice == 3:
+      dessert_menu()
+  else:
+      print("Invalid choice")
+  ```
+
+
+  Here we have typed `choice ==` on every condition. This is tedious and we
+  might spell `choice` wrong, and even write a different variable in its place,
+  causing a logic error that is hard to find.
+
+
+  ### Introducing `match`/`case`
+
+
+  Python 3.10 introduced the `match`/`case` statement, which provides a more
+  elegant way to handle multiple conditions.  This is really useful when you
+  have a single variable being compared against many potential values, like in
+  our menu program. Here's how you can use `match`/`case` instead of
+  if-elif-else:
+
+
+  ```python
+
+  match choice:
+      case 1:
+          starter_menu()
+      case 2:
+          maincourse_menu()
+      case 3:
+          dessert_menu()
+      case _:
+          print("Invalid choice")
+  ```
+
+
+  You can see that we write the variable identifier `choice` only once, so we
+  can't mistype it later, and we save a lot of keystrokes! Instead of
+  `if`/`elif` we have a `case` statement and write the comparison operand only
+  (1, 2 etc). The operator `==` is assumed.  Instead of the `else` branch we use
+  `case` with a single underscore. The above code is identical in function to
+  the previous version that used `if-elif-else`.
+
+
+  > **Note:** Python's `match/case` syntax is also used in Ruby,
+  while `switch/case` is found in other programming languages such as C++, C#,
+  Java and JavaScript.
+
+
+  ### Benefits of `match`/`case`
+
+
+  * **Clarity**: The `match`/`case` structure is more concise and easier to
+  read, especially when dealing with many conditions.
+
+
+  * **Reduced Repetition**: You only need to specify the variable once, reducing
+  the chance of errors.
+
+
+  * **Default Case**: The underscore (`_`) acts as a default case, similar to
+  the `else` in `if-elif-else`.
+
+
+  By using `match`/`case`, you can write cleaner and more maintainable code,
+  making it a valuable tool for handling complex decision-making in your Python
+  programs.

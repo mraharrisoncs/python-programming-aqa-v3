@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: Lesson 2 - More powerful conditions
+description: This lesson covers logical expressions using AND, OR and NOT
+objectives: |-
+  Write a logical expression with and, or and not logical operators
+  Know the order of precedence in logical expressions
+  Use and/or/not in Python programs
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml
+  - lessonpart6.yml
+  - lessonpart7.yml

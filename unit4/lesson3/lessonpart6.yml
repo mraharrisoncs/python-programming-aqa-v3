@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Solutions to if-elif-else exercises
+content: |
+  How did you do? Here are the suggested solutions!
+
+  ### 1. School phase?
+
+  ```python
+  def which_phase(age):
+      if age < 11:
+          return "Primary"
+      elif age <= 16:
+          return "Secondary"
+      else:
+          return "Sixth Form"
+  ```
+
+  Try this out now in the attached file **q1solution.py**
+
+  ### 2. Pizza discount?
+
+  ```python
+  def discount(price, loyalty, student, day, age):
+      if loyalty:
+          return price * 0.85
+      elif student and day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+          return price * 0.90
+      elif age > 65:
+          return price * 0.95
+      else:
+          return price
+  ```
+
+  Try this out now in the attached file **q2solution.py**
+showEditor: true
+editors:
+  - course1/unit4/lesson3/lessonpart6/q1solution.py
+  - course1/unit4/lesson3/lessonpart6/q2solution.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Did your solution match ours? Did you solve it a different way? There
+          is no single correct solution, was yours more or less efficient than
+          ours?

@@ -1,0 +1,130 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Nested ifs
+content: >+
+  ### Introduction to Nested IF Statements
+
+
+  Remember the party decision program?
+
+
+  ```python
+
+  if room_tidy and homework_done:
+      print("go to party")
+  ```
+
+
+  We could have written this as two separate if statements, one inside the
+  other. This is called **nesting** if statements.
+
+
+  ```python
+
+  if room_tidy:
+      if homework_done:
+          print("go to party")
+  ```
+
+
+  When the above program runs, Python first checks the value of `room_tidy`, and
+  if this is True, it executes the second `if` statement. This then checks the
+  Boolean `homework_done`. If this is also True, it prints "go to party". The
+  behaviour is identical to the first version that used `and` to make a compound
+  condition.
+
+
+  In Python, nested if statements allow you to check multiple conditions within
+  another condition. This is useful when you need to make decisions based on
+  more than one criterion. A nested **if** is simply an **if** statement inside
+  another **if** statement.
+
+
+  ### Syntax of Nested IF
+
+
+  Here's the general structure of a nested if statement:
+
+
+  ```python
+
+  if condition1:
+      # Executes when condition1 is true
+      if condition2:
+          # Executes when condition2 is true
+          print("Both conditions are true")
+      else:
+          # Executes when condition2 is false
+          print("Condition1 is true, but condition2 is false")
+  else:
+      # Executes when condition1 is false
+      print("Condition1 is false")
+  ```
+
+
+  ### Example 1: test scores
+
+
+  Let's write a nested if statement to determine if a student has passed a
+  course based on their test score and attendance. A passing score is 50, and
+  the student must have attended at least 75% of classes.
+
+
+  ```python
+
+  if score >= 50:
+      if attendance >= 75:
+          print("You passed the course!")
+      else:
+          print("Your test score was good but your attendance was too low")
+  else:
+      print("Your test score was too low")
+  ```
+
+
+  ### Indenting
+
+
+  Remember that Python uses indenting to show where a code block starts and
+  ends. In the above example, the inner **if** statement is indented by four
+  spaces to show that it is inside the outer if statement. Within this indented
+  block you **must** continue to indent the code correctly, hence the inner
+  **if** statement branches are indented just as they would be if they were not
+  nested within the outer statement.
+
+
+  ### Example 2: checking card validity
+
+
+  Remember the ticket barrier function? Maybe we want to improve it to return a
+  message instead of just True or False. We would split the condition into
+  nested ifs, and then instead of returning True or False we would return an
+  appropriate message like this:
+
+
+  ```python
+
+  def check_smartcard(card_valid, card_balance, time_of_day_hh):
+    if card_valid:
+       if card_balance >= 1.00 
+          if not (time_of_day_hh <= 9)
+            return "you may travel"
+          else:
+            return "you may not travel before 9am"
+        else:
+          return "balance less than 1.00"
+    else:
+      return "card invalid"
+  ```
+
+
+  ### Compound conditions vs. nested ifs
+
+
+  We saw how **and** and **or** allow join conditions together on a single
+  **if** statement. So why would you ever need nested ifs? Because they give us
+  more control. We can have multiple branches of code and execute each one
+  conditionally. The original ticket barrier function only returned True or
+  False. The new version allows us to return individual messages for each
+  condition.
+

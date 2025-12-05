@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Python practical - if-elif-else
+content: >
+  ## Using if-elif-else
+
+
+  ### 1. School phase?
+
+
+  Starting with the code in **q1.py**, write a function that accepts an integer
+  parameter representing a student's age in years and returns which school phase
+  they are in. If under 11 they are in 'Primary', between 11 and 16 inclusive:
+  'Secondary', over 16: 'Sixth Form'.
+
+
+  ### 2. Pizza discount?
+
+
+  A pizza restaurant offers discounts based on the following rules:
+
+
+  * Customers with a **filled loyalty card** get **15% off**.
+
+
+  * If they don't have a filled loyalty card but do have a **student card**,
+  they get **10% off**, **but only on weekdays**.
+
+
+  * If neither of the above is true, but the customer is **over 65**, they get
+  **5% off**.
+
+
+  * Otherwise, they pay full price.
+
+
+  A Python function has been partially written in **q2.py**. This takes five
+  parameters:
+
+
+  * the original price of the order: float
+
+
+  * whether they have a filled loyalty card: Boolean
+
+
+  * whether they have a student card: Boolean
+
+
+  * the day of the week e.g. "Mon": string
+
+
+  * their age in years : integer
+
+
+  Complete this function with an **`if-elif-else`** code block that implements
+  the discount rules correctly, and returns the amended price.
+showEditor: true
+editors:
+  - course1/unit4/lesson3/lessonpart5/q1.py
+  - course1/unit4/lesson3/lessonpart5/q2.py

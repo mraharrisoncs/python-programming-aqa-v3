@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Introducing elif
+content: >+
+  ### Understanding if-elif-else
+
+
+  In Python, the `if-elif-else` statement is a powerful tool for
+  decision-making. It allows you to check multiple conditions and execute
+  different blocks of code based on which condition is true. This is
+  particularly useful when you have more than two possible outcomes. Consider
+  this function that returns a grade based on the score passed in as a
+  parameter. 
+
+
+  ```python
+
+  def grade(score):
+    if score >= 80:
+      return 'A'
+    else:
+      if score >= 60
+        return 'B'
+      else:
+        if score >= 40
+          return 'C'
+        else:
+          return 'F'
+  ```
+
+
+  After the first conditional, we have nested each if statement in the
+  **else** branch of the previous one. This works, but it's really messy, and
+  the indentation is out of control! Fortunately, Python gives us an easier way
+  to do this. The **elif** statement is short for **else if**, and the above
+  function can be simplified like this:
+
+
+  ```python
+
+  def grade(score):
+    if score >= 80:
+      return 'A'
+    elif score >= 60
+      return 'B'
+    elif score >= 40
+      return 'C'
+    else:
+      return 'F'
+  ```
+
+
+  ### Syntax of if-elif-else
+
+
+  The general syntax of an `if-elif-else` statement is as follows:
+
+
+  ```python
+
+  if condition1:
+      # Code to execute if condition1 is true
+  elif condition2:
+      # Code to execute if condition1 is false and condition2 is true
+  elif condition3:
+      # Code to execute if condition1 and condition2 are false and condition3 is true
+  '''
+
+  add more elif branches as necessary here
+
+  '''
+
+  else:
+      # Code to execute if none of the above conditions are true
+  ```
+
+
+  * **`if`**: The initial condition to check. If this condition is true, the
+  corresponding block of code is executed.
+
+
+  * **`elif`**: Short for "else if," this allows you to check additional
+  conditions if the previous ones are false.
+
+
+  * **`else`**: The block of code that runs if none of the preceding conditions
+  are true.
+
+
+  ### Example: Weather Advice
+
+
+  Here's another example that provides advice based on the weather:
+
+
+  ```python
+
+  weather = "rainy"
+
+
+  if weather == "sunny":
+      print("Wear sunglasses!")
+  elif weather == "rainy":
+      print("Take an umbrella!")
+  elif weather == "snowy":
+      print("Wear a warm coat!")
+  else:
+      print("Check the weather forecast!")
+  ```
+

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Boolean expressions with AND
+content: >
+  ## And operator
+
+
+  Imagine you ask your parents if you can go to a party at the weekend. Your Dad
+  says "yes, if you tidy your room **and** do your homework". We can use
+  **and** in Python just like in English. The `if` statement would look like
+  this:
+
+
+  ```python
+
+  if room_tidy == True and homework_done == True:
+      print("go to party")
+  ```
+
+
+  Here's another example: "Dan will buy pizza if he finishes work before 11 and
+  has more than five pounds in his pocket":
+
+
+  ```python
+
+  if finished_work < 11 and cash_in_pocket > 5.0:
+      print("buy pizza")
+  ```
+
+
+  Notice how the Python `if` statement reads very much like English, it was
+  designed that way to be easy to code! Just say the sentence in English, choose
+  meaningful names for the variables and change words like "before" and "more
+  than" to comparison operators ==, <, <=, >, >=, !=. That's it!
+
+
+  ## Multiple 'and' operators
+
+
+  We can have more than one logical operator in our conditions. We use Boolean
+  logic a lot in games programming, here is an example from a text adventure
+  game with two `and` operators:
+
+
+  ```python
+
+  has_key = True
+
+  health_points = 119
+
+  location = "outside_treasure_room"
+
+
+  if has_key and health_points > 50 and location = "outside_treasure_room"
+      print("You enter the treasure room!")
+  ```
+
+
+  Look at that if statement. If we read it out loud, we would say "If has key
+  and health points greater than 50 and location equals outside treasure room
+  door, print "You enter the treasure room!" This is basically an English
+  description of the condition we need at this point in the game.&#x20;
+
+
+  ## Try it
+
+
+  Now you try writing a condition with `and` operators. Write the missing
+  condition in the attached program. The function is designed to check test
+  scores. The student will pass only if both score1 and score2 are more than 50.
+  **Note**: just change line 8 and leave the rest alone.
+
+
+  **Extension**: improve the program so that it only returns "pass" if both
+  scores are over 50 **and** the total is at least 120.
+showEditor: true
+editors:
+  - course1/unit4/lesson2/lessonpart1/scores.py

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson1
+title: Lesson 1 - Simple selection
+description: Introduction to selection.
+objectives: |-
+  1. Why do we need selection? 
+  2. Boolean expressions. 
+  3. Using if and if-else.
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart5.yml
+  - lessonpart4.yml
+  - lessonpart6.yml

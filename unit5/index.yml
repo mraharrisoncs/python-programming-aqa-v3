@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: unit5
+title: Unit 5 - Condition-controlled iteration
+description: Learn how to write while loops and use them in programs
+objectives: |-
+  1. Simple while loops
+  2. While loops with compound expressions
+  3. Programming with while loops
+  - validation
+  - linear search
+  - the accumulator pattern
+  4. Beyond the spec with break and continue
+lessons:
+  - lesson1/index.yml

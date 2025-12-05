@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Programming with match/case
+content: >+
+  ### Worked Example 1: Categorising Grades
+
+
+  In this example, we'll use the `match/case` statement to categorise grades
+  from A to D into Distinction, Merit, Pass, and Fail. Here is a function that
+  takes the parameter **grade** and returns a string containing the category:
+
+
+  ```python
+
+  def categorize_grade(grade):
+      match grade:
+          case 'A':
+              return "Distinction"
+          case 'B':
+              return "Merit"
+          case 'C':
+              return "Pass"
+          case 'D':
+              return "Fail"
+          case _:
+              return "Invalid grade"
+  ```
+
+
+  ### Worked Example 2: Handling Multiple Conditions with | 
+
+
+  In this example, we'll use the `match/case` statement with the `|` operator to
+  handle multiple conditions. Let's consider a scenario where we categorize
+  weather observations into "Good", "Moderate" or "Bad":
+
+
+  ```python
+
+  def categorize_weather(observation):
+      match observation:
+          case 'Sunny' | 'Clear':
+              return "Good weather"
+          case 'Cloudy' | 'Overcast':
+              return "Moderate weather"
+          case 'Rainy' | 'Stormy':
+              return "Bad weather"
+          case _:
+              return "Unknown"
+  ```
+
+
+  ## PRIMM activities
+
+
+  Using the attached **grades.py**:
+
+
+  1. **🤔 Predict** what the program does.
+
+  2. ▶️ **Run** and check your prediction, were you correct?
+
+  3. 🔍 **Investigate:** why does a grade "E" or "z" return "Invalid grade"? 
+
+  4. ✏️ **Modify:** Change the program so that "D" returns a "Level 1 Pass" and
+  "E" and "F" both return a "Fail".
+
+  5. 🛠️ **Make:** a new function that is the reverse of this one, turning
+  "Distinction" into "A" etc.
+
+showEditor: true
+editors:
+  - course1/unit4/lesson4/lessonpart3/grades.py

@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Using match/case
+content: >
+  ### Understanding match/case in Python
+
+
+  The `match/case` statement is a type of **selection** statement that allows
+  you to compare a value against a series of values or patterns and execute code
+  based on which pattern matches.&#x20;
+
+
+  ### Using match/case to replace if-elif-else chains:
+
+
+  As we saw before, when you have a series of conditions that check the same
+  variable, `match/case` can make your code cleaner and easier to read.
+
+
+  ```python
+
+  def get_day_name(day_number):
+      match day_number:
+          case 1:
+              return "Monday"
+          case 2:
+              return "Tuesday"
+          case 3:
+              return "Wednesday"
+          case 4:
+              return "Thursday"
+          case 5:
+              return "Friday"
+          case 6:
+              return "Saturday"
+          case 7:
+              return "Sunday"
+          case _:
+              return "Invalid day"
+  ```
+
+
+  ### Handling Multiple Patterns:
+
+
+  You can match multiple patterns in a single case using the `|` operator.
+
+
+  ```python
+
+  def is_weekend(day_number):
+      match day_number:
+          case 6 | 7:
+              return True
+          case _:
+              return False
+  ```
+
+
+  Here, both 6 and 7 are matched in the same case, indicating the weekend days.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: string
+        content: |-
+          What will be stored in the variable day if we run this code?
+          day = get_day_name(2) 
+        options:
+          - id: "1"
+            value: Tuesday
+            explanation: The function returns "Tuesday" when the parameter is 2
+            isCorrect: true

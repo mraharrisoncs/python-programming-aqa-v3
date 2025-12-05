@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Solutions to and, or, not exercises
+content: |
+  ## Solutions: Using and, or, not
+
+  ### 1. Enrolment checker
+
+  ```python
+  def eligible(age, grades):
+      if age >= 18 and "A" in grades:
+          return "Eligible"
+      else:
+          return "Not eligible"
+  ```
+
+  Check this out in the attached **q1solution.py** file.
+
+  ***
+
+  ### 2. Food safety advice
+
+  ```python
+  def safe_to_eat(ingredients, allergen1, allergen2):
+      if allergen1 in ingredients or allergen2 in ingredients:
+          print("Not safe")
+      else:
+          print("Safe") 
+  ```
+
+  You can run and test this now in q2solution.py
+showEditor: true
+editors:
+  - course1/unit4/lesson2/lessonpart7/q1solution.py
+  - course1/unit4/lesson2/lessonpart7/q2solution.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How would you change the enrolment function if the course requirement
+          was lowered to allow any B as well as any A?

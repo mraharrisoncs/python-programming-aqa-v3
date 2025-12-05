@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Programming with AND, OR and NOT
+content: >+
+  ### Worked Example 1: Number checker
+
+
+  Let's create a function that checks if a number is a **two-digit number that
+  is divisible by either two or three**, for example 10, 12, 14, 15, 16, 18, 20,
+  21 .. 96, 98, 99.\*\* \*\*We'll use logical operators `and`, `or`, and `not`
+  to achieve this.&#x20;
+
+
+  Firstly let's work out some conditions we can use. **Having two digits** just
+  means the number is between 10 and 99 inclusive. **Divisible by two** means
+  that when we divide by two and take the **remainder**, this is **zero**.
+  Likewise, **divisible by three** means when we divide by three the
+  **remainder** is **zero**. We can use **MOD** or the Python operator **`%`**
+  for this:
+
+
+  ```python
+
+  def check_number(num):
+      # Check if the number is between 10 and 99, and divisible by 2 or 3
+      if (num >= 10 and num <= 99) and (num % 2 == 0 or num % 3 == 0):
+          return "Yes"
+      else:
+          return "No"
+
+  # main program  test the function
+
+  print(check_number(12))  # Output: Yes
+
+  print(check_number(15))  # Output: Yes
+
+  print(check_number(25))  # Output: No
+
+  print(check_number(99))  # Output: Yes
+
+  ```
+
+
+  ### Worked Example 2: String Slicing in a Word Game
+
+
+  Let's play a word game. First pick a topic, e.g. "fruit". If I say **banana**,
+  you must say a fruit that starts with the last letter of **banana**, so
+  **avocado** is OK.  But another rule is you cannot say a word less than six
+  letters long, so **apple** would not be allowed. The final rule is that
+  **orange** is not allowed ever!
+
+
+  Here is a function that uses Boolean logic with **and** to ensure the
+  condition is met.
+
+
+  ```python
+
+  def is_valid_next_word(previous_word, next_word):
+      # Check if the next word is valid
+      if next_word[0] == previous_word[-1] and len(next_word) >= 6 and not next_word == "orange":
+          return "Valid"
+      else:
+          return "Invalid"
+
+  # main program - test the function
+
+  print(is_valid_next_word("banana", "avocado"))      # Output: Valid
+
+  print(is_valid_next_word("kumquat", "tamarind"))    # Output: Valid
+
+  print(is_valid_next_word("banana", "loganberry"))   # Output: Invalid
+
+  print(is_valid_next_word("banana", "apple"))        # Output: Invalid
+
+  print(is_valid_next_word("avocado", "orange"))      # Output: Invalid
+
+
+
+
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit4/lesson2/lessonpart5/example1.py
+  - course1/unit4/lesson2/lessonpart5/example2.py

@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Solutions to match-case exercises
+content: |
+  Here is the solution to q1:
+
+  ```python
+  def classify(animal):
+      match animal:
+          case 'dog':
+              print("Mammal")
+          case 'snake':
+              print("Reptile")
+          case 'carp':
+              print("Fish")
+          case 'eagle':
+              print("Bird")
+          case _:
+              print("Unknown")
+  ```
+
+  Try it in the code editor now, using q1solution.py
+
+  Here is the solution to q2:
+
+  ```python
+  def check_zone(zone):
+      match zone:
+          case 1 | 2:
+              return "Central fare"
+          case 3 | 4:
+              return "Suburban fare"
+          case 5 | 6:
+              return "Outer fare"
+          case _:
+              return "Invalid zone"
+  ```
+
+  Open the file q2solution.py to try this out.
+showEditor: true
+editors:
+  - course1/unit4/lesson4/lessonpart5/q1solution.py
+  - course1/unit4/lesson4/lessonpart5/q2solution.py

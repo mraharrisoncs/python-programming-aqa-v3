@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Pseudocode notes
+content: >+
+  ## Pseudocode notes on selection
+
+
+  Remember, AQA do not require our candidates to use Python, and some schools
+  use other languages whose keywords are different. This is why you will see our
+  pseudocode in exam papers, not Python. For simplicity and compatibility with
+  many languages, we do not have equivalents of `elif` or `match/case` in our
+  pseudocode, only `IF-THEN-ELSE`. 
+
+
+  Complex conditional statements will be represented in exams with nested
+  `IF` statements, rather than `if-elif-else` or `match-case` statements. Here
+  is the basic structure of a nested `IF`, written in AQA pseudocode.
+
+
+  ```python
+
+  IF BoolExp THEN
+    # statements here
+  ELSE
+    IF BoolExp THEN
+      # statements here
+    ELSE
+      # statements here
+    ENDIF
+  ENDIF
+
+  ```
+

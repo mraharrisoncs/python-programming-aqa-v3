@@ -1,0 +1,130 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Simple while loops
+content: >
+  ## Python while
+
+
+  Remember this program?
+
+
+  ```python
+
+  password = ""
+
+  while len(password) < 10:
+    password = input("type a new password, minimum length 10 characters: ")
+  print(f"your new password is {password}")
+
+  ```
+
+
+  Let's look at this code in more detail.&#x20;
+
+
+  First we set password to the empty string with `password = ""`. If we didn't
+  do this, the conditional on the next line would fail trying to use the
+  variable `password` before is has been assigned a value. This would throw
+  a **Name Error** at runtime in Python.
+
+
+  The second line is our `while` statement. After the `while` keyword is a
+  conditional or **Boolean expression**. We met these in Unit 4.  Remember, an
+  **expression** is any valid sequence of **terms** and **operators** that can
+  be **evaluated** to obtain a result. Just like the `if` statement,
+  `while` takes a **Boolean expression**, which evaluates to either `True` or
+  `False`. 
+
+
+  We met `len()` in unit 3, it returns the length of a string. So the expression
+  `len(password) < 10` will be `True` if string stored in the
+  `password` variable is less than ten characters long. If the expression is
+  `True` then Python will enter the loop and execute the code block that follows
+  the colon `:`
+
+
+  When this program runs for the first time, we know that password is set to
+  `""` which has length of zero. Zero is less than ten, so the expression
+  evaluates to `True` and the indented code block is executed. Line 3 will now
+  run, and ask the user for a password. After this there is no more indented
+  code, so Python loops back to the `while` statement.
+
+
+  If the inputted password has less than ten characters, the condition evaluates
+  to `True` again, and the indented code block is executed once more. This
+  happens every time the user inputs a password that is too short.
+
+
+  However once the new password has ten characters or more, the expression
+  `len(password) < 10` will evaluate to `False` and the while loop will
+  `terminate` - this means it will skip the indented code block and execute the
+  next line that is not indented. This means the `print()` statement will now
+  execute!
+
+
+  ## Flowchart for while
+
+
+  Here is a flowchart to illustrate what is going on:
+
+
+  \<tbc >
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What will happen if the initial value of 'password' is not set before
+          the while loop?
+        options:
+          - id: "1"
+            value: The program will throw a Name Error at runtime.
+            explanation: Without initializing 'password', the variable is used before
+              assignment, causing a Name Error.
+            isCorrect: true
+          - id: "2"
+            value: The program will run without any errors.
+            explanation: The program will not run correctly because 'password' is used
+              before it is assigned a value.
+          - id: "3"
+            value: The while loop will execute indefinitely.
+            explanation: The loop will not execute indefinitely; it will throw a Name Error
+              before the loop starts.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What will happen if the user inputs a password with 8 characters?
+        options:
+          - id: "1"
+            value: The while loop will continue to run and prompt for a new password.
+            explanation: The condition 'len(password) \< 10' will evaluate to True, so the
+              loop continues.
+            isCorrect: true
+          - id: "2"
+            value: The while loop will terminate and print the password.
+            explanation: The loop only terminates when the password is 10 characters or
+              more.
+          - id: "3"
+            value: The program will throw a Name Error.
+            explanation: A Name Error occurs if 'password' is not initialized before the
+              loop.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: In any given while loop, how does Python know which lines to repeat?
+        options:
+          - id: "1"
+            value: The lines to be repeated are indented after the while statement
+            explanation: Yes, the colon ':' tells Python to expect an indented code block
+              and this whole block is executed repeatedly.
+            isCorrect: true
+          - id: "2"
+            value: It only repeats the first line after the while statement
+            explanation: No, you can have multiple indented lines inside a while statement
+              and they are all repeated.
+          - id: "3"
+            value: It repeats all the lines from while until it sees print
+            explanation: No, the first un-indented line marks the end of the block and this
+              might not always be print.

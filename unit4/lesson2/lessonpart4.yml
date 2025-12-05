@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Operator precedence
+content: >+
+  Just like in maths, Python has rules about which parts of a logical expression
+  get evaluated first. These rules are called *operator precedence*. Like
+  BIDMAS, Brackets are always evaluated first, then AND, OR and NOT, in that
+  order. If you have arithmetic, comparisons **and** Boolean operations, then
+  the full operator precedence rule is:
+
+
+  | **Operator (high to low)** | **Examples**                        |
+
+  | -------------------------- | ----------------------------------- |
+
+  | **Brackets / Parentheses** | `(x + y)`, `(a > b and c)`          |
+
+  | **Arithmetic operators**   | `**`, `*`, `/`, `//`, `%`, `+`, `-` |
+
+  | **Comparison Operators**   | `<`, `<=`, `>`, `>=`, `==`, `!=`    |
+
+  | **NOT**                    | `not x`                             |
+
+  | **AND**                    | `x and y`                           |
+
+  | **OR**                     | `x or y`                            |
+
+
+  You could use the acronym BACNAO or "Boole ate cheese, never ate olives"!
+

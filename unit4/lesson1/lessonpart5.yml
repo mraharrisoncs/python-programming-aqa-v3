@@ -1,0 +1,191 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Programming if-else
+content: >
+  #### Using Boolean expressions in programs
+
+
+  Boolean expressions are often used in `if-else` statements to decide which
+  block of code should be executed. Here's another example that uses
+  `>=` (greater than or equal to), and this time we have wrapped the code in a
+  procedure definition:
+
+
+  ```python
+
+  def can_vote(age):
+    if age >= 18:
+      print("You are eligible to vote")
+    else:
+      print("You are not eligible to vote")
+
+  # main program
+
+  my_age = int(input("Age?"))
+
+  print(can_vote(my_age))
+
+  ```
+
+
+  In this example, the Boolean expression `age >= 18` is evaluated. If it is
+  `True`, the program prints "You are eligible to vote". Otherwise, it prints
+  "You are not eligible to vote".&#x20;
+
+
+  Here is another example, this time with a function that returns a string
+  describing how someone is driving. I've also used a constant at the top of the
+  code, so we can easily change the `speed_limit` later.
+
+
+  ```python
+
+  speed_limit = 30      
+
+
+  def speed_check(current_speed):
+    if current_speed <= speed_limit:
+      return "Safe driving, keep going."
+    else:
+      return "Too fast, slow down!"
+
+  # main program
+
+  speed = int(input("Current speed?"))
+
+  print(speed_check(speed))
+
+  ```
+
+
+  This time, the Boolean expression has two **variables** as the operands, and
+  `less than or equal to` as the comparison operator  The
+  expression `current_speed <= speed_limit` is evaluated. If `True`, the program
+  outputs "Safe driving, keep going." Otherwise, it prints "Too fast, slow
+  down!"
+
+
+  ### Pseudocode notes
+
+
+  Programming languages use combinations of basic symbols such as != and <=
+  because these symbols are available in ASCII and can be entered directly on
+  computer keyboards. In AQA exams, however, we use the standard mathematical
+  symbols for comparison operators. Also we use the keywords IF, THEN, ELSE and
+  ENDIF, and don't forget we use OUTPUT for print(), so the 'weather' example
+  looks like this...
+
+
+  ```python
+
+  IF weather == "raining" THEN
+    OUTPUT "Take an umbrella"
+  ELSE
+    OUTPUT "Good to go!"
+  ENDIF
+
+  ```
+
+
+  ...the voting example like this...
+
+
+  ```python
+
+  IF age ≥ 18 THEN
+    OUTPUT "You are eligible to vote"
+  ELSE
+    OUTPUT "You are not eligible to vote"
+  ENDIF
+
+  ```
+
+
+  ...and the speed check example like this:
+
+
+  ```python
+
+  IF current_speed ≤ speed_limit THEN
+    RETURN "Safe driving, keep going."
+  ELSE
+    RETURN "Too fast, slow down!"
+  ENDIF
+
+  ```
+
+
+  Check your understanding now.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What is the output of this code?
+          pension_age = 67
+          age = 67
+          if age \>= pension_age:
+              print("State pension due")
+          else:
+              print("Not yet!")
+        options:
+          - id: "1"
+            value: State pension due
+            explanation: Yes, 67 \>= 67 evaluates to True
+            isCorrect: true
+          - id: "2"
+            value: Not yet
+            explanation: No, 67 \>= 67 evaluates to True
+          - id: "3"
+            value: "67"
+            explanation: No, the output is one of the strings
+          - id: "4"
+            value: Syntax Error
+            explanation: No, the code is syntactically correct
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: The pseudocode statement IF temperature ≥ 21 THEN would be written in
+          Python as which of these?
+        options:
+          - id: "1"
+            value: "if temperature \\>= 21:"
+            explanation: Yes, the ≥ symbol must be written as \>=
+            isCorrect: true
+          - id: "2"
+            value: "if temperature \\<= 21:"
+            explanation: No, the ≥ symbol is not \<=
+          - id: "3"
+            value: if temperature \>= 21
+            explanation: You need a punctuation mark in Python to indicate that an indented
+              code block follows
+          - id: "4"
+            value: "if temperature != 21:"
+            explanation: No, the ≥ symbol means greater than or equal to, != means not equal
+              to
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What would be output from this code?
+          if "10" != 10:
+            print("different")
+          else:
+            print("same")
+        options:
+          - id: "1"
+            value: different
+            explanation: Yes, the string "10" and the integer 10 are not the same in Python
+            isCorrect: true
+          - id: "2"
+            value: same
+            explanation: No, the string "10" and the integer 10 are not the same in Python
+          - id: "3"
+            value: "10"
+            explanation: No, one of the strings is output
+          - id: "4"
+            value: Syntax Error
+            explanation: No, the code is syntactically correct.

@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Python practical - if-else
+content: >+
+  ## Python if-else exercises
+
+
+  ### 1. Positive or Negative?
+
+
+  Starting with the code in **q1.py**, write a function that uses an if-else
+  statement to determine if a number is positive or negative. Return "positive"
+  if the number is greater than zero, otherwise return "negative".
+
+
+  ### 2: Even or Odd?
+
+
+  Complete the function in **q2.py**  to check if a number is even or odd.
+  Return "even" if the number is divisible by 2, otherwise return "odd". *Hint:
+  remember the modulus operator % from Unit 2, which returns the remainder. If
+  the remainder after dividing by 2 is zero, the number is even.*
+
+
+  ### 3: Compare Two Numbers
+
+
+  Complete the code in **q3.py** to compare two numbers and return "First is
+  greater" if the first number is greater than the second, otherwise return
+  "First is not greater".
+
+showEditor: true
+editors:
+  - course1/unit4/lesson1/lessonpart4/q1.py
+  - course1/unit4/lesson1/lessonpart4/q2.py
+  - course1/unit4/lesson1/lessonpart4/q3.py

@@ -1,0 +1,133 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Using AND and OR
+content: >
+  Remember the party decision program?
+
+
+  ```python
+
+  if room_tidy == True and homework_done == True:
+      print("go to party")
+  ```
+
+
+  The first thing to note is that `== True` is not needed in this code. That's
+  because if an operand is already **Boolean**, we can use it directly in our
+  expression. If the operand is already **True**, then the condition
+  becomes `True == True`, which is also **True**, and if it's **False**, then
+  `False == True` is also **False**! Let's simplify the code:
+
+
+  ```python
+
+  if room_tidy and homework_done:
+      print("go to party")
+  ```
+
+
+  Remember this later when you are writing logical expressions with Boolean
+  variables or Boolean expressions.&#x20;
+
+
+  But back to the party, what if Dad relents and says "OK, you can go if you
+  **either** tidy your room **or** do your homework today". That looks like
+  this:
+
+
+  ```python
+
+  if room_tidy or homework_done:
+      print("go to party")
+  ```
+
+
+  And let's change the pizza question to "Dan will buy pizza if he finishes work
+  before 11 and either has more than five pounds in his pocket, **or** has
+  remembered his debit card":
+
+
+  ```python
+
+  if finished_work < 11 and (cash_in_pocket > 5.0 or debit_card_in_pocket)
+      print("buy pizza")
+  ```
+
+
+  We have used brackets above to ensure that Python evaluates the
+  **or** operation first, then the **and** operation. This is important because
+  the usual **order of operations **would perform **and** before **or,** but
+  brackets are always evaluated first, just as in arithmetic operations
+  (BIDMAS).
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: >
+          What will be the result of this Boolean expression, if age = 18 and
+          railcard = False?
+
+
+          age \< 18 or railcard
+        options:
+          - id: "1"
+            value: "True"
+            explanation: No, 18 is not less than 18, and railcard is False
+          - id: "2"
+            value: "False"
+            explanation: Correct, 18 \< 18 is False, and railcard is False so the expression
+              evaluates to False
+            isCorrect: true
+          - id: "3"
+            value: age
+            explanation: No, Boolean expressions always evaluate to True or False
+          - id: "4"
+            value: railcard
+            explanation: No, the result must be a Boolean value
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: >-
+          A program triggers a burglar alarm if either the door opens or the
+          window opens. door_open and window_open are Boolean variables. Write
+          the missing Boolean operator in this code:
+
+          if door_open ___ window_open:
+              sound_alarm()
+        options:
+          - id: "1"
+            value: or
+            explanation: Yes, the answer is in the question! "if either the door opens or
+              the window opens"
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: >-
+          What is the output of this code, if finished_work = 10, cash_in_pocket
+          = 3.0 and debit_card_in_pocket = True?
+
+          if finished_work \< 11 and (cash_in_pocket \> 5.0 or
+          debit_card_in_pocket)
+              print("buy pizza")
+          else:
+              print("go home")
+        options:
+          - id: "1"
+            value: buy pizza
+            explanation: Yes, 10 \< 11 is True, cash_in_pocket \> 5.0 is False but
+              debit_card_in_pocket is True. True and (False or True) is True
+          - id: "2"
+            value: go home
+            explanation: No, 10 \< 11 is True, cash_in_pocket \> 5.0 is False but
+              debit_card_in_pocket is True. True and (False or True) is True
+          - id: "3"
+            value: "True"
+            explanation: No, the question asks for the output which is a string
+            isCorrect: true
+          - id: "4"
+            value: "False"
+            explanation: No, the question asks for the output which is a string

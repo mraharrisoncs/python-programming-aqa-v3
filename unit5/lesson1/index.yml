@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson1
+title: Lesson 1 - Simple while loops
+description: Why we need while loops, and how to write them
+objectives: |-
+  - Why do we need condition-controlled loops?
+  - Writing simple while loops
+lessonParts:
+  - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml

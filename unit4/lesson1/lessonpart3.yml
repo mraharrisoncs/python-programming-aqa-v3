@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Boolean Expressions - comparing things
+content: >
+  ### Boolean Expressions in IF statements
+
+
+  Remember, a Boolean expression is an expression that evaluates to either
+  `True` or `False`. We use the result to control the flow of a program by using
+  selection statements like `if` and `else`. We were looking at this example
+  program:
+
+
+  ```python
+
+  weather = input("What is the weather today? ")
+
+  if weather == "raining":
+    print("Take an umbrella")
+  else:
+    print("Good to go!")
+  ```
+
+
+  The Boolean expression here is `weather == "raining"`, which always evaluates
+  to either True or False, nothing else. We can use **any** Boolean expression
+  as the condition on an `if` statement. Anything that evaluates to `True` or
+  `False` can control an `if` statement.
+
+
+  #### Comparison Operators
+
+
+  In the above example, `==` is a **comparison operator** because it compare two
+  values, in this case the contents of the variable `weather` and the string
+  literal "raining". Putting two **operands** like this either side of a
+  comparison operator makes a valid **Boolean expression,** which evaluates to a
+  **Boolean value**: either `True` or `False`.&#x20;
+
+
+  Here are the common comparison operators in Python:
+
+
+  * `==`: Equal to
+
+
+  * `!=`: Not equal to
+
+
+  * `>`: Greater than
+
+
+  * `>=`: Greater than or equal to
+
+
+  * `<`: Less than
+
+
+  * `<=`: Less than or equal to
+
+
+  #### Writing a Boolean Expression
+
+
+  A Boolean expression involves a comparison **operator** and two **operands,**
+  one either side. Read through these examples and consider why we get the
+  output shown:
+
+
+  ```python
+
+  >>> x = 10
+
+  >>> y = 20
+
+
+  >>> print(x == y)
+
+  False
+
+
+  >>> print(x != y)
+
+  True
+
+
+  >>> print(x > y)
+
+  False
+
+
+  >>> print(x <= y)
+
+  True
+
+  ```
+
+
+
+  Check your understanding now.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What are the operands in this Boolean expression?
+          age \>= 18
+        options:
+          - id: "1"
+            value: age, 18
+            explanation: Yes, the operands are the terms either side of the operator
+            isCorrect: true
+          - id: "2"
+            value: \>, =
+            explanation: No, these are parts of the operator
+          - id: "3"
+            value: age, \>
+            explanation: No, \> is part of the operator
+          - id: "4"
+            value: =, 18
+            explanation: No, = is part of the operator
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: >-
+          Which comparison operator would be needed in an if statement to do the
+          following?
+
+          Check if a baby's weight is at least 3.5kg?
+        options:
+          - id: "1"
+            value: \>=
+            explanation: Yes, "at least" is a synonym for "greater than or equal to"
+            isCorrect: true
+          - id: "2"
+            value: \<=
+            explanation: No, this is "less than or equal to"?
+          - id: "3"
+            value: ==
+            explanation: No, this is equals, or "exactly equal to"
+          - id: "4"
+            value: \>
+            explanation: No, this is greater than, and we need a weight of exactly 3.5 to
+              result in True.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What does this Boolean expression evaluate to?
+          "chalk" != "cheese"
+        options:
+          - id: "1"
+            value: "True"
+            explanation: Correct, "chalk" is not the same as "cheese"!
+            isCorrect: true
+          - id: "2"
+            value: "False"
+            explanation: No, the != operator means "not equal to".
+          - id: "3"
+            value: chalk
+            explanation: No, a Boolean expression always evaluates to either True or False
+          - id: "4"
+            value: cheese
+            explanation: No, a Boolean expression always evaluates to either True or False

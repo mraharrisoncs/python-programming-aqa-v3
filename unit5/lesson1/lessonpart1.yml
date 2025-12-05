@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Why condition-controlled iteration?
+content: >
+  ## Iteration
+
+
+  To iterate is to repeat a process. Iteration is synonymous with repetition or
+  looping.\* Programs containing only sequence and selection cannot run
+  continuously; they must come to an end.&#x20;
+
+
+  This is not very useful when you want keep processing input until some goal is
+  achieved - for instance completing a game, calculating the company payroll or
+  simply getting your password correct after multiple attempts.
+
+
+  In short, we need **iteration**, along with **sequence** and **selection**, to
+  make useful programs.
+
+
+  > \**Strictly speaking,* **iteration** *means processing all the elements in a
+  list one by one, but we usually use the word* **iteration** *interchangeably
+  with* **repetition** *at this stage of study.*
+
+
+  ## Condition-controlled iteration
+
+
+  This is the first kind of iteration we will look at, it's the kind that stops
+  when something happens. We use a **while** statement in Python, which runs a
+  code block until a **condition** becomes False. We met **conditions** in Unit
+  4, they are **Boolean expressions** you can use on an **`if`** or
+  **`elif`** statement, and you can use them after **`while`** too. Here is a 
+  short program that uses a simple while loop to ensure a password is at least
+  ten characters long:
+
+
+  ```python
+
+  password = ""
+
+  while len(password) < 10:
+    password = input("type a new password, minimum length 10 characters: ")
+  print(f"your new password is {password}")
+
+  ```
+
+
+  The line `while len(password) < 10:` can be read aloud as "while length of
+  password is less than 10". Python evaluates the **Boolean
+  expression** `len(password) < 10`, and if this is **`True`** it enters the
+  loop, executing the indented line(s).&#x20;
+
+
+  After the indented code block finishes, Python returns to the
+  **`while`** statement and evaluates the condition again. If the condition is
+  now **`False`** then the indented code block is **skipped**, and the loop
+  terminates. In the above program, the next line to run is the
+  **print** statement. 
+
+
+  ### **Activity:**
+
+
+  Try the code in the attached program. Type in strings of different lengths.
+  Change the condition and see what happens.
+showEditor: true
+editors:
+  - course1/unit5/lesson1/lessonpart1/password_while.py

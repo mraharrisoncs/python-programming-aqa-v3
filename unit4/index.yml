@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: unit4
+title: Unit 4 - Selection
+description: |-
+  Programming selection in Python 
+  (also known as branching or conditional execution)
+objectives: |-
+  1. Why do we need selection? Boolean expressions. Using if and if-else.
+  2. Logical operators and, or and not, and operator precedence.
+  3. Nested if statements and if-elif-else.
+  4. Simplifying if-elif-else with match/case.
+lessons:
+  - lesson1/index.yml
+  - lesson2/index.yml
+  - lesson3/index.yml
+  - lesson4/index.yml

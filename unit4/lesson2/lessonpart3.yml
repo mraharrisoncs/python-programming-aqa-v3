@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Using AND, OR and NOT
+content: >
+  The final Boolean operator you need to know is **not**. Unlike **and** and
+  **or**, the **not** operator takes only one **operand**, and **inverts** it,
+  changing True to False or False to True. Consider our party question again.
+  This time Mum says "you can go to the party if you have **not** been given any
+  detentions this term":
+
+
+  ```python
+
+  if not had_detentions:
+      print("go to party")
+  ```
+
+
+  In the above code, **`had_detentions`** is a Boolean variable. But we can use
+  any **Boolean expression** in our conditions, including arithmetic comparisons
+  like > and !=. If we have an integer variable **`number_of_detentions`** then
+  the code might look like this:
+
+
+  ```python
+
+  if number_of_detentions == 0:
+      print("go to party")
+  ```
+
+
+  Dad has a word with Mum and relaxes the rule to "no more than two detentions,
+  as long as you also wash the car, and don't argue with your brother". This
+  would become:
+
+
+  ```python
+
+  if number_of_detentions == 0 and car_washed and not argued_with_brother:
+      print("go to party")
+  ```
+
+
+  Notice that either side of every **and** statement, and following the
+  **not** statement is a complete **Boolean expression**, either a Boolean
+  variable (**`car_washed`**) or a comparison (**`number_of_detentions ==
+  0`**).  
+
+
+  ## Writing a Boolean function
+
+
+  Let's look at one last example, and this time let's write a function that
+  returns a Boolean value.&#x20;
+
+
+  A ticket barrier will open when you tap your off-peak travelcard, if the card
+  is valid, the balance on the card is at least £1.00 and the time of day is not
+  before 9am. Write a function that returns True if the barrier should open, and
+  False if not.
+
+
+  ```python
+
+  def check_smartcard(card_valid, card_balance, time_of_day_hh):
+    if card_valid and card_balance >= 1.00 and not (time_of_day_hh <= 9)
+      return True
+    else:
+      return False
+  ```
+
+
+  Notice there are sometimes several ways of writing conditions, we could
+  write `time_of_day_hh > 9` instead, but `not (time_of_day_hh <= 9)` reflects
+  the instructions given in the question more closely.
+
+
+  ## Returning a Boolean directly
+
+
+  In the above example, we don't actually need an if statement! The Boolean
+  expression evaluates to True or False already, so we can just return that
+  directly and achieve the same result:
+
+
+  ```python
+
+  def check_smartcard(card_valid, card_balance, time_of_day_hh):
+    return card_valid and card_balance >= 1.00 and not (time_of_day_hh <= 9)
+  ```
+
+
+  The expression after `return` is evaluated, and the resulting value is
+  returned from the function, which is exactly the same value as in the original
+  `if-else` version!

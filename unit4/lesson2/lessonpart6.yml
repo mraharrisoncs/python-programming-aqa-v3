@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Python practical - AND, OR and NOT
+content: >
+  ## Using and, or, not
+
+
+  ### 1. Enrolment checker
+
+
+  Finish the function in **q1.py** to determine if a student can enrol in a
+  course based on their age and exam results. The rules are as follows:
+
+
+  * The student must be at least 18 years old.
+
+
+  * One of their three exam grades must be an A.
+
+
+  The function should take `age` as an integer, and `grades` as a string of
+  three characters e.g. "AAB" or "BCC". Any one of these grades can be an A to
+  enrol on the course. *Hint:* remember the **`in`** string operator.
+
+
+  ### 2. Food safety advice
+
+
+  In this exercise, you will complete a Python function to check if a person can
+  eat a dish based on their allergies. Each person can state only two allergies,
+  to make it simpler! The function will take three parameters:
+
+
+  * A list of ingredients in a dish, stored in a single string, e.g. "milk,
+  eggs, wheat, peanuts, sugar"
+
+
+  * A string containing a single allergen, e.g. "peanuts"
+
+
+  * Another string containing a single allergen, e.g. "shellfish"
+
+
+  Complete the function in q2.py to print "Safe" if the dish does not contain
+  the customer's allergens, otherwise print "Not safe".
+showEditor: true
+editors:
+  - course1/unit4/lesson2/lessonpart6/q1.py
+  - course1/unit4/lesson2/lessonpart6/q2.py
