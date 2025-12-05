@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: course1
+title: Python Programming for AQA GCSE CS V2
+level: beginner
+description: Python programming course
+cardImageUrl: https://vscodeedu.com/assets/course-cards/card6.png
+contacts:
+  - displayName: Alan Harrison
+    pictureUrl: https://avatars.githubusercontent.com/u/15657148?v=4
+    homePageUrl: https://github.com/mraharrisoncs
+units:
+  - id: unit1
+    title: Unit 1
+    lessons:
+      - id: lesson1
+        title: Lesson 1
+        lessonParts:
+          - id: lessonpart1
+            title: Page 1
