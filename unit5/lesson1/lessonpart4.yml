@@ -15,7 +15,7 @@ content: >
   def five_times_table():
     # five times table
     counter = 1
-    while counter <= 10:
+    while counter < 11:
       print(f"5 x {counter} = {5 * counter}")
       counter += 1
 
@@ -31,12 +31,38 @@ content: >
   the same as `counter = counter + 1`.
 
 
-  The loop continues **while** counter is less than or equal to 10, or in other
-  words, stops when counter reaches 11. Try this in the terminal now, the file
-  is attached.
+  The loop continues **while** counter is less than 11, or in other words, stops
+  when **counter reaches 11**. Note that it **doesn't execute** the code block
+  inside the while loop for a counter value of 11. The last iteration to run is
+  when counter=10.&#x20;
+
+
+  Try this in the terminal now, the file is attached.
 
 
   ## Countdown to lift-off!
+
+
+  ```python
+
+  def countdown():
+    # count down from 10
+    counter = 10
+    while counter >= 1:
+      print(f"{counter} !")
+      counter -= 1
+    print("lift-off !")
+
+  # MAIN PROGRAM
+
+  countdown()
+
+  ```
+
+
+  The above program sets counter to 10 initially, then loops while counter is
+  greater than or equal to 1, decrementing it by 1 each iteration (subtracting 1
+  with `counter -= 1`)
 
 
   ### Try It Yourself
@@ -48,3 +74,4 @@ content: >
 showEditor: true
 editors:
   - course1/unit5/lesson1/lessonpart4/fivextable_while.py
+  - course1/unit5/lesson1/lessonpart4/countdown_while.py

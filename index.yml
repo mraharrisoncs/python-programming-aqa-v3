@@ -1894,7 +1894,7 @@ files:
 
       \  counter = 1\r
 
-      \  while counter <= 10:\r
+      \  while counter < 11:\r
 
       \    print(f\"5 x {counter} = {5 * counter}\")\r
 
@@ -1905,6 +1905,26 @@ files:
       # MAIN PROGRAM\r
 
       five_times_table()"
+  - path: course1/unit5/lesson1/lessonpart4/countdown_while.py
+    content: "def countdown():\r
+
+      \  # count down from 10\r
+
+      \  counter = 10\r
+
+      \  while counter >= 1:\r
+
+      \    print(f\"{counter} !\")\r
+
+      \    counter -= 1\r
+
+      \  print(\"lift-off !\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown()"
 units:
   - unit1/index.yml
   - unit2/index.yml
