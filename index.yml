@@ -1964,6 +1964,41 @@ files:
       password = get_password()\r
 
       print(f\"your new password is {password}\")"
+  - path: course1/unit5/lesson2/lessonpart2/check_password1.py
+    content: "def check_password():\r
+
+      \    password = \"Computer#Science\"\r
+
+      \    attempts = 3\r
+
+      \    password_attempt = \"\"\r
+
+      \    while password_attempt != password and attempts > 0:\r
+
+      \        password_attempt = input(f\"Type your password, {attempts}
+      attempts remaining: \")\r
+
+      \        attempts -= 1\r
+
+      \    if password_attempt == password:\r
+
+      \        return True\r
+
+      \    else:\r
+
+      \        return False\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      if check_password():\r
+
+      \    print(\"Correct!\")\r
+
+      else:\r
+
+      \    print(\"Incorrect.\")\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml

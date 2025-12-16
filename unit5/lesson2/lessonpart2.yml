@@ -15,11 +15,14 @@ content: >+
       password = "Computer#Science"
       attempts = 3
       password_attempt = ""
-      while password_attempt != password and tries > 0:
-          password_attempt = input(f"Type your password, {attempts} attempts remaining")
+      while password_attempt != password and attempts > 0:
+          password_attempt = input(f"Type your password, {attempts} attempts remaining: ")
       if password_attempt == password:
           return True
       else:
           return False
   ```
 
+showEditor: true
+editors:
+  - course1/unit5/lesson2/lessonpart2/check_password1.py
