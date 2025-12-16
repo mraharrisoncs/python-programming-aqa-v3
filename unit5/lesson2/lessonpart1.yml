@@ -14,7 +14,7 @@ content: >
   uppercase letter and ends with a lowercase letter.
 
 
-  Here is the enhanced version of the program:
+  Here is the enhanced version of the function:
 
 
   ```python
@@ -22,8 +22,10 @@ content: >
   def get_password():
       # input password repeatedly until it meets all criteria
       password = ""
-      while len(password) < 10 or not password[0].isupper() or not password[-1].islower() 
-          password = input("Type a new password, min length 10, first uppercase, last lowercase")
+      while len(password) < 10 or not password[0].isupper() \
+                               or not password[-1].islower() 
+          password = input("Type a new password, min length 10, \
+                            first uppercase, last lowercase: ")
       
       # input password again until it matches the first password
       password_repeat = ""
