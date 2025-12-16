@@ -4,7 +4,7 @@ title: Unit 5 - Condition-controlled iteration
 description: Learn how to write while loops and use them in programs
 objectives: |-
   1. Simple while loops
-  2. While loops with compound expressions
+  2. More complex while loops
   3. Programming with while loops
   - validation
   - linear search

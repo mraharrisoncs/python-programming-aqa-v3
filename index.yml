@@ -1997,6 +1997,33 @@ files:
       else:\r
 
       \    print(\"Incorrect.\")\r\n"
+  - path: course1/unit5/lesson2/lessonpart3/get_password_flag.py
+    content: "def get_password():\r
+
+      \    blocklist = [\"ABCDEFGHIJ#\", \"QWERTYUIOP#\", \"A123456789#\"]\r
+
+      \    # input password repeatedly until it meets all criteria\r
+
+      \    password = \"\"\r
+
+      \    valid = False\r
+
+      \    while not valid:\r
+
+      \        if len(password) >= 10 and password[0].isupper() and '#' in
+      password:\r
+
+      \              valid = True\r
+
+      \        if password in blocklist:\r
+
+      \              valid = False\r
+
+      \        if not valid:\r
+
+      \            password = input(\"Type a new password, min length 10,\" \\\r
+
+      \                              + \" first uppercase, last lowercase: \")"
 units:
   - unit1/index.yml
   - unit2/index.yml

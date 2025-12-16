@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Using Boolean flags to control iteration
+content: >+
+  Remember our password strength checker? It ended up with a quite messy
+  condition that looked like this:
+
+
+  ```python
+
+  while len(password) < 10 or not password[0].isupper() or '#' not in password:
+
+  ```
+
+
+  When your while loop condition starts to grow like this, it might be time to
+  replace it with a Boolean **flag** which controls the iteration. Then you can
+  test the conditions and alter the flag within the loop body, like this *(I've
+  trimmed the code by taking out the check for repeat password)* :
+
+
+  ```python
+
+  def get_password():
+      # input password repeatedly until it meets all criteria
+      password = ""
+      valid = False
+      while not valid:
+          if len(password) >= 10 and password[0].isupper() and '#' in password:
+              valid = True
+          else:
+              password = input("Type a new password, min length 10," \
+                                + " first uppercase, last lowercase: ")
+  ```
+
+
+  Note that we've been able to swap around the logic, so the Boolean variable
+  `valid` is set to `True` when we have a valid password, i.e. when this
+  condition is met:
+
+
+  ```python
+
+  len(password) >= 10 and password[0].isupper() and '#' in password: 
+
+  ```
+
+
+  This is much easier to read and debug! Note that once the `valid` flag is set
+  to `True`, the while loop will terminate, because its condition `not
+  valid` will be `False`. 
+
+
+  ## Python reads like English!
+
+
+  If all the `True` and `False`s are confusing you, just remember, Python was
+  designed to be very readable. Each line of code says what it means. So `while
+  not valid` means "keep looping while my password is not valid"! Choose an
+  identifier for your Boolean flag variable that makes sense, and your code will
+  be easy to follow.
+
+
+  ## Adding complexity
+
+
+  Now we have a Boolean flag controlling our while loop, it's easy to add
+  complexity to our loop conditions. We can just write more lines of code that
+  alter the `valid` variable as we need them. Let's say we now want to check
+  that the password is not in a **blocklist** of banned passwords. Let's add
+  that code now:
+
+
+  ```python
+
+  def get_password():
+      blocklist = ["ABCDEFGHIJ#", "QWERTYUIOP#", "A123456789#"]
+      # input password repeatedly until it meets all criteria
+      password = ""
+      valid = False
+      while not valid:
+          if len(password) >= 10 and password[0].isupper() and '#' in password:
+                valid = True
+          if password in blocklist:
+                valid = False
+          if not valid:
+              password = input("Type a new password, min length 10," \
+                                + " first uppercase, last lowercase: ")
+  ```
+
+
+  I've added the new check for presence in the blocklist as a separate
+  `if` statement for clarity. It sets the `valid` flag back to `False` if the
+  password is found in the blocklist. I've tweaked the next line too, as we
+  can't use `else` this time. 
+
+
+  > Tip: there are many ways to solve this problem, the code above is just one
+  way! Find the most elegant way of solving the problem: concise but readable,
+  and easy to debug.
+
+
+  ## Try the code now
+
+
+  Open the attached file and try the new password checker. Then answer these
+  questions!
+
+
+  <br />
+
+showEditor: true
+editors:
+  - course1/unit5/lesson2/lessonpart3/get_password_flag.py
