@@ -12,3 +12,4 @@ objectives: |-
   4. Beyond the spec with break and continue
 lessons:
   - lesson1/index.yml
+  - lesson2/index.yml

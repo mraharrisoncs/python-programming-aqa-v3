@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: Lesson 2 - While loops with compound expressions
+description: While loops with compound expressions
+lessonParts:
+  - lessonpart1.yml
