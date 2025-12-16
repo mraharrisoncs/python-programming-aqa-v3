@@ -1,11 +1,12 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Using compound expressions
-content: >
-  In this lesson, we will explore how to use while loops with compound
-  expressions. Compound expressions allow us to combine multiple conditions
-  using logical operators such as `and`, `or`, and `not`. This can make our
-  loops more powerful and flexible.
+content: >+
+  So far, we have used simple Boolean expressions in our while loops:
+  `len(password) <-10` and `password_repeat != password`. But we can use a
+  compound Boolean expression, one that combines multiple conditions using
+  logical operators such as `and`, `or`, and `not`. This can make our loops more
+  powerful and flexible.
 
 
   Let's revisit the `get_password` program and enhance it to ensure that the
@@ -38,19 +39,19 @@ content: >
   ### Key Points:
 
 
-  - **Compound Expression in While Loop**: The condition in the first `while`
+  * **Compound Expression in While Loop**: The condition in the first `while`
   loop uses a compound expression: `len(password) < 10 or not any(c.isupper()
   for c in password) or not any(c.islower() for c in password)`. This ensures
   that the loop continues until the password is at least 10 characters long and
-  contains both uppercase and lowercase letters.
+  contains both uppercase and lowercase letters. 
 
 
-  - **Logical Operators**: The `or` operator is used to combine multiple
+  * **Logical Operators**: The `or` operator is used to combine multiple
   conditions. The loop will continue if any of the conditions are true, meaning
   the password does not yet meet all the criteria.
 
 
-  - **String Methods**: The `any()` function checks if any character in the
+  * **String Methods**: The `any()` function checks if any character in the
   password is uppercase or lowercase using `c.isupper()` and `c.islower()`.
 
 
@@ -58,3 +59,4 @@ content: >
   validation logic in our programs. Try modifying the program to add additional
   criteria, such as requiring a number or special character, to further practice
   using compound expressions in while loops.
+
