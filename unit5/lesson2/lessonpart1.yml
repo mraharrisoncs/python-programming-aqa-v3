@@ -11,7 +11,7 @@ content: >
 
   Let's revisit the `get_password` program and enhance it to ensure that the
   password not only meets a minimum length requirement but also starts with an
-  uppercase letter and ends with a lowercase letter.
+  uppercase letter and contains a hash symbol, `#`.
 
 
   Here is the enhanced version of the function:
@@ -22,8 +22,7 @@ content: >
   def get_password():
       # input password repeatedly until it meets all criteria
       password = ""
-      while len(password) < 10 or not password[0].isupper() \
-                               or not password[-1].islower() 
+      while len(password) < 10 or not password[0].isupper() or not password[-1].islower() 
           password = input("Type a new password, min length 10, \
                             first uppercase, last lowercase: ")
       

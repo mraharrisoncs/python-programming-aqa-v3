@@ -1932,9 +1932,8 @@ files:
 
       \    password = \"\"\r
 
-      \    while len(password) < 10 or not password[0].isupper() \\\r
-
-      \                             or not password[-1].islower():\r
+      \    while len(password) < 10 or not password[0].isupper() or '#' not in
+      password:\r
 
       \        password = input(\"Type a new password, min length 10,\" \\\r
 
