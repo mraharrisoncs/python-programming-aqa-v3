@@ -1973,6 +1973,8 @@ files:
 
       \    password_attempt = \"\"\r
 
+      \r
+
       \    while password_attempt != password and attempts > 0:\r
 
       \        password_attempt = input(f\"Type your password, {attempts}
@@ -1980,13 +1982,9 @@ files:
 
       \        attempts -= 1\r
 
-      \    if password_attempt == password:\r
+      \ \r
 
-      \        return True\r
-
-      \    else:\r
-
-      \        return False\r
+      \    return password_attempt == password\r
 
       \r
 
