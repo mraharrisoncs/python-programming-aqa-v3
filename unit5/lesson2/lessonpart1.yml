@@ -1,3 +1,60 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Page
+title: Using compound expressions
+content: >
+  In this lesson, we will explore how to use while loops with compound
+  expressions. Compound expressions allow us to combine multiple conditions
+  using logical operators such as `and`, `or`, and `not`. This can make our
+  loops more powerful and flexible.
+
+
+  Let's revisit the `get_password` program and enhance it to ensure that the
+  password not only meets a minimum length requirement but also contains both
+  uppercase and lowercase letters. This will demonstrate the use of compound
+  expressions in a while loop.
+
+
+  Here is the enhanced version of the program:
+
+
+  ```python
+
+  def get_password():
+      # input password repeatedly until it meets all criteria
+      password = ""
+      while len(password) < 10 or not any(c.isupper() for c in password) or not any(c.islower() for c in password):
+          password = input("Type a new password, minimum length 10 characters, with both uppercase and lowercase letters: ")
+      
+      # input password again until it matches the first password
+      password_repeat = ""
+      while password_repeat != password:
+          password_repeat = input("Type your new password again: ")
+      
+      # return the new password
+      return password
+  ```
+
+
+  ### Key Points:
+
+
+  - **Compound Expression in While Loop**: The condition in the first `while`
+  loop uses a compound expression: `len(password) < 10 or not any(c.isupper()
+  for c in password) or not any(c.islower() for c in password)`. This ensures
+  that the loop continues until the password is at least 10 characters long and
+  contains both uppercase and lowercase letters.
+
+
+  - **Logical Operators**: The `or` operator is used to combine multiple
+  conditions. The loop will continue if any of the conditions are true, meaning
+  the password does not yet meet all the criteria.
+
+
+  - **String Methods**: The `any()` function checks if any character in the
+  password is uppercase or lowercase using `c.isupper()` and `c.islower()`.
+
+
+  By using compound expressions, we can create more complex and robust
+  validation logic in our programs. Try modifying the program to add additional
+  criteria, such as requiring a number or special character, to further practice
+  using compound expressions in while loops.
