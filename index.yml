@@ -1910,7 +1910,7 @@ files:
 
       \  # count down from 10\r
 
-      \  counter = 10\r
+      \  counter = 12\r
 
       \  while counter >= 1:\r
 

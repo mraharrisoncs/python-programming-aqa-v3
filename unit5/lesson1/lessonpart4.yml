@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Counting with while
-content: >
+content: >-
   ## Times tables with **while**
 
 
@@ -61,17 +61,67 @@ content: >
 
 
   The above program sets counter to 10 initially, then loops while counter is
-  greater than or equal to 1, decrementing it by 1 each iteration (subtracting 1
-  with `counter -= 1`)
+  **greater than or equal to 1**, **decrementing** it by 1 each iteration
+  (subtracting 1 with `counter -= 1`).
 
 
-  ### Try It Yourself
-
-
-  Modify the `display_times_table` function to display the times table for a
-  different number. Experiment with changing the loop condition to display more
-  or fewer multipliers.
+  Now try these questions:
 showEditor: true
 editors:
   - course1/unit5/lesson1/lessonpart4/fivextable_while.py
   - course1/unit5/lesson1/lessonpart4/countdown_while.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why do we use 'counter \< 11' in the times table program?
+        options:
+          - id: "1"
+            value: To ensure the loop runs for counter values up to 10 but not 11.
+            explanation: Yes, the loop stops when the counter reaches 11, ensuring it runs
+              10 times.
+            isCorrect: true
+          - id: "2"
+            value: To make the loop run indefinitely.
+            explanation: No, the loop stops when the counter reaches 11, so it does not run
+              indefinitely.
+          - id: "3"
+            value: To start the loop from 11.
+            explanation: No, the loop starts with the counter set to 1, not 11.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: In the countdown program, what is the conditional expression on the
+          while statement?
+        options:
+          - id: "1"
+            value: counter \>= 1
+            explanation: Yes, a conditional expression is a complete set of terms and
+              operator(s) that evaluates to a Boolean result. '\>=' on it's own
+              is the comparison operator.
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: If we change the third line to counter = 12 in the countdown program,
+          how many times will the loop run?
+        options:
+          - id: "1"
+            value: 12 times
+            explanation: Yes, the loop starts at 12 and runs while counter is greater than
+              or equal to 1 (inclusive)
+            isCorrect: true
+          - id: "2"
+            value: 11 times
+            explanation: No, the loop runs from 12 down to 1 inclusive for a total of 12
+              iterations.
+          - id: "3"
+            value: 10 times
+            explanation: No, the loop runs more than 10 times because it starts at 12.
+          - id: "4"
+            value: 13 times
+            explanation: No, the loop does not run 13 times as it starts at 12 and stops at
+              1.
