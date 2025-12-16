@@ -1,7 +1,178 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: Page
-content: |
-  # While loops with compound expressions
+title: More while loops
+content: >
+  # Structured programming with while loops
 
-  #  
+
+  Let's put our password length checker into a subprogram - a function that
+  inputs and validates a new password:
+
+
+  ```python
+
+  def get_password():
+    password = ""
+    while len(password) < 10:
+      password = input("type a new password, minimum length 10 characters: ")
+    return password
+
+  # MAIN PROGRAM
+
+  print("Let's set your password!")
+
+  password = get_password()
+
+  print(f"your new password is {password}")
+    
+  ```
+
+
+  Now we can call `get_password()` to input and validate a new password any time
+  we want it! Also if we want to improve our password routine - say, to check
+  password strength other than just number of characters - we can just update
+  the `get_password()` function. When we **structure** our program like this,
+  into **subprograms**, this makes debugging and maintenance easier.
+
+
+  Let's add another feature: **requesting the password a second time.** Lots of
+  websites do this - it makes sure you know what password you have typed, when
+  the field is obscured so "shoulder surfers" can't steal your password!
+
+
+  Here is the enhanced code:
+
+
+  ```python
+
+  def get_password():
+    
+    # input password repeatedly until length at least 10 characters
+    password = ""
+    while len(password) < 10:
+      password = input("type a new password, minimum length 10 characters: ")
+    
+    # input password again until it matches first password
+    password_repeat = ""
+    while password_repeat != password:
+      password_repeat = input("type your new password again: ")
+    
+    # return the new password (either variable will do as they are the same!)
+    return password
+
+
+  # MAIN PROGRAM
+
+  print("Let's set your password!")
+
+  password = get_password()
+
+  print(f"your new password is {password}")
+    
+  ```
+
+
+  We have added a second `while` loop, which inputs the second password string,
+  and checks this against the first. This time the **condition** uses the
+  `!=` operator, which means **not equal to.** Both of these loops are
+  **condition-controlled** because they end when their **condition** changes
+  from `True` to `False`. 
+
+
+  ## Activity: Try the program
+
+
+  Try the code now in the given Python file. Try passwords of different lengths,
+  two strings that do not match, and finally two strings that do match. Then
+  answer these questions.
+showEditor: true
+editors:
+  - course1/unit5/lesson1/lessonpart3/get_password1.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of the second while loop in the get_password
+          function?
+        options:
+          - id: "1"
+            value: To ensure the password is at least 10 characters long.
+            explanation: This is the purpose of the first while loop.
+          - id: "2"
+            value: To confirm that the user knows the password they have typed.
+            explanation: Yes, the second while loop ensures the user retypes the password
+              correctly.
+            isCorrect: true
+          - id: "3"
+            value: To check the strength of the password.
+            explanation: The code does not check password strength beyond length.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of the first while loop in the get_password
+          function?
+        options:
+          - id: "1"
+            value: To ensure the password is at least 10 characters long.
+            explanation: The first while loop checks if the password length is less than 10
+              and continues to prompt the user until a valid length is entered.
+            isCorrect: true
+          - id: "2"
+            value: To check if the password matches the repeated password.
+            explanation: The first while loop does not compare the password with the
+              repeated password; it only checks the length.
+          - id: "3"
+            value: To ensure the password contains both letters and numbers.
+            explanation: The first while loop does not check the content of the password,
+              only its length.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: string
+        content: What comparison operator is used in the second while loop to check if
+          the repeated password is different to the first password?
+        options:
+          - id: "1"
+            value: "!="
+            explanation: The '!=' operator means 'not equal to', ensuring the loop continues
+              until the passwords match.
+            isCorrect: true
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why do we use != in the second loop and not == ?
+        options:
+          - id: "1"
+            value: To ensure the loop continues while the repeated password is different to
+              the first password.
+            explanation: Yes, we use != to keep looping while they are not equal, and end
+              when they are equal.
+            isCorrect: true
+          - id: "2"
+            value: To ensure the loop continues until the repeated password is different
+              from the first password.
+            explanation: Using != would stop the loop if the passwords are different, which
+              is not the desired behavior.
+          - id: "3"
+            value: To ensure the loop continues while the repeated password is less than ten
+              characters long.
+            explanation: No, this is the behaviour of the first loop, not the second.
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the Boolean value of 'password_repeat != password' if both
+          values are the same?
+        options:
+          - id: "1"
+            value: "False"
+            explanation: Yes, the '!=' operator returns False when both values are the same,
+              and this terminates the loop.
+            isCorrect: true
+          - id: "2"
+            value: "True"
+            explanation: No, the '!=' operator returns True only when the values are
+              different (not equal).

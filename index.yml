@@ -1845,6 +1845,48 @@ files:
       print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
 
       print(f\"Calories per person = {cals_per_person}\")"
+  - path: course1/unit5/lesson1/lessonpart3/get_password1.py
+    content: "def get_password():\r
+
+      \  \r
+
+      \  # input password repeatedly until length at least 10 characters\r
+
+      \  password = \"\"\r
+
+      \  while len(password) < 10:\r
+
+      \    password = input(\"type a new password, minimum length 10 characters:
+      \")\r
+
+      \  \r
+
+      \  # input password again until it matches first password\r
+
+      \  password_repeat = \"\"\r
+
+      \  while password_repeat != password:\r
+
+      \    password_repeat = input(\"type your new password again: \")\r
+
+      \  \r
+
+      \  # return the new password (either variable will do as they are the
+      same!)\r
+
+      \  return password\r
+
+      \r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(\"Let's set your password!\")\r
+
+      password = get_password()\r
+
+      print(f\"your new password is {password}\")"
 units:
   - unit1/index.yml
   - unit2/index.yml
