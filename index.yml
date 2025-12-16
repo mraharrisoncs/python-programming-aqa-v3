@@ -1933,7 +1933,7 @@ files:
       \    password = \"\"\r
 
       \    while len(password) < 10 or not password[0].isupper() or not
-      password[-1].islower() \r
+      password[-1].islower():\r
 
       \        password = input(\"Type a new password, min length 10, first
       uppercase, last lowercase\")\r
@@ -1952,7 +1952,15 @@ files:
 
       \    # return the new password\r
 
-      \    return password"
+      \    return password\r
+
+      \r
+
+      \    # MAIN PROGRAM\r
+
+      \    password = get_password()\r
+
+      \    print(password)"
 units:
   - unit1/index.yml
   - unit2/index.yml
