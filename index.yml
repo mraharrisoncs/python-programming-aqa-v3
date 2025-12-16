@@ -1925,6 +1925,34 @@ files:
       # MAIN PROGRAM\r
 
       countdown()"
+  - path: course1/unit5/lesson2/lessonpart1/password2.py
+    content: "def get_password():\r
+
+      \    # input password repeatedly until it meets all criteria\r
+
+      \    password = \"\"\r
+
+      \    while len(password) < 10 or not password[0].isupper() or not
+      password[-1].islower() \r
+
+      \        password = input(\"Type a new password, min length 10, first
+      uppercase, last lowercase\")\r
+
+      \    \r
+
+      \    # input password again until it matches the first password\r
+
+      \    password_repeat = \"\"\r
+
+      \    while password_repeat != password:\r
+
+      \        password_repeat = input(\"Type your new password again: \")\r
+
+      \    \r
+
+      \    # return the new password\r
+
+      \    return password"
 units:
   - unit1/index.yml
   - unit2/index.yml

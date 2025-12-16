@@ -58,3 +58,6 @@ content: >
   validation logic in our programs. Try modifying the program to add additional
   criteria, such as requiring a number or special character, to further practice
   using compound expressions in while loops.
+showEditor: true
+editors:
+  - course1/unit5/lesson2/lessonpart1/password2.py
