@@ -1887,6 +1887,24 @@ files:
       password = get_password()\r
 
       print(f\"your new password is {password}\")"
+  - path: course1/unit5/lesson1/lessonpart4/fivextable_while.py
+    content: "def five_times_table()\r
+
+      \  # five times table\r
+
+      \  counter = 1\r
+
+      \  while counter <= 10:\r
+
+      \    print(f\"5 x {counter} = {5 * counter}\")\r
+
+      \    counter += 1\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      five_times_table()"
 units:
   - unit1/index.yml
   - unit2/index.yml

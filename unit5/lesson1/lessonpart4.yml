@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Counting with while
+content: >
+  ## Times tables with **while**
+
+
+  We can use a `while` loop with a counter, to repeat something a number of
+  times. Later we will see a better way of doing this - the `for` loop - but for
+  now let's use what we know.
+
+
+  ```python
+
+  def five_times_table()
+    # five times table
+    counter = 1
+    while counter <= 10:
+      print(f"5 x {counter} = {5 * counter}")
+      counter += 1
+
+  # MAIN PROGRAM
+
+  five_times_table()
+
+  ```
+
+
+  In this program, we set a counter to 1, and inside the loop we
+  **increment** it by 1 each iteration. That's what `counter += 1` means, it's
+  the same as `counter = counter + 1`.
+
+
+  The loop continues **while** counter is less than or equal to 10, or in other
+  words, stops when counter reaches 11. Try this in the terminal now, the file
+  is attached.
+
+
+  ## Countdown to lift-off!
+
+
+  ### Try It Yourself
+
+
+  Modify the `display_times_table` function to display the times table for a
+  different number. Experiment with changing the loop condition to display more
+  or fewer multipliers.
+showEditor: true
+editors:
+  - course1/unit5/lesson1/lessonpart4/fivextable_while.py
