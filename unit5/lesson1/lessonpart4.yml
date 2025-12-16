@@ -12,7 +12,7 @@ content: >
 
   ```python
 
-  def five_times_table()
+  def five_times_table():
     # five times table
     counter = 1
     while counter <= 10:

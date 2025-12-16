@@ -1888,7 +1888,7 @@ files:
 
       print(f\"your new password is {password}\")"
   - path: course1/unit5/lesson1/lessonpart4/fivextable_while.py
-    content: "def five_times_table()\r
+    content: "def five_times_table():\r
 
       \  # five times table\r
 
