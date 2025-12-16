@@ -128,3 +128,22 @@ questionGroups:
             value: It repeats all the lines from while until it sees print
             explanation: No, the first un-indented line marks the end of the block and this
               might not always be print.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: What makes a while loop an example of 'condition-controlled iteration'?
+        options:
+          - id: "1"
+            value: It repeats a block of code as long as a specified condition is true.
+            explanation: Yes, the iteration is controlled by the condition given on the
+              while statement.
+            isCorrect: true
+          - id: "2"
+            value: It executes a block of code a fixed number of times.
+            explanation: A while loop does not have a fixed number of iterations; it depends
+              on the condition.
+          - id: "3"
+            value: It executes a block of code only once.
+            explanation: A while loop can execute multiple times, not just once, depending
+              on the condition.
