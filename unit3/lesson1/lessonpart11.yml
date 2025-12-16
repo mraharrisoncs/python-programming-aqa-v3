@@ -164,7 +164,13 @@ content: >+
   **operands** and performs an operation on them both. You may recall `*` and
   `%` are **arithmetic operators**, `==` and `>=` are **comparison operators**,
   well **`in`** is a **membership operator**, it checks whether the left-hand
-  operand exists within the right-hand operand. So now you know!
+  operand exists within the right-hand operand. 
+
+
+  > Tip: to check if a substring is **not** present in a larger string we can
+  either negate the result of **in** like this: `not substring in string` or use
+  the Python operator `not in` like this, which sounds better when you read it:
+  `substring not in string` - only in Python!
 
 
   ## Pseudocode notes
