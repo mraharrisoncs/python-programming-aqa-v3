@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Using compound expressions
-content: >+
+content: >
   So far, we have used simple Boolean expressions in our while loops:
   `len(password) <-10` and `password_repeat != password`. But we can use a
   compound Boolean expression, one that combines multiple conditions using
@@ -10,9 +10,8 @@ content: >+
 
 
   Let's revisit the `get_password` program and enhance it to ensure that the
-  password not only meets a minimum length requirement but also contains both
-  uppercase and lowercase letters. This will demonstrate the use of compound
-  expressions in a while loop.
+  password not only meets a minimum length requirement but also starts with an
+  uppercase letter and ends with a lowercase letter.
 
 
   Here is the enhanced version of the program:
@@ -23,8 +22,8 @@ content: >+
   def get_password():
       # input password repeatedly until it meets all criteria
       password = ""
-      while len(password) < 10 or not any(c.isupper() for c in password) or not any(c.islower() for c in password):
-          password = input("Type a new password, minimum length 10 characters, with both uppercase and lowercase letters: ")
+      while len(password) < 10 or not password[0].isupper() or not password[-1].islower() 
+          password = input("Type a new password, min length 10, first uppercase, last lowercase")
       
       # input password again until it matches the first password
       password_repeat = ""
@@ -59,4 +58,3 @@ content: >+
   validation logic in our programs. Try modifying the program to add additional
   criteria, such as requiring a number or special character, to further practice
   using compound expressions in while loops.
-
