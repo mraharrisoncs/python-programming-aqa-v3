@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: More while loops with compound expressions
+content: >+
+  Let's now write a ` check_password` program which inputs a password attempt,
+  and checks against the password variable, returning `True` if correct within
+  three attempts, before returning `False`. For simplicity we have set the
+  password to "Computer#Science", but in reality we would retrieve a password
+  from an encrypted database!
+
+
+  ```python
+
+  def check_password():
+      password = "Computer#Science"
+      attempts = 3
+      password_attempt = ""
+      while password_attempt != password and tries > 0:
+          password_attempt = input(f"Type your password, {attempts} attempts remaining")
+      if password_attempt == password:
+          return True
+      else:
+          return False
+  ```
+
