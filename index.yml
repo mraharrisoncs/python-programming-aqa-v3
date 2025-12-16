@@ -1935,9 +1935,9 @@ files:
       \    while len(password) < 10 or not password[0].isupper() or '#' not in
       password:\r
 
-      \        password = input(\"Type a new password, min length 10,\" \\\r
+      \        password = input(\"Type new password, min length 10,\" \\\r
 
-      \                          + \" first uppercase, last lowercase: \")\r
+      \                          + \" first uppercase, include #: \")\r
 
       \    \r
 
@@ -2021,9 +2021,25 @@ files:
 
       \        if not valid:\r
 
-      \            password = input(\"Type a new password, min length 10,\" \\\r
+      \            password = input(\"Type new password, min length 10,\" \\\r
 
-      \                              + \" first uppercase, last lowercase: \")"
+      \                              + \" first upper, include #: \")\r
+
+      \r
+
+      \    # return the new password\r
+
+      \    return password\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(\"Let's set your password!\")\r
+
+      password = get_password()\r
+
+      print(f\"your new password is {password}\")"
 units:
   - unit1/index.yml
   - unit2/index.yml

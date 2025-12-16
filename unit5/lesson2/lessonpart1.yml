@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Using compound expressions
-content: >+
+content: >
   So far, we have used simple Boolean expressions in our while loops:
   `len(password) <-10` and `password_repeat != password`. But we can use a
   compound Boolean expression, one that combines multiple conditions using
@@ -23,8 +23,8 @@ content: >+
       # input password repeatedly until it meets all criteria
       password = ""
       while len(password) < 10 or not password[0].isupper() or '#' not in password:
-          password = input("Type a new password, min length 10," \
-                            + " first uppercase, last lowercase: ")
+          password = input("Type new password, min length 10," \
+                            + " first uppercase, include #: ")
         
       # input password again until it matches the first password
       password_repeat = ""
@@ -46,14 +46,16 @@ content: >+
   * `len(password) < 10` - we met this earlier, this will be `True` if the
   password is too short.
 
+
   * `not password[0].isupper()` - this grabs the first character of the password
   with `password[0]` then uses the `isupper()` string method, which
   returns `True` if this is uppercase. Finally we negate this result using
   `not`, so this condition will be `True` if the first character is **not** an
   uppercase letter - another indicator that our password is invalid.
 
+
   * `'#' not in password` - this uses the string comparison operator `not
-  in` (see Unit 3) which returns `True` when** **a substring is **not in** a
+  in` (see Unit 3) which returns `True` when\*\* \*\*a substring is **not in** a
   larger string, in this case when there is no `#` symbol in our password - the
   final indicator for an invalid password.
 
@@ -69,17 +71,16 @@ content: >+
   >
 
   > While loops are tricky to get your head around sometimes, just remember they
-  keep looping **while** a condition is** True.** Sometimes it's more intuitive
-  to state the** terminating** condition, i.e. what needs to happen for the loop
-  to end. If this is the case, don't forget to **negate** that condition before
-  using it on your **while** statement!
+  keep looping **while** a condition is\*\* True.\*\* Sometimes it's more
+  intuitive to state the\*\* terminating\*\* condition, i.e. what needs to
+  happen for the loop to end. If this is the case, don't forget to
+  **negate** that condition before using it on your **while** statement!
 
 
   ## Try it out!
 
 
   Try the program in the attached file, and then answer the questions below.
-
 showEditor: true
 editors:
   - course1/unit5/lesson2/lessonpart1/password2.py

@@ -29,8 +29,8 @@ content: >+
           if len(password) >= 10 and password[0].isupper() and '#' in password:
               valid = True
           else:
-              password = input("Type a new password, min length 10," \
-                                + " first uppercase, last lowercase: ")
+              password = input("Type new password, min length 10," \
+                                + " first upper, include #: ")
   ```
 
 
@@ -84,8 +84,8 @@ content: >+
           if password in blocklist:
                 valid = False
           if not valid:
-              password = input("Type a new password, min length 10," \
-                                + " first uppercase, last lowercase: ")
+              password = input("Type new password, min length 10," \
+                                + " first upper, include #: ")
   ```
 
 
@@ -105,9 +105,6 @@ content: >+
 
   Open the attached file and try the new password checker. Then answer these
   questions!
-
-
-  <br />
 
 showEditor: true
 editors:
