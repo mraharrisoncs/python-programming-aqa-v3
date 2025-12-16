@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Using compound expressions
-content: >
+content: >+
   So far, we have used simple Boolean expressions in our while loops:
   `len(password) <-10` and `password_repeat != password`. But we can use a
   compound Boolean expression, one that combines multiple conditions using
@@ -10,8 +10,8 @@ content: >
 
 
   Let's revisit the `get_password` program and enhance it to ensure that the
-  password not only meets a minimum length requirement but also starts with an
-  uppercase letter and contains a hash symbol, `#`.
+  password not only meets a minimum length requirement but also **starts with an
+  uppercase letter** and **contains a hash symbol,** **`#`.**
 
 
   Here is the enhanced version of the function:
@@ -22,10 +22,10 @@ content: >
   def get_password():
       # input password repeatedly until it meets all criteria
       password = ""
-      while len(password) < 10 or not password[0].isupper() or not password[-1].islower() 
-          password = input("Type a new password, min length 10, \
-                            first uppercase, last lowercase: ")
-      
+      while len(password) < 10 or not password[0].isupper() or '#' not in password:
+          password = input("Type a new password, min length 10," \
+                            + " first uppercase, last lowercase: ")
+        
       # input password again until it matches the first password
       password_repeat = ""
       while password_repeat != password:
@@ -36,29 +36,139 @@ content: >
   ```
 
 
-  ### Key Points:
+  ######
 
 
-  * **Compound Expression in While Loop**: The condition in the first `while`
-  loop uses a compound expression: `len(password) < 10 or not any(c.isupper()
-  for c in password) or not any(c.islower() for c in password)`. This ensures
-  that the loop continues until the password is at least 10 characters long and
-  contains both uppercase and lowercase letters. 
+  Let's look at that first compound condition in detail. It contains three
+  separate conditions:
 
 
-  * **Logical Operators**: The `or` operator is used to combine multiple
-  conditions. The loop will continue if any of the conditions are true, meaning
-  the password does not yet meet all the criteria.
+  * `len(password) < 10` - we met this earlier, this will be `True` if the
+  password is too short.
+
+  * `not password[0].isupper()` - this grabs the first character of the password
+  with `password[0]` then uses the `isupper()` string method, which
+  returns `True` if this is uppercase. Finally we negate this result using
+  `not`, so this condition will be `True` if the first character is **not** an
+  uppercase letter - another indicator that our password is invalid.
+
+  * `'#' not in password` - this uses the string comparison operator `not
+  in` (see Unit 3) which returns `True` when** **a substring is **not in** a
+  larger string, in this case when there is no `#` symbol in our password - the
+  final indicator for an invalid password.
 
 
-  * **String Methods**: The `any()` function checks if any character in the
-  password is uppercase or lowercase using `c.isupper()` and `c.islower()`.
+  These three conditions are connected with Boolean `or` operators. That's
+  because if any one of them is `True`, our password is too weak and must be
+  rejected, and the `while` loop will continue running. Only when all three
+  conditions are `False` will our loop terminate.
 
 
-  By using compound expressions, we can create more complex and robust
-  validation logic in our programs. Try modifying the program to add additional
-  criteria, such as requiring a number or special character, to further practice
-  using compound expressions in while loops.
+  > ## Negative thinking
+
+  >
+
+  > While loops are tricky to get your head around sometimes, just remember they
+  keep looping **while** a condition is** True.** Sometimes it's more intuitive
+  to state the** terminating** condition, i.e. what needs to happen for the loop
+  to end. If this is the case, don't forget to **negate** that condition before
+  using it on your **while** statement!
+
+
+  ## Try it out!
+
+
+  Try the program in the attached file, and then answer the questions below.
+
 showEditor: true
 editors:
   - course1/unit5/lesson2/lessonpart1/password2.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which of these passwords would be acceptable, if input in the
+          get_password function?
+        options:
+          - id: "1"
+            value: Password#123
+            explanation: Yes, this password is at least 10 characters long, starts with an
+              uppercase letter, and contains a hash symbol.
+            isCorrect: true
+          - id: "2"
+            value: password#123
+            explanation: No, this password does not start with an uppercase letter.
+          - id: "3"
+            value: Password123
+            explanation: No, this password does not contain a hash symbol.
+          - id: "4"
+            value: Pass#
+            explanation: No, this password is not at least 10 characters long.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What type of expression is present on the while statement?
+        options:
+          - id: "1"
+            value: Simple Boolean expression
+            explanation: No, a simple Boolean expression involves only one condition, e.g. x
+              \< 10.
+          - id: "2"
+            value: Compound Boolean expression
+            explanation: Yes, a compound Boolean expression combines multiple conditions
+              using logical (Boolean) operators.
+            isCorrect: true
+          - id: "3"
+            value: Arithmetic expression
+            explanation: No, this involves mathematical operations, not logical conditions.
+          - id: "4"
+            value: Algebraic expression
+            explanation: No, this involves mathematical operations, not logical conditions.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: In a while loop, what must the expression evaluate to, for the loop to
+          terminate?
+        options:
+          - id: "1"
+            value: "False"
+            explanation: Yes, the loop terminates when the condition evaluates to False.
+            isCorrect: true
+          - id: "2"
+            value: "True"
+            explanation: No, the loop continues as long as the condition evaluates to True.
+          - id: "3"
+            value: None
+            explanation: None is not a valid Boolean value for loop termination.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: multiple
+        content: |-
+          In the loop 
+          while tries \<= 3:
+          which values of tries will terminate the loop?
+        options:
+          - id: "1"
+            value: "4"
+            explanation: Yes, the loop terminates when tries is greater than 3.
+            isCorrect: true
+          - id: "2"
+            value: "3"
+            explanation: No, the loop continues while tries is less than or equal to 3.
+          - id: "3"
+            value: "2"
+            explanation: No, the loop continues while tries is less than or equal to 3.
+          - id: "4"
+            value: "3.1"
+            explanation: Yes, once tries is assigned any value greater than 3, the loop will
+              terminate next time round
+            isCorrect: true
+          - id: "5"
+            value: "99"
+            explanation: Yes, once tries is assigned any value greater than 3, the loop will
+              terminate next time round
+            isCorrect: true
