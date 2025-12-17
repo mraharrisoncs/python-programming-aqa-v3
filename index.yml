@@ -2039,7 +2039,7 @@ files:
 
       password = get_password()\r
 
-      print(f\"your new password is {password}\")"
+      print(f\"your new password is {password}\") "
 units:
   - unit1/index.yml
   - unit2/index.yml
