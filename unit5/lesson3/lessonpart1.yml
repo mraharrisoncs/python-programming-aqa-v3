@@ -65,3 +65,29 @@ content: >
   flag called `erroneous` which is `True` at the start of the loop, and is set
   to `False` if the input is acceptable. You must choose the clearest
   implementation that solves the problem.
+
+
+  Now answer these questions on using a while loop to validate input.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of input validation?
+        options:
+          - id: "1"
+            value: To ensure input data is meaningful and usable by the program.
+            explanation: Yes, input validation prevents errors by ensuring data is in the
+              expected format or range.
+            isCorrect: true
+          - id: "2"
+            value: To make the program run faster.
+            explanation: No, input validation focuses on data correctness, not performance.
+          - id: "3"
+            value: To add more features to the program.
+            explanation: No, input validation is about data integrity, not feature
+              expansion.
+          - id: "4"
+            value: To check the user has entered the correct value
+            explanation: No, the program cannot know what value is correct, only what is
+              valid and meaningful.
