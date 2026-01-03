@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart2
+title: Page
+content: >+
+  ### Worked Example 1: Validating menu choices
+
+
+  In this example, which is part of a shopping program, we'll use `while` to
+  check the choice entered is in the range 1 to 4
+
+
+  ```python
+
+  def get_choice():
+    print("Menu:")
+    print("1. Add item")
+    print("2. List items")
+    print("3. Delete items")
+    print("4. Go back")
+    choice = input("Enter a choice between 1 and 4: ")
+    while choice < 1 or choice > 4:
+        print("Invalid input. Please try again.")
+        choice = input("Enter a choice between 1 and 4: ")
+    return choice
+  ```
+
+
+  ### Worked Example 2: Validating an input day of the week
+
+
+  Imagine we are writing an appointment booking system. We need a function to
+  input a day of the week. In this function, an input string can be one of the
+  days of the working week in short form ("Mon", "Tue" up to "Fri"). This time
+  we will use a Boolean flag `looping` to control the loop. Once `looping` gets
+  set to `False`, the loop will terminate on next iteration.
+
+
+  ```python
+
+  def get_day():
+      looping = True
+      while looping:  
+          day = input("What day of the week are you available? ")
+          if day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+              looping = False
+          else:
+              print("Invalid input, try again!)
+      return day
+  ```
+
+
+  ## PRIMM activities
+
+
+  Using the attached **`grade_checker.py`**:
+
+
+  1. **🤔 Predict** what the program does.
+
+  2. ▶️ **Run** and check your prediction, were you correct?
+
+  3. 🔍 **Investigate:** why does x
+
+  4. ✏️ **Modify:** Change the program so that x
+
+  5. 🛠️ **Make:** a new function x
+

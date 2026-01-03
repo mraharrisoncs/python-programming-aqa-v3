@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Page
+title: While loops for validation of input
 content: >
   &#x20;Input validation is a crucial part of programming, ensuring input data
   is correct and meaningful. While loops are perfect for this task.

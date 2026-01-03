@@ -7,3 +7,4 @@ objectives: |-
   Validation, Linear Search and the "Accumulator Pattern"
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
