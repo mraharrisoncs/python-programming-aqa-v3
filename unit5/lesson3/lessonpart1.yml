@@ -6,7 +6,7 @@ content: >
   is correct and meaningful. While loops are perfect for this task.
 
 
-  #### Why Validate Input?
+  ## Why Validate Input?
 
 
   When users provide input, it may not always be in the format or range you
@@ -15,7 +15,7 @@ content: >
   helps prevent errors and ensures your program runs smoothly.
 
 
-  #### Using While Loops for Validation
+  ## Using While Loops for Validation
 
 
   A `while` loop can repeatedly prompt the user for input until they provide a
@@ -91,3 +91,26 @@ questionGroups:
             value: To check the user has entered the correct value
             explanation: No, the program cannot know what value is correct, only what is
               valid and meaningful.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of the 'erroneous' flag in the get_score()
+          function?
+        options:
+          - id: "1"
+            value: To control the loop until a valid score is entered.
+            explanation: Yes, the 'erroneous' flag is used to keep the loop running until a
+              valid input is provided.
+            isCorrect: true
+          - id: "2"
+            value: To store the user's input score.
+            explanation: No, the 'erroneous' flag does not store the input; it controls the
+              loop.
+          - id: "3"
+            value: To calculate the average score.
+            explanation: No, the 'erroneous' flag is not used for calculations; it controls
+              the loop.
+          - id: "4"
+            value: To store a list of erroneous input values
+            explanation: No, erroneous is a Boolean variable, it stores only True or False
