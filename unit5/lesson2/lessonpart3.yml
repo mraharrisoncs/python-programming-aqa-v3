@@ -30,6 +30,7 @@ content: >
           valid = True # assume input is valid, and then test assumptions
           if len(password) < 10 or not password[0].isupper() or '#' not in password:
               valid = False # password is weak so loop should continue
+      return password
   ```
 
 
@@ -40,24 +41,25 @@ content: >
   terminate, because its condition `not valid` will be `False`. 
 
 
-  ## Python reads like English!
+  > ### Python reads like English!
 
+  >
 
-  If all the `True` and `False`s are confusing you, just remember, Python was
-  designed to be very readable. Each line of code says what it means. So `while
-  not valid` means "keep looping while my password is not valid"! Choose an
-  identifier for your Boolean flag variable that makes sense, and your code will
-  be easy to follow.
+  > Tip: If all the `True` and `False`s are confusing you, just remember, Python
+  was designed to be very readable. Each line of code says what it means. So
+  `while not valid` means "keep looping while my password is not valid"! Choose
+  an identifier for your Boolean flag variable that makes sense, and your code
+  will be easy to follow.
 
 
   ## Adding complexity
 
 
   Now we have a Boolean flag controlling our while loop, it's easy to add
-  complexity to our loop conditions. We can just write more lines of code that
-  alter the `valid` variable as we need them. Let's say we now want to check
-  that the password is not in a **blocklist** of banned passwords. Let's add
-  that code now:
+  complexity to our loop control decisions. We can just write more lines of code
+  that alter the `valid` variable as we need them. Let's say we now want to
+  check that the password is not in a **blocklist** of banned passwords. Let's
+  add that code now:
 
 
   ```python
@@ -74,7 +76,7 @@ content: >
               valid = False # password is weak so loop should continue
           if password in blocklist:
               valid = False # password is in block list so loop should continue
-
+      return password
   ```
 
 
@@ -98,3 +100,97 @@ content: >
 showEditor: true
 editors:
   - course1/unit5/lesson2/lessonpart3/get_password_flag.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why might we use a Boolean flag variable to control a while loop?
+        options:
+          - id: "1"
+            value: To simplify complex loop conditions by managing them within the loop
+              body.
+            explanation: Yes, using a Boolean flag allows for easier management of multiple
+              conditions without complicating the loop condition.
+            isCorrect: true
+          - id: "2"
+            value: To make the loop run faster by reducing the number of conditions checked.
+            explanation: No, the use of a Boolean flag does not make the loop run faster.
+          - id: "3"
+            value: To ensure the loop runs a fixed number of times.
+            explanation: No, a Boolean flag is used to control loop continuation based on
+              conditions, not to fix the number of iterations.
+          - id: "4"
+            value: Because a while loop condition must be a Boolean variable
+            explanation: No, a while loop condition must be a Boolean expression, not
+              necessarily a Boolean variable
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why do we need to set valid = True just before testing the new
+          password's validity?
+        options:
+          - id: "1"
+            value: To assume the password is valid initially and then test it.
+            explanation: Yes, setting valid to True assumes the password is valid, allowing
+              the loop to test this assumption.
+            isCorrect: true
+          - id: "2"
+            value: To ensure the loop runs at least once.
+            explanation: No, the loop runs at least once because valid is initially set to
+              False before entering the loop.
+          - id: "3"
+            value: To reset the password input each time.
+            explanation: No, setting valid to True does not reset the password input.
+          - id: "4"
+            value: Because the new password is always valid.
+            explanation: No, it may be invalid, but we assume valid first, then set valid =
+              False when we find a problem with it.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why is the line 'return password' aligned vertically with the 'while'
+          statement?
+        options:
+          - id: "1"
+            value: Because it is part of the loop body.
+            explanation: No, the 'return password' line is not part of the loop body; it
+              executes after the loop ends.
+          - id: "2"
+            value: Because it executes after the loop has finished.
+            explanation: Yes, because it needs to run after the loop terminates.
+            isCorrect: true
+          - id: "3"
+            value: Because it is a condition for the loop.
+            explanation: No, it is not a condition for the loop; it is the final action
+              after the loop completes.
+          - id: "4"
+            value: Because 'return' marks the end of a while loop body.
+            explanation: No, the first line that is not indented marks the end, this can be
+              any statement.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: Looking at the password checker code, why would it be unnecessary to
+          add the password 'ABCDE#' to the blocklist?
+        options:
+          - id: "1"
+            value: Because 'ABCDE#' does not meet the minimum length requirement.
+            explanation: Yes, the password 'ABCDE#' is less than 10 characters long, so it
+              will not pass the initial length check.
+            isCorrect: true
+          - id: "2"
+            value: Because 'ABCDE#' is already a strong password.
+            explanation: No, the password 'ABCDE#' does not meet all the strength criteria,
+              such as minimum length.
+          - id: "3"
+            value: Because 'ABCDE#' is a common password.
+            explanation: No, we would want to block common passwords, but this one already
+              fails the length test.
+          - id: "4"
+            value: Because it's part of "ABCDEFGHIJ#"
+            explanation: No, the code checks 'password in blocklist' which compares the
+              password string to each whole string in the blocklist.
