@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Linear search with a while loop
+content: >+
+  The condition-controlled loop or `while` loop in Python is very useful. Let's
+  explore how a `while` loop can be used to help find an item in a list. We will
+  perform a **linear search** on a list of names. Linear search is a simple
+  search algorithm that checks each element in a list one by one until the
+  desired element is found or the list ends.
+
+
+  ### Linear Search with a While Loop
+
+
+  Let's consider a list of first names: `["Aisha", "Carlos", "Fatima", "Jin",
+  "Liam", "Zara"]`. We want to write a function that uses a while loop to search
+  for a specific name in this list.
+
+
+  ```python
+
+  def linear_search(target):
+      names = ["Aisha", "Carlos", "Fatima", "Jin", "Liam", "Zara"]
+      index = 0
+      found = False
+      
+      while index < len(names) and not found:
+          if names[index] == target:
+              found = True
+          else:
+              index += 1
+      return 
+  ```
+
+
+  ### Explanation
+
+
+  * **Initialization**: We start by initializing `index` to 0 and `found` to
+  `False`. `index` will track our current position in the list, and `found` will
+  indicate whether the target name has been found.
+
+
+  * **While Loop Condition**: The loop continues as long as `index` is less than
+  the length of the list and `found` is `False`. This ensures we don't go out of
+  bounds and stop searching once the name is found.
+
+
+  * **Inside the Loop**: We check if the current name at `names[index]` matches
+  the `target`. If it does, we set `found` to `True`. Otherwise, we increment
+  `index` to check the next name.
+
+
+  * **Post-Loop Check**: After the loop, we check if `found` is `True` to
+  determine if the name was found and return the appropriate message.
+
+
+  This example demonstrates how a while loop can be effectively used to perform
+  a linear search, iterating through a list until the desired element is found
+  or the list is exhausted.
+
