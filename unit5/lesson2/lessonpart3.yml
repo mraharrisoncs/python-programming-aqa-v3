@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: Using Boolean flags to control iteration
-content: >+
+content: >
   Remember our password strength checker? It ended up with a quite messy
   condition that looked like this:
 
@@ -23,32 +23,21 @@ content: >+
 
   def get_password():
       # input password repeatedly until it meets all criteria
-      password = ""
       valid = False
       while not valid:
-          if len(password) >= 10 and password[0].isupper() and '#' in password:
-              valid = True
-          else:
-              password = input("Type new password, min length 10," \
+          password = input("Type new password, min length 10," \
                                 + " first upper, include #: ")
+          valid = True # assume input is valid, and then test assumptions
+          if len(password) < 10 or not password[0].isupper() or '#' not in password:
+              valid = False # password is weak so loop should continue
   ```
 
 
-  Note that we've been able to swap around the logic, so the Boolean variable
-  `valid` is set to `True` when we have a valid password, i.e. when this
-  condition is met:
-
-
-  ```python
-
-  len(password) >= 10 and password[0].isupper() and '#' in password: 
-
-  ```
-
-
-  This is much easier to read and debug! Note that once the `valid` flag is set
-  to `True`, the while loop will terminate, because its condition `not
-  valid` will be `False`. 
+  We are now controlling the loop with a Boolean flag called `valid`. After
+  inputting the new password, this flag is set to `True`, we check for password
+  strength. If the checks fail, the `valid` flag is changed back to
+  `False`.  Note that if the `valid` flag remains `True` the while loop will
+  terminate, because its condition `not valid` will be `False`. 
 
 
   ## Python reads like English!
@@ -76,23 +65,24 @@ content: >+
   def get_password():
       blocklist = ["ABCDEFGHIJ#", "QWERTYUIOP#", "A123456789#"]
       # input password repeatedly until it meets all criteria
-      password = ""
       valid = False
       while not valid:
-          if len(password) >= 10 and password[0].isupper() and '#' in password:
-                valid = True
+          password = input("Type new password, min length 10," \
+                            + " first upper, include #: ")
+          valid = True # assume input is valid, and then test assumptions
+          if len(password) < 10 or not password[0].isupper() or '#' not in password:
+              valid = False # password is weak so loop should continue
           if password in blocklist:
-                valid = False
-          if not valid:
-              password = input("Type new password, min length 10," \
-                                + " first upper, include #: ")
+              valid = False # password is in block list so loop should continue
+
   ```
 
 
-  I've added the new check for presence in the blocklist as a separate
-  `if` statement for clarity. It sets the `valid` flag back to `False` if the
-  password is found in the blocklist. I've tweaked the next line too, as we
-  can't use `else` this time. 
+  We just add the new check for 'presence in the blocklist' as a separate
+  `if` statement. It sets the `valid` flag back to `False` if the password is
+  found in the blocklist. Because we are using a single Boolean variable to
+  control the loop., we could keep adding new password strength checks without
+  the while loop condition becoming long and complicated!
 
 
   > Tip: there are many ways to solve this problem, the code above is just one
@@ -105,7 +95,6 @@ content: >+
 
   Open the attached file and try the new password checker. Then answer these
   questions!
-
 showEditor: true
 editors:
   - course1/unit5/lesson2/lessonpart3/get_password_flag.py
