@@ -51,10 +51,6 @@ content: >+
   `index` to check the next name.
 
 
-  * **Post-Loop Check**: After the loop, we check if `found` is `True` to
-  determine if the name was found and return the appropriate message.
-
-
   This example demonstrates how a while loop can be effectively used to perform
   a linear search, iterating through a list until the desired element is found
   or the list is exhausted.
