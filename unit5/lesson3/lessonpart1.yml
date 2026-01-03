@@ -1,3 +1,65 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Page
+content: >
+  ### While Loops for Validation of Input
+
+
+  In this lesson, we will explore how to use `while` loops to validate user
+  input in Python programs. Input validation is a crucial part of programming,
+  ensuring input data is correct and meaningful. While loops are perfect for
+  this task.
+
+
+  #### Why Validate Input?
+
+
+  When users provide input, it may not always be in the format or range you
+  expect. For example, if your program requires a number between 1 and 10, a
+  user might accidentally enter a letter or a number outside this range. Input
+  validation helps prevent errors and ensures your program runs smoothly.
+
+
+  #### Using While Loops for Validation
+
+
+  A `while` loop can repeatedly prompt the user for input until they provide a
+  valid response. Here's a basic example:
+
+
+  ```python
+
+  # Example: Validating a test score between 1 and 100
+
+  score = input("Enter a score between 1 and 100: ")
+
+
+  # Validate input using a while loop
+
+  while score < 1 or score > 100:
+      print("Invalid input. Please try again.")
+      score = input("Enter a score between 1 and 100: ")
+
+  print(f"Thank you! You entered: {number}")
+
+  ```
+
+
+  #### How It Works
+
+
+  1. **Initial Input**: The program asks the user to enter a number.
+
+  2. **Conversion and Validation**: It attempts to convert the input to an
+  integer. If the conversion fails (e.g., the user enters a letter), it sets
+  `number` to `None`.
+
+  3. **While Loop**: The loop continues to prompt the user until a valid number
+  is entered. The condition checks if `number` is `None` or outside the desired
+  range.
+
+  4. **Success**: Once a valid number is entered, the loop exits, and the
+  program acknowledges the input.
+
+
+  ####
