@@ -68,3 +68,37 @@ content: >
 showEditor: true
 editors:
   - course1/unit5/lesson3/lessonpart3/sum_scores.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why do we need to set score = 0 before entering the loop in the first
+          example?
+        options:
+          - id: "1"
+            value: To initialize the score variable so it can be used in the loop condition.
+            explanation: Yes, initializing score ensures it has a defined value before the
+              loop starts.
+            isCorrect: true
+          - id: "2"
+            value: To ensure the loop runs at least once.
+            explanation: No, the loop will run regardless of the initial score value.
+          - id: "3"
+            value: To prevent the loop from terminating immediately.
+            explanation: No, the loop condition is based on user input, not the initial
+              score value.
+          - id: "4"
+            value: To store the total of all scores entered.
+            explanation: No, the total is stored in the total variable, not the score
+              variable.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: What will be returned by this function if the user enters 4, 7, -1?
+        options:
+          - id: "1"
+            value: "11"
+            explanation: The loop adds 4 and 7 to the total before terminating with -1.
+            isCorrect: true
