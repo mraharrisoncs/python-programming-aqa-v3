@@ -2063,6 +2063,32 @@ files:
       \  simple interest = (principal * rate * time) / 100\r
 
       '''\r\n"
+  - path: course1/unit5/lesson3/lessonpart3/sum_scores.py
+    content: "def sum_scores():\r
+
+      \    total = 0\r
+
+      \    finished = False\r
+
+      \    while not finished:\r
+
+      \        score = int(input(\"Enter a score: \"))\r
+
+      \        if score == -1:\r
+
+      \            finished = True\r
+
+      \        else:\r
+
+      \            total = total + score\r
+
+      \    return total\r
+
+      \r
+
+      # main program\r
+
+      print(\"total = \",sum_scores())"
 units:
   - unit1/index.yml
   - unit2/index.yml

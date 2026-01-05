@@ -4,48 +4,67 @@ title: Summing numbers with a while loop
 content: >
   Imagine you want to add up a stream of values: test scores, daily
   temperatures, the prices of goods in your shopping basket. We can write a
-  `while`loop to repeatedly input these values and sum them. The code that
-  performs this activity is so common it has a name: the **accumulator
-  pattern**.
+  `while` loop to repeatedly input these values and sum them. The code that
+  performs this activity is so common it has a name:&#x20;
 
 
   ### The accumulator pattern
 
 
   Let's write a function that uses a `while` loop to repeatedly input integers
-  that represent test scores, sum these scores and return the total.
+  that represent test scores, sum these scores and return the total. We will
+  terminate the loop when the user enters `-1` (otherwise it will run forever!)
 
 
   ```python
 
   def sum_scores():
-      while index < len(names) and not found:
-          if names[index] == target:
-              found = True
-          else:
-              index += 1
-      return found
+      total = 0
+      score = 0
+      while score != -1:
+          score = int(input("Enter a score: "))
+          if score != -1:
+              total = total + score
+      return total
   ```
 
 
-  ### Explanation
+  You can see that if the user enters the special value `-1` the loop ends next
+  time it iterates. If the input value is not `-1` it is treated as a data
+  value, and added to the total.&#x20;
 
 
-  * **Initialization**: We start by initializing `index` to 0 and `found` to
-  `False`. `index` will track our current position in the list, and `found` will
-  indicate whether the target name has been found.
+  > Tip: A special value that terminates a loop in this way is called a
+  **sentinel** value, and this type of loop is often called a **listener**
+  loop because it listens for the sentinel value!
 
 
-  * **While Loop Condition**: The loop continues as long as `index` is less than
-  the length of the list and `found` is `False`. This ensures we don't go out of
-  bounds and stop searching once the name is found.
+  ## Boolean flag-controlled version
 
 
-  * **Inside the Loop**: We check if the current name at `names[index]` matches
-  the `target`. If it does, we set `found` to `True`. Otherwise, we increment
-  `index` to check the next name.
+  We can make the above code more readable if we rewrite (sometimes called
+  *refactor*) our code to use a Boolean flag to control iteration:
 
 
-  This example demonstrates how a while loop can be effectively used to perform
-  a linear search, iterating through a list until the desired element is found
-  or the list is exhausted.
+  ```python
+
+  def sum_scores():
+      total = 0
+      finished = False
+      while not finished:
+          score = int(input("Enter a score: "))
+          if score == -1:
+              finished = True
+          else:
+              total = total + score
+      return total
+  ```
+
+
+  ######  
+
+
+  Try this program in the attached file now, then answer these questions:
+showEditor: true
+editors:
+  - course1/unit5/lesson3/lessonpart3/sum_scores.py
