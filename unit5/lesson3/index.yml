@@ -3,8 +3,10 @@ id: lesson3
 title: Lesson 3 - Programming with while loops
 description: Using while loops in programs
 objectives: |-
-  Students will be able to use while loops in programs including
-  Validation, Linear Search and the "Accumulator Pattern"
+  Students will be able to use while loops in programs including use cases:
+  - validation of user input
+  - summing numbers using the "accumulator pattern"
+  - the sentinel-controlled loop
 lessonParts:
   - lessonpart1.yml
   - lessonpart2.yml
