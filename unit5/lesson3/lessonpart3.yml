@@ -1,29 +1,24 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: Linear search with a while loop
-content: >+
-  The condition-controlled loop or `while` loop in Python is very useful. Let's
-  explore how a `while` loop can be used to help find an item in a list. We will
-  perform a **linear search** on a list of names. Linear search is a simple
-  search algorithm that checks each element in a list one by one until the
-  desired element is found or the list ends.
+title: Summing numbers with a while loop
+content: >
+  Imagine you want to add up a stream of values: test scores, daily
+  temperatures, the prices of goods in your shopping basket. We can write a
+  `while`loop to repeatedly input these values and sum them. The code that
+  performs this activity is so common it has a name: the **accumulator
+  pattern**.
 
 
-  ### Linear Search with a While Loop
+  ### The accumulator pattern
 
 
-  Let's consider a list of first names: `["Aisha", "Carlos", "Fatima", "Jin",
-  "Liam", "Zara"]`. We want to write a function that uses a while loop to search
-  for a specific name in this list.
+  Let's write a function that uses a `while` loop to repeatedly input integers
+  that represent test scores, sum these scores and return the total.
 
 
   ```python
 
-  def linear_search(target):
-      names = ["Aisha", "Carlos", "Fatima", "Jin", "Liam", "Zara"]
-      index = 0
-      found = False
-      
+  def sum_scores():
       while index < len(names) and not found:
           if names[index] == target:
               found = True
@@ -54,4 +49,3 @@ content: >+
   This example demonstrates how a while loop can be effectively used to perform
   a linear search, iterating through a list until the desired element is found
   or the list is exhausted.
-
