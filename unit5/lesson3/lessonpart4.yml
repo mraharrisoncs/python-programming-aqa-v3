@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Page
+content: >+
+  ### Worked Examples with while loops
+
+
+  Let's see some more `while` examples in Python:
+
+
+  #### Example 1: Vending Machine Coin Counter
+
+
+  Let's create a simple function that inputs coin values until a total is
+  reached or exceeded. The function returns the change due.
+
+
+  ```python
+
+  def input_coins(price):
+
+    
+  ```
+
+
+  **Explanation:**
+
+
+  * We use the `datetime` module to get the current day of the week.
+
+
+  * The `if` statement checks if the day is a weekday.
+
+
+  * The `elif` statement checks if it's Saturday.
+
+
+  * The `else` statement handles the case for Sunday.
+
+
+  #### Example 2: Menu System for a Food Ordering App
+
+
+  Here's a simple menu function that allows someone to order a meal. The menu is
+  organised into starters, main courses and desserts!
+
+
+  ```python
+
+  def menu():
+    # Display menu
+    print("Welcome, choose a category:")
+    print("1. Starters")
+    print("2. Main Courses")
+    print("3. Desserts")
+
+    # Get user choice and call function 
+    choice = int(input("Choice (1-3)? "))
+    if choice == 1:
+        starter_menu()
+    elif choice == 2:
+        maincourse_menu()
+    elif choice == 3:
+        dessert_menu()
+    else:
+        print("Invalid choice")
+    return
+  ```
+
+
+  **Explanation:**
+
+
+  * The program displays a menu with three options.
+
+
+  * The user inputs their choice, which is then checked using `if-elif-else`.
+
+
+  * Each condition corresponds to a menu option, and the `else` statement
+  handles invalid inputs.
+
+
+  #### Example 3: Playlist Selector Based on Mood
+
+
+  This example demonstrates a simple playlist selector that suggests a playlist
+  based on the user's mood.
+
+
+  ```python
+
+  # Ask the user for their mood
+
+  mood = input("How are you feeling today? (happy, sad, energetic, relaxed):
+  ").lower()
+
+
+  if mood == "happy":
+      print("Here's a playlist to keep you smiling: 'Feel Good Hits'")
+  elif mood == "sad":
+      print("Here's a playlist to lift your spirits: 'Cheer Up Tunes'")
+  elif mood == "energetic":
+      print("Here's a playlist to keep you moving: 'Workout Jams'")
+  elif mood == "relaxed":
+      print("Here's a playlist to help you unwind: 'Chill Vibes'")
+  else:
+      print("Sorry, I don't have a playlist for that mood. Try 'Mixed Emotions'!")
+  ```
+
+
+  **Explanation:**
+
+
+  * The user inputs their mood, which is converted to lowercase to ensure
+  consistent comparison.
+
+
+  * The `if-elif-else` structure checks the mood and suggests a corresponding
+  playlist.
+
+
+  * The `else` statement provides a default playlist if the mood doesn't match
+  any predefined options.
+
