@@ -7,8 +7,8 @@ objectives: |-
   2. More complex while loops
   3. Programming with while loops
   - validation
-  - linear search
   - the accumulator pattern
+  - worked examples and practical exercises
   4. Infinite loops and going beyond the spec with break and continue
 lessons:
   - lesson1/index.yml
