@@ -9,7 +9,7 @@ objectives: |-
   - validation
   - linear search
   - the accumulator pattern
-  4. Beyond the spec with break and continue
+  4. Infinite loops and going beyond the spec with break and continue
 lessons:
   - lesson1/index.yml
   - lesson2/index.yml
