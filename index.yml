@@ -2113,6 +2113,52 @@ files:
       \r
 
       print(f\"total = {total}\")\r\n"
+  - path: course1/unit5/lesson3/lessonpart5/test_marker.py
+    content: "def test_marker():\r
+
+      \    total = 0\r
+
+      \    count = 0\r
+
+      \    highest = -1\r
+
+      \    finished = False\r
+
+      \    while not finished:\r
+
+      \        score = int(input(\"Enter a test score (0-100) -1 to end: \"))\r
+
+      \        while score < -1 or score > 100:\r
+
+      \            score = int(input(\"Invalid, retry: \"))\r
+
+      \        if score == -1:\r
+
+      \            finished = True\r
+
+      \        else:\r
+
+      \            total = total + score\r
+
+      \            count = count + 1\r
+
+      \            if score > highest:\r
+
+      \                highest = score\r
+
+      \    average = total/count\r
+
+      \    return average, highest\r
+
+      \r
+
+      # main program\r
+
+      average, highest = test_marker()\r
+
+      print(f\"Average score was: {average}\")\r
+
+      print(f\"Highest score was: {highest}\")"
 units:
   - unit1/index.yml
   - unit2/index.yml

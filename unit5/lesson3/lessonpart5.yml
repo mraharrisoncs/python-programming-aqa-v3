@@ -5,7 +5,7 @@ content: >+
   ## Worked Examples&#x20;
 
 
-  Let's see some more `while` examples in Python, and then do some PRIMM
+  Let's see some more `while` examples in Python, before trying some more PRIMM
   activities:
 
 
@@ -157,3 +157,6 @@ content: >+
 
      For example, AX1045, Z109B4 and PPKGN7 are all valid, but X1, wn9044 and AX104Q are all invalid.
 
+showEditor: true
+editors:
+  - course1/unit5/lesson3/lessonpart5/test_marker.py
