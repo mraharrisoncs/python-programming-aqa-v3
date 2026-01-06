@@ -2089,6 +2089,30 @@ files:
     content: "def get_code():\r
 
       \    pass # delete this and write your code here"
+  - path: course1/unit5/lesson3/lessonpart4/post_conditioned.py
+    content: "# Python 'fake' post-conditioned loop\r
+
+      price = 150\r
+
+      total = 0\r
+
+      looping = True\r
+
+      while looping:\r
+
+      \    print(f\"credit so far = {total}\")\r
+
+      \    coin = int(input(\"Enter a coin: \"))\r
+
+      \    total = total + coin\r
+
+      \    if total >= price:\r
+
+      \        looping = False \r
+
+      \r
+
+      print(f\"total = {total}\")\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml
