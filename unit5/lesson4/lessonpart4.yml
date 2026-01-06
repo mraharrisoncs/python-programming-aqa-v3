@@ -1,0 +1,141 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: "Python practical: while loops"
+content: >+
+  ### 1. Countdown timer
+
+
+  Starting with the code in **q1.py**, complete the function that accepts an
+  integer representing a **starting number** and prints a countdown to zero.
+
+
+  Use a `while` loop to implement the following behaviour:
+
+
+  * Keep printing the current number
+
+
+  * Subtract `1` each time
+
+
+  * Stop when the number reaches `0`
+
+
+  * After the loop finishes, print `"Lift off!"`
+
+
+  For example, if the input is `3`, the output should be:
+
+
+  ```
+
+  3
+
+  2
+
+  1
+
+  Lift off!
+
+  ```
+
+
+  ***
+
+
+  ### 2. Input validation: age checker
+
+
+  Starting with the code in **q2.py**, write a function that repeatedly asks the
+  user for their **age** until they enter a valid value.
+
+
+  Use a `while` loop to enforce these rules:
+
+
+  * Keep asking for input while the age is **less than 0** or **greater than
+  120**
+
+
+  * When a valid age is finally entered, print `"Age accepted"`
+
+
+  * You do not need to return anything — just validate and print
+
+
+  For example, if the user enters `-5`, then `200`, then `34`, the program
+  should only accept the final value.
+
+
+  ***
+
+
+  ### 3. Vending machine program
+
+
+  Starting with the code in **q3.py**, complete a small vending‑machine program
+  using **two functions** and a `while` loop.
+
+
+  Write the following:
+
+
+  #### **Function 1:** **`get_price(item)`**
+
+
+  Accepts a string representing an item name and returns its price:
+
+
+  * `"cola"` → `2.00`
+
+
+  * `"crisps"` → `1.20`
+
+
+  * `"water"` → `1.00`
+
+
+  * For any other item, return `0`
+
+
+  #### **Function 2:** **`run_machine()`**
+
+
+  Uses a `while` loop to repeatedly:
+
+
+  * Ask the user to enter an item name
+
+
+  * Stop the loop when the user types `"quit"`
+
+
+  * Use `get_price()` to look up the item’s cost
+
+
+  * Add the cost to a running total
+
+
+  * Ignore unknown items (price `0`) but still continue the loop
+
+
+  After the loop ends, print the final total in the format:
+
+
+  ```
+
+  Total: £X.XX
+
+  ```
+
+
+  For example, if the user enters `cola`, `water`, `biscuits`, `quit`, the
+  output should be:
+
+
+  ```
+
+  Total: £3.00
+
+  ```
+
