@@ -3,12 +3,12 @@ id: unit6
 title: Unit 6 - Introduction to lists and arrays
 description: Exploring lists and arrays, programming with lists in Python
 objectives: |-
-  - What is a list?
-  - Lists and list operations
-  - Simple programming with lists
-  - What is an array?
-  - Pseudocode for arrays
-  - Advanced list operations
-  - Practical exercises
+  - Answer the question: what is a list?
+  - Use lists and list operations
+  - Be able to write simple programs with lists
+  - Answer the question: what is an array?
+  - Read pseudocode for arrays and lists
+  - Use advanced list operations in a program
+  - Complete some practical Python exercises with lists
 lessons:
   - lesson1/index.yml

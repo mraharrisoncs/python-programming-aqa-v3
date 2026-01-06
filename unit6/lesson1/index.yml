@@ -4,7 +4,7 @@ title: Lesson 1 - What is a list?
 description: Introduction to lists in Python
 objectives: |-
   - Why use a list?
-  - List operations
+  - Basic list operations
   - Simple programming with lists
 lessonParts:
   - lessonpart1.yml
