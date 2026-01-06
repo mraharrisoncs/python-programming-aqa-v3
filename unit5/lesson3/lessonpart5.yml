@@ -129,3 +129,31 @@ content: >+
 
   * The main program calls the function and outputs the result.
 
+
+  ## PRIMM activities
+
+
+  Using the attached **`email_checker.py`**:
+
+
+  1. **🤔 Predict** what the program does.
+
+  2. ▶️ **Run** and check your prediction, were you correct?
+
+  3. 🔍 **Investigate:** why do we need `or` in the first `if` statement, not
+  `and`? What is the identifier of the Boolean variable that controls the loop? 
+
+  4. ✏️ **Modify:** Change the program to also check the email contains a "."
+  dot. \
+     **Stretch challenge:** can you check the dot comes after the @ symbol?
+  5. 🛠️ **Make:** a new function `get_code()` that inputs a product code and
+  validates it. The input string should:
+
+     * be exactly 6 characters long
+
+     * start with a capital letter
+
+     * end with a number.
+
+     For example, AX1045, Z109B4 and PPKGN7 are all valid, but X1, wn9044 and AX104Q are all invalid.
+
