@@ -12,34 +12,64 @@ content: >+
   #### Example 1: Vending Machine Coin Counter
 
 
-  First we will create a simple function that inputs coin values until a total
-  is reached or exceeded. The function returns the change due.
+  Here's a simple function that uses the while loop we saw earlier to input coin
+  values until a total is reached or exceeded. The function returns the change
+  due.
 
 
   ```python
 
-  def input_coins(price):
+  import random
 
-    
+
+  def input_coins(price):
+      total = 0
+      looping = True
+      while looping:
+          print(f"credit so far = {total}")
+          coin = int(input("Enter a coin: "))
+          total = total + coin
+          if total >= price:
+              looping = False 
+      return total - price
+
+  # main program
+
+  change = input_coins(random.randint(20,500))
+
+  print(f"Your change is {change}")
+   
   ```
 
 
   **Explanation:**
 
 
-  * We use the `datetime` module to get the current day of the week.
+  * We import the `random` library to allow use of `randint` later
 
 
-  * The `if` statement checks if the day is a weekday.
+  * The function `input_coins()` takes one parameter `price` which will be the
+  price of an item
 
 
-  * The `elif` statement checks if it's Saturday.
+  * We initialise the `total` to zero, and the loop control Boolean flag
+  `looping` to `True`
 
 
-  * The `else` statement handles the case for Sunday.
+  * We now enter the loop, and inside the loop we output the running total, and
+  input a new coin. If the total reaches the price, or goes over it, the loop
+  control variable is set to False and the loop ends.
 
 
-  #### Example 2: Menu System for a Food Ordering App
+  * We return the difference between the total and the price - this is the
+  change due
+
+
+  * The main program calls the function with a random price from 20p to £5,
+  saves the return value as `change` and then outputs this.
+
+
+  #### Example 2: Temperature value analysis - with validation
 
 
   Here's a simple menu function that allows someone to order a meal. The menu is
