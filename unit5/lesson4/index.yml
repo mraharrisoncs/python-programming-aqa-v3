@@ -3,8 +3,9 @@ id: lesson4
 title: Lesson 4 - Practical programming with while
 description: Putting it all together, solving problems with while loops
 objectives: |-
-  - Write programs using while
   - Understand pseudocode for condition-controlled loops
   - Tackle some PRIMM activities and practical programming problems
 lessonParts:
+  - lessonpart2.yml
   - lessonpart1.yml
+  - lessonpart3.yml

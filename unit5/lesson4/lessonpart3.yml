@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
-id: lessonpart6
+id: lessonpart3
 title: Solution to PRIMM Make activity
 content: >
   ## PRIMM Make solution
@@ -50,5 +50,5 @@ content: >
   calculation of a single letter score, and one for the main loop. 
 showEditor: true
 editors:
-  - course1/unit5/lesson3/lessonpart6/word_game_solution.py
-  - course1/unit5/lesson3/lessonpart6/word_game_solution_structured.py
+  - course1/unit5/lesson4/lessonpart3/word_game_solution.py
+  - course1/unit5/lesson4/lessonpart3/word_game_solution_structured.py

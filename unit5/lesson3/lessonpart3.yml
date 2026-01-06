@@ -13,7 +13,8 @@ content: >
 
   Let's write a function that uses a `while` loop to repeatedly input integers
   that represent test scores, sum these scores and return the total. We will
-  terminate the loop when the user enters `-1` (otherwise it will run forever!)
+  terminate the loop when the user enters `-1` (otherwise it will run
+  forever!)  
 
 
   ```python
