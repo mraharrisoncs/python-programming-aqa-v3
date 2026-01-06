@@ -1,14 +1,11 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
-id: lessonpart4
+id: lessonpart5
 title: Programming practical with while loops
 content: >+
-  ### While loops in pseudocode
+  ### Worked Examples&#x20;
 
 
-  When you see while loops in AQA exam papers we will use pseudocode keywords
-
-
-  <br />
+  Let's see some more `while` examples in Python:
 
 
   #### Example 1: Vending Machine Coin Counter
