@@ -73,9 +73,9 @@ content: >+
 
   Then write the 'run_machine' function that repeatedly
 
-  inputs items and calls 'get_price' until the user types 'quit',
+  inputs items and calls 'get_price' to get the price of the item
 
-  and then outputs the total cost.
+  until the user types 'quit', and then outputs the total cost.
 
   '''
 

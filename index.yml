@@ -2354,9 +2354,9 @@ files:
 
       Then write the 'run_machine' function that repeatedly\r
 
-      inputs items and calls 'get_price' until the user types 'quit',\r
+      inputs items and calls 'get_price' to get the price of the item\r
 
-      and then outputs the total cost.\r
+      until the user types 'quit', and then outputs the total cost.\r
 
       '''\r
 
@@ -2436,9 +2436,9 @@ files:
 
       Then write the 'run_machine' function that repeatedly\r
 
-      inputs items and calls 'get_price' until the user types 'quit',\r
+      inputs items and calls 'get_price' to get the price of the item\r
 
-      and then outputs the total cost.\r
+      until the user types 'quit', and then outputs the total cost.\r
 
       '''\r
 
