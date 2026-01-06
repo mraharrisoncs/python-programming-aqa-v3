@@ -28,12 +28,25 @@ content: >
 
 
   This is the first kind of iteration we will look at, it's the kind that stops
-  when something happens. We use a **while** statement in Python, which runs a
-  code block until a **condition** becomes False. We met **conditions** in Unit
-  4, they are **Boolean expressions** you can use on an **`if`** or
-  **`elif`** statement, and you can use them after **`while`** too. Here is a 
-  short program that uses a simple while loop to ensure a password is at least
-  ten characters long:
+  when something happens. It's called **condition-controlled** because the loop
+  continues or ends according to a **condition** - an expression that can
+  evaluate to `True` or `False`. 
+
+
+  > Tip: **condition-controlled** iteration is also called **indefinite
+  iteration** because we don't know how many times the loop will run. We will
+  look at **count-controlled** or **definite** iteration later, which means
+  looping a set number of times using a count.
+
+
+  ## Python while statement
+
+
+  We use a **while** statement in Python, which runs a code block until a
+  **condition** becomes False. We met **conditions** in Unit 4, they are
+  **Boolean expressions** you can use on an **`if`** or **`elif`** statement,
+  and you can use them after **`while`** too. Here is a short program that uses
+  a simple while loop to ensure a password is at least ten characters long:
 
 
   ```python
