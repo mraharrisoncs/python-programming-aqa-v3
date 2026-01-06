@@ -156,9 +156,13 @@ content: >+
      * vowels "a", "e", "i", "o", "u" score 1
      * "q", "x" and "z" score 3&#x20;
      * all other letters score 2
+     * A full stop '.' indicates the end of the word
 
      The function should calculate the score for the word and return it.
+
+     > Hint: use the conditional expression **`letter in "aeiou"`** to check for a vowel, and similar code for the other letter categories.
 
 showEditor: true
 editors:
   - course1/unit5/lesson3/lessonpart5/test_marker.py
+  - course1/unit5/lesson3/lessonpart5/word_game.py

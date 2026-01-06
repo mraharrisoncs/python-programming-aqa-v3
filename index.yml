@@ -2163,6 +2163,36 @@ files:
       # main program\r
 
       test_marker()"
+  - path: course1/unit5/lesson3/lessonpart5/word_game.py
+    content: "def word_score():\r
+
+      \    score = 0\r
+
+      \    done = False\r
+
+      \    while not done:\r
+
+      \        letter = input(\"Letter? \")\r
+
+      \        if letter == '.':\r
+
+      \            done = True\r
+
+      \        else:\r
+
+      \            pass # write code here\r
+
+      \    return score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml
