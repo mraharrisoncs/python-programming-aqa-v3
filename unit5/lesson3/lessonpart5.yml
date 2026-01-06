@@ -133,29 +133,31 @@ content: >+
   ## PRIMM activities
 
 
-  Using the attached **`email_checker.py`**:
+  Using the attached **`test_marker.py`**:
 
 
   1. **🤔 Predict** what the program does.
 
   2. ▶️ **Run** and check your prediction, were you correct?
 
-  3. 🔍 **Investigate:** why do we need `or` in the first `if` statement, not
-  `and`? What is the identifier of the Boolean variable that controls the loop? 
+  3. 🔍 **Investigate:** 
 
-  4. ✏️ **Modify:** Change the program to also check the email contains a "."
-  dot. \
-     **Stretch challenge:** can you check the dot comes after the @ symbol?
-  5. 🛠️ **Make:** a new function `get_code()` that inputs a product code and
-  validates it. The input string should:
+     * What **variable** controls the outer loop, and what is its **data type**?&#x20;
+     * What is the purpose of the inner `while` loop?
+     * The input value `-1` indicates that the loop should end, what do we call a special value like this?
+  4. ✏️ **Modify:** 
 
-     * be exactly 6 characters long
+     * Change the program to only accept scores between 0 and 60.
+     * **Stretch challenge:** Move the code that inputs and validates the score to a separate function `get_score()`.
+  5. 🛠️ **Make:** Using the skeleton code in `word_game.py` write a new
+  function for a word game called `word_score() `that repeatedly inputs single
+  letters and assigns each letter a score according to these rules:
 
-     * start with a capital letter
+     * vowels "a", "e", "i", "o", "u" score 1
+     * "q", "x" and "z" score 3&#x20;
+     * all other letters score 2
 
-     * end with a number.
-
-     For example, AX1045, Z109B4 and PPKGN7 are all valid, but X1, wn9044 and AX104Q are all invalid.
+     The function should calculate the score for the word and return it.
 
 showEditor: true
 editors:

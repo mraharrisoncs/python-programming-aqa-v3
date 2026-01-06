@@ -2122,6 +2122,8 @@ files:
 
       \    highest = -1\r
 
+      \    lowest = 101\r
+
       \    finished = False\r
 
       \    while not finished:\r
@@ -2146,19 +2148,21 @@ files:
 
       \                highest = score\r
 
-      \    average = total/count\r
+      \            if score < lowest:\r
 
-      \    return average, highest\r
+      \                lowest = score\r
+
+      \    print(f\"Highest was: {highest}, lowest was: {lowest}\")\r
+
+      \    print(f\"Average was: {total/count}\")\r
+
+      \    return \r
 
       \r
 
       # main program\r
 
-      average, highest = test_marker()\r
-
-      print(f\"Average score was: {average}\")\r
-
-      print(f\"Highest score was: {highest}\")"
+      test_marker()"
 units:
   - unit1/index.yml
   - unit2/index.yml
