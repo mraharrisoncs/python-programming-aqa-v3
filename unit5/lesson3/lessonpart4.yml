@@ -2,7 +2,7 @@
 id: lessonpart4
 title: Pseudocode WHILE ENDWHILE and REPEAT UNTIL
 content: >
-  ### Condition-controlled iteration in pseudocode
+  ## Pre-conditioned loops in pseudocode
 
 
   As we have seen previously, AQA exam papers and reference material use
@@ -35,9 +35,12 @@ content: >
 
   A `while` loop always tests the condition **at the start** of each iteration.
   So in the above example, the password length is checked on entry to the loop,
-  and again on every iteration. This is called a pre-conditioned loop. Some
-  programming languages - but not Python - allow you to check the loop condition
-  **at the end** of the loop. This is called a **post-conditioned** loop. 
+  and again on every iteration.&#x20;
+
+
+  This is called a **pre-conditioned** loop. Some programming languages - but
+  not Python - allow you to check the loop condition **at the end** of the loop.
+  This is called a **post-conditioned** loop. 
 
 
   ## Post-conditioned loops - REPEAT UNTIL
