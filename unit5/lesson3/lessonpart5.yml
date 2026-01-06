@@ -149,13 +149,13 @@ content: >+
 
      * Change the program to only accept scores between 0 and 60.
      * **Stretch challenge:** Move the code that inputs and validates the score to a separate function `get_score()`.
-  5. 🛠️ **Make:** Using the skeleton code in `word_game.py` write a new
+  5. 🛠️ **Make:** Using the skeleton code in **`word_game.py`** write a new
   function for a word game called `word_score() `that repeatedly inputs single
   letters and assigns each letter a score according to these rules:
 
-     * vowels "a", "e", "i", "o", "u" score 1
-     * "q", "x" and "z" score 3&#x20;
-     * all other letters score 2
+     * vowels "a", "e", "i", "o", "u" score **1**
+     * "q", "x" and "z" score **3**&#x20;
+     * all other letters score **2**
      * A full stop '.' indicates the end of the word
 
      The function should calculate the score for the word and return it.
