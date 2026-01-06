@@ -2,14 +2,14 @@
 id: lessonpart5
 title: Programming practical with while loops
 content: >+
-  ### Worked Examples&#x20;
+  ## Worked Examples&#x20;
 
 
   Let's see some more `while` examples in Python, and then do some PRIMM
   activities:
 
 
-  #### Example 1: Vending Machine Coin Counter
+  ### Example 1: Vending Machine Coin Counter
 
 
   Here's a simple function that uses the while loop we saw earlier to input coin
@@ -42,7 +42,7 @@ content: >+
   ```
 
 
-  **Explanation:**
+  ### **Explanation:**
 
 
   * We import the `random` library to allow use of `randint` later
@@ -69,16 +69,16 @@ content: >+
   saves the return value as `change` and then outputs this.
 
 
-  #### Example 2: Temperature value analysis - with validation
+  ### Example 2: Temperature value analysis - with validation
 
 
-  Here's a program that inputs temperatures repeatedly, until the user types
-  "99". It then outputs the average temperature.
+  Here's a function that inputs temperatures repeatedly, until the user types
+  "99". It then returns the average temperature.
 
 
   ```python
 
-  def temp_data():
+  def analyse_temps():
       total = 0
       count = 0
       finished = False
@@ -91,9 +91,41 @@ content: >+
           else:
               total = total + temp
               count = count + 1
-      return total
+      return total / count
+
+  # main program
+
+  print(f"Average temperature was: {analyse_temps()}")
+
   ```
 
 
-  **Explanation:**
+  ### **Explanation:**
+
+
+  * The function `analyse_temps()` initializes two variables, `total` and
+  `count`, to zero and a Boolean flag `finished` to `False`, and then enters a
+  `while` loop that continues until `finished` is `True`.
+
+
+  * Inside the loop, it prompts the user to input a temperature in Celsius, with
+  "99" as the sentinel value to end the input.
+
+
+  * If the input temperature is outside the valid range (-40 to 99), it prompts
+  the user to retry until a valid temperature is entered.
+
+
+  * If the input temperature is "99", the loop ends by setting `finished` to
+  `True`.
+
+
+  * Otherwise, it adds the temperature to `total` and increments `count` by 1.
+
+
+  * The function calculates the average temperature using `total/count` and
+  returns this.
+
+
+  * The main program calls the function and outputs the result.
 
