@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: unit6
+title: Unit 6 - Introduction to arrays and lists
+description: Exploring arrays and their implementation in Python as lists
+objectives: |-
+  - What is an array? 
+  - 1D arrays
+  - Lists and list operations
+  - Programming with lists
+lessons:
+  - lesson1/index.yml
