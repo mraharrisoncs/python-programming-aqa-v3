@@ -1671,7 +1671,7 @@ files:
 
       \            print(\"Mammal\") \r
 
-      \    # write more code here\r
+      \    # TODO - write your code here\r
 
       \r
 
@@ -2307,6 +2307,44 @@ files:
       username = surname + \"_\" + initial + \"_\" + year_suffix\r
 
       print(\"Your username is:\", username)\r\n"
+  - path: course1/unit5/lesson4/lessonpart4/q1.py
+    content: "'''\r
+
+      Print a countdown from the given number down to 1,\r
+
+      then print 'Lift off!'.\r
+
+      '''\r
+
+      def countdown(start):\r
+
+      \    pass # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      countdown(5)\r
+
+      countdown(10)\r\n"
+  - path: course1/unit5/lesson4/lessonpart4/q2.py
+    content: "'''\r
+
+      Repeatedly ask the user for their age until they enter\r
+
+      a valid value between 0 and 120. Then print 'Age accepted'.\r
+
+      '''\r
+
+      def get_valid_age():\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      get_valid_age()"
 units:
   - unit1/index.yml
   - unit2/index.yml
