@@ -1,12 +1,15 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: Solution to PRIMM Make activity
-content: |+
+content: >
   ## PRIMM Make solution
+
 
   Here is a possible solution to the previous **PRIMM** Make activity:
 
+
   ```python
+
   def word_score():
       # initialise total score 
       total_score = 0
@@ -32,11 +35,19 @@ content: |+
       return total_score
 
   # main program
+
   print("Enter a word, letter by letter,")
+
   print("full stop to finish.")
+
   print(f"Your word scored: {word_score()}")
+
   ```
 
+
+  This solution is available in the attached file `word_game_solution.py `as
+  well as a more structured solution with two functions, one for the input and
+  calculation of a single letter score, and one for the main loop. 
 showEditor: true
 editors:
   - course1/unit5/lesson3/lessonpart6/word_game_solution.py
