@@ -2166,23 +2166,19 @@ files:
   - path: course1/unit5/lesson3/lessonpart5/word_game.py
     content: "def word_score():\r
 
-      \    score = 0\r
+      \    # initialise score \r
 
-      \    done = False\r
+      \    # initialise Boolean flag (if using)\r
 
-      \    while not done:\r
+      \    # while ...\r
 
-      \        letter = input(\"Letter? \")\r
+      \        # input letter\r
 
-      \        if letter == '.':\r
+      \        # check for sentinel\r
 
-      \            done = True\r
+      \        # calculate score\r
 
-      \        else:\r
-
-      \            pass # write code here\r
-
-      \    return score\r
+      \    # return score\r
 
       \r
 
