@@ -2377,6 +2377,114 @@ files:
       # main program\r
 
       run_machine()"
+  - path: course1/unit5/lesson4/lessonpart5/q1_solution.py
+    content: "'''\r
+
+      Print a countdown from the given number down to 1,\r
+
+      then print 'Lift off!'.\r
+
+      '''\r
+
+      def countdown(start):\r
+
+      \    while start > 0:\r
+
+      \        print(start)\r
+
+      \        start -= 1\r
+
+      \    print(\"Lift off!\")\r
+
+      \r
+
+      # main program\r
+
+      countdown(5)\r
+
+      countdown(10)"
+  - path: course1/unit5/lesson4/lessonpart5/q2_solution.py
+    content: "'''\r
+
+      Repeatedly ask the user for their age until they enter\r
+
+      a valid value between 0 and 120. Then print 'Age accepted'.\r
+
+      '''\r
+
+      def get_valid_age():\r
+
+      \    age = int(input(\"Enter your age: \"))\r
+
+      \    while age < 0 or age > 120:\r
+
+      \        age = int(input(\"Invalid age. Enter your age: \"))\r
+
+      \    print(\"Age accepted\")\r
+
+      \r
+
+      # main program\r
+
+      get_valid_age()"
+  - path: course1/unit5/lesson4/lessonpart5/q3_solution.py
+    content: "'''\r
+
+      Write a function 'get_price' that returns the price of an item:\r
+
+      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
+
+      Then write the 'run_machine' function that repeatedly\r
+
+      inputs items and calls 'get_price' until the user types 'quit',\r
+
+      and then outputs the total cost.\r
+
+      '''\r
+
+      def get_price(item):\r
+
+      \    if item == \"cola\":\r
+
+      \        return 2.00\r
+
+      \    elif item == \"crisps\":\r
+
+      \        return 1.20\r
+
+      \    elif item == \"water\":\r
+
+      \        return 1.00\r
+
+      \    else:\r
+
+      \        return 0\r
+
+      \r
+
+      def run_machine():\r
+
+      \    total = 0\r
+
+      \    item = input(\"Enter an item (or 'quit' to finish): \")\r
+
+      \r
+
+      \    while item != \"quit\":\r
+
+      \        total += get_price(item)\r
+
+      \        item = input(\"Enter an item (or 'quit' to finish): \")\r
+
+      \r
+
+      \    print(f\"Total: £{total:.2f}\")\r
+
+      \r
+
+      # main program\r
+
+      run_machine()"
 units:
   - unit1/index.yml
   - unit2/index.yml

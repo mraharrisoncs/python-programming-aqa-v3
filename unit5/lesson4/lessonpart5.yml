@@ -1,0 +1,112 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Solutions to practical while problems
+content: >+
+  Here are suggested solutions for the practical activities on the previous
+  page. You can run and test the solutions in the attached files.
+
+
+  ## Question 1
+
+
+  ```python
+
+  '''
+
+  Print a countdown from the given number down to 1,
+
+  then print 'Lift off!'.
+
+  '''
+
+  def countdown(start):
+      while start > 0:
+          print(start)
+          start -= 1
+      print("Lift off!")
+
+  # main program
+
+  countdown(5)
+
+  countdown(10)
+
+  ```
+
+
+  Question 2
+
+
+  ```python
+
+  '''
+
+  Repeatedly ask the user for their age until they enter
+
+  a valid value between 0 and 120. Then print 'Age accepted'.
+
+  '''
+
+  def get_valid_age():
+      age = int(input("Enter your age: "))
+      while age < 0 or age > 120:
+          age = int(input("Invalid age. Enter your age: "))
+      print("Age accepted")
+
+  # main program
+
+  get_valid_age()
+
+  ```
+
+
+  Question 3
+
+
+  ```python
+
+  '''
+
+  Write a function 'get_price' that returns the price of an item:
+
+  "cola" → 2.00, "crisps" → 1.20, "water" → 1.00
+
+  Then write the 'run_machine' function that repeatedly
+
+  inputs items and calls 'get_price' until the user types 'quit',
+
+  and then outputs the total cost.
+
+  '''
+
+  def get_price(item):
+      if item == "cola":
+          return 2.00
+      elif item == "crisps":
+          return 1.20
+      elif item == "water":
+          return 1.00
+      else:
+          return 0
+
+  def run_machine():
+      total = 0
+      item = input("Enter an item (or 'quit' to finish): ")
+
+      while item != "quit":
+          total += get_price(item)
+          item = input("Enter an item (or 'quit' to finish): ")
+
+      print(f"Total: £{total:.2f}")
+
+  # main program
+
+  run_machine()
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit5/lesson4/lessonpart5/q1_solution.py
+  - course1/unit5/lesson4/lessonpart5/q2_solution.py
+  - course1/unit5/lesson4/lessonpart5/q3_solution.py
