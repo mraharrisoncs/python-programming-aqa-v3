@@ -2309,6 +2309,84 @@ files:
       print(\"full stop to finish.\")\r
 
       print(f\"Your word scored: {word_score()}\")"
+  - path: course1/unit5/lesson4/lessonpart1/test_marker.py
+    content: "def test_marker():\r
+
+      \    total = 0\r
+
+      \    count = 0\r
+
+      \    highest = -1\r
+
+      \    lowest = 101\r
+
+      \    finished = False\r
+
+      \    while not finished:\r
+
+      \        score = int(input(\"Enter a test score (0-100) -1 to end: \"))\r
+
+      \        while score < -1 or score > 100:\r
+
+      \            score = int(input(\"Invalid, retry: \"))\r
+
+      \        if score == -1:\r
+
+      \            finished = True\r
+
+      \        else:\r
+
+      \            total = total + score\r
+
+      \            count = count + 1\r
+
+      \            if score > highest:\r
+
+      \                highest = score\r
+
+      \            if score < lowest:\r
+
+      \                lowest = score\r
+
+      \    print(f\"Highest was: {highest}, lowest was: {lowest}\")\r
+
+      \    print(f\"Average was: {total/count}\")\r
+
+      \    return \r
+
+      \r
+
+      # main program\r
+
+      test_marker()"
+  - path: course1/unit5/lesson4/lessonpart1/word_game.py
+    content: "def word_score():\r
+
+      \    # initialise total score \r
+
+      \    # initialise Boolean flag (if using)\r
+
+      \    # while ...\r
+
+      \        # input letter\r
+
+      \        # check for sentinel\r
+
+      \        # calculate letter score\r
+
+      \        # add to total score\r
+
+      \    # return total score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml
