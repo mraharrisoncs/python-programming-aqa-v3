@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Solution to PRIMM Make activity
+content: |+
+  ## PRIMM Make solution
+
+  Here is a possible solution to the previous **PRIMM** Make activity:
+
+  ```python
+  def word_score():
+      # initialise total score 
+      total_score = 0
+      # initialise Boolean flag (if using)
+      done = False
+      while not done:
+          # input letter
+          letter = input("Enter a letter: ")
+          # check for sentinel
+          if letter == ".":
+              done = True
+          # calculate letter score
+          else:
+              if letter in "aeiou":
+                  score = 1
+              elif letter in "qxz":
+                  score = 3
+              else:
+                  score = 2
+          # add to total score
+              total_score += score
+      # return total score
+      return total_score
+
+  # main program
+  print("Enter a word, letter by letter,")
+  print("full stop to finish.")
+  print(f"Your word scored: {word_score()}")
+  ```
+
+showEditor: true
+editors:
+  - course1/unit5/lesson3/lessonpart6/word_game_solution.py
+  - course1/unit5/lesson3/lessonpart6/word_game_solution_structured.py

@@ -2166,7 +2166,7 @@ files:
   - path: course1/unit5/lesson3/lessonpart5/word_game.py
     content: "def word_score():\r
 
-      \    # initialise word score \r
+      \    # initialise total score \r
 
       \    # initialise Boolean flag (if using)\r
 
@@ -2178,9 +2178,9 @@ files:
 
       \        # calculate letter score\r
 
-      \        # add to word score\r
+      \        # add to total score\r
 
-      \    # return word score\r
+      \    # return total score\r
 
       \r
 
@@ -2191,6 +2191,124 @@ files:
       print(\"full stop to finish.\")\r
 
       print(f\"Your word scored: {word_score()}\")\r\n"
+  - path: course1/unit5/lesson3/lessonpart6/word_game_solution.py
+    content: "def word_score():\r
+
+      \    # initialise total score \r
+
+      \    total_score = 0\r
+
+      \    # initialise Boolean flag (if using)\r
+
+      \    done = False\r
+
+      \    while not done:\r
+
+      \        # input letter\r
+
+      \        letter = input(\"Enter a letter: \")\r
+
+      \        # check for sentinel\r
+
+      \        if letter == \".\":\r
+
+      \            done = True\r
+
+      \        # calculate letter score\r
+
+      \        else:\r
+
+      \            if letter in \"aeiou\":\r
+
+      \                score = 1\r
+
+      \            elif letter in \"qxz\":\r
+
+      \                score = 3\r
+
+      \            else:\r
+
+      \                score = 2\r
+
+      \        # add to total score\r
+
+      \            total_score += score\r
+
+      \    # return total score\r
+
+      \    return total_score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")"
+  - path: course1/unit5/lesson3/lessonpart6/word_game_solution_structured.py
+    content: "# New version with separate functions\r
+
+      # for input & score calculation and main loop\r
+
+      \r
+
+      def get_letter():\r
+
+      \    # input letter and score it\r
+
+      \    letter = input(\"Enter a letter: \")\r
+
+      \    if letter == \".\":\r
+
+      \        return -1 # sentinel value\r
+
+      \    elif letter in \"aeiou\":\r
+
+      \        return 1\r
+
+      \    elif letter in \"qxz\":\r
+
+      \        return 3\r
+
+      \    else:\r
+
+      \        return 2\r
+
+      \    \r
+
+      def word_score():\r
+
+      \    # calculate word score\r
+
+      \    total_score = 0\r
+
+      \    done = False\r
+
+      \    while not done:\r
+
+      \        score = get_letter()\r
+
+      \        if score == -1: # input was \".\"\r
+
+      \            done = True\r
+
+      \        else:\r
+
+      \            total_score += score\r
+
+      \    return total_score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")"
 units:
   - unit1/index.yml
   - unit2/index.yml
