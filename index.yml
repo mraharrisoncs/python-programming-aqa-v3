@@ -2345,6 +2345,38 @@ files:
       # main program\r
 
       get_valid_age()"
+  - path: course1/unit5/lesson4/lessonpart4/q3.py
+    content: "'''\r
+
+      Write a function 'get_price' that returns the price of an item:\r
+
+      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
+
+      Then write the 'run_machine' function that repeatedly\r
+
+      inputs items and calls 'get_price' until the user types 'quit',\r
+
+      and then outputs the total cost.\r
+
+      '''\r
+
+      def get_price(item):\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      \r
+
+      def run_machine():\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      run_machine()"
 units:
   - unit1/index.yml
   - unit2/index.yml
