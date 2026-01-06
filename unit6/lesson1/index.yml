@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Lesson 1 - What is a list?
+title: Lesson 1 - Introduction to lists
 description: Introduction to lists in Python
 objectives: |-
   - Why use a list?

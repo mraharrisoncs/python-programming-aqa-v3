@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Page
+title: Why use lists?
 content: >
   ### Why Use a List?
 
@@ -35,7 +35,7 @@ content: >
   5. **Built-in Functions and Methods**: Python provides a variety of built-in
   functions and methods to work with lists, such as `append()`, `remove()`,
   `sort()`, and `reverse()`. These functions make it easy to manipulate and
-  manage list data.
+  manage list data. 
 
 
   6. **Iteration**: Lists are iterable, meaning you can loop through them using
