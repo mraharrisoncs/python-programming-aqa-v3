@@ -2166,7 +2166,7 @@ files:
   - path: course1/unit5/lesson3/lessonpart5/word_game.py
     content: "def word_score():\r
 
-      \    # initialise score \r
+      \    # initialise word score \r
 
       \    # initialise Boolean flag (if using)\r
 
@@ -2176,9 +2176,11 @@ files:
 
       \        # check for sentinel\r
 
-      \        # calculate score\r
+      \        # calculate letter score\r
 
-      \    # return score\r
+      \        # add to word score\r
+
+      \    # return word score\r
 
       \r
 
