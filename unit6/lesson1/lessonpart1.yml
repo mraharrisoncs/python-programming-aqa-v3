@@ -129,9 +129,9 @@ content: >
   clear it contains multiple items.
 
 
-  The list is an example of a **data structure** - a collection of data stored
-  in an organised way under a single identifier, so it can be quickly and easily
-  processed in many ways.
+  The list is an example of a **data structure** - a way of storing and
+  organising a collection of data under a single identifier, so it can be
+  quickly and easily processed in many ways. 
 
 
   ## Practice with lists
@@ -202,3 +202,27 @@ questionGroups:
           - id: "4"
             value: "193"
             explanation: No, this is the sum
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: What do we call a way of storing and organising a collection of data
+          under a single identifier?
+        options:
+          - id: "1"
+            value: Data structure
+            explanation: Yes, a data structure is used to store and organize data under a
+              single identifier.
+            isCorrect: true
+          - id: "2"
+            value: Variable
+            explanation: No, a variable typically stores a single piece of data, not a
+              collection.
+          - id: "3"
+            value: Function
+            explanation: No, a function is a block of code that performs a specific task,
+              not a way to store data.
+          - id: "4"
+            value: Algorithm
+            explanation: No, an algorithm is a sequence of steps to solve a problem, not a
+              way to store data.
