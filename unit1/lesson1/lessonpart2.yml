@@ -2,16 +2,11 @@
 id: lessonpart2
 title: Output using print()
 content: >+
-  Output is a crucial part of programming, as it allows us to display
-  information to the user. We saw on the previous page that the `print()`
-  function in Python is used to output data to the console.
+  &#x20;
 
 
-  ### Examples using print()
-
-
-  Let's look at some more examples of using the `print()` function, starting
-  with simple cases and moving to more complex ones.
+  Let's look at some more examples of using the `print()` function to output
+  data to the screen:
 
 
   #### Hello World again
@@ -33,20 +28,19 @@ content: >+
 
   >
 
-  > When you see `>>>` in code examples in this course, as in the example above,
-  it indicates code typed into the console, also called the Python ***REPL*** or
-  Shell. Output from the given command is shown below the code.
+  > When you see `>>>` in  this course, as above, it means code typed into the
+  console, also called the Python ***REPL*** or Shell. Output from the command
+  is shown below the code.
 
   >
 
-  > You could type the same code into a program and run it to get the same
-  output. But sometimes it is quicker to try things out in the REPL before
-  writing them into a program.&#x20;
+  > The code can also be written in a program and run. But sometimes it is
+  quicker to try things out in the REPL.&#x20;
 
   >
 
-  > You can open a REPL on the right of this tutorial. It will be available on
-  certain course pages, where it is useful.
+  > You can open a REPL on the right of the course, on some course pages like
+  this one.
 
 
   #### Printing Multiple Strings
@@ -77,8 +71,8 @@ content: >+
 
 
   Notice that the commas are **not displayed**. These are used
-  as **separators** inside the **print()** statement. Also you can see that we
-  can output any kind of data, and even mix up data types:
+  as **separators** inside the **print()** statement. We can output any kind of
+  data, and even mix up data types:
 
 
   #### Outputting strings and numbers
