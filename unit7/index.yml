@@ -5,7 +5,7 @@ description: Understand count-controlled iteration and how to implement it with
   a for loop in Python
 objectives: |-
   - Define count-controlled iteration (definite iteration)
-  - Know the structure of a 'for' loop
+  - Know the purpose and structure of a 'for' loop
   - Write code that iterates over a list and over a string in Python
   - Use the 'range()' function to generate ranges of numbers
   - Write code that iterates with a counter using range()
@@ -13,3 +13,4 @@ objectives: |-
   - Write programs to solve problems with 'for' loops.
 lessons:
   - lesson1/index.yml
+  - lesson2/index.yml

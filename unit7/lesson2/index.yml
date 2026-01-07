@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lesson2
+title: Lesson 2 - Structure of a for loop
+description: Structure of a for loop
+objectives: |-
+  Describe a for loop, draw a flowchart for it
+  Interpret a for loop in code
+lessonParts:
+  - lessonpart1.yml
