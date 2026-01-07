@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Input, output and variables
+title: Lesson 1 - Input, output and variables
 description: Writing your first program with input and output, using variables
   and knowing data types
 objectives: |-
