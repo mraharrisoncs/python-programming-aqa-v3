@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
-title: Solutions to practical while problems
+title: Solutions to Python practical while problems
 content: >+
   Here are suggested solutions for the practical activities on the previous
   page. You can run and test the solutions in the attached files.
