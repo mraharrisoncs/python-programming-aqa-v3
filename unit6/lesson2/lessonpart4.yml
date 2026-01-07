@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: More programming with lists
+content: |
+  Worked examples
+
+  Highest and lowest temperature
+
+  Counting house points
+
+  PRIMM activity - Linear search
