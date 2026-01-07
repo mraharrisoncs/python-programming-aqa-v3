@@ -1,12 +1,36 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: Implementing arrays as lists in Python
-content: |+
+content: >
   tbc
+
 
   why Python doesn't have arrays (single way of doing things)
 
-  Implementing an array as a list
+
+  Pseudocode
+
+
+  ```python
+
+  # pseudocode to create an array of prime integers up to 13
+
+  primes ← [2, 3, 5, 7, 11, 13]
+
+  ```
+
+
+  Python
+
+
+  ```python
+
+  # Python assignment to create a list that simulates an array of prime integers
+  up to 13
+
+  primes = [2, 3, 5, 7, 11, 13]
+
+  ```
+
 
   Programming with lists
-
