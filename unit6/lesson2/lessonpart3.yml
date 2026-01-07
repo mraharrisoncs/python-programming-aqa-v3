@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Implementing arrays as lists in Python
+content: |+
+  tbc
+
+  why Python doesn't have arrays (single way of doing things)
+
+  Implementing an array as a list
+
+  Programming with lists
+
