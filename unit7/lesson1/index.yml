@@ -1,5 +1,10 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Lesson
+title: Lesson 1 - Structure of a for loop
+description: Introduction to count-controlled (definite) iteration
+objectives: |-
+  - Define count-controlled iteration (definite iteration)
+  - Know the structure of a 'for' loop
+  - Write code that iterates over a list and over a string in Python
 lessonParts:
   - lessonpart1.yml
