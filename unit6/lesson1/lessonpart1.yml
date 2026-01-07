@@ -129,7 +129,9 @@ content: >
   clear it contains multiple items.
 
 
-  The list is an example of a **data structure** - 
+  The list is an example of a **data structure** - a collection of data stored
+  in an organised way under a single identifier, so it can be quickly and easily
+  processed in many ways.
 
 
   ## Practice with lists
