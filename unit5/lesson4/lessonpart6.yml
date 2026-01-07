@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Infinite loops and more!
+content: |
+  tbc
+
+  Infinite loops - accidental
+
+  Infinite loops - While True, returning out of a loop
+
+  Beyond the spec with break and continue
