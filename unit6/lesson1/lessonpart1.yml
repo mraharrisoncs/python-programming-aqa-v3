@@ -27,11 +27,11 @@ content: >+
 
 
   But this would need one line of code and **one integer variable for each
-  value**, and if we wanted to store the temperature every hour for several
-  years, that's a lot of code and a lot of variables!&#x20;
+  value**, and if we wanted to store the temperature *every hour for several
+  years*, that's a lot of code and a lot of variables!&#x20;
 
 
-  Also, working with this data would need even more clunky code, for example to
+  Also, working with this data would need yet more clunky code, for example to
   sum the first seven values:
 
 
@@ -90,7 +90,7 @@ content: >+
   ```
 
 
-  And we can use len() - just like we did in string handling - to find the
+  And we can use `len()` - just like we did in string handling - to find the
   length of the list.
 
 
@@ -122,7 +122,69 @@ content: >+
   ## Practice with lists
 
 
-  Open the Python REPL on the right, and copy/paste the commands above. Try out
-  the given list functions. Then answer these questions.
+  Open the Python REPL (the Shell) on the right, and copy/paste the commands
+  above to try them out. Then answer these questions. Use the REPL if you're
+  stuck.
 
 showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why do we use lists?
+        options:
+          - id: "1"
+            value: To allow us to store multiple values under a single identifier.
+            explanation: Yes, making code simpler and more elegant.
+            isCorrect: true
+          - id: "2"
+            value: To store only one value at a time.
+            explanation: No, lists are used to store multiple values, not just one.
+          - id: "3"
+            value: To make code more complex and harder to read.
+            explanation: No, lists simplify code by reducing the number of variables needed.
+          - id: "4"
+            value: To save memory, because lists only take up one slot in RAM
+            explanation: No, lists do not use less memory than multiple variables.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: In the list temps = [24, 26, 31, 26, 21, 18, 22], what does temps[1]
+          return?
+        options:
+          - id: "1"
+            value: "24"
+            explanation: No, 24 is the first element, accessed with index 0.
+          - id: "2"
+            value: "26"
+            explanation: Yes, 26 is the second element, accessed with index 1.
+            isCorrect: true
+          - id: "3"
+            value: "31"
+            explanation: No, 31 is the third element, accessed with index 2.
+          - id: "4"
+            value: "22"
+            explanation: No, 22 is the seventh element, accessed with index 6 (or -1, see
+              later)
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: If scores = [78, 64, 51], what is returned by len(scores)?
+        options:
+          - id: "1"
+            value: "3"
+            explanation: The len() function returns the number of elements in the list.
+            isCorrect: true
+          - id: "2"
+            value: "2"
+            explanation: No, while the index of the last item is 2, the length of the list
+              is 3.
+          - id: "3"
+            value: "1"
+            explanation: No, there are three elements in the list.
+          - id: "4"
+            value: "193"
+            explanation: No, this is the sum
