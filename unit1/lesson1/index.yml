@@ -9,12 +9,12 @@ objectives: |-
   3. Inputting text with input()
   4. Variables and data types
 lessonParts:
+  - lessonpart11.yml
   - lessonpart1.yml
   - lessonpart2.yml
   - lessonpart3.yml
   - lessonpart4.yml
   - lessonpart5.yml
-  - lessonpart11.yml
   - lessonpart6.yml
   - lessonpart7.yml
   - lessonpart8.yml
