@@ -8,3 +8,4 @@ objectives: |-
   - Simple programming with lists
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
