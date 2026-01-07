@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit6
-title: Unit 6 - Lists and arrays
-description: Exploring lists and arrays, programming with lists in Python
+title: Unit 6 - 1D arrays and lists
+description: Exploring 1D arrays, programming 1D lists in Python
 objectives: |-
   1. Define the purpose and structure of a list
   2. Use lists and list operations in Python
