@@ -1,49 +1,128 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Why use lists?
-content: >
-  ### Why Use a List?
+content: >+
+  ### Why use lists?
 
 
-  In Python, a list is a versatile data structure that allows you to store
-  multiple items in a single variable. Lists are one of the most commonly used
-  data structures in Python due to their flexibility and ease of use. Here are
-  some reasons why you might want to use a list:
+  Remember our temperature program? What if - instead of just calculating a
+  total or average and discarding our input data - we wanted to store all the
+  input data for future use? We *could* store each day's temperature in a
+  separate variable like this:
 
 
-  1. **Organize Data**: Lists help you organize data in a structured way.
-  Instead of having multiple variables for related data, you can store them all
-  in a single list. For example, if you have a list of student names, you can
-  store them all together in one list.
+  ```python
+
+  temp1 = int(input("Enter temperature 1: "))
+
+  temp2 = int(input("Enter temperature 2: "))
+
+  temp3 = int(input("Enter temperature 3: "))
+
+  temp4 = int(input("Enter temperature 4: "))
+
+  ''' continued
+
+  ```
 
 
-  2. **Dynamic Size**: Unlike arrays in some other programming languages, Python
-  lists can grow and shrink dynamically. This means you can add or remove items
-  from a list as needed, without having to declare a fixed size beforehand.
+  But this would need one line of code and **one integer variable for each
+  value**, and if we wanted to store the temperature every hour for several
+  years, that's a lot of code and a lot of variables!&#x20;
 
 
-  3. **Easy Access and Modification**: Lists allow you to access and modify
-  elements easily using indices. You can retrieve, update, or delete any item in
-  a list by referring to its position.
+  Also, working with this data would need even more clunky code, for example to
+  sum the first seven values:
 
 
-  4. **Versatile Data Types**: A single list can contain items of different data
-  types. For example, you can have a list that contains strings, integers, and
-  even other lists.
+  ```python
+
+  >>> total = temp1 + temp2 + temp3 + temp4 + temp5 + temp6 + temp7
+
+  ```
 
 
-  5. **Built-in Functions and Methods**: Python provides a variety of built-in
-  functions and methods to work with lists, such as `append()`, `remove()`,
-  `sort()`, and `reverse()`. These functions make it easy to manipulate and
-  manage list data. 
+  ## Creating and indexing a list
 
 
-  6. **Iteration**: Lists are iterable, meaning you can loop through them using
-  a `for` loop. This makes it easy to perform operations on each item in the
-  list.
+  Instead we can create a **list** called `temps` and store **all** our
+  temperatures under this **identifier.** This is how we do that:
 
 
-  By using lists, you can write more efficient and organized code, making it
-  easier to manage and manipulate collections of data. In the upcoming lessons,
-  we will explore how to create lists, perform basic operations, and use them in
-  simple Python programs.
+  ```python
+
+  >>> temps = [24, 26, 31, 26, 21, 18, 22]
+
+  ```
+
+
+  We can now access any **item** in the list as long as we know its **position**
+  in the list, which we call the **index** of the item. But remember from string
+  indexing, Python always counts from **zero**. For example:
+
+
+  ```python
+
+  >>> temps = [24, 26, 31, 26, 21, 18, 22]
+
+  >>> temps[0]
+
+  24
+
+  >>> temps[5]
+
+  18
+
+  ```
+
+
+  Now we can use a really cool function called `sum()` to add up all the values!
+
+
+  ```python
+
+  >>> temps = [24, 26, 31, 26, 21, 18, 22]
+
+  >>> sum(temps)
+
+  168
+
+  ```
+
+
+  And we can use len() - just like we did in string handling - to find the
+  length of the list.
+
+
+  ```python
+
+  >>> temps = [24, 26, 31, 26, 21, 18, 22]
+
+  >>> len(temps)
+
+  7
+
+  ```
+
+
+  So now we can find the **average** very easily!
+
+
+  ```python
+
+  >>> temps = [24, 26, 31, 26, 21, 18, 22]
+
+  >>> sum(temps)/len(temps)
+
+  24.0
+
+  ```
+
+
+  ## Practice with lists
+
+
+  Open the Python REPL on the right, and copy/paste the commands above. Try out
+  the given list functions. Then answer these questions.
+
+showTerminal: true
