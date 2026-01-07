@@ -126,3 +126,8 @@ content: >+
 
   > **Hint:** Use a `while` loop and a running total.
 
+showEditor: true
+editors:
+  - course1/unit6/lesson2/lessonpart5/q1.py
+  - course1/unit6/lesson2/lessonpart5/q2.py
+  - course1/unit6/lesson2/lessonpart5/q3.py

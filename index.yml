@@ -2485,6 +2485,92 @@ files:
       \    finished = True\r
 
       print(\"Average = \", total / count)  "
+  - path: course1/unit6/lesson2/lessonpart5/q1.py
+    content: "'''\r
+
+      Create two new lists\r
+
+      one containing all the even numbers \r
+
+      and one containing all the odd numbers\r
+
+      '''\r
+
+      nums = [3, 10, 7, 4, 12, 9]\r
+
+      \r
+
+      evens = []\r
+
+      odds = []\r
+
+      \r
+
+      i = 0\r
+
+      while i < len(nums):\r
+
+      \    # TODO: write your code here\r
+
+      \r
+
+      print(\"Evens:\", evens)\r
+
+      print(\"Odds:\", odds)"
+  - path: course1/unit6/lesson2/lessonpart5/q2.py
+    content: "'''\r
+
+      given a list of words, find the first one\r
+
+      that starts with a vowel\r
+
+      '''\r
+
+      def find_vowel_word(words)\r
+
+      \    i = 0\r
+
+      \    found = False\r
+
+      \    # TODO: write your code here\r
+
+      \r
+
+      # main program\r
+
+      find_vowel_word([\"tree\", \"sky\", \"orange\", \"cloud\"])\r\n"
+  - path: course1/unit6/lesson2/lessonpart5/q3.py
+    content: "'''\r
+
+      Write a function that takes one parameter, \r
+
+      the number of minutes available for travel, and returns\r
+
+      the index of the last station you can reach\r
+
+      '''\r
+
+      \r
+
+      times = [3, 12, 8, 21, 11, 15]\r
+
+      \r
+
+      def max_station(minutes):\r
+
+      \    i = 0            # station index\r
+
+      \    total = 0        # running total of minutes used\r
+
+      \    # TODO: write your code here\r
+
+      \r
+
+      \r
+
+      # Example call:\r
+
+      print(max_station(18))   # expected: 2"
 units:
   - unit1/index.yml
   - unit2/index.yml
