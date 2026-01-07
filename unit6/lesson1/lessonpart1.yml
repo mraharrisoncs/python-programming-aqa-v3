@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Why use lists?
-content: >+
+content: >
   ### Why use lists?
 
 
@@ -119,13 +119,25 @@ content: >+
   ```
 
 
+  ## About lists
+
+
+  We chose the identifier `temps` because the list stores temperatures, making
+  `temps` a **meaningful** name for the list. Your list identifier should say
+  what is in the list. It's also a good idea to make a list
+  identifier **plural** (e.g. `temps`, `scores`, `days_of_the_week`) to make
+  clear it contains multiple items.
+
+
+  The list is an example of a **data structure** - 
+
+
   ## Practice with lists
 
 
   Open the Python REPL (the Shell) on the right, and copy/paste the commands
   above to try them out. Then answer these questions. Use the REPL if you're
   stuck.
-
 showTerminal: true
 questionGroups:
   - id: "1"
