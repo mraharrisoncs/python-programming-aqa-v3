@@ -1,8 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit3
-title: Unit 3 - String handling operations
-description: This course has a single unit which covers string handling
-  operations in Python.
+title: Unit 3 - String handling
+description: String handling operations in Python.
 objectives: |-
   Understand and be able to use:
   • length

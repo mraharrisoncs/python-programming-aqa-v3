@@ -1,8 +1,16 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit8
 title: Unit 8 - 2D Arrays and lists of lists
-description: 2D arrays
-objectives: tbc
+description: 2D arrays and lists of lists
+objectives: |-
+  1. Know the purpose and structure of 2D arrays and lists of lists
+  2. Read the pseudocode for 2D arrays
+  3. Implementing 2D arrays with lists of lists (2D lists)
+  4. Indexing 2D lists
+  5. Creating 2D lists
+  6. Traversing 2D lists
+  7. Practice writing programs with 2D lists to solve problems.
+  8. Capstone project - Text Adventure
 lessons:
   - lesson1/index.yml
   - lesson2/index.yml

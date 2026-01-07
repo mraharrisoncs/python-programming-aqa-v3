@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit1
-title: Unit 1 - Inputs, Outputs and Structured Programs
+title: Unit 1 - Inputs, outputs and structured programs
 description: Getting started with input, output and structured programming
 objectives: |-
   1. Getting started
