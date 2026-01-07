@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: What is an array?
+content: |
+  TBC
+
+  Arrays
+
+  Array dimensions
+
+  1D arrays 
+
+  2D arrays
+
+  Implementing Arrays as Lists in Python

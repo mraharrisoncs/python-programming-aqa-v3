@@ -12,3 +12,4 @@ objectives: |-
   - Complete some practical Python exercises with lists
 lessons:
   - lesson1/index.yml
+  - lesson2/index.yml
