@@ -1,0 +1,181 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Capstone project - journey planner
+content: >+
+  # 🚆 **Capstone Project: Railway Journey Planner**
+
+
+  In this project, you will write a Python program that answers the question:
+
+
+  > **“How far can I travel in X minutes?”**
+
+
+  In the starter program **journey\_planner.py** attached, you have:
+
+
+  * a list of **station names**
+
+
+  * a list of **journey times** between each pair of stations
+
+
+  Your job is to write a function that:
+
+
+  * starts at **station 0**
+
+
+  * keeps adding journey times while there is still time left
+
+
+  * saves the stations visited as it goes
+
+
+  * stops when the next journey would take you over the limit
+
+
+  * returns the final journey including stations visited, e.g. "Aldford through
+  Bramley to Croxley".
+
+
+  This project uses everything you’ve learned so far:
+
+
+  * functions and return values
+
+
+  * input, output and variables
+
+
+  * lists and indexing
+
+
+  * `while` loops and `for` loops
+
+
+  * `if‑else`
+
+
+  * string handling
+
+
+  ***
+
+
+  ## 🧱 **Example Data**
+
+
+  ```python
+
+  stations = ["Aldford", "Bramley", "Croxley", "Dunford", "Elmstead", "Fenton"]
+
+
+  times = [3, 12, 8, 21, 11]
+
+  ```
+
+
+  This means:
+
+
+  * Aldford → Bramley takes **3 minutes**
+
+
+  * Bramley → Croxley takes **12 minutes**
+
+
+  * Croxley → Dunford takes **8 minutes**
+
+
+  * Dunford → Elmstead takes **21 minutes**
+
+
+  * Elmstead → Fenton takes **11 minutes**
+
+
+  ***
+
+
+  ## 🎯 **Your Task**
+
+
+  Write **two** functions. The **first** function:
+
+
+  ```python
+
+  max_station(minutes)
+
+  ```
+
+
+  returns the **index** of the last station you can reach within the given
+  number of minutes.
+
+
+  ### Example
+
+
+  ```python
+
+  >>> max_station(20)
+
+  2
+
+  ```
+
+
+  Because:
+
+
+  * 3 minutes → station 1
+
+
+  * +12 minutes → station 2 (total 15)
+
+
+  * +8 minutes → would be 23 → too far
+
+
+  So the last reachable station is **station 2**.
+
+
+  The **second** function:
+
+
+  ```python
+
+  journey_to(station)
+
+  ```
+
+
+  This function returns a string describing the journey from the first station
+  up to the station number given, for example:
+
+
+  ```python
+
+  >>> journey_to(2)
+
+  "Aldford through Bramley to Croxley."
+
+  ```
+
+
+  In the main program, ask the user for the number of minutes they have
+  available. Then use your two functions to calculate the possible journey and
+  output it. For example:
+
+
+  ```
+
+  Enter your available minutes:
+
+  20
+
+  In 20 minutes you can travel from Aldford through Bramley to Croxley.
+
+  ```
+

@@ -1,9 +1,14 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson2
-title: Lesson 2 - Structure of a for loop
-description: Structure of a for loop
+title: Lesson 2 - Iterating over a range of numbers
+description: Using range() in a count-controlled for loop
 objectives: |-
-  Describe a for loop, draw a flowchart for it
-  Interpret a for loop in code
+  - using range() to generate lists of numbers
+  - using range() in a count-controlled loop
+  - Pseudocode for definite iteration
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml

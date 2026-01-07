@@ -8,3 +8,7 @@ objectives: |-
   - Write code that iterates over a list and over a string in Python
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
+  - lessonpart3.yml
+  - lessonpart4.yml
+  - lessonpart5.yml
