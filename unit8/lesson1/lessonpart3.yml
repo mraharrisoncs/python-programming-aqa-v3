@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Implementing 2D arrays with lists of lists
+content: Enter your content here
