@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson2
-title: Lesson 2 - Lists versus arrays
+title: Lesson 2 - Lists and arrays in programs
 description: |-
   - Define an array and understand dimensions of an array
   - Know the differences between 1D arrays and lists
