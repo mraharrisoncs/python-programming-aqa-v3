@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Append, change remove
-content: >+
+content: >
   ## Append to a list
 
 
@@ -58,4 +58,21 @@ content: >+
 
   ```
 
+
+  ## List length
+
+
+  Just like with strings, the `len()` function finds the length of a list:
+
+
+  ```python
+
+  >>> len(fruits)
+
+  5
+
+  ```
+
+
+  Try out the above commands in the REPL, and then answer these questions
 showTerminal: true
