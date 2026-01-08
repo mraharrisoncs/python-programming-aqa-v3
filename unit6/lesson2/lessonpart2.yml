@@ -74,26 +74,28 @@ content: >+
                   ['O', 'X', 'X'] ,
                   ['.', 'X', '.'] ]
 
-  vowels ← ['a', 'e', 'i', 'o', u']
+  magic_square ← [ [8, 1, 6] ,
+                   [3, 5, 7] ,
+                   [4, 9, 2] ]
 
   ```
 
 
-  ## Accessing a 1D array element
+  ## Accessing a 2D array element
 
 
-  Pseudocode uses the same syntax as Python to access an element:
+  2D Arrays need two indexes, which we can think of as row and column:
 
 
   ```
 
-  >>> primes[0]
+  >>> tic_tac_toe[0][1]
 
-  2
+  'O'
 
-  >>> vowels[2]
+  >>> magic_square[1][2]
 
-  'i'
+  7
 
   ```
 
