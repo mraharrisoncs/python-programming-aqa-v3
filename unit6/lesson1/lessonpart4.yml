@@ -50,11 +50,11 @@ content: >+
 
   ```python
 
-  >>> fruits[1] = "peach"
+  >>> fruits.remove("kiwi")
 
   >>> fruits
 
-  ['apple', 'peach', 'kiwi', 'banana', 'pear', 'plum']
+  ['apple', 'peach', 'banana', 'pear', 'plum']
 
   ```
 
