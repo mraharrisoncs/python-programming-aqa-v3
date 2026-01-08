@@ -45,16 +45,50 @@ content: >
   ## Remove list element
 
 
-  The `remove` method can find and remove a list item
+  The `remove` method can find and remove a list item by name:
 
 
   ```python
+
+  >>> fruits = ['apple', 'peach', 'kiwi', 'banana', 'pear', 'plum']
 
   >>> fruits.remove("kiwi")
 
   >>> fruits
 
   ['apple', 'peach', 'banana', 'pear', 'plum']
+
+  ```
+
+
+  Note that `remove` gets rid of the **first** matching element only:
+
+
+  ```
+
+  >>> planets = ["Mercury", "Venus", "Venus", "Earth", Venus]
+
+  >>> planets.remove("Venus")
+
+  >>> planets
+
+  ['Mercury', 'Venus', 'Earth', 'Venus']
+
+  ```
+
+
+  We can also delete items by index number with the `del` command:
+
+
+  ```
+
+  >>> planets = ["Mercury", "Venus", "Earth", "Venus"]
+
+  >>> del planets[3]
+
+  >>> planets
+
+  ['Mercury', 'Venus', 'Earth']
 
   ```
 
