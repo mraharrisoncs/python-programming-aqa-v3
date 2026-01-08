@@ -5,7 +5,7 @@ content: >
   ## Append to a list
 
 
-  Lists can grow and shrink, they are not fixed in size. We can add items to the
+  Lists can grow and shrink: they are not fixed in size. We can add items to the
   end of the list using the `append` method. Here is an example:
 
 
@@ -76,3 +76,94 @@ content: >
 
   Try out the above commands in the REPL now, and then answer these questions.
 showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which method would you use to add an item to the end of a list in
+          Python?
+        options:
+          - id: "1"
+            value: append
+            explanation: Yes, the append method adds an item to the end of a list.
+            isCorrect: true
+          - id: "2"
+            value: remove
+            explanation: No, the remove method deletes an item from a list.
+          - id: "3"
+            value: add
+            explanation: No, add is not a list method.
+          - id: "4"
+            value: len
+            explanation: No, the len function returns the length of the list.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: If we start with dogs = ["pug", "spaniel"] and then execute
+          dogs.append("poodle"), what is the state of the dogs list?
+        options:
+          - id: "1"
+            value: '["pug", "spaniel", "poodle"]'
+            explanation: Yes, the append method adds the item to the end of the list.
+            isCorrect: true
+          - id: "2"
+            value: '["poodle", "pug", "spaniel"]'
+            explanation: No, append does not add the item to the front of the list.
+          - id: "3"
+            value: '["pug", "spanielpoodle"]'
+            explanation: No, append does not join the string to an existing element in the
+              list.
+          - id: "4"
+            value: '["pug", "spaniel"]'
+            explanation: No, append adds an item to the list, so the list will have an
+              additional element.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: If we start with dogs = ["pug", "spaniel", "poodle"], and we want to
+          get rid of "pug" leaving ["spaniel", "poodle"], which two commands
+          would work here?
+        options:
+          - id: "1"
+            value: dogs.remove("pug")
+            explanation: The remove method deletes the specified item from the list.
+            isCorrect: true
+          - id: "2"
+            value: del dogs[0]
+            explanation: Yes, the del statement removes the item at the specified index.
+            isCorrect: true
+          - id: "3"
+            value: dogs.append("pug")
+            explanation: No, the append method adds an item to the end of the list, doesn't
+              remove it.
+          - id: "4"
+            value: dogs[0] = ""
+            explanation: No, this command changes the first item to an empty list but it
+              remains in the list
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the list colours = ["red", "purple", "blue", "cyan", "green",
+          "yellow", "orange"], which command changes "purple" to "magenta"?
+        options:
+          - id: "1"
+            value: colours[1] = "magenta"
+            explanation: This command correctly accesses the index of "purple" and changes
+              it to "magenta".
+            isCorrect: true
+          - id: "2"
+            value: colours.append("magenta")
+            explanation: No, this command adds "magenta" to the end of the list, it does not
+              replace "purple".
+          - id: "3"
+            value: colours.remove("purple")
+            explanation: No, this command removes "purple" from the list but does not
+              replace it with "magenta".
+          - id: "4"
+            value: colours[2] = "magenta"
+            explanation: No, this command accesses the index of "blue" and changes it to
+              "magenta".
