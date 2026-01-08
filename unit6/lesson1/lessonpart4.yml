@@ -1,31 +1,61 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
-title: Simple programming with lists
-content: |
-  Change 
+title: Append, change remove
+content: >+
+  ## Append to a list
 
-  Append
 
-  Remove
+  Lists can grow and shrink, they are not fixed in size. We can add items to the
+  end of the list using the `append` method. Here is an example:
 
-  Join
 
-  Length
+  ```python
 
-  Sum
+  >>> fruits = ["apple", "orange", "kiwi", "banana", "pear"]
 
-  Sort
+  >>> fruits.append("plum")
 
-  Max, Min
+  >>> fruits
 
-  in
+  ['apple', 'orange', 'kiwi', 'banana', 'pear', 'plum']
 
-  tbc
+  ```
 
-  Worked examples:
 
-  The temperature program revisited
+  ## Change list element
 
-  Using a list for validation - the day of the week program revisited
 
-  PRIMM activity: a shopping list program
+  We can change or **overwrite** a list element by using its index, like this:
+
+
+  ```python
+
+  >>> fruits[1] = "peach"
+
+  >>> fruits
+
+  ['apple', 'peach', 'kiwi', 'banana', 'pear', 'plum']
+
+  ```
+
+
+  You can see that element with index 1 has changed from "orange" to "peach".
+
+
+  ## Remove list element
+
+
+  The `remove` method can find and remove a list item
+
+
+  ```python
+
+  >>> fruits[1] = "peach"
+
+  >>> fruits
+
+  ['apple', 'peach', 'kiwi', 'banana', 'pear', 'plum']
+
+  ```
+
+showTerminal: true
