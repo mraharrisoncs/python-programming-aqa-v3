@@ -1,36 +1,22 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: 2D arrays as lists-of-lists in Python
-content: >
+content: >+
   <br />
 
 
-  Let's see how to implement 2D arrays in Python. Remember the 
-
-
-  Pseudocode
-
-
-  ```python
-
-  # pseudocode to create an array of prime integers up to 13
-
-  primes ← [2, 3, 5, 7, 11, 13]
-
-  ```
-
-
-  Python
+  Let's see how to implement 2D arrays in Python. The syntax is very similar to
+  Pseudocode:
 
 
   ```python
 
-  # Python assignment to create a list that simulates an array of prime integers
-  up to 13
+  tic_tac_toe = [ ['.', 'O', 'O'] ,
+                  ['O', 'X', 'X'] ,
+                  ['.', 'X', '.'] ]
 
-  primes = [2, 3, 5, 7, 11, 13]
-
+  magic_square = [ [8, 1, 6] ,
+                   [3, 5, 7] ,
+                   [4, 9, 2] ]
   ```
 
-
-  2D arrays
