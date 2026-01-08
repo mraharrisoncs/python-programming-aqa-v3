@@ -1,9 +1,96 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: More list operations - sum, sort, min, max
-content: |
-  ## Sum
+content: >
+  In this section, we will explore some useful operations that can be performed
+  on lists in Python. These operations include `sum`, `sort`, `min`, and `max`.
+  Understanding these operations will help you manipulate and analyze data
+  stored in lists more effectively.
 
-  ## Sort
 
-  ## Min, Max
+  ### Sum
+
+
+  The `sum()` function calculates the total of all numerical elements in a list.
+  This is useful when you need to find the total or aggregate value of a list of
+  numbers.
+
+
+  ```python
+
+  numbers = [3, 5, 7, 9]
+
+  total = sum(numbers)
+
+  print("Sum:", total)  # Output: Sum: 24
+
+  ```
+
+
+  ### Sort
+
+
+  The `sort()` method sorts the elements of a list in ascending order by
+  default. You can also sort in descending order by using the `reverse=True`
+  parameter.
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry", "date"]
+
+  fruits.sort()
+
+  print("Sorted fruits:", fruits)  # Output: Sorted fruits: ['apple', 'banana',
+  'cherry', 'date']
+
+
+  fruits.sort(reverse=True)
+
+  print("Reverse sorted fruits:", fruits)  # Output: Reverse sorted fruits:
+  ['date', 'cherry', 'banana', 'apple']
+
+  ```
+
+
+  ### Min
+
+
+  The `min()` function returns the smallest element in a list. This is useful
+  for finding the minimum value in a list of numbers or the first element in
+  alphabetical order in a list of strings.
+
+
+  ```python
+
+  numbers = [3, 5, 7, 9]
+
+  minimum = min(numbers)
+
+  print("Minimum:", minimum)  # Output: Minimum: 3
+
+  ```
+
+
+  ### Max
+
+
+  The `max()` function returns the largest element in a list. This is useful for
+  finding the maximum value in a list of numbers or the last element in
+  alphabetical order in a list of strings.
+
+
+  ```python
+
+  numbers = [3, 5, 7, 9]
+
+  maximum = max(numbers)
+
+  print("Maximum:", maximum)  # Output: Maximum: 9
+
+  ```
+
+
+  These operations are fundamental when working with lists and can be applied in
+  various programming scenarios. Practice using these functions to become more
+  comfortable with list manipulation in Python.
