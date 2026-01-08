@@ -179,5 +179,5 @@ questionGroups:
         options:
           - id: "1"
             value: student[1]
-            explanation: The surname "Hussain" is at index 1 in the list.
+            explanation: Yes, the surname "Hussain" is at index 1 in the list.
             isCorrect: true
