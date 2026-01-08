@@ -1,21 +1,38 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: More list operations
-content: |
-  Change 
+title: List indexing and slicing
+content: >
+  ### Structure of a List
 
-  Append
 
-  Remove
+  <br />
 
-  Join
 
-  Length
+  The string above consists of a sequence of characters stored under a single
+  **identifier**, *greeting*. Within the string, each character has an
+  **index** value. Python, like most programming languages, indexes everything
+  from zero.&#x20;
 
-  Sum
 
-  Sort
+  Here is that *greeting* string again, showing the index of each character:
 
-  Max, Min
 
-  in
+  ```python
+
+  greeting
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  | 11  |
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  |  H  |  e  |  l  |  l  |  o  |     |  W  |  o  |  r  |  l  |  d  |  !  |
+
+  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
+  ```
+
+
+  As you can see, the 'H' in "Hello World!" has index zero, the space between
+  words has index 5, and the exclamation mark at the end has index 11. 

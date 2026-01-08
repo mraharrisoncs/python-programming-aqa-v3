@@ -1,7 +1,25 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Simple programming with lists
-content: |+
+content: |
+  Change 
+
+  Append
+
+  Remove
+
+  Join
+
+  Length
+
+  Sum
+
+  Sort
+
+  Max, Min
+
+  in
+
   tbc
 
   Worked examples:
@@ -11,4 +29,3 @@ content: |+
   Using a list for validation - the day of the week program revisited
 
   PRIMM activity: a shopping list program
-
