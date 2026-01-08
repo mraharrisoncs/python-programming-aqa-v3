@@ -2,6 +2,12 @@
 id: lessonpart3
 title: List indexing and slicing
 content: >
+  Remember our `greeting = "Hello World!"` example? We said that we could break
+  this string into parts called **substrings**. In Python we do that by
+  specifying the  **index position(s)** of the substring we want. Let's take
+  another look at the string:
+
+
   ### Structure of a List
 
 

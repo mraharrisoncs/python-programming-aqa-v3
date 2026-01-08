@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Creating and using lists
-content: >+
+content: >
   <br />
 
 
@@ -39,7 +39,7 @@ content: >+
 
   # create a list of fruits as strings
 
-  fruits = ["apple", "orange", "kiwi"]
+  fruits = ["apple", "orange", "kiwi", "banana", "pear"]
 
 
   # create a student record as a mix of strings, integers, floats and Booleans
@@ -71,7 +71,7 @@ content: >+
 
   ```python
 
-  >>> fruits = ["apple", "orange", "kiwi"]
+  >>> fruits = ["apple", "orange", "kiwi", "banana", "pear"]
 
   >>> fruits[0]
 
@@ -93,7 +93,6 @@ content: >+
 
   Now open the REPL and type in the above commands. Then try the questions
   below.
-
 showTerminal: true
 questionGroups:
   - id: "1"
@@ -143,8 +142,8 @@ questionGroups:
     questions:
       - id: "1"
         type: choice
-        content: Using the list fruits = ["apple", "orange", "kiwi"], which command
-          would display "kiwi"?
+        content: Using the list fruits = ["apple", "orange", "kiwi", "banana", "pear"],
+          which command would display "kiwi"?
         options:
           - id: "1"
             value: fruits[2]
@@ -155,10 +154,10 @@ questionGroups:
             explanation: No, 'apple' is at index 0 in the list.
           - id: "3"
             value: fruits[1]
-            explanation: No, 'orange' is at index 1 in the list.
+            explanation: No, 'orange' is at index 1 in the list (because we count from 0)
           - id: "4"
             value: fruits[3]
-            explanation: No, there is no index 3 in the list, the indices are 0, 1, 2.
+            explanation: No, 'banana' is at index 3 in the list (because we count from 0)
   - id: "4"
     questions:
       - id: "1"
