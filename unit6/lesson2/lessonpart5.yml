@@ -81,7 +81,9 @@ content: >+
 
   * You always start at **station 0**.
 
+
   * If you have enough time to travel the first segment, you reach station 1;
+
 
   * if you have enough time for the next segment, you reach station 2; and so
   on.

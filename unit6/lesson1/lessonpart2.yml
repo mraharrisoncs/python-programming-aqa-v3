@@ -1,17 +1,184 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Creating and using lists
-content: |
+content: >+
   <br />
 
-  Lists can contain any data type
 
-  Creating a list
+  ## Creating a list
 
-  Access items
 
-  Change item
+  In Python, you can just assign a list to a variable like this:
 
-  Append
 
-  Remove 
+  ```python
+
+  temps = [24, 26, 31, 26, 21, 18, 22]
+
+  ```
+
+
+  Note that we use **square brackets** to indicate a list, and **elements** are
+  separated by commas. 
+
+
+  ## Lists can contain any data type
+
+
+  Lists can contain integers, floats, strings or Booleans, or even other lists!
+  Here are some more example list assignments
+
+
+  ```python
+
+  # create a list of weights for measuring ingredients - a mix of integers and
+  floats
+
+  weights = [1, 2.5, 5, 7.5, 10, 15, 20, 40]
+
+
+  # create a list of fruits as strings
+
+  fruits = ["apple", "orange", "kiwi"]
+
+
+  # create a student record as a mix of strings, integers, floats and Booleans
+
+  student = ["Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False]
+
+
+  # create a list of rooms in an adventure game. Each room is another list 
+
+  # containing room number, description, object, doors and numbers of linked
+  rooms
+
+  rooms = [ [1, "Hall", "Mirror", "NESW", 2, 3, 4],
+            [2, "Dining Room", "Candlestick", "ESW", 1, 5, 6] ]
+
+  ```
+
+
+  That last example might be used to store the configuration of a world in a
+  text adventure! See Unit 8 for more on lists of lists. 
+
+
+  ## Access items by index
+
+
+  We can retrieve the content of a list by its **index number**, the position in
+  the list, counting from 0:
+
+
+  ```python
+
+  >>> fruits = ["apple", "orange", "kiwi"]
+
+  >>> fruits[0]
+
+  apple
+
+  >>> fruits[1]
+
+  orange
+
+
+  >>> student = ["Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False]
+
+  >>> student[6]
+
+  False
+
+  ```
+
+
+  Now open the REPL and type in the above commands. Then try the questions
+  below.
+
+showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which of the following is true about data types in a Python list?
+        options:
+          - id: "1"
+            value: Strings are not allowed in a Python list
+            explanation: No, any data type can be included in a Python list.
+          - id: "2"
+            value: Booleans are not allowed in a Python list
+            explanation: No, any data type can be included in a Python list.
+          - id: "3"
+            value: Only integers and floats are allowed in a Python list
+            explanation: No, any data type can be included in a Python list.
+          - id: "4"
+            value: Any data type can be included in a Python list
+            explanation: Yes, integers, floats, Booleans, strings and other lists!
+            isCorrect: true
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which of the following is the correct way to create a list of integers
+          in Python?
+        options:
+          - id: "1"
+            value: numbers = [1, 2, 3, 4, 5]
+            explanation: This is the correct syntax for creating a list of integers using
+              square brackets.
+            isCorrect: true
+          - id: "2"
+            value: numbers = (1, 2, 3, 4, 5)
+            explanation: This creates something called a tuple, not a list, because it uses
+              parentheses.
+          - id: "3"
+            value: numbers = {1, 2, 3, 4, 5}
+            explanation: This creates something called a set, not a list, because it uses
+              curly braces.
+          - id: "4"
+            value: numbers = 1, 2, 3, 4, 5
+            explanation: This creates a tuple by default, not a list, because it lacks
+              square brackets.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Using the list fruits = ["apple", "orange", "kiwi"], which command
+          would display "kiwi"?
+        options:
+          - id: "1"
+            value: fruits[2]
+            explanation: Yes, 'kiwi' is at index 2 in the list.
+            isCorrect: true
+          - id: "2"
+            value: fruits[0]
+            explanation: No, 'apple' is at index 0 in the list.
+          - id: "3"
+            value: fruits[1]
+            explanation: No, 'orange' is at index 1 in the list.
+          - id: "4"
+            value: fruits[3]
+            explanation: No, there is no index 3 in the list, the indices are 0, 1, 2.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: string
+        content: What is the index number used to access the first element of a list in
+          Python?
+        options:
+          - id: "1"
+            value: "0"
+            explanation: In Python, list indexing starts at 0.
+            isCorrect: true
+  - id: "5"
+    questions:
+      - id: "1"
+        type: string
+        content: Given the list student = ["Taha", "Hussain", 10, "Pankhurst", 104,
+          93.5, False], type the command that displays the student's surname
+          "Hussain".
+        options:
+          - id: "1"
+            value: student[1]
+            explanation: The surname "Hussain" is at index 1 in the list.
+            isCorrect: true
