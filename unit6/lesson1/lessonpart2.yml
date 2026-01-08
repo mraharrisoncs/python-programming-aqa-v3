@@ -62,11 +62,29 @@ content: >
   text adventure! See Unit 8 for more on lists of lists. 
 
 
-  ## Access items by index
+  ## List length
 
 
-  We can retrieve the content of a list by its **index number**, the position in
-  the list, counting from 0:
+  The `len()` function returns the length of a list (the total number of
+  elements).
+
+
+  ```python
+
+  >>> fruits = ["apple", "orange", "kiwi", "banana", "pear"]
+
+  >>> len(fruits)
+
+  5
+
+  ```
+
+
+  ## Accessing a list item
+
+
+  We can access an item in a list by its **index number**, the position in the
+  list, counting from 0:
 
 
   ```python
@@ -77,6 +95,7 @@ content: >
 
   apple
 
+
   >>> fruits[1]
 
   orange
@@ -84,15 +103,15 @@ content: >
 
   >>> student = ["Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False]
 
-  >>> student[6]
+  >>> student[5]
 
-  False
+  93.5
 
   ```
 
 
   Now open the REPL and type in the above commands. Then try the questions
-  below.
+  below. 
 showTerminal: true
 questionGroups:
   - id: "1"

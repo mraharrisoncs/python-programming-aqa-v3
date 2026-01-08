@@ -64,9 +64,9 @@ content: >
   Note that `remove` gets rid of the **first** matching element only:
 
 
-  ```
+  ```python
 
-  >>> planets = ["Mercury", "Venus", "Venus", "Earth", Venus]
+  >>> planets = ["Mercury", "Venus", "Venus", "Earth", "Venus"]
 
   >>> planets.remove("Venus")
 
@@ -80,7 +80,7 @@ content: >
   We can also delete items by index number with the `del` command:
 
 
-  ```
+  ```python
 
   >>> planets = ["Mercury", "Venus", "Earth", "Venus"]
 

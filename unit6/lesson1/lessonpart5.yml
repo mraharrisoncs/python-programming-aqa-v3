@@ -1,31 +1,64 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
-title: Simple programming with lists
-content: |
-  Change 
+title: List membership - index and in
+content: >+
+  ## Finding items in a list
 
-  Append
 
-  Remove
+  We can find the index of an item in a list with the `index()` method. This
+  returns the index of the first item that matches the argument:
 
-  Join
 
-  Length
+  ```python
 
-  Sum
+  >>> planets = ["Mercury", "Venus", "Venus", "Earth", "Venus"]
 
-  Sort
+  >>> planets.index("Venus")
 
-  Max, Min
+  1
 
-  in
 
-  tbc
+  >>> colours = ["red", "magenta", "blue", "cyan", "green", "yellow", "orange"]
 
-  Worked examples:
+  >>> colours.index("yellow")
 
-  The temperature program revisited
+  5
 
-  Using a list for validation - the day of the week program revisited
 
-  PRIMM activity: a shopping list program
+  ```
+
+
+  If the item is not in the list, the instruction will fail with a Python
+  `ValueError`:
+
+
+  ```python
+
+  >>> pets = ["dog", "cat", "hamster"]
+
+  >>> pets.index("gecko")
+
+  ValueError
+
+  ```
+
+
+  Just like we did with strings, we can check an element is in a list with the
+  `in` operator:
+
+
+  ```python
+
+  >>> pets = ["dog", "cat", "hamster"]
+
+  >>> "dog" in pets
+
+  True
+
+  >>> "gecko" in pets
+
+  False
+
+  ```
+
+showTerminal: true
