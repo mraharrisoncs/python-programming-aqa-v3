@@ -1,4 +1,9 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
-title: Programming 2
-content: Enter your content here
+title: More list operations - sum, sort, min, max
+content: |
+  ## Sum
+
+  ## Sort
+
+  ## Min, Max
