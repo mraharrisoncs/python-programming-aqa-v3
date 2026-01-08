@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: Implementing arrays as lists in Python
+title: 2D arrays as lists-of-lists in Python
 content: >
-  tbc
+  <br />
 
 
-  why Python doesn't have arrays (single way of doing things)
+  Let's see how to implement 2D arrays in Python. Remember the 
 
 
   Pseudocode
@@ -33,4 +33,4 @@ content: >
   ```
 
 
-  Programming with lists
+  2D arrays

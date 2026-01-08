@@ -50,3 +50,50 @@ content: >+
 
   ```
 
+
+  ## Defining 2D arrays
+
+
+  The pseudocode statement to allocate a two-dimensional array is as follows:
+
+
+  ```
+
+  Identifier ← [ [Exp, … ,Exp], 
+                  … 
+                 [Exp, … ,Exp] ]
+  ```
+
+
+  For example:
+
+
+  ```
+
+  tic_tac_toe ← [ ['.', 'O', 'O'] ,
+                  ['O', 'X', 'X'] ,
+                  ['.', 'X', '.'] ]
+
+  vowels ← ['a', 'e', 'i', 'o', u']
+
+  ```
+
+
+  ## Accessing a 1D array element
+
+
+  Pseudocode uses the same syntax as Python to access an element:
+
+
+  ```
+
+  >>> primes[0]
+
+  2
+
+  >>> vowels[2]
+
+  'i'
+
+  ```
+
