@@ -1,18 +1,52 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Pseudocode for arrays
-content: |+
-  tbc
+content: >+
+  Let's take a look at the AQA Pseudocode for arrays, which you will see in exam
+  papers.
 
-  1D arrays
+
+  ## Defining 1D arrays
+
+
+  The pseudocode statement to allocate a one-dimensional array is as follows:
+
 
   ```
+
   Identifier ← [Exp, … ,Exp]
-  ```
-
-  for example
 
   ```
+
+
+  Where `Exp` means an expression. Expressions can be literal values or
+  arithmetic, Boolean or string expressions. For example:
+
+
+  ```
+
   primes ← [2, 3, 5, 7, 11, 13]
+
+  vowels ← ['a', 'e', 'i', 'o', u']
+
+  ```
+
+
+  ## Accessing a 1D array element
+
+
+  Pseudocode uses the same syntax as Python to access an element:
+
+
+  ```
+
+  >>> primes[0]
+
+  2
+
+  >>> vowels[2]
+
+  'i'
+
   ```
 
