@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Why 2D?
+title: Why 2D arrays?
 content: |+
   ## Some real-world information is grid-like
 
