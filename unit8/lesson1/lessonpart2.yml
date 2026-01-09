@@ -1,4 +1,115 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
-title: 2D arrays and pseudocode
-content: Enter your content here
+title: Creating and using 2D arrays in Python
+content: >
+  ## Creating a 2D array
+
+
+  In Python, a 2D array can be represented using a **list of lists**. Each
+  **sublist** represents a row in the 2D array. Here's how you can create a 2D
+  array:
+
+
+  ```python
+
+  grid= [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+  ]
+
+  ```
+
+
+  Just like 1D arrays (lists) we use square brackets. We need one pair of
+  brackets for the outer list, then another pair of brackets around **each
+  sublist**, separated by commas. Each sublist contains elements that represent
+  the columns in that row.
+
+
+  > Note: although Python doesn't have genuine arrays, and uses *lists of lists*
+  to implement 2D arrays, we will just use the phrase **2D array** in the rest
+  of this unit, for simplicity!
+
+
+  ## Python 2D arrays can contain any data type
+
+
+  All Python data structures can contain integers, floats, strings, Booleans, or
+  even other lists. Here are some more examples of 2D array assignments:
+
+
+  ```python
+
+  # create a 2D array of temperatures for different cities over a week
+
+  temperatures = [
+      [24, 26, 31, 26, 21, 18, 22],  # City 1
+      [30, 32, 33, 31, 29, 28, 27],  # City 2
+      [20, 22, 25, 23, 21, 19, 18]   # City 3
+  ]
+
+
+  # create a 2D array of student records, each containing name, age, and grade
+
+  students = [
+      ["Alice", 14, 88.5],
+      ["Bob", 15, 92.0],
+      ["Charlie", 14, 85.0]
+  ]
+
+
+  # create a 2D array representing a grid in a game, with each cell containing a
+  description
+
+  game_grid = [
+      ["Start", "Path", "Treasure"],
+      ["Path", "Enemy", "Path"],
+      ["Path", "Path", "End"]
+  ]
+
+  ```
+
+
+  ## Accessing an item in a 2D array
+
+
+  We can access an item in a 2D array by specifying the row index and the column
+  index, both starting from 0:
+
+
+  ```python
+
+  matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+  ]
+
+
+  # Access the element in the first row, second column
+
+  print(matrix[0][1])  # Output: 2
+
+
+  # Access the element in the third row, third column
+
+  print(matrix[2][2])  # Output: 9
+
+
+  students = [
+      ["Alice", 14, 88.5],
+      ["Bob", 15, 92.0],
+      ["Charlie", 14, 85.0]
+  ]
+
+
+  # Access the grade of the second student
+
+  print(students[1][2])  # Output: 92.0
+
+  ```
+
+
+  Now open the REPL and type in the above commands. Then try the questions
+  below.

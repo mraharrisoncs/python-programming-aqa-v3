@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Creating and traversing a 2D list
+title: Traversing a 2D array
 content: |
   tbc
 showTerminal: true

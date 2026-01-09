@@ -1,13 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart7
 title: "Python practical: lists"
-content: |
-  Enter your content here
+content: |+
+  Practical exercise tbc
 
-  Worked examples:
-
-  The temperature program revisited
-
-  Using a list for validation - the day of the week program revisited
-
-  PRIMM activity: a shopping list program
