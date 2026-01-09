@@ -12,7 +12,7 @@ content: >
 
   ```python
 
-  grid= [
+  matrix = [
       [1, 2, 3],
       [4, 5, 6],
       [7, 8, 9]
@@ -56,10 +56,9 @@ content: >
 
   students = [
       ["Taha",     "Hussain",   10, "Pankhurst",   104, 93.5,  False],
-      ["Aisha",    "Khan",       9, "Nightingale",  91, 88.0,  False],
-      ["Leo",      "Morgan",    11, "Wilberforce", 112, 76.5,  True],
+      ["Aisha",    "Khan",       9, "Nightingale",  91, 88.0,  True],
+      ["Leo",      "Morgan",    11, "Wilberforce", 112, 76.5,  False],
       ["Sophie",   "Turner",     8, "Barnardo",     87, 95.0,  False],
-      ["Ethan",    "Reid",      11, "Wilberforce", 110, 78.0,  True],
       ["Hannah",   "Lewis",      8, "Barnardo",     89, 97.0,  False]
   ]
 
@@ -76,12 +75,6 @@ content: >
   ```
 
 
-  <br />
-
-
-  <br />
-
-
   ## Accessing an item in a 2D array
 
 
@@ -91,7 +84,7 @@ content: >
 
   ```python
 
-  matrix = [
+  >>> matrix = [
       [1, 2, 3],
       [4, 5, 6],
       [7, 8, 9]
@@ -100,27 +93,34 @@ content: >
 
   # Access the element in the first row, second column
 
-  print(matrix[0][1])  # Output: 2
+  >>> matrix[0][1]
+
+  2
 
 
   # Access the element in the third row, third column
 
-  print(matrix[2][2])  # Output: 9
+  >>> matrix[2][2]
+
+  9
 
 
-  students = [
-      ["Alice", 14, 88.5],
-      ["Bob", 15, 92.0],
-      ["Charlie", 14, 85.0]
+  >>> students = [
+      ["Taha",     "Hussain",   10, "Pankhurst",   104, 93.5,  False],
+      ["Aisha",    "Khan",       9, "Nightingale",  91, 88.0,  True],
+      ["Leo",      "Morgan",    11, "Wilberforce", 112, 76.5,  False],
+      ["Sophie",   "Turner",     8, "Barnardo",     87, 95.0,  False],
+      ["Hannah",   "Lewis",      8, "Barnardo",     89, 97.0,  False]
   ]
 
 
-  # Access the grade of the second student
+  # Access the year group (column index 2) of the second student (row index 1)
 
-  print(students[1][2])  # Output: 92.0
+  >>> students[1][2]
+
+  9
 
   ```
 
 
-  Now open the REPL and type in the above commands. Then try the questions
-  below.
+  Now open the REPL and try the above commands. Then try the questions below.
