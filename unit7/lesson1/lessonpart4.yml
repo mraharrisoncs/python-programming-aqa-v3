@@ -1,4 +1,22 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Iterating over a string
-content: Enter your content here
+content: >+
+  ## Iterating Over a String
+
+
+  A `for` loop can also be used to iterate over each character in a string. Here
+  is an example:
+
+
+  ```python
+
+  word = "hello"
+
+  for letter in word:
+      print(letter)
+  ```
+
+
+  This loop will print each character in the string `word`.
+

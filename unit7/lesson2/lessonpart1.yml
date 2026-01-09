@@ -1,4 +1,27 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: The Python range() function
-content: Enter your content here
+content: >-
+  ## Using `range()` to Create a Loop
+
+
+  The `range()` function is useful for generating a sequence of numbers, which
+  can be used to control the iteration in a `for` loop. You can specify the
+  start, stop, and step values. Here is an example that mimics a `FOR i = a TO b
+  STEP c` loop:
+
+
+  ```python
+
+  for i in range(0, 10, 2):
+      print(i)
+  ```
+
+
+  In this example, `range(0, 10, 2)` generates numbers starting from 0 up to
+  (but not including) 10, with a step of 2. The loop will print: 0, 2, 4, 6, 8.
+
+
+  These examples demonstrate how to use `for` loops to iterate over lists and
+  strings, as well as how to use the `range()` function to create loops with
+  specific start, stop, and step values.

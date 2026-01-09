@@ -1,4 +1,71 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Structure of a for loop
-content: Enter your content here
+content: >
+  In Python, a `for` loop is used to iterate over a sequence, such as a list or
+  string.&#x20;
+
+
+  ### Structure of a `for` Loop
+
+
+  The basic structure of a `for` loop in Python is as follows:
+
+
+  ```python
+
+  for variable in sequence:
+      # Code block to execute
+  ```
+
+
+  * **`variable`**: This is a temporary variable that takes the value of the
+  next item in the sequence on each iteration.
+
+
+  * **`sequence`**: This is the collection of items you want to iterate over.
+
+
+  * **Code block**: This is the block of code that will be executed on each
+  iteration. It is indented to indicate that it belongs to the loop.
+
+
+  ### Example
+
+
+  Here is a simple example of a `for` loop iterating over a list:
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry"]
+
+  for fruit in fruits:
+      print(fruit)
+  ```
+
+
+  In this example, the loop will print each fruit in the list one by one.
+
+
+  ### Using `range()`
+
+
+  The `range()` function is often used with `for` loops to generate a sequence
+  of numbers. Here is an example:
+
+
+  ```python
+
+  for i in range(5):
+      print(i)
+  ```
+
+
+  This loop will print numbers from 0 to 4. The `range(5)` generates a sequence
+  of numbers starting from 0 up to, but not including, 5.
+
+
+  Understanding the structure of a `for` loop is essential for implementing
+  count-controlled iteration in Python. In the following lessons, we will
+  explore how to iterate over lists and strings using `for` loops.

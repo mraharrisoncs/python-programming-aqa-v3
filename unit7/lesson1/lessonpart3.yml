@@ -1,4 +1,25 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: Iterating over a list
-content: Enter your content here
+content: >+
+  ## Iterating Over a List
+
+
+  In Python, a `for` loop is commonly used to iterate over elements in a list.
+  This allows you to perform operations on each item in the list. Here is a
+  simple example:
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry"]
+
+  for fruit in fruits:
+      print(fruit)
+  ```
+
+
+  In this example, the loop iterates over each element in the `fruits` list and
+  prints it.
+
+

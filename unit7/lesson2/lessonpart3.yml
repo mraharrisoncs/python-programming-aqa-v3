@@ -1,4 +1,103 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: The accumulator pattern with 'for'
-content: Enter your content here
+content: >
+  ### The Accumulator Pattern with 'for' Loop
+
+
+  The accumulator pattern is a common programming technique used to calculate a
+  total or aggregate value by iterating over a sequence of data. In Python, this
+  is often implemented using a `for` loop. Below are several examples
+  demonstrating how to use the accumulator pattern with a `for` loop.
+
+
+  #### Example 1: Sum of Numbers
+
+
+  Let's calculate the sum of numbers from 1 to 10 using the accumulator pattern.
+
+
+  ```python
+
+  total = 0
+
+  for number in range(1, 11):
+      total += number
+  print("The sum of numbers from 1 to 10 is:", total)
+
+  ```
+
+
+  In this example, `total` is initialized to 0. The `for` loop iterates over
+  each number in the range from 1 to 10, adding each number to `total`.
+
+
+  #### Example 2: Product of Numbers
+
+
+  Now, let's calculate the product of numbers from 1 to 5.
+
+
+  ```python
+
+  product = 1
+
+  for number in range(1, 6):
+      product *= number
+  print("The product of numbers from 1 to 5 is:", product)
+
+  ```
+
+
+  Here, `product` is initialized to 1. The `for` loop multiplies each number in
+  the range from 1 to 5 with `product`.
+
+
+  #### Example 3: Sum of Even Numbers
+
+
+  Let's find the sum of even numbers between 1 and 20.
+
+
+  ```python
+
+  sum_even = 0
+
+  for number in range(1, 21):
+      if number % 2 == 0:
+          sum_even += number
+  print("The sum of even numbers from 1 to 20 is:", sum_even)
+
+  ```
+
+
+  In this example, the `for` loop checks if a number is even using the modulus
+  operator `%`. If the number is even, it is added to `sum_even`.
+
+
+  #### Example 4: Accumulating Values from a List
+
+
+  Suppose we have a list of numbers, and we want to calculate their total.
+
+
+  ```python
+
+  numbers = [3, 5, 7, 9, 11]
+
+  total = 0
+
+  for number in numbers:
+      total += number
+  print("The total of the list is:", total)
+
+  ```
+
+
+  Here, the `for` loop iterates over each element in the list `numbers`, adding
+  each element to `total`.
+
+
+  These examples illustrate how the accumulator pattern can be used in various
+  scenarios to aggregate values using a `for` loop. Practice implementing this
+  pattern to become proficient in solving problems that require accumulation.
