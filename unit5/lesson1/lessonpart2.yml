@@ -27,9 +27,9 @@ content: |+
   while len(password) < 10:
   ```
 
-  The second line is our `while` statement. After the `while` keyword is a conditional or **Boolean expression**. We met these in Unit 4.  Remember, an **expression** is any valid sequence of **terms** and **operators** that can be **evaluated** to obtain a result. Just like the `if` statement, `while` takes a **Boolean expression**, which evaluates to either `True` or `False`. 
+  &#x20;After the `while` keyword is a conditional or **Boolean expression**. We met these in Unit 4, a **Boolean expression** evaluates to either `True` or `False`. 
 
-  We met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if string stored in the `password` variable is less than ten characters long. If the expression is `True` then Python will enter the loop and execute the code block that follows the colon `:`
+  We met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if string stored in the `password` variable is less than ten characters long, and Python will  execute the **code block** that follows the colon `:`
 
   When this program runs for the first time, we know that password is set to `""` which has length of zero. Zero is less than ten, so the expression evaluates to `True` and the indented code block is executed.
 
@@ -37,17 +37,13 @@ content: |+
   password = input("type a new password, minimum length 10 characters: ") 
   ```
 
-  Line 3 will now run, and ask the user for a password, and stores it in the variable `password`.
-
-  After this there is no more indented code, so Python loops back to the `while` statement. 
+  It now asks the user for a password, and stores it in the variable `password`. After this there is no more indented code, so Python loops back to the `while` statement. 
 
   ```python
   while len(password) < 10:
   ```
 
-  If the inputted password has less than ten characters, the condition evaluates to `True` again, and the indented code block is executed once more. This happens every time the user inputs a password that is too short.
-
-  However once the new password has ten characters or more, the expression `len(password) < 10` will evaluate to `False` and the while loop will `terminate` - this means it will skip the indented code block and execute the next line that is not indented, the `print()` statement. 
+  If the password is still too short, the condition evaluates to `True` again, and the indented code block is executed once more. However once the new password has **ten characters or more**, the expression `len(password) < 10` will evaluate to `False` and the while loop will `terminate` - this means it will skip the indented code block and execute the next line that is not indented, the `print()` statement. 
 
   ```python
   print(f"your new password is {password}")
