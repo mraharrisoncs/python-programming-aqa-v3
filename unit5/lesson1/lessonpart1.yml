@@ -5,14 +5,15 @@ content: >
   ## Iteration
 
 
-  To iterate is to repeat a process. Iteration is synonymous with repetition or
-  looping.\* Programs containing only sequence and selection cannot run
-  continuously; they must come to an end.&#x20;
+  To iterate is to repeat a process. Iterating means repeating or
+  looping.\*&#x20;
 
 
-  This is not very useful when you want keep processing input until some goal is
-  achieved - for instance completing a game, calculating the company payroll or
-  simply getting your password correct after multiple attempts.
+  Programs with only sequence and selection must come to an end, they can't
+  repeat steps. This is not very useful when you want keep processing input
+  until some goal is achieved, such as completing a game, calculating the
+  company payroll or simply getting your password correct after multiple
+  attempts.
 
 
   In short, we need **iteration**, along with **sequence** and **selection**, to
