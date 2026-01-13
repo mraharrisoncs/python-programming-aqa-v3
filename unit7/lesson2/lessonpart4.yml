@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: "Python practical: iterating over a range"
-content: >
-  ## Worked Example 1: Sum of First N Natural Numbers
+content: >+
+  ### Worked Example 1: Sum of First N Natural Numbers
 
 
   In this example, we'll use a count-controlled loop to calculate the sum of the
@@ -27,7 +27,7 @@ content: >
   ```
 
 
-  ## Worked Example 2: Generating a Multiplication Table
+  ### Worked Example 2: Generating a Multiplication Table
 
 
   This example demonstrates how to generate a multiplication table for a given
@@ -56,7 +56,7 @@ content: >
   ```
 
 
-  ## Worked Example 3: Calculating Factorial
+  ### Worked Example 3: Calculating Factorial
 
 
   In this example, we'll calculate the factorial of a number using a
@@ -80,7 +80,3 @@ content: >
 
   ```
 
-
-  These examples illustrate practical uses of count-controlled iteration in
-  Python, showcasing how loops can be used to perform repetitive tasks
-  efficiently.

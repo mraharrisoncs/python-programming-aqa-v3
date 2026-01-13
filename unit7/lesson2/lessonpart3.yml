@@ -2,16 +2,13 @@
 id: lessonpart3
 title: The accumulator pattern with 'for'
 content: >
-  ### The Accumulator Pattern with 'for' Loop
-
-
   The accumulator pattern is a common programming technique used to calculate a
   total or aggregate value by iterating over a sequence of data. In Python, this
   is often implemented using a `for` loop. Below are several examples
   demonstrating how to use the accumulator pattern with a `for` loop.
 
 
-  #### Example 1: Sum of Numbers
+  ### Example 1: Sum of Numbers
 
 
   Let's calculate the sum of numbers from 1 to 10 using the accumulator pattern.
@@ -32,10 +29,11 @@ content: >
   each number in the range from 1 to 10, adding each number to `total`.
 
 
-  #### Example 2: Product of Numbers
+  ### Example 2: Product of Numbers
 
 
-  Now, let's calculate the product of numbers from 1 to 5.
+  Now, let's calculate the product of numbers from 1 to 5. (The product is the
+  result of **multiplying** numbers).
 
 
   ```python
@@ -53,7 +51,7 @@ content: >
   the range from 1 to 5 with `product`.
 
 
-  #### Example 3: Sum of Even Numbers
+  ### Example 3: Sum of Even Numbers
 
 
   Let's find the sum of even numbers between 1 and 20.
@@ -75,7 +73,7 @@ content: >
   operator `%`. If the number is even, it is added to `sum_even`.
 
 
-  #### Example 4: Accumulating Values from a List
+  ### Example 4: Accumulating Values from a List
 
 
   Suppose we have a list of numbers, and we want to calculate their total.

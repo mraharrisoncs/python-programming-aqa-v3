@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: The Python range() function
-content: >-
+content: >
   ## Using `range()` to Create a Loop
 
 
@@ -22,6 +22,4 @@ content: >-
   (but not including) 10, with a step of 2. The loop will print: 0, 2, 4, 6, 8.
 
 
-  These examples demonstrate how to use `for` loops to iterate over lists and
-  strings, as well as how to use the `range()` function to create loops with
-  specific start, stop, and step values.
+  tbc
