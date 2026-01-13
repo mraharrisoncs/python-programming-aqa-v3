@@ -2,7 +2,7 @@
 id: lessonpart5
 title: List membership - index and in
 content: >
-  ## Finding items in a list
+  ### Finding items in a list
 
 
   We can find the index of an item in a list with the `index()` method. This
@@ -43,7 +43,10 @@ content: >
   ```
 
 
-  Just like we did with strings, we can check an element is in a list with the
+  ### Check item in list
+
+
+  Just like we did with strings, we can check an itemis in a list with the
   `in` operator:
 
 

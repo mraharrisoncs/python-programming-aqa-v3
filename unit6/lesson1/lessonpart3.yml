@@ -1,10 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: List slicing
-content: >+
-  ## List slicing
-
-
+content: >
   You've seen how to access individual elements in a list using their index
   positions. What if we want a sequence of more than one element, e.g. the first
   three or the last two?
@@ -30,7 +27,7 @@ content: >+
   example? Let's see how to slice that up.
 
 
-  ## Structure of a List
+  ### Structure of a list
 
 
   Here is that **fruits** list again, showing the index of each element:
@@ -155,9 +152,8 @@ content: >+
   ```
 
 
-  Now use the REPL on the right to practice string slicing, and answer the
+  Now use the REPL on the right to practice list slicing, and answer the
   following questions.
-
 showTerminal: true
 questionGroups:
   - id: "1"

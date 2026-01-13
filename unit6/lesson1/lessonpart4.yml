@@ -2,7 +2,7 @@
 id: lessonpart4
 title: Append, change and remove list items
 content: >
-  ## Append to a list
+  ### Append to a list
 
 
   Lists can grow and shrink: they are not fixed in size. We can add items to the
@@ -22,7 +22,7 @@ content: >
   ```
 
 
-  ## Change list element
+  ### Change list element
 
 
   We can change or **overwrite** a list element by using its index, like this:
@@ -42,7 +42,7 @@ content: >
   You can see that element with index 1 has changed from "orange" to "peach".
 
 
-  ## Remove list element
+  ### Remove list element
 
 
   The `remove` method can find and remove a list item by name:
@@ -93,7 +93,7 @@ content: >
   ```
 
 
-  ## List length
+  ### List length
 
 
   Just like with strings, the `len()` function finds the length of a list:

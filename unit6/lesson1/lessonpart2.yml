@@ -2,7 +2,7 @@
 id: lessonpart2
 title: Creating and using lists
 content: >
-  ## Creating a list
+  ### Creating a list
 
 
   In Python, you can just assign a list to a variable like this:
@@ -19,7 +19,7 @@ content: >
   separated by commas. 
 
 
-  ## Lists can contain any data type
+  ### Lists can contain any data type
 
 
   Lists can contain integers, floats, strings or Booleans, or even other lists!
@@ -59,7 +59,7 @@ content: >
   text adventure! See Unit 8 for more on lists of lists. 
 
 
-  ## List length
+  ### List length
 
 
   The `len()` function returns the length of a list (the total number of
@@ -77,7 +77,7 @@ content: >
   ```
 
 
-  ## Accessing a list item
+  ### Accessing a list item
 
 
   We can access an item in a list by its **index number**, the position in the
