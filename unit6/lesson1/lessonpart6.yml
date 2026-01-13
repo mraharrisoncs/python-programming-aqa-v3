@@ -2,14 +2,11 @@
 id: lessonpart6
 title: Programming with lists
 content: >
-  ## Worked Example 1 - 
+  ## Worked Example 1 - Average Temperature 
 
 
-  The temperature program revisited
-
-
-  Use this code as a starting point, rewrite the function to take a list as a
-  parameter.
+  Here is the average temperature program again. This time we are going to pass
+  a list of temperatures to the function.
 
 
   ```python
@@ -18,18 +15,54 @@ content: >
       total = 0
       index = 0
       while index < len(temps):
-          total += temp
+          total += temps[index]
       
       return total / len(temps)
 
   # MAIN PROGRAM
 
+  average = analyse_temps([21.1, 23.4, 26.9, 24.1, 25.5, 29.0, 27.8])
+
+  print("Average temperature was:", average)
 
 
   ```
 
 
-  Explain the code.
+  ### Explanation
+
+
+  1. `def analyse_temps(temps):` - This line defines a function named
+  `analyse_temps` that takes one parameter, `temps`, which is expected to be a
+  list of temperature values.
+
+
+  2. `total = 0` - Initializes a variable `total` to 0. This variable will be
+  used to accumulate the sum of all temperatures in the list.
+
+
+  3. `index = 0` - Initializes a variable `index` to 0. This variable will be
+  used to keep track of the current position in the list as we iterate through
+  it.
+
+
+  4. `while index < len(temps):` - Starts a while loop that will continue as
+  long as `index` is less than the length of the `temps` list. This ensures that
+  we process each temperature in the list.
+
+
+  5. `total += temps[index]` - This line adds the current temperature to
+  `total`.&#x20;
+
+
+  6. `index += 1` - Increments the `index` variable by 1, moving to the next
+  position in the list for the next iteration of the loop.
+
+
+  7. `return total / len(temps)` - After the loop has processed all
+  temperatures, this line calculates the average temperature by dividing the
+  `total` sum by the number of temperatures in the list (`len(temps)`) and
+  returns the result.
 
 
   Using a list for validation - the day of the week program revisited
