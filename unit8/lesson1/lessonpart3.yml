@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: 2D array operations
+title: 2D array operations - append and remove
 content: >
   ### Append to a 2D Array
 
@@ -87,58 +87,6 @@ content: >
   ```
 
 
-  ### Slicing a 2D Array
-
-
-  Slicing can be used to extract a portion of a 2D array. You can slice rows or
-  elements within rows. Here’s how you can slice rows:
-
-
-  ```python
-
-  >>> game_grid = [
-
-  ...     ["Start", "Path", "Treasure"],
-
-  ...     ["Path", "Enemy", "Path"],
-
-  ...     ["Path", "Path", "End"]
-
-  ... ]
-
-
-  >>> sub_grid = game_grid[0:2]
-
-  >>> sub_grid
-
-  [['Start', 'Path', 'Treasure'], ['Path', 'Enemy', 'Path']]
-
-  ```
-
-
-  To slice elements within rows, you can specify the range for both dimensions:
-
-
-  ```python
-
-  >>> game_grid = [
-
-  ...     ["Start", "Path", "Treasure"],
-
-  ...     ["Path", "Enemy", "Path"],
-
-  ...     ["Path", "Path", "End"]
-
-  ... ]
-
-
-  >>> sub_grid = [row[0:2] for row in game_grid]
-
-  >>> sub_grid
-
-  [['Start', 'Path'], ['Path', 'Enemy'], ['Path', 'Path']]
-
-  ```
 
 
   Try out these operations in your Python environment to get a better
