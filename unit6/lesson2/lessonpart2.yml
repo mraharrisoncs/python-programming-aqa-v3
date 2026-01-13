@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Pseudocode for arrays
-content: >+
-  Let's take a look at the AQA Pseudocode for arrays, which you will see in exam
-  papers.
+content: >
+  Let's take a look at the AQA **pseudocode** for arrays, which you will see in
+  exam papers.
 
 
   ## Defining 1D arrays
@@ -83,7 +83,8 @@ content: >+
   ## Accessing a 2D array element
 
 
-  2D Arrays need two indexes, which we can think of as row and column:
+  2D Arrays need two indexes, which we can think of as row and column. We put
+  each of them in a separate pair of square brackets, like this:
 
 
   ```
@@ -98,3 +99,5 @@ content: >+
 
   ```
 
+
+  This syntax is identical to Python, as we will see on the next page!
