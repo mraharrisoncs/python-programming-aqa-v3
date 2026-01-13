@@ -93,21 +93,6 @@ content: >
   ```
 
 
-  ### List length
-
-
-  Just like with strings, the `len()` function finds the length of a list:
-
-
-  ```python
-
-  >>> len(fruits)
-
-  5
-
-  ```
-
-
   Try out the above commands in the REPL now, and then answer these questions.
 showTerminal: true
 questionGroups:
@@ -171,8 +156,8 @@ questionGroups:
             isCorrect: true
           - id: "3"
             value: dogs.append("pug")
-            explanation: No, the append method adds an item to the end of the list, doesn't
-              remove it.
+            explanation: No, the append method adds an item to the end of the list, it
+              doesn't remove it.
           - id: "4"
             value: dogs[0] = ""
             explanation: No, this command changes the first item to an empty list but it
