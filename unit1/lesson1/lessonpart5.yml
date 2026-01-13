@@ -12,22 +12,16 @@ content: >
   # 🔢   🧮   📜    ✅/❌
 
 
-  ***
-
-
-  ## Data types 
-
-
-  In Python, data types are essential for defining the kind of data a variable
-  can hold. Understanding these types helps us perform operations correctly and
-  avoid errors. Let's explore the "primitive" data types: **integer**,
-  **float**, **string**, and **Boolean**.
+  In Python, **data types** are essential for defining the kind of data a
+  variable can hold. Understanding these types helps us perform operations
+  correctly and avoid errors. Let's explore the **primitive** data types:
+  **integer**, **float**, **string**, and **Boolean**.
 
 
   ### 🔢 Integer
 
 
-  An integer is a whole number without a decimal point. It can be positive,
+  An integer is a **whole number** without a decimal point. It can be positive,
   negative, or zero. Integers are used in situations where fractional values are
   not needed, such as counting items or indexing:
 
@@ -44,9 +38,9 @@ content: >
   ### **🧮** Float
 
 
-  A float, or real number, is a number that includes a decimal point. Floats are
-  used when precision is required, such as in scientific calculations or when
-  dealing with currency, weights and measures:
+  A float, or real number, is a number that **includes a decimal point**. Floats
+  are used when precision is required, such as in scientific calculations or
+  when dealing with currency, weights and measures:
 
 
   ```python
@@ -61,9 +55,9 @@ content: >
   ### 📜 String
 
 
-  A string is a sequence of characters enclosed in quotes. Strings are used for
-  text manipulation, such as storing names, addresses, or any other textual
-  data.
+  A string is a **sequence of characters**. Strings store text such as names,
+  addresses, post codes, anything that might contain letters, numbers and
+  symbols.
 
 
   **Example Use Case:**
@@ -75,14 +69,16 @@ content: >
 
   greeting = "Hello World!"
 
+  postcode = "DE6 2PZ"
+
   ```
 
 
   ### ✅/❌Boolean
 
 
-  A Boolean represents one of two values: `True` or `False`. Booleans are used
-  in conditional statements and logical operations:
+  A Boolean represents **one of two values:** **`True`** **or** **`False`**.
+  Booleans are used in conditional statements and logical operations:
 
 
   ```python

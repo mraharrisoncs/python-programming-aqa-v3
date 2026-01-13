@@ -2,11 +2,13 @@
 id: lessonpart6
 title: Casting functions
 content: >
-  ### Casting Functions
+  Sometimes, you need to convert data from one type to another. For example,
+  `input()` always returns a **string** so we need to cast this with `int()` or
+  `float()` if we want to save as a number. Python provides **casting
+  functions** to do this.
 
 
-  Sometimes, you need to convert data from one type to another. Python provides
-  **casting functions** to do this:
+  ### Casting functions
 
 
   **`int()`**: Converts to an integer🔢:
@@ -15,6 +17,8 @@ content: >
   ```python
 
   age = int("25")  # Converts string to integer
+
+  year = int(input("What year were you born? ")) # string to int
 
   ```
 
@@ -26,6 +30,8 @@ content: >
 
   temperature = float("36.6")  # Converts string to float
 
+  weight = float(input("Enter weight in kg: "))  # string to float
+
   ```
 
 
@@ -36,11 +42,9 @@ content: >
 
   age_str = str(25)  # Converts integer to string
 
+  print("Your weight is: " + str(weight)) # float to string
+
   ```
-
-
-  Understanding these data types and casting functions will help you manage and
-  manipulate data effectively in your Python programs. 
 
 
   You can try out casting functions in the REPL, then check your understanding
@@ -64,3 +68,23 @@ questionGroups:
           - id: "3"
             value: float()
             explanation: No, this changes strings to floats
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which casting function would you use to convert the string '3.14' into
+          a float?
+        options:
+          - id: "1"
+            value: float()
+            explanation: Yes, float() is used to convert a string to a float.
+            isCorrect: true
+          - id: "2"
+            value: int()
+            explanation: No, int() is used to convert a string to an integer, not a float.
+          - id: "3"
+            value: str()
+            explanation: No, str() is used to convert data to a string, not a float.
+          - id: "4"
+            value: input()
+            explanation: No, input() is not a casting function
