@@ -2,8 +2,6 @@
 id: lessonpart2
 title: Simple while loops
 content: |+
-  ## Python while
-
   Remember this program?
 
   ```python
@@ -27,11 +25,13 @@ content: |+
   while len(password) < 10:
   ```
 
-  &#x20;After the `while` keyword is a conditional or **Boolean expression**. We met these in Unit 4, a **Boolean expression** evaluates to either `True` or `False`. 
+  &#x20;After the `while` keyword is a conditional or **Boolean expression,** `len(password) < 10`. We met Boolean expressions in Unit 4, they evaluate to either `True` or `False`. 
 
-  We met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if string stored in the `password` variable is less than ten characters long, and Python will  execute the **code block** that follows the colon `:`
+  Also we met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if string stored in the `password` variable is **less than ten characters long**.
 
-  When this program runs for the first time, we know that password is set to `""` which has length of zero. Zero is less than ten, so the expression evaluates to `True` and the indented code block is executed.
+  If this condition is `True` then Python will  execute the **indented code block** that follows the colon `:  `otherwise this block will be **skipped** until the next line that is not **indented.**
+
+  When this program runs for the first time, we know that password is set to `""` which has **length of zero**. Zero is less than ten, so the expression evaluates to `True` and the indented code block is executed.
 
   ```python
   password = input("type a new password, minimum length 10 characters: ") 
