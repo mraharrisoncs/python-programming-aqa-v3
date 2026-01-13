@@ -9,7 +9,7 @@ content: >+
   data to the screen:
 
 
-  #### Hello World again
+  ## Hello World again
 
 
   ```python
@@ -43,7 +43,7 @@ content: >+
   this one.
 
 
-  #### Printing Multiple Strings
+  ### Printing Multiple Strings
 
 
   ```python
@@ -58,7 +58,7 @@ content: >+
   Here, multiple strings are printed with a **space** between each.
 
 
-  #### Printing Numbers
+  ### Printing Numbers
 
 
   ```python
@@ -75,7 +75,7 @@ content: >+
   data, and even mix up data types:
 
 
-  #### Outputting strings and numbers
+  ### Outputting strings and numbers
 
 
   ```python

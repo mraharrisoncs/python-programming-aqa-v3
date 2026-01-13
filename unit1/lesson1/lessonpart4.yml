@@ -2,18 +2,17 @@
 id: lessonpart4
 title: Input using input()
 content: >
-  Let's now gather input from users in Python using the `input()` function. This
-  is an essential part of creating interactive programs, as it allows your
-  program to respond to user data instead of "hard-coding" everything.
+  Let's now gather input from users in Python using the `input()` function.
+  Input is really useful, as it allows your program to **respond to user
+  actions**.
 
 
-  ### Understanding `input()`
+  ### Understanding input()
 
 
-  The `input()` function in Python is used to capture user input. When you call
-  `input()`, the program will pause and wait for the user to type something and
-  press Enter. If we **assign** this to a variable we can use it later in our
-  program, like this:
+  The `input()` function in Python will pause and wait for the user to type
+  something and press Enter. If we **assign** this input data to a **variable**
+  we can use it later in our program, like this:
 
 
   ```python
@@ -30,12 +29,12 @@ content: >
   In this example:
 
 
-  * The `print("Enter your name:")` line displays a message prompting the user
-  to enter their name.
+  * `print("Enter your name:")` displays a message prompting the user to enter
+  their name.
 
 
-  * The `name = input()` line waits for the user to type their name and press
-  Enter. The entered name is stored in the variable `name`.
+  * `name = input()` waits for the user to type their name and press Enter. This
+  name is stored in the variable `name`.
 
 
   * Finally, `print("Hello, ",  name, "!")` outputs a greeting using the name

@@ -2,6 +2,9 @@
 id: lessonpart3
 title: Variables in Python
 content: >+
+  Let's take a look at variables in Python.
+
+
   ### Literals
 
 
@@ -29,7 +32,7 @@ content: >+
 
   This is not very useful, as we're only displaying things typed in by the
   programmer. We really need a way of storing things and using them later.
-  That's where variables come in.
+  That's where **variables** come in.
 
 
   ### Variables are names for things
@@ -41,7 +44,7 @@ content: >+
   manipulate data easily.
 
 
-  #### Assigning Variables
+  ### Assigning Variables
 
 
   To create a variable in Python, you use the ***assignment*** operator
@@ -75,7 +78,7 @@ content: >+
   Here, `age` is the variable name, and `16` is the value stored in it.
 
 
-  #### Printing Variables
+  ### Printing Variables
 
 
   You can use the `print()` function to display the value of a variable. Let's
@@ -93,7 +96,7 @@ content: >+
   ```
 
 
-  #### Combining Variables and Literals
+  ### Combining Variables and Literals
 
 
   You can also print variables alongside other text (string literals) by
