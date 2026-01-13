@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: Programming with lists
-content: >
+content: >+
   ## Worked Example 1 - Average Temperature 
 
 
@@ -121,4 +121,45 @@ content: >
   <br />
 
 
-  PRIMM activity: a shopping list program
+  ## PRIMM Activity - Shopping List Program
+
+
+  🤔 Predict what the program does.
+
+
+  ▶️ Run and check your prediction, were you correct?
+
+
+  🔍 Investigate:
+
+
+  What variable is used to store the list of items, and what is its data type?
+
+
+  What is the purpose of the `add_item` function?
+
+
+  What happens when you try to remove an item that is not in the list?
+
+
+  ✏️ Modify:
+
+
+  Change the program to allow only unique items in the shopping list.
+
+
+  Stretch challenge: Add a feature to sort the list alphabetically before
+  displaying it.
+
+
+  🛠️ Make: Write a basic text editor with the following features:
+
+
+  * `add_line(text)`: Adds a line at the end of the document containing the text
+
+
+  * `display_doc()`: Displays all lines in the document with line numbers
+
+
+  * `remove_line(num)`: Removes a numbered line from the document.
+
