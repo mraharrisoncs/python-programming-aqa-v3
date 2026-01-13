@@ -84,7 +84,44 @@ questionGroups:
             explanation: No, int() is used to convert a string to an integer, not a float.
           - id: "3"
             value: str()
-            explanation: No, str() is used to convert data to a string, not a float.
+            explanation: No, str() is used to convert numeric data to a string, not a float.
           - id: "4"
             value: input()
             explanation: No, input() is not a casting function
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why must we always use int() or float() around input() if we want to
+          input a number?
+        options:
+          - id: "1"
+            value: Because input() returns data as a string, which needs to be converted to
+              a number.
+            explanation: Yes, input() returns a string, so we use int() or float() to
+              convert it to a number.
+            isCorrect: true
+          - id: "2"
+            value: Because input() cannot handle digits directly, only letters.
+            explanation: No, input() can handle numbers but returns them as strings.
+          - id: "3"
+            value: Because input() returns integers and we need a float.
+            explanation: No, input() returns a string, which we need to cast with int() or
+              float()
+          - id: "4"
+            value: Because input() automatically converts numbers to floats.
+            explanation: No, input() does not convert numbers; it returns them as strings.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: string
+        content: >-
+          Write the missing code in this line, which inputs a pet's weight and
+          stores as a float: 
+
+          weight = ____(input())
+        options:
+          - id: "1"
+            value: float
+            explanation: The float() function converts a string to a float.
+            isCorrect: true
