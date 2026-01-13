@@ -1,11 +1,38 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: Programming with lists
-content: |
+content: >
   ## Worked Example 1 - 
+
 
   The temperature program revisited
 
+
+  Use this code as a starting point, rewrite the function to take a list as a
+  parameter.
+
+
+  ```python
+
+  def analyse_temps(temps):
+      total = 0
+      index = 0
+      while index < len(temps):
+          total += temp
+      
+      return total / len(temps)
+
+  # MAIN PROGRAM
+
+
+
+  ```
+
+
+  Explain the code.
+
+
   Using a list for validation - the day of the week program revisited
+
 
   PRIMM activity: a shopping list program
