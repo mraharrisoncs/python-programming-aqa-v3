@@ -6,10 +6,12 @@ content: >
 
 
   Here is the average temperature program again. This time we are going to pass
+
   a list of temperatures to the function.
 
 
   ```python
+
 
   def analyse_temps(temps):
       total = 0
@@ -21,7 +23,9 @@ content: >
 
   # MAIN PROGRAM
 
+
   average = analyse_temps([21.1, 23.4, 26.9, 24.1, 25.5, 29.0, 27.8])
+
 
   print("Average temperature was:", average)
 
@@ -33,39 +37,85 @@ content: >
 
 
   1. `def analyse_temps(temps):` - This line defines a function named
-  `analyse_temps` that takes one parameter, `temps`, which is expected to be a
-  list of temperature values.
-
+     `analyse_temps` that takes one parameter, `temps`, which is expected to be a
+     list of temperature values.
 
   2. `total = 0` - Initializes a variable `total` to 0. This variable will be
-  used to accumulate the sum of all temperatures in the list.
-
+     used to accumulate the sum of all temperatures in the list.
 
   3. `index = 0` - Initializes a variable `index` to 0. This variable will be
-  used to keep track of the current position in the list as we iterate through
-  it.
-
+     used to keep track of the current position in the list as we iterate through
+     it.
 
   4. `while index < len(temps):` - Starts a while loop that will continue as
-  long as `index` is less than the length of the `temps` list. This ensures that
-  we process each temperature in the list.
-
+     long as `index` is less than the length of the `temps` list. This ensures that
+     we process each temperature in the list.
 
   5. `total += temps[index]` - This line adds the current temperature to
-  `total`.&#x20;
-
+     `total`.&#x20;
 
   6. `index += 1` - Increments the `index` variable by 1, moving to the next
-  position in the list for the next iteration of the loop.
-
+     position in the list for the next iteration of the loop.
 
   7. `return total / len(temps)` - After the loop has processed all
-  temperatures, this line calculates the average temperature by dividing the
-  `total` sum by the number of temperatures in the list (`len(temps)`) and
-  returns the result.
+     temperatures, this line calculates the average temperature by dividing the
+     `total` sum by the number of temperatures in the list (`len(temps)`) and
+     returns the result.
+
+  ## Example 2 - Using a list for validation - the language selection program
 
 
-  Using a list for validation - the day of the week program revisited
+  ```python
+
+  def get_language():
+      supported_languages = ["English", "French", "Spanish", "Arabic"]:
+      looping = True
+      while looping:
+          language = input("Please select a language: ")
+          if language in supported_languages
+              looping = False
+          else:
+              print("Invalid input, try again!")
+      return language
+  ```
+
+
+  This code defines a function `get_language()` that helps users select a
+  language from a predefined list. Let's break it down line by line:
+
+
+  1. `def get_language():` - This line defines a function named `get_language`
+  that takes no parameters.
+
+  2. `supported_languages = ["English", "French", "Spanish", "Arabic"]:` -
+  Initializes a list called `supported_languages` containing the languages that
+  the user can select.
+
+  3. `looping = True` - Sets a boolean variable `looping` to `True`, which will
+  control the while loop.
+
+  4. `while looping:` - Begins a while loop that will continue to execute as
+  long as `looping` is `True`.
+
+  5. `language = input("Please select a language: ")` - Prompts the user to
+  input a language and stores the input in the variable `language`.
+
+  6. `if language in supported_languages` - Checks if the user's input is in the
+  `supported_languages` list.
+
+  7. `looping = False` - If the input is valid, sets `looping` to `False`, which
+  will exit the loop.
+
+  8. `else:` - If the input is not valid, the code proceeds to the next line.
+
+  9. `print("Invalid input, try again!")` - Informs the user that the input was
+  invalid and prompts them to try again.
+
+  10. `return language` - Once a valid language is selected, the function
+  returns the selected language.
+
+
+  <br />
 
 
   PRIMM activity: a shopping list program

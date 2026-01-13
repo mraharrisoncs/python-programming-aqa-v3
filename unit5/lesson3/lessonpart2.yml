@@ -35,6 +35,10 @@ content: >+
   set to `False`, the loop will terminate on next iteration.
 
 
+  > Note that this example uses a **list** to store valid day names. We will
+  look at lists in Unit 6.
+
+
   ```python
 
   def get_day():
