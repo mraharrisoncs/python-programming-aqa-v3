@@ -30,7 +30,7 @@ content: >
   iteration. It is indented to indicate that it belongs to the loop.
 
 
-  ### Example
+  ### Example for loop
 
 
   Here is a simple example of a `for` loop iterating over a list:
@@ -64,8 +64,3 @@ content: >
 
   This loop will print numbers from 0 to 4. The `range(5)` generates a sequence
   of numbers starting from 0 up to, but not including, 5.
-
-
-  Understanding the structure of a `for` loop is essential for implementing
-  count-controlled iteration in Python. In the following lessons, we will
-  explore how to iterate over lists and strings using `for` loops.
