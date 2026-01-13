@@ -5,7 +5,7 @@ content: >
   ### Finding items in a list
 
 
-  We can find the index of an item in a list with the `index()` method. This
+  We can find the position of an item in a list with the `index()` method. This
   returns the index of the first item that matches the argument:
 
 
@@ -46,8 +46,8 @@ content: >
   ### Check item in list
 
 
-  Just like we did with strings, we can check an itemis in a list with the
-  `in` operator:
+  Just like we did with strings, we can check whether an item is in a list with
+  the `in` operator:
 
 
   ```python
@@ -65,5 +65,73 @@ content: >
   ```
 
 
-  Try these out in the REPL now!
+  Try these out in the REPL now, then answer these questions.
 showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the list colours = ["red", "magenta", "blue", "cyan", "green",
+          "yellow", "orange"], what instruction would return the position of
+          "green" in the list?
+        options:
+          - id: "1"
+            value: colours.index("green")
+            explanation: Yes, this returns the index of "green" in the list.
+            isCorrect: true
+          - id: "2"
+            value: colours.index("yellow")
+            explanation: No, this returns the index of "yellow", not "green".
+          - id: "3"
+            value: '"green" in colours'
+            explanation: No, this checks if "green" is in the list but does not return it.
+          - id: "4"
+            value: colours[4]
+            explanation: No, this returns the item at index 4, which is "green", but does
+              not return the index method.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the list colours = ["red", "magenta", "blue", "cyan", "green",
+          "yellow", "orange"], what would be the result of
+          colours.index("purple")?
+        options:
+          - id: "1"
+            value: ValueError
+            explanation: Yes, because 'purple' is not in the list, so a ValueError is
+              raised.
+            isCorrect: true
+          - id: "2"
+            value: "0"
+            explanation: No, because 'purple' is not the first item in the list.
+          - id: "3"
+            value: "6"
+            explanation: No, because 'purple' is not in the list.
+          - id: "4"
+            value: "-1"
+            explanation: No, because Python raises a ValueError instead of returning -1 when
+              an item is not found.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given a list of strings with identifier colours, how can we check if
+          the string 'green' is in the list?
+        options:
+          - id: "1"
+            value: "'green' in colours"
+            explanation: Yes, the 'in' operator checks for membership in the list.
+            isCorrect: true
+          - id: "2"
+            value: colours.index('green')
+            explanation: No, this returns the index of 'green' if it exists, but raises an
+              error if it doesn't.
+          - id: "3"
+            value: colours.contains('green')
+            explanation: No, 'contains' is not a valid method for lists in Python.
+          - id: "4"
+            value: "'green' == colours"
+            explanation: No, this checks if 'green' is equal to the entire list, not if it's
+              in the list.
