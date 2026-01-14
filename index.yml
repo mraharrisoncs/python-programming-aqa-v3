@@ -2970,6 +2970,48 @@ files:
       # MAIN PROGRAM\r
 
       countdown()"
+  - path: course1/unit5/lesson4/lessonpart6/countdown_buggy.py
+    content: "def countdown():\r
+
+      \  # count down from 10 in twos\r
+
+      \  counter = 10\r
+
+      \  while counter != 1:\r
+
+      \    print(f\"{counter} !\")\r
+
+      \    counter -= 2\r
+
+      \  print(\"lift-off !\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown()"
+  - path: course1/unit5/lesson4/lessonpart6/while_true.py
+    content: "def get_score():\r
+
+      \  score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \  while True:\r
+
+      \      if score < 1 or score > 100:\r
+
+      \          print(\"Invalid input. Please try again.\")\r
+
+      \          score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \      else:\r
+
+      \          return score\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(get_score())"
 units:
   - unit1/index.yml
   - unit2/index.yml

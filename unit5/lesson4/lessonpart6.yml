@@ -1,11 +1,118 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: Infinite loops and beyond!
-content: |
-  tbc
+content: >
+  A big issue with condition-controlled iteration is the risk of an **infinite
+  loop**, a loop that never ends!
 
-  Infinite loops - accidental
 
-  Infinite loops - While True, returning out of a loop
+  ### Accidental infinite loops
+
+
+  Remember our countdown program? This slightly altered version - which should
+  count down from 10 in steps of two - contains a bug, can you spot it? Try
+  running it!
+
+
+  Hint: you might need to hit the stop button - the red square that looks like
+  this 🟥 at the top right of the screen! 
+
+
+  ```python
+
+  def countdown():
+    # count down from 10 in twos
+    counter = 10
+    while counter != 1:
+      print(f"{counter} !")
+      counter -= 2
+    print("lift-off !")
+
+  # MAIN PROGRAM
+
+  countdown()
+
+  ```
+
+
+  `while counter != 1` says "keep looping while the counter is **not equal to
+  1**", or in other words, "stop looping when the counter reaches 1".
+
+
+  However, `counter` begins at 10 and counts down in twos, so it will go `8, 4,
+  2, 0, -2...` ! It will never equal 1.
+
+
+  We have coded an **infinite loop**. Can you work out how to fix it? Answer the
+  question below.
+
+
+  ### While True
+
+
+  Sometimes the simplest way to code a while loop is to make it loop "forever",
+  and **break out** of the loop when something happens. 
+
+
+  We can code any **Boolean expression** that evaluates to `True` on our while
+  loop condition, to make it loop forever. Here are some examples:
+
+
+  ```python
+
+  while counter == counter:
+
+  while 1 == 1:
+
+  while 1 < 2:
+
+  while "x" = "x"
+
+  ```
+
+
+  All of these expressions evaluate to `True` at all times, and the while loop
+  will run forever. But there is a much simpler expression that is always `True`
+  - the keyword `True` itself!
+
+
+  ```python
+
+  while True:
+    # this code block will run forever
+  ```
+
+
+  ### Breaking out of a loop
+
+
+  There are two ways we can break out of a while loop, and we must use one of
+  them inside a `while True` loop, or it will never end! First we can
+  **return** out of the function that the while loop is part of. This works
+  fine, if the function does not need to do anything else.&#x20;
+
+
+  Here is a validation example from Lesson 3, showing this technique.
+
+
+  ```python
+
+  def get_score():
+    score = int(input("Enter a score between 1 and 100: "))
+    while True:
+        if score < 1 or score > 100:
+            print("Invalid input. Please try again.")
+            score = int(input("Enter a score between 1 and 100: "))
+        else:
+            return score
+  ```
+
+
+  <br />
+
 
   Beyond the spec with break and continue
+showEditor: true
+editors:
+  - course1/unit5/lesson4/lessonpart6/countdown_buggy.py
+  - course1/unit5/lesson4/lessonpart6/while_true.py
