@@ -1,24 +1,63 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: 2D arrays as lists-of-lists in Python
+title: More list operations - sum, sort
 content: >
-  <br />
+  We know we can use a loop with an **accumulator pattern** to sum the contents
+  of a list, and maybe you can write a **bubble sort** too! But Python includes
+  some **cheat codes** so you don't have to do those things! Let's look at
+  the `sum` and `sort` functions.
 
 
-  Let's see how to implement 2D arrays in Python. The syntax is very similar to
-  Pseudocode:
+  ### Sum
+
+
+  The `sum()` function calculates the total of all numerical elements in a
+  list.&#x20;
 
 
   ```python
 
-  tic_tac_toe = [ ['.', 'O', 'O'] ,
-                  ['O', 'X', 'X'] ,
-                  ['.', 'X', '.'] ]
+  numbers = [3, 5, 7, 9]
 
-  magic_square = [ [8, 1, 6] ,
-                   [3, 5, 7] ,
-                   [4, 9, 2] ]
+  total = sum(numbers)
+
+  print("Sum:", total)  # Output: Sum: 24
+
   ```
 
 
-  tbc
+  ### Sort
+
+
+  The `sort()` method sorts the elements of a list in ascending order by
+  default. You can also sort in descending order by using the `reverse=True`
+  parameter.
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry", "date"]
+
+  fruits.sort()
+
+  print("Sorted fruits:", fruits)  # Output: Sorted fruits: ['apple', 'banana',
+  'cherry', 'date']
+
+
+  fruits.sort(reverse=True)
+
+  print("Reverse sorted fruits:", fruits)  # Output: Reverse sorted fruits:
+  ['date', 'cherry', 'banana', 'apple']
+
+  ```
+
+
+  > Notes: we call `sum()` a **function** because we call it with the list as an
+  **argument**, like this: `sum(mylist)`. We call `sort()` a **method** because
+  it's a special function attached to a list object, so we call it with the
+  **dot-notation** like this: `mylist.sort()`. This distinction helps you write
+  programs, but it isn't necessary to know these details for the exam.
+
+
+  Try these out in the REPL, then answer these questions:
+showTerminal: true

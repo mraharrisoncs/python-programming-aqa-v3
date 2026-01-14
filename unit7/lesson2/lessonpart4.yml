@@ -7,7 +7,7 @@ content: >+
 
   In this example, we'll use a count-controlled loop to calculate the sum of the
   first N natural numbers. We'll define a function `sum_of_n_numbers` that takes
-  an integer `n` as input and returns the sum.
+  an integer `n` as input and returns the sum.  
 
 
   ```python
@@ -33,7 +33,7 @@ content: >+
   This example demonstrates how to generate a multiplication table for a given
   number using a count-controlled loop. We'll define a function
   `multiplication_table` that prints the table for a specified number up to a
-  given range.
+  given range. 
 
 
   ```python

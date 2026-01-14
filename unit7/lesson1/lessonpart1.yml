@@ -4,11 +4,54 @@ title: Why count-controlled iteration?
 content: >+
   Count-controlled iteration, also known as **definite** iteration, repeats a
   block of code a specific number of times. This type of iteration is useful
-  when the number of iterations is known before the loop starts. In Python, we
-  use a `for` loop.
+  when the number of iterations is **known before the loop starts**. In Python,
+  we use a `for` loop for definite iteration.
 
 
   ### When to use a for loop
+
+
+  We use a **for** loop when we know how many times we want to repeat a block of
+  code. We might want to run a **set number of times** or process a **known list
+  of items.** This is why we call it **definite** iteration, the loop will run a
+  definite number of iterations.
+
+
+  > Remember, if we do **not know** how many times we want to loop, we would use
+  **indefinite** iteration, also known as **condition-controlled** iteration. In
+  Python this means a **while** loop which we met in Unit 5.
+
+
+  ### For loop syntax
+
+
+  <br />
+
+
+  ### Example uses
+
+
+  Remember the countdown program we made with a while loop?
+
+
+  ```python
+
+  def countdown():
+    # count down from 10
+    counter = 10
+    while counter >= 1:
+      print(f"{counter} !")
+      counter -= 1
+    print("lift-off !")
+
+  # MAIN PROGRAM
+
+  countdown()
+
+  ```
+
+
+  We can simplify this 
 
 
   * **Iterating over a sequence of numbers**: You might want to perform an
@@ -16,33 +59,5 @@ content: >+
 
 
   * **Processing items in a list**: You can iterate over each item in a **list**
-  to perform operations like summing values or modifying elements.
-
-
-  ### Example Code in Python
-
-
-  ```python
-
-  # Example 1: Iterating over a range of numbers
-
-  for i in range(1, 11):
-      print(i)
-
-  # Example 2: Iterating over a list
-
-  fruits = ["apple", "banana", "cherry"]
-
-  for fruit in fruits:
-      print(fruit)
-
-  # Example 3: Using range() to iterate with a counter
-
-  total = 0
-
-  for i in range(5):
-      total += i
-  print("Total:", total)
-
-  ```
+  to perform operations like summing values or modifying elements. 
 

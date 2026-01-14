@@ -71,7 +71,7 @@ content: >
   Note that these loops are **condition-controlled** because a
   **condition** controls the iteration. That they are constructed to run a
   number of times doesn't make them **count-controlled** - we will look at those
-  loops in a later unit.
+  loops in a Unit 7
 
 
   Now try these questions:

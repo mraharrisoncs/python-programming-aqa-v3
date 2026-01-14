@@ -2,7 +2,7 @@
 id: lessonpart5
 title: "Python practical: lists"
 content: >+
-  ## Question 1: Split Even and Odd Numbers
+  ## 🔢 Question 1 – Split Even and Odd Numbers
 
 
   Using the starter code in **q1.py**, given a list of numbers, create two new
@@ -38,7 +38,7 @@ content: >+
   ***
 
 
-  ## Question 2: Find the First Word Starting With a Vowel
+  ## 🔤 Question 2 – Find the First Word Starting With a Vowel
 
 
   Using starter code in **q2.py**, given a list of words, find the **first** one
@@ -66,10 +66,10 @@ content: >+
   ```
 
 
-  > \*\*Hint: \*\*Use a `while` loop and `if‑elif‑else`.
+  > **Hint:** Use a `while` loop and `if‑elif‑else`.
 
 
-  ## Q3 — How Far Can I Travel on a Railway Line?
+  ## 🚆 Question 3 – How Far Can I Travel on a Railway Line?
 
 
   Using the starter code in **q3.py**, which creates and stores a list of

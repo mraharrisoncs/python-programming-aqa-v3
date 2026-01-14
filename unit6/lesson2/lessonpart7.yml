@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: "Solutions to Python practical: more lists"
+content: |+
+  Here are some suggested solutions!
+
+  ## 🔢 Question 1 – Split Even and Odd Numbers
+
+  ```python
+  '''
+  Create two new lists:
+  one containing all the even numbers
+  and one containing all the odd numbers.
+  '''
+  nums = [3, 10, 7, 4, 12, 9]
+
+  evens = []
+  odds = []
+
+  i = 0
+  while i < len(nums):
+      if nums[i] % 2 == 0:
+          evens.append(nums[i])
+      else:
+          odds.append(nums[i])
+      i += 1
+
+  print("Evens:", evens)
+  print("Odds:", odds)
+  ```
+
+  ***
+
+  ## 🔤 Question 2 – Find the First Word Starting With a Vowel
+
+  ```python
+  '''
+  Given a list of words, find the first one
+  that starts with a vowel
+  '''
+  words = ["tree", "sky", "orange", "cloud"]
+
+  vowels = "aeiou"
+  i = 0
+  found = False
+
+  while i < len(words):
+      if words[i][0].lower() in vowels:
+          print("First vowel word:", words[i])
+          found = True
+          break
+      i += 1
+
+  if not found:
+      print("No vowel words found")
+  ```
+
+  ***
+
+  ## 🚆 Question 3 – How Far Can I Travel on a Railway Line?
+
+  ```python
+  '''
+  Write a function that takes one parameter, 
+  the number of minutes available for travel, and returns
+  the index of the last station you can reach
+  '''
+  times = [3, 12, 8, 21, 11, 15]
+
+  def max_station(minutes):
+      total = 0
+      station = 0
+
+      i = 0
+      while i < len(times):
+          if total + times[i] <= minutes:
+              total += times[i]
+              station += 1
+          else:
+              break
+          i += 1
+
+      return station
+
+  # Example
+  print(max_station(18))   # Expected: 2
+  ```
+

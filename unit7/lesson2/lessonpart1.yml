@@ -1,25 +1,121 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: The Python range() function
+title: Iterating over a literal list of numbers
 content: >
-  ## Using `range()` to Create a Loop
+  Sometimes we want to do something a set number of times, or perform an
+  operation on each number in a range of numbers. Let's look at some loops that
+  iterate over a **range of numbers.**
 
 
-  The `range()` function is useful for generating a sequence of numbers, which
-  can be used to control the iteration in a `for` loop. You can specify the
-  start, stop, and step values. Here is an example that mimics a `FOR i = a TO b
-  STEP c` loop:
+  ### Times table program
+
+
+  Remember our times table program that used a `while` loop in Unit 5?
 
 
   ```python
 
-  for i in range(0, 10, 2):
-      print(i)
+  def five_times_table():
+    # five times table
+    counter = 1
+    while counter < 11:
+      print(f"5 x {counter} = {5 * counter}")
+      counter += 1
+
+  # MAIN PROGRAM
+
+  five_times_table()
+
   ```
 
 
-  In this example, `range(0, 10, 2)` generates numbers starting from 0 up to
-  (but not including) 10, with a step of 2. The loop will print: 0, 2, 4, 6, 8.
+  We can improve this by using a `for` loop, that **iterates** over a **range of
+  numbers** stored in a **list literal** instead of using a counter variable and
+  incrementing it ourselves:
 
 
-  tbc
+  ```python
+
+  def five_times_table():
+    # five times table
+    for counter in [1,2,3,4,5,6,7,8,9,10]:
+      print(f"5 x {counter} = {5 * counter}")
+
+  # MAIN PROGRAM
+
+  five_times_table()
+
+  ```
+
+
+  **Explanation:**
+
+
+  * The `for` loop **iterates** over the list `[1,2,3,4,5,6,7,8,9,10]`, which
+  means it sets the `counter` variable to each number in turn, then executes the
+  indented code block.
+
+
+  * The first time through the loop, `counter` = 1, and the line `5 x 1 = 5` is
+  printed
+
+
+  * The second time through the loop, `counter` = 2, and the line `5 x 2 =
+  10` is printed
+
+
+  * The loop continues until it prints `5 x 10 = 50`, after which there are no
+  more elements in the list so the loop ends.
+
+
+
+
+  ### Countdown program
+
+
+  Here's another example from Unit 5:
+
+
+  ```python
+
+  def countdown():
+    # count down from 10
+    counter = 10
+    while counter >= 1:
+      print(f"{counter} !")
+      counter -= 1
+    print("lift-off !")
+
+  # MAIN PROGRAM
+
+  countdown()
+
+  ```
+
+
+  Again we can improve this with a `for` loop and a list of numbers, this time
+  counting down from ten:
+
+
+  ```python
+
+  def countdown():
+    # count down from 10
+    for counter in [10,9,8,7,6,5,4,3,2,1]:
+      print(f"{counter} !")
+      counter -= 1
+    print("lift-off !")
+
+  # MAIN PROGRAM
+
+  countdown()
+
+  ```
+
+
+  Try the code in the attached files, and then answer these questions:
+showEditor: true
+showTerminal: true
+editors:
+  - course1/unit7/lesson2/lessonpart1/five_times_table_for.py
+  - course1/unit7/lesson2/lessonpart1/countdown_for.py

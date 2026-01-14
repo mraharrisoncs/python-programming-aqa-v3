@@ -2,16 +2,16 @@
 id: lessonpart3
 title: The accumulator pattern with 'for'
 content: >
-  The accumulator pattern is a common programming technique used to calculate a
-  total or aggregate value by iterating over a sequence of data. In Python, this
-  is often implemented using a `for` loop. Below are several examples
-  demonstrating how to use the accumulator pattern with a `for` loop.
+  The **accumulator pattern** is a common programming technique used to
+  calculate a total. We saw a `while` loop version earlier, now let's look at
+  examples with a `for` loop.
 
 
   ### Example 1: Sum of Numbers
 
 
-  Let's calculate the sum of numbers from 1 to 10 using the accumulator pattern.
+  Let's calculate the **sum** of numbers from 1 to 10 using the accumulator
+  pattern.
 
 
   ```python
@@ -32,8 +32,8 @@ content: >
   ### Example 2: Product of Numbers
 
 
-  Now, let's calculate the product of numbers from 1 to 5. (The product is the
-  result of **multiplying** numbers).
+  Now, let's calculate the **product** of numbers from 1 to 5. (The product is
+  the result of **multiplying** numbers).
 
 
   ```python
@@ -70,18 +70,21 @@ content: >
 
 
   In this example, the `for` loop checks if a number is even using the modulus
-  operator `%`. If the number is even, it is added to `sum_even`.
+  operator `%`. If the number is even, it is added to `sum_even`. (We could have
+  used `range (2, 21, 2)` in our `for` loop instead, but this example might be
+  useful for more complicated purposes!)
 
 
   ### Example 4: Accumulating Values from a List
 
 
-  Suppose we have a list of numbers, and we want to calculate their total.
+  Instead of a simple range of numbers, we might have a list of numbers already,
+  and we want to calculate their total.
 
 
   ```python
 
-  numbers = [3, 5, 7, 9, 11]
+  numbers = [3, 8, 15, 9, 11]
 
   total = 0
 
@@ -94,8 +97,3 @@ content: >
 
   Here, the `for` loop iterates over each element in the list `numbers`, adding
   each element to `total`.
-
-
-  These examples illustrate how the accumulator pattern can be used in various
-  scenarios to aggregate values using a `for` loop. Practice implementing this
-  pattern to become proficient in solving problems that require accumulation.

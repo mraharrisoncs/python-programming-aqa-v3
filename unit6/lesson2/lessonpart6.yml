@@ -1,56 +1,8 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
-title: More list operations - sum, sort, min, max
+title: Yet more list operations - min, max
 content: >
-  In this section, we will explore some useful operations that can be performed
-  on lists in Python. These operations include `sum`, `sort`, `min`, and `max`.
-  Understanding these operations will help you manipulate and analyze data
-  stored in lists more effectively.
-
-
-  ### Sum
-
-
-  The `sum()` function calculates the total of all numerical elements in a list.
-  This is useful when you need to find the total or aggregate value of a list of
-  numbers.
-
-
-  ```python
-
-  numbers = [3, 5, 7, 9]
-
-  total = sum(numbers)
-
-  print("Sum:", total)  # Output: Sum: 24
-
-  ```
-
-
-  ### Sort
-
-
-  The `sort()` method sorts the elements of a list in ascending order by
-  default. You can also sort in descending order by using the `reverse=True`
-  parameter.
-
-
-  ```python
-
-  fruits = ["apple", "banana", "cherry", "date"]
-
-  fruits.sort()
-
-  print("Sorted fruits:", fruits)  # Output: Sorted fruits: ['apple', 'banana',
-  'cherry', 'date']
-
-
-  fruits.sort(reverse=True)
-
-  print("Reverse sorted fruits:", fruits)  # Output: Reverse sorted fruits:
-  ['date', 'cherry', 'banana', 'apple']
-
-  ```
+  Let's look at some more useful list functions: `min` and `max`:
 
 
   ### Min
@@ -63,11 +15,11 @@ content: >
 
   ```python
 
-  numbers = [3, 5, 7, 9]
+  >>> numbers = [3, 5, 7, 9]
 
-  minimum = min(numbers)
+  >>> min(numbers)
 
-  print("Minimum:", minimum)  # Output: Minimum: 3
+  3
 
   ```
 
@@ -82,15 +34,14 @@ content: >
 
   ```python
 
-  numbers = [3, 5, 7, 9]
+  grades = ['A', 'B', 'C', 'D']
 
-  maximum = max(numbers)
+  >>> max(grades)
 
-  print("Maximum:", maximum)  # Output: Maximum: 9
+  'D'
 
   ```
 
 
-  These operations are fundamental when working with lists and can be applied in
-  various programming scenarios. Practice using these functions to become more
-  comfortable with list manipulation in Python.
+  Try these out in the REPL, then answer these questions:
+showTerminal: true

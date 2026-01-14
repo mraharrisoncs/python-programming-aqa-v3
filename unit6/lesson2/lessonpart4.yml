@@ -1,11 +1,253 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: More programming with lists
-content: |
-  Worked examples tbc
+content: >
+  ## 🌡️ Example Program 1 – Highest and Lowest Temperature (Using `min`, `max`,
+  `sum`)
 
-  Highest and lowest temperature
 
-  Counting house points
+  ```python
 
-  PRIMM activity - Linear search
+  def analyse_temps(temps):
+      highest = max(temps)
+      lowest = min(temps)
+      total = sum(temps)
+      average = total / len(temps)
+
+      return highest, lowest, average
+
+  # MAIN PROGRAM
+
+  week = [21.1, 23.4, 26.9, 24.1, 25.5, 29.0, 27.8]
+
+  high, low, avg = analyse_temps(week)
+
+
+  print("Highest temperature:", high)
+
+  print("Lowest temperature:", low)
+
+  print("Average temperature:", avg)
+
+  ```
+
+
+  ### Explanation
+
+
+  * `max()` finds the highest temperature.
+
+
+  * `min()` finds the lowest temperature.
+
+
+  * `sum()` adds all temperatures together.
+
+
+  * The average is calculated using the total divided by the number of values.
+
+
+  * This version is short and shows the power of Python’s built‑in list
+  functions.
+
+
+  ***
+
+
+  ## 🏆 Example Program 2 – House Points (Using `sum` and `sort`)
+
+
+  ```python
+
+  def total_points(points_list):
+      return sum(points_list)
+
+  def rank_houses(house_totals):
+      house_totals.sort(key=lambda pair: pair[1], reverse=True)
+      return house_totals
+
+  # MAIN PROGRAM
+
+  griffin = [5, 10, 3, 8]
+
+  phoenix = [7, 4, 6, 9]
+
+  dragon = [10, 10, 5, 2]
+
+
+  totals = [
+      ("Griffin", total_points(griffin)),
+      ("Phoenix", total_points(phoenix)),
+      ("Dragon", total_points(dragon))
+  ]
+
+
+  ranked = rank_houses(totals)
+
+
+  print("House rankings:")
+
+  for house, points in ranked:
+      print(house, "→", points)
+  ```
+
+
+  ### Explanation
+
+
+  * Each house’s total is calculated using `sum()`.
+
+
+  * The list of `(house, total)` pairs is sorted using `.sort()` with a `key`
+  function.
+
+
+  * `reverse=True` sorts from highest to lowest.
+
+
+  * This example shows how sorting can be applied to more complex data
+  structures.
+
+
+  ***
+
+
+  # 🎧 **PRIMM Activity – Music Ratings with Parallel Lists**
+
+
+  ```python
+
+  def analyse_music(songs, ratings):
+      total = sum(ratings)
+      average = total / len(ratings)
+
+      highest = max(ratings)
+      lowest = min(ratings)
+
+      fav_index = ratings.index(highest)
+      worst_index = ratings.index(lowest)
+
+      return total, average, fav_index, worst_index
+
+  # MAIN PROGRAM
+
+  songs = ["Skyline", "Echoes", "Neon Lights", "Midnight Run"]
+
+  ratings = [4, 5, 3, 5]
+
+
+  total, average, fav_index, worst_index = analyse_music(songs, ratings)
+
+
+  print("Total rating:", total)
+
+  print("Average rating:", average)
+
+  print("Favourite song:", songs[fav_index])
+
+  print("Lowest‑rated song:", songs[worst_index])
+
+  ```
+
+
+  ***
+
+
+  ## 🤔 **Predict**
+
+
+  Before running the program:
+
+
+  * Which song do you think will be the favourite?
+
+
+  * What value will `max(ratings)` return?
+
+
+  * What index will `ratings.index(max(ratings))` give?
+
+
+  * What will the average rating be?
+
+
+  * Which song will be the lowest‑rated?
+
+
+  ***
+
+
+  ## ▶️ **Run**
+
+
+  Run the program and compare the output with your predictions.
+
+
+  ***
+
+
+  ## 🔍 **Investigate**
+
+
+  * Why do we need **parallel lists** (`songs` and `ratings`)?
+
+
+  * What does `ratings.index(highest)` return?
+
+
+  * What happens if two songs share the highest rating?
+
+
+  * What does `sum(ratings)` tell us about the list?
+
+
+  * Why is it safe to use the same index on both lists?
+
+
+  * What would happen if the lists were different lengths?
+
+
+  ***
+
+
+  ## ✏️ **Modify**
+
+
+  Try the following changes:
+
+
+  * Add a new song and rating to both lists.
+
+
+  * Print a message such as:
+
+    * `"Amazing!"` if the favourite song has a rating of 5
+
+    * `"Mixed reviews"` if the lowest rating is 2 or below
+
+  * Add code to print **all songs and their ratings** in order.
+
+
+  * Add a line that prints how many 5‑star ratings there are (hint:
+  `ratings.count(5)`).
+
+
+  ***
+
+
+  ## 🛠️ **Make**
+
+
+  Write a function `top_three(songs, ratings)` that:
+
+
+  * Sorts the songs by rating (highest first)
+
+
+  * Returns the top three songs
+
+
+  * Uses **sort**, **index**, or **zip** as needed
+
+
+  Your main program should print the top three songs in order.
