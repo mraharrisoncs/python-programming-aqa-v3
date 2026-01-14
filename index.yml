@@ -2647,6 +2647,108 @@ files:
       # TODO: add some step values to the list\r
 
       # TODO: print the total using the function"
+  - path: course1/unit6/lesson1/lessonpart7/q2.py
+    content: "'''\r
+
+      Write a menu ordering system with two functions \r
+
+      get_valid_item() displays the menu and asks for a single item\r
+
+      and validates it.\r
+
+      take_order() repeatedly calls get_valid_item() to take a whole order\r
+
+      and returns this as a list.\r
+
+      Hint: take_order() must ask for a 'sentinel' value (e.g. 'x' to finish)\r
+
+      '''\r
+
+      \r
+
+      def get_valid_item(menu):\r
+
+      \    # TODO: display menu, ask for input and validate using while loop\r
+
+      \    pass\r
+
+      \r
+
+      def take_order(menu):\r
+
+      \    # TODO: allow multiple valid items to be added to an order list\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
+
+      order = []\r
+
+      \r
+
+      # TODO: call take_order and display the final order"
+  - path: course1/unit6/lesson1/lessonpart7/q3.py
+    content: "'''\r
+
+      Write a playlist program with four functions\r
+
+      add_song(playlist, song) → adds a song only if it isn't already in the
+      list\r
+
+      remove_song(playlist, song) → removes a song if it exists\r
+
+      move_song(playlist, old_index, new_index) → moves a song to a new
+      position\r
+
+      show_playlist(playlist) → prints the playlist\r
+
+      '''\r
+
+      \r
+
+      def add_song(playlist, song):\r
+
+      \    # TODO: add only if not already in the list\r
+
+      \    pass\r
+
+      \r
+
+      def remove_song(playlist, song):\r
+
+      \    # TODO: remove only if it exists\r
+
+      \    pass\r
+
+      \r
+
+      def move_song(playlist, old_index, new_index):\r
+
+      \    # TODO: move a song to a new position\r
+
+      \    pass\r
+
+      \r
+
+      def show_playlist(playlist):\r
+
+      \    # TODO: print the playlist\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      playlist = []\r
+
+      \r
+
+      # TODO: test your functions here"
 units:
   - unit1/index.yml
   - unit2/index.yml

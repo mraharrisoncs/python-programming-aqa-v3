@@ -76,3 +76,5 @@ content: >+
 showEditor: true
 editors:
   - course1/unit6/lesson1/lessonpart7/q1.py
+  - course1/unit6/lesson1/lessonpart7/q2.py
+  - course1/unit6/lesson1/lessonpart7/q3.py
