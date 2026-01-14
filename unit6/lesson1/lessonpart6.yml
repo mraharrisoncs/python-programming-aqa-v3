@@ -175,15 +175,15 @@ content: >+
 
      * What variable is used to store the list of items, and what is its data type?
 
-     * What is the purpose of the `add_item` function?
+     * What is the purpose of the `add_item() `function?
 
-     * What happens when you try to remove an item that is not in the list?
+     * In the function `remove_item()`, what is the purpose of the line `if item in shopping_list`?
 
   4. ✏️ **Modify**:
 
      * Change the program to allow only unique items in the shopping list.
 
-     * Stretch challenge: Add a feature to sort the list alphabetically before displaying it.
+     * **Stretch challenge**: Add a feature to sort the list alphabetically before displaying it.
 
   5. 🛠️ **Make**: Write a basic text editor with the following features:
 
