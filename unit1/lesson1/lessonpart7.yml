@@ -118,20 +118,17 @@ content: >
   2. ▶️ **Run:** what happens when you run the program, was your prediction
   correct?
 
-  3. 🔍 **Investigate:** where does the output appear? Do the quotes appear in
-  the output or not? What about the exclamation mark?
+  3. 🔍 **Investigate:** What happens when you input letters instead of
+  numbers? 
 
-  4. ✏️ **Modify:** what happens if you change "Hello World!" to "Greetings,
-  People!"?&#x20;
+  4. ✏️ **Modify:** what happens if you change `int` to `float`? What if you
+  change "five" and `5` to 100?
 
-     What happens if you insert the line `print()` above the existing line?&#x20;
-
-     What happens if you delete the quote marks **`""`** ?
-  5. 🛠️ **Make**: Delete the code and write a new program that says "How",
-  "Are", "You?" on separate lines.&#x20;
+  5. 🛠️ **Make**: Delete the code and write a new program that asks for your
+  favourite number, and then doubles it!
 
 
-  Reflect on the PRIMM activities below
+  Reflect on the PRIMM activities below.
 showEditor: true
 editors:
   - course1/unit1/lesson1/lessonpart7/age.py
