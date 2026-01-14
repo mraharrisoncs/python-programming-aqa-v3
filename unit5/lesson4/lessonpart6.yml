@@ -104,7 +104,7 @@ content: >
             print("Invalid input. Please try again.")
             score = int(input("Enter a score between 1 and 100: "))
         else:
-            return score
+            return score # return out of the loop 
   ```
 
 

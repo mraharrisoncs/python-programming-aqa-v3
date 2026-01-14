@@ -27,10 +27,10 @@ content: >
   # Example: Validating a test score between 1 and 100
 
   def get_score():
-    score = input("Enter a score between 1 and 100: ")
+    score = int(input("Enter a score between 1 and 100: "))
     while score < 1 or score > 100:
         print("Invalid input. Please try again.")
-        score = input("Enter a score between 1 and 100: ")
+        score = int(input("Enter a score between 1 and 100: "))
     return score
   ```
 
@@ -51,7 +51,7 @@ content: >
   def get_score():
     erroneous = True
     while erroneous:
-        score = input("Enter a score between 1 and 100: ")
+        score = int(input("Enter a score between 1 and 100: "))
         if score >= 0 and score <= 100:
             erroneous = False
     return score
