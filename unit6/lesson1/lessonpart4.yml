@@ -186,3 +186,23 @@ questionGroups:
             value: colours[2] = "magenta"
             explanation: No, this command accesses the index of "blue" and changes it to
               "magenta".
+  - id: "5"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the list colours = ["red", "purple", "red", "purple"], what would
+          be in the list after the command colours.remove("purple")?
+        options:
+          - id: "1"
+            value: '["red", "red", "purple"]'
+            explanation: Yes, the remove method deletes the first occurrence of "purple".
+            isCorrect: true
+          - id: "2"
+            value: '["red", "purple", "red"]'
+            explanation: No, the first "purple" is removed, not the last.
+          - id: "3"
+            value: '["red", "red"]'
+            explanation: No, only the first "purple" is removed, not all occurrences.
+          - id: "4"
+            value: '["red", "purple", "purple"]'
+            explanation: No, the first "purple" is removed, leaving one "purple".
