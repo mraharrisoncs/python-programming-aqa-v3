@@ -1,6 +1,78 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart7
 title: "Python practical: lists"
-content: |+
-  Practical exercise tbc
+content: >+
+  ## 🚶‍♂️ **Question 1 – Simple Step Counter**
 
+
+  Using the starter code in q1.py, create a program with a single function:
+
+
+  * `total_steps(steps_list)`
+
+    * Takes a list of daily step counts
+
+    * Uses a **while loop** to add them up
+
+    * Returns the total
+
+  Your main program should create a list of step counts and print the total.
+
+
+  ***
+
+
+  ## 🍽️ **Question 2 – Menu Ordering System**
+
+
+  Using the starter code in q2.py, write a program that:
+
+
+  * Stores a list of valid menu items
+
+
+  * Asks the user to choose an item
+
+
+  * Validates the choice using a loop
+
+
+  * Allows the user to add multiple valid items to their order
+
+
+  * Stores the final order in a list and displays it
+
+
+  Functions required:
+
+
+  * `get_valid_item(menu)`
+
+
+  * `take_order(menu)`
+
+
+  ***
+
+
+  ## 🎵 **Question 3 – Music Playlist Manager**
+
+
+  Build a playlist program with these features:
+
+
+  * `add_song(playlist, song)` → adds a song only if it isn’t already in the
+  list
+
+
+  * `remove_song(playlist, song)` → removes a song if it exists
+
+
+  * `move_song(playlist, old_index, new_index)` → moves a song to a new position
+
+
+  * `show_playlist(playlist)` → prints the playlist
+
+showEditor: true
+editors:
+  - course1/unit6/lesson1/lessonpart7/q1.py

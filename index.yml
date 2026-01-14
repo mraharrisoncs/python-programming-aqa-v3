@@ -2621,6 +2621,32 @@ files:
       remove_item(shopping_list, \"Bananas\")\r
 
       display_list(shopping_list)\r\n"
+  - path: course1/unit6/lesson1/lessonpart7/q1.py
+    content: "'''\r
+
+      Write a function that takes a list of step counts\r
+
+      as a parameter, uses a while loop to add them up\r
+
+      and returns the total\r
+
+      '''\r
+
+      def total_steps(steps_list):\r
+
+      \    # TODO: delete 'pass' and write code here\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      steps = []\r
+
+      # TODO: add some step values to the list\r
+
+      # TODO: print the total using the function"
 units:
   - unit1/index.yml
   - unit2/index.yml
