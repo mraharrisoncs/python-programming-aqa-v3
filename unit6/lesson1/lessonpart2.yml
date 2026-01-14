@@ -183,7 +183,7 @@ questionGroups:
         options:
           - id: "1"
             value: "0"
-            explanation: In Python, list indexing starts at 0.
+            explanation: Yes, in Python, list indexing starts at 0.
             isCorrect: true
   - id: "5"
     questions:

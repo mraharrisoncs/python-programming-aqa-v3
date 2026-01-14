@@ -2571,6 +2571,56 @@ files:
     content: "print(7 + 3)\r
 
       # enter more print statements below\r\n"
+  - path: course1/unit6/lesson1/lessonpart6/shopping_list_app.py
+    content: "# Shopping List Program\r
+
+      \r
+
+      def add_item(shopping_list, item):\r
+
+      \    shopping_list.append(item)\r
+
+      \    print(f\"Added {item} to the shopping list.\")\r
+
+      \r
+
+      def remove_item(shopping_list, item):\r
+
+      \    if item in shopping_list:\r
+
+      \        shopping_list.remove(item)\r
+
+      \        print(f\"Removed {item} from the shopping list.\")\r
+
+      \    else:\r
+
+      \        print(f\"{item} not found in the shopping list.\")\r
+
+      \r
+
+      def display_list(shopping_list):\r
+
+      \    print(\"Shopping List:\")\r
+
+      \    print(shopping_list)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      shopping_list = []\r
+
+      \r
+
+      add_item(shopping_list, \"Apples\")\r
+
+      add_item(shopping_list, \"Bananas\")\r
+
+      display_list(shopping_list)\r
+
+      remove_item(shopping_list, \"Bananas\")\r
+
+      display_list(shopping_list)\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml

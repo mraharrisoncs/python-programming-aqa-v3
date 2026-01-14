@@ -63,7 +63,7 @@ content: >
 
   >>> fruits[2]
 
-  kiwi
+  'kiwi'
 
   ```
 
@@ -82,13 +82,37 @@ content: >
 
   >>> fruits[-1]
 
-  pear
+  'pear'
 
 
   >>> fruits[-2]
 
-  banana
+  'banana'
 
+
+  ```
+
+
+  Here we can see the negative indexes, underneath the usual positive indexes:
+
+
+  ```python
+
+  fruits
+
+  +--------+--------+--------+--------+--------+
+
+  |   0    |   1    |   2    |   3    |   4    | 
+
+  +--------+--------+--------+--------+--------+
+
+  |   -5   |   -4   |   -3   |   -2   |   -1   |
+
+  +--------+--------+--------+--------+--------+
+
+  | apple  | orange |  kiwi  | banana |  pear  |  
+
+  +--------+--------+--------+--------+--------+
 
   ```
 
@@ -97,8 +121,9 @@ content: >
 
 
   We can also give both **start** and **end** values, to retrieve a **list
-  slice**. This behaves in the same way as **string slicing** (see Unit 3). Here
-  is how that works:
+  slice**. This behaves in the same way as **string slicing** (see Unit 3), we
+  give the **start** index, and the index of the first element we **do not
+  want**, as the **end** index. Here is how that works:
 
 
   ```python
@@ -107,7 +132,7 @@ content: >
 
   >>> fruits[0:2]
 
-  ["apple", "orange"]
+  ['apple', 'orange']
 
 
   >>> fruits[2:5]
@@ -128,12 +153,12 @@ content: >
 
   >>> fruits[:2]
 
-  ["apple", "orange"]
+  ['apple', 'orange']
 
 
-  >>> fruits[4:]
+  >>> fruits[3:]
 
-  ["pear"]
+  ['banana', 'pear']
 
 
   ```
@@ -161,7 +186,7 @@ questionGroups:
       - id: "1"
         type: choice
         content: Given the list fruits = ["apple", "orange", "kiwi", "banana", "pear"]
-          choose the command that retrieves ["apple", "orange"]
+          choose the command that retrieves ['apple', 'orange']
         options:
           - id: "1"
             value: fruits[0:2]
@@ -182,7 +207,7 @@ questionGroups:
       - id: "1"
         type: choice
         content: Given the list fruits = ["apple", "orange", "kiwi", "banana", "pear"]
-          choose the command that retrieves ["banana", "pear"]
+          choose the command that retrieves ['banana', 'pear']
         options:
           - id: "1"
             value: fruits[3:5]
@@ -205,7 +230,7 @@ questionGroups:
       - id: "1"
         type: multiple
         content: Given the list fruits = ["apple", "orange", "kiwi", "banana", "pear"]
-          choose all the commands that retrieve ["kiwi", "banana", "pear"].
+          choose all the commands that retrieve ['kiwi', 'banana', 'pear'].
         options:
           - id: "1"
             value: fruits[2:5]

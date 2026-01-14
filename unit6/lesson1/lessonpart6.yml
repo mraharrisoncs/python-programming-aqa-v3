@@ -62,7 +62,10 @@ content: >+
      `total` sum by the number of temperatures in the list (`len(temps)`) and
      returns the result.
 
-  ## Example 2 - Using a list for validation - the language selection program
+  ***
+
+
+  ## Worked Example 2 - Validating a Language Choice
 
 
   ```python
@@ -118,48 +121,78 @@ content: >+
   returns the selected language.
 
 
-  <br />
+  ***
 
 
   ## PRIMM Activity - Shopping List Program
 
 
-  🤔 Predict what the program does.
+  ```python
+
+  # Shopping List Program
 
 
-  ▶️ Run and check your prediction, were you correct?
+  def add_item(shopping_list, item):
+      shopping_list.append(item)
+      print(f"Added {item} to the shopping list.")
+
+  def remove_item(shopping_list, item):
+      if item in shopping_list:
+          shopping_list.remove(item)
+          print(f"Removed {item} from the shopping list.")
+      else:
+          print(f"{item} not found in the shopping list.")
+
+  def display_list(shopping_list):
+      print("Shopping List:")
+      print(shopping_list)
+
+  # MAIN PROGRAM
+
+  shopping_list = []
 
 
-  🔍 Investigate:
+  add_item(shopping_list, "Apples")
+
+  add_item(shopping_list, "Bananas")
+
+  display_list(shopping_list)
+
+  remove_item(shopping_list, "Bananas")
+
+  display_list(shopping_list)
+
+  ```
 
 
-  What variable is used to store the list of items, and what is its data type?
+  1. 🤔 **Predict** what the program does.
 
 
-  What is the purpose of the `add_item` function?
+  2. ▶️ **Run** and check your prediction, were you correct?
 
 
-  What happens when you try to remove an item that is not in the list?
+  3. 🔍 **Investigate**:
 
+     * What variable is used to store the list of items, and what is its data type?
 
-  ✏️ Modify:
+     * What is the purpose of the `add_item` function?
 
+     * What happens when you try to remove an item that is not in the list?
 
-  Change the program to allow only unique items in the shopping list.
+  4. ✏️ **Modify**:
 
+     * Change the program to allow only unique items in the shopping list.
 
-  Stretch challenge: Add a feature to sort the list alphabetically before
-  displaying it.
+     * Stretch challenge: Add a feature to sort the list alphabetically before displaying it.
 
+  5. 🛠️ **Make**: Write a basic text editor with the following features:
 
-  🛠️ Make: Write a basic text editor with the following features:
+     * `add_line(text)`: Adds a line at the end of the document containing the text
 
+     * `display_doc()`: Displays all lines in the document with line numbers
 
-  * `add_line(text)`: Adds a line at the end of the document containing the text
+     * `remove_line(num)`: Removes a numbered line from the document.
 
-
-  * `display_doc()`: Displays all lines in the document with line numbers
-
-
-  * `remove_line(num)`: Removes a numbered line from the document.
-
+showEditor: true
+editors:
+  - course1/unit6/lesson1/lessonpart6/shopping_list_app.py
