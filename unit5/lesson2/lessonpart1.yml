@@ -36,7 +36,7 @@ content: >
   ```
 
 
-  ######
+  #### Explanation
 
 
   Let's look at that first compound condition in detail. It contains three
@@ -71,10 +71,10 @@ content: >
   >
 
   > While loops are tricky to get your head around sometimes, just remember they
-  keep looping **while** a condition is\*\* True.\*\* Sometimes it's more
-  intuitive to state the\*\* terminating\*\* condition, i.e. what needs to
-  happen for the loop to end. If this is the case, don't forget to
-  **negate** that condition before using it on your **while** statement!
+  keep looping **while** a condition is **True**. Sometimes it's more intuitive
+  to state the  **terminating** condition, i.e. what needs to happen for the
+  loop to **end**. If this is the case, don't forget to **negate** that
+  condition before using it on your **while** statement!
 
 
   ## Try it out!
