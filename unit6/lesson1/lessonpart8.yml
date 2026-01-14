@@ -1,0 +1,151 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart8
+title: "Solutions to Python practical: lists"
+content: >+
+  Here are suggested solutions for the practical activities on the previous
+  page. You can run and test the solutions in the attached files.
+
+
+  ## 🚶‍♂️ Question 1 – Simple Step Counter
+
+
+  ```python
+
+  '''
+
+  Return the total number of steps in the list
+
+  by adding each value using a while loop.
+
+  '''
+
+  def total_steps(steps_list):
+      total = 0
+      index = 0
+
+      while index < len(steps_list):
+          total += steps_list[index]
+          index += 1
+
+      return total
+
+  # main program
+
+  steps = [4500, 6200, 7000, 8000]
+
+  print("Total steps:", total_steps(steps))
+
+  ```
+
+
+  ***
+
+
+  ## 🍽️ Question 2 – Menu Ordering System
+
+
+  ```python
+
+  '''
+
+  Repeatedly ask the user to choose a menu item.
+
+  Only accept items that appear in the menu list.
+
+  Allow the user to add multiple valid items to an order
+
+  and return the completed order list.
+
+  '''
+
+  def get_valid_item(menu):
+      item = input("Choose an item: ")
+      while item not in menu:
+          item = input("Not on the menu. Choose an item: ")
+      return item
+
+  def take_order(menu):
+      order = []
+      add_more = "yes"
+
+      while add_more == "yes":
+          item = get_valid_item(menu)
+          order.append(item)
+          add_more = input("Add another item? (yes/no): ")
+
+      return order
+
+  # main program
+
+  menu = ["Pizza", "Pasta", "Salad", "Soup"]
+
+  final_order = take_order(menu)
+
+  print("Your order:", final_order)
+
+  ```
+
+
+  ***
+
+
+  ## 🎵 Question 3 – Music Playlist Manager
+
+
+  ```python
+
+  '''
+
+  Manage a playlist by adding unique songs,
+
+  removing songs that exist, moving songs to new positions,
+
+  and displaying the playlist.
+
+  '''
+
+  def add_song(playlist, song):
+      if song not in playlist:
+          playlist.append(song)
+      else:
+          print("Song already in playlist.")
+
+  def remove_song(playlist, song):
+      if song in playlist:
+          playlist.remove(song)
+      else:
+          print("Song not found.")
+
+  def move_song(playlist, old_index, new_index):
+      if 0 <= old_index < len(playlist) and 0 <= new_index < len(playlist):
+          song = playlist.pop(old_index)
+          playlist.insert(new_index, song)
+      else:
+          print("Invalid index.")
+
+  def show_playlist(playlist):
+      print("Playlist:", playlist)
+
+  # main program
+
+  playlist = []
+
+  add_song(playlist, "Song A")
+
+  add_song(playlist, "Song B")
+
+  add_song(playlist, "Song C")
+
+  move_song(playlist, 0, 2)
+
+  remove_song(playlist, "Song B")
+
+  show_playlist(playlist)
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit6/lesson1/lessonpart8/q1_solution.py
+  - course1/unit6/lesson1/lessonpart8/q2_solution.py
+  - course1/unit6/lesson1/lessonpart8/q3_solution.py

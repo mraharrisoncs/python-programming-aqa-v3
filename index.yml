@@ -2624,11 +2624,9 @@ files:
   - path: course1/unit6/lesson1/lessonpart7/q1.py
     content: "'''\r
 
-      Write a function that takes a list of step counts\r
+      Return the total number of steps in the list\r
 
-      as a parameter, uses a while loop to add them up\r
-
-      and returns the total\r
+      by adding each value using a while loop.\r
 
       '''\r
 
@@ -2650,17 +2648,17 @@ files:
   - path: course1/unit6/lesson1/lessonpart7/q2.py
     content: "'''\r
 
-      Write a menu ordering system with two functions \r
+      Repeatedly ask the user to choose a menu item.\r
 
-      get_valid_item() displays the menu and asks for a single item\r
+      Only accept items that appear in the menu list.\r
 
-      and validates it.\r
+      Allow the user to add multiple valid items to an order\r
 
-      take_order() repeatedly calls get_valid_item() to take a whole order\r
+      and return the completed order list.\r
 
-      and returns this as a list.\r
+      Hint: take_order() needs a while loop that calls get_valid_item() \r
 
-      Hint: take_order() must ask for a 'sentinel' value (e.g. 'x' to finish)\r
+      repeatedly and asking if more items are needed, if not it should end.\r
 
       '''\r
 
@@ -2749,6 +2747,165 @@ files:
       \r
 
       # TODO: test your functions here"
+  - path: course1/unit6/lesson1/lessonpart8/q1_solution.py
+    content: "'''\r
+
+      Return the total number of steps in the list\r
+
+      by adding each value using a while loop.\r
+
+      '''\r
+
+      def total_steps(steps_list):\r
+
+      \    total = 0\r
+
+      \    index = 0\r
+
+      \r
+
+      \    while index < len(steps_list):\r
+
+      \        total += steps_list[index]\r
+
+      \        index += 1\r
+
+      \r
+
+      \    return total\r
+
+      \r
+
+      # main program\r
+
+      steps = [4500, 6200, 7000, 8000]\r
+
+      print(\"Total steps:\", total_steps(steps))"
+  - path: course1/unit6/lesson1/lessonpart8/q2_solution.py
+    content: "'''\r
+
+      Repeatedly ask the user to choose a menu item.\r
+
+      Only accept items that appear in the menu list.\r
+
+      Allow the user to add multiple valid items to an order\r
+
+      and return the completed order list.\r
+
+      '''\r
+
+      def get_valid_item(menu):\r
+
+      \    item = input(\"Choose an item: \")\r
+
+      \    while item not in menu:\r
+
+      \        item = input(\"Not on the menu. Choose an item: \")\r
+
+      \    return item\r
+
+      \r
+
+      def take_order(menu):\r
+
+      \    order = []\r
+
+      \    add_more = \"yes\"\r
+
+      \r
+
+      \    while add_more == \"yes\":\r
+
+      \        item = get_valid_item(menu)\r
+
+      \        order.append(item)\r
+
+      \        add_more = input(\"Add another item? (yes/no): \")\r
+
+      \r
+
+      \    return order\r
+
+      \r
+
+      # main program\r
+
+      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
+
+      final_order = take_order(menu)\r
+
+      print(\"Your order:\", final_order)"
+  - path: course1/unit6/lesson1/lessonpart8/q3_solution.py
+    content: "'''\r
+
+      Manage a playlist by adding unique songs,\r
+
+      removing songs that exist, moving songs to new positions,\r
+
+      and displaying the playlist.\r
+
+      '''\r
+
+      def add_song(playlist, song):\r
+
+      \    if song not in playlist:\r
+
+      \        playlist.append(song)\r
+
+      \    else:\r
+
+      \        print(\"Song already in playlist.\")\r
+
+      \r
+
+      def remove_song(playlist, song):\r
+
+      \    if song in playlist:\r
+
+      \        playlist.remove(song)\r
+
+      \    else:\r
+
+      \        print(\"Song not found.\")\r
+
+      \r
+
+      def move_song(playlist, old_index, new_index):\r
+
+      \    if 0 <= old_index < len(playlist) and 0 <= new_index <
+      len(playlist):\r
+
+      \        song = playlist.pop(old_index)\r
+
+      \        playlist.insert(new_index, song)\r
+
+      \    else:\r
+
+      \        print(\"Invalid index.\")\r
+
+      \r
+
+      def show_playlist(playlist):\r
+
+      \    print(\"Playlist:\", playlist)\r
+
+      \r
+
+      # main program\r
+
+      playlist = []\r
+
+      add_song(playlist, \"Song A\")\r
+
+      add_song(playlist, \"Song B\")\r
+
+      add_song(playlist, \"Song C\")\r
+
+      move_song(playlist, 0, 2)\r
+
+      remove_song(playlist, \"Song B\")\r
+
+      show_playlist(playlist)"
 units:
   - unit1/index.yml
   - unit2/index.yml
