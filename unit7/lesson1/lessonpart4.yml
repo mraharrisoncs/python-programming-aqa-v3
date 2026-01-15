@@ -33,11 +33,6 @@ content: >
   `for` loop is perfect for processing each one.
 
 
-  Below is a **beginner‑friendly** version of a Caesar cipher encoder written as
-  a function. It uses only lowercase letters and keeps spaces and punctuation
-  unchanged.
-
-
   ### Caesar Cipher Encoder Function
 
 
@@ -98,7 +93,8 @@ content: >
   ```
 
 
-  This is `"hello world"` shifted by 3 places.
+  This is `"hello world"` shifted by 3 places. Try the code now in the attached
+  file.
 showEditor: true
 editors:
   - course1/unit7/lesson1/lessonpart4/caesar_cipher.py
