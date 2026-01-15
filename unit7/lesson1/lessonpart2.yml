@@ -6,34 +6,10 @@ content: >+
   string.&#x20;
 
 
-  ### Structure of a `for` Loop
+  ## Printing ALL THE FRUITS!
 
 
-  The basic structure of a `for` loop in Python is as follows:
-
-
-  ```python
-
-  for variable in sequence:
-      # Code block to execute
-  ```
-
-
-  * **`variable`**: This is a temporary variable that takes the value of the
-  next item in the sequence on each iteration.
-
-
-  * **`sequence`**: This is the collection of items you want to iterate over.
-
-
-  * **Code block**: This is the block of code that will be executed on each
-  iteration. It is indented to indicate that it belongs to the loop.
-
-
-  ### Example for loop
-
-
-  Here is a simple example of a `for` loop iterating over a list:
+  Here is that fruits example again:
 
 
   ```python
@@ -45,6 +21,66 @@ content: >+
   ```
 
 
-  In this example, the loop will print each fruit in the list one by one.
+  ```
+
+  apple
+
+  banana
+
+  cherry
+
+  ```
 
 
+  ### Explanation
+
+
+  * The list `fruits` contains three elements: "apple", "banana", and "cherry".
+
+
+  * The `for` loop iterates over each element in the `fruits` list.
+
+
+  * During each iteration, the variable `fruit` takes on the value of the
+  current element in the list
+
+
+  * In the first iteration, `fruit` is assigned the value `"apple"`
+
+
+  * The `print(fruit)` statement outputs the current value of `fruit` to the
+  console.
+
+
+  * When the code loops around, `fruit` is now assigned the value `"banana"` and
+  so on.
+
+
+  * As a result, each fruit in the list is printed on a new line.
+
+
+  ## More than just printing
+
+
+  We can perform a whole bunch of things inside the loop, not just printing.
+  Here is an improved program that outputs a message along with each fruit,
+  using the correct article (*a* or *an*) in front of our fruit, using a string
+  of vowels.
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry", "damson", "elderberry"]
+
+  for fruit in fruits:
+      if fruit[0] in "aeiou":
+        article = "an "
+      else:
+        article = "a "
+      print("I love " + article + fruit)
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit7/lesson1/lessonpart2/fruits_article.py

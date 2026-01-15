@@ -3012,6 +3012,21 @@ files:
       print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
 
       print(f\"Calories per person = {cals_per_person}\")"
+  - path: course1/unit7/lesson1/lessonpart2/fruits_article.py
+    content: "fruits = [\"apple\", \"banana\", \"cherry\", \"damson\",
+      \"elderberry\"]\r
+
+      for fruit in fruits:\r
+
+      \    if fruit[0] in \"aeiou\":\r
+
+      \      article = \"an \"\r
+
+      \    else:\r
+
+      \      article = \"a \"\r
+
+      \    print(\"I love \" + article + fruit)"
 units:
   - unit1/index.yml
   - unit2/index.yml
