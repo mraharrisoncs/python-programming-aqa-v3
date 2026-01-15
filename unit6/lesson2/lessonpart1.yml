@@ -93,6 +93,19 @@ content: >+
   **constants** instead of variables where available.
 
 
+  ## Array dimensions
+
+
+  So far we have met **one-dimensional** arrays, like `[10, 20, 30, 40, 50, 60,
+  70]`. This is a linear sequence of values, it has only one dimension, so we
+  call it a **1D array**.
+
+
+  Later we will explore **two-dimensional** or **2D arrays**, which are needed
+  for things like game boards, bitmaps and other information that can be
+  arranged in a **grid** across two dimensions (e.g. horizontal and vertical).
+
+
   ## We call Python lists arrays!
 
 
