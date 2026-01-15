@@ -3020,11 +3020,11 @@ files:
 
       \    if fruit[0] in \"aeiou\":\r
 
-      \      article = \"an \"\r
+      \        article = \"an \"\r
 
       \    else:\r
 
-      \      article = \"a \"\r
+      \        article = \"a \"\r
 
       \    print(\"I love \" + article + fruit)"
 units:

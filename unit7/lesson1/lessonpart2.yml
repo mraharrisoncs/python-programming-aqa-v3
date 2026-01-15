@@ -77,9 +77,9 @@ content: >
 
   for fruit in fruits:
       if fruit[0] in "aeiou":
-        article = "an "
+          article = "an "
       else:
-        article = "a "
+          article = "a "
       print("I love " + article + fruit)
 
   ```

@@ -2,22 +2,135 @@
 id: lessonpart3
 title: More iteration over lists
 content: >
-  ## More iteration over lists
+  ***
 
 
-  In Python, a `for` loop is commonly used to iterate over elements in a list.
-  This allows you to perform operations on each item in the list. Here is a
-  simple example:
+  So far, we’ve iterated over simple lists of strings such as fruit names.
+  Python lists, however, can store **any kind of data** — numbers, strings, or
+  even a mixture. A `for` loop works the same way no matter what the list
+  contains.
+
+
+  ## Iterating Over a List of Numbers (Floats)
+
+
+  Lists often contain **numeric data**, such as prices, temperatures, or
+  measurements. A `for` loop lets us process each number in turn.
+
+
+  ### Example: Increasing prices by 10%
 
 
   ```python
 
-  fruits = ["apple", "banana", "cherry"]
+  prices = [1.20, 2.50, 3.99, 0.99]
 
-  for fruit in fruits:
-      print(fruit)
+
+  for price in prices:
+      new_price = price * 1.10
+      print("New price:", round(new_price, 2))
   ```
 
 
-  In this example, the loop iterates over each element in the `fruits` list and
-  prints it.
+  ### Explanation
+
+
+  * Each `price` is a **float** (a number with decimals).
+
+
+  * The loop multiplies each price by `1.10` to add 10%.
+
+
+  * `round(..., 2)` keeps the output tidy to two decimal places.
+
+
+  ***
+
+
+  ## Iterating Over a List of Strings
+
+
+  You’ve already seen this with fruits, but here’s a different example that
+  *uses* the string data rather than just printing it.
+
+
+  ### Example: Counting the length of each word
+
+
+  ```python
+
+  words = ["python", "loop", "iteration", "code"]
+
+
+  for word in words:
+      length = len(word)
+      print(word, "has", length, "letters")
+  ```
+
+
+  ## Iterating Over a Mixed List
+
+
+  Python lists can contain **different data types at the same time**. This is
+  unusual in some languages, but perfectly normal in Python.
+
+
+  ### Example: Identifying the type of each item
+
+
+  ```python
+
+  items = ["apple", 3.14, 42, "banana", True]
+
+
+  for item in items:
+      print(item, "is a", type(item))
+  ```
+
+
+  ### What this shows
+
+
+  * The loop doesn’t care what type each element is.
+
+
+  * `type(item)` reveals whether it’s a string, float, integer, or boolean.
+
+
+  * This is useful when processing unpredictable or user‑generated data.
+
+
+  ***
+
+
+  ## Using a Loop to Build a New List
+
+
+  A common pattern is to iterate over a list and create a **new** list based on
+  the original.
+
+
+  ### Example: Converting temperatures from °C to °F
+
+
+  ```python
+
+  temps_c = [0, 10, 20, 30]
+
+  temps_f = []
+
+
+  for c in temps_c:
+      f = (c * 9/5) + 32
+      temps_f.append(f)
+
+  print(temps_f)
+
+  ```
+
+
+  ### Why this matters
+
+
+  This pattern — *loop → calculate → append* — is the foundation of many
+  data‑processing tasks.
