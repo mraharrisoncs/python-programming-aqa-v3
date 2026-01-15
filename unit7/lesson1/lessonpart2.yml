@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Iterating over a list
-content: >+
+content: >
   In Python, a `for` loop is used to iterate over a sequence, such as a list or
   string.&#x20;
 
@@ -68,6 +68,9 @@ content: >+
   of vowels.
 
 
+  > In English, the *articles* are the words `a` ,`an` and `the`.&#x20;
+
+
   ```python
 
   fruits = ["apple", "banana", "cherry", "damson", "elderberry"]
@@ -81,6 +84,8 @@ content: >+
 
   ```
 
+
+  You can try this code in the attached file **`fruits_article.py`**.
 showEditor: true
 editors:
   - course1/unit7/lesson1/lessonpart2/fruits_article.py
