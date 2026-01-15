@@ -22,36 +22,43 @@ content: >+
   Python this means a **while** loop which we met in Unit 5.
 
 
-  ### For loop syntax
+  ### Structure of a `for` Loop
 
 
-  <br />
-
-
-  ### Example uses
-
-
-  Remember the countdown program we made with a while loop?
+  The basic structure of a `for` loop in Python is as follows:
 
 
   ```python
 
-  def countdown():
-    # count down from 10
-    counter = 10
-    while counter >= 1:
-      print(f"{counter} !")
-      counter -= 1
-    print("lift-off !")
-
-  # MAIN PROGRAM
-
-  countdown()
-
+  for variable in sequence:
+      # Code block to execute
   ```
 
 
-  We can simplify this 
+  * **`variable`**: This is a temporary variable that takes the value of the
+  next item in the sequence on each iteration.
+
+
+  * **`sequence`**: This is the collection of items you want to iterate over.
+
+
+  * **Code block**: This is the block of code that will be executed on each
+  iteration. It is indented to indicate that it belongs to the loop.
+
+
+  ### Example for loop
+
+
+  Here is a simple example of a `for` loop iterating over a list:
+
+
+  ```python
+
+  fruits = ["apple", "banana", "cherry"]
+
+  for fruit in fruits:
+      print(fruit)
+  ```
 
 
   * **Iterating over a sequence of numbers**: You might want to perform an
