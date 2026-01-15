@@ -52,3 +52,9 @@ showEditor: true
 editors:
   - course1/unit5/lesson4/lessonpart3/word_game_solution.py
   - course1/unit5/lesson4/lessonpart3/word_game_solution_structured.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on this solution. What surprised you?

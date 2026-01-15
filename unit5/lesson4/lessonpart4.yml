@@ -2,7 +2,7 @@
 id: lessonpart4
 title: "Python practical: while loops"
 content: >+
-  ### 1. Countdown timer
+  ### 1. 🔢 Countdown timer
 
 
   Starting with the code in **q1.py**, complete the function that accepts an
@@ -43,7 +43,7 @@ content: >+
   ***
 
 
-  ### 2. Input validation: age checker
+  ### 2. 🔞 Input validation: age checker
 
 
   Starting with the code in **q2.py**, write a function that repeatedly asks the
@@ -70,7 +70,7 @@ content: >+
   ***
 
 
-  ### 3. Vending machine program
+  ### 3. 🥤 Vending machine program
 
 
   Starting with the code in **q3.py**, complete a small vending‑machine program

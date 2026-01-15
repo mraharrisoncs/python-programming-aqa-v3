@@ -34,7 +34,7 @@ content: >+
   ```
 
 
-  Question 2
+  ### Question 2
 
 
   ```python
@@ -60,7 +60,7 @@ content: >+
   ```
 
 
-  Question 3
+  ### Question 3
 
 
   ```python
@@ -110,3 +110,11 @@ editors:
   - course1/unit5/lesson4/lessonpart5/q1_solution.py
   - course1/unit5/lesson4/lessonpart5/q2_solution.py
   - course1/unit5/lesson4/lessonpart5/q3_solution.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on the solutions provided for the practical while loop
+          problems. Which solution did you find most challenging to understand
+          and why?

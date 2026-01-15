@@ -28,8 +28,6 @@ files:
       print(\"I eat\", 5, \"a day!\")\r
 
       \r\n"
-  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
-    content: "print(\"Hello World!\")\r\n"
   - path: course1/unit1/lesson1/lessonpart3/variables.py
     content: "age = 14\r
 
@@ -1456,25 +1454,6 @@ files:
       # Final output\r
 
       print(\"Dispense drink\")"
-  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
-    content: "slices = 40\r
-
-      people = 12\r
-
-      cal_per_slice = 120\r
-
-      slices_each = slices // people                 # DIV to get whole number
-      of slices each\r
-
-      slices_left = slices %  people                 # MOD to get remaining
-      slices\r
-
-      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
-      per person\r
-
-      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
-
-      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit4/lesson3/lessonpart5/q1.py
     content: "'''\r
 
@@ -2277,6 +2256,48 @@ files:
       print(\"full stop to finish.\")\r
 
       print(f\"Your word scored: {word_score()}\")"
+  - path: course1/unit5/lesson4/lessonpart6/countdown_buggy.py
+    content: "def countdown():\r
+
+      \  # count down from 10 in twos\r
+
+      \  counter = 10\r
+
+      \  while counter != 1:\r
+
+      \    print(f\"{counter} !\")\r
+
+      \    counter -= 2\r
+
+      \  print(\"lift-off !\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown()"
+  - path: course1/unit5/lesson4/lessonpart6/while_true.py
+    content: "def get_score():\r
+
+      \  score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \  while True:\r
+
+      \      if score < 1 or score > 100:\r
+
+      \          print(\"Invalid input. Please try again.\")\r
+
+      \          score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \      else:\r
+
+      \          return score\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(get_score())"
   - path: course1/unit5/lesson4/lessonpart4/q1.py
     content: "'''\r
 
@@ -2455,6 +2476,27 @@ files:
       # main program\r
 
       run_machine()"
+  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
+    content: "print(\"Hello World!\")\r\n"
+  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
+    content: "slices = 40\r
+
+      people = 12\r
+
+      cal_per_slice = 120\r
+
+      slices_each = slices // people                 # DIV to get whole number
+      of slices each\r
+
+      slices_left = slices %  people                 # MOD to get remaining
+      slices\r
+
+      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
+      per person\r
+
+      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
+
+      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit6/lesson1/lessonpart6/shopping_list_app.py
     content: "# Shopping List Program\r
 
@@ -2876,36 +2918,6 @@ files:
       # Example call:\r
 
       print(max_station(18))   # expected: 2"
-  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
-    content: "full_name = input(\"Enter your full name: \")   \r
-
-      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
-
-      \r
-
-      # Split the full name into first and surname\r
-
-      space_index = full_name.find(\" \")\r
-
-      first_name = full_name[:space_index]\r
-
-      surname = full_name[space_index + 1:]\r
-
-      \r
-
-      # Get the first initial and last two digits of the year\r
-
-      initial = first_name[0]\r
-
-      year_suffix = str(year)[-2:]\r
-
-      \r
-
-      # Build the username\r
-
-      username = surname + \"_\" + initial + \"_\" + year_suffix\r
-
-      print(\"Your username is:\", username)\r\n"
   - path: course1/unit7/lesson2/lessonpart1/five_times_table_for.py
     content: "def five_times_table():\r
 
@@ -2970,48 +2982,36 @@ files:
       # MAIN PROGRAM\r
 
       countdown()"
-  - path: course1/unit5/lesson4/lessonpart6/countdown_buggy.py
-    content: "def countdown():\r
+  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
+    content: "full_name = input(\"Enter your full name: \")   \r
 
-      \  # count down from 10 in twos\r
-
-      \  counter = 10\r
-
-      \  while counter != 1:\r
-
-      \    print(f\"{counter} !\")\r
-
-      \    counter -= 2\r
-
-      \  print(\"lift-off !\")\r
+      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
 
       \r
 
-      # MAIN PROGRAM\r
+      # Split the full name into first and surname\r
 
-      countdown()"
-  - path: course1/unit5/lesson4/lessonpart6/while_true.py
-    content: "def get_score():\r
+      space_index = full_name.find(\" \")\r
 
-      \  score = int(input(\"Enter a score between 1 and 100: \"))\r
+      first_name = full_name[:space_index]\r
 
-      \  while True:\r
-
-      \      if score < 1 or score > 100:\r
-
-      \          print(\"Invalid input. Please try again.\")\r
-
-      \          score = int(input(\"Enter a score between 1 and 100: \"))\r
-
-      \      else:\r
-
-      \          return score\r
+      surname = full_name[space_index + 1:]\r
 
       \r
 
-      # MAIN PROGRAM\r
+      # Get the first initial and last two digits of the year\r
 
-      print(get_score())"
+      initial = first_name[0]\r
+
+      year_suffix = str(year)[-2:]\r
+
+      \r
+
+      # Build the username\r
+
+      username = surname + \"_\" + initial + \"_\" + year_suffix\r
+
+      print(\"Your username is:\", username)\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml

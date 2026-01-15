@@ -83,13 +83,24 @@ content: >
   ```
 
 
-  ### Breaking out of a loop
+  ### Beyond the spec - breaking out!
+
+
+  In AQA GCSE exam questions, your **indefinite loops** should use a terminating
+  condition - you will never need to use `while True`. However if you find
+  yourself coding it in Python, you'll need to know how to break out! 
+
+
+  ### Returning out of a loop
 
 
   There are two ways we can break out of a while loop, and we must use one of
   them inside a `while True` loop, or it will never end! First we can
   **return** out of the function that the while loop is part of. This works
-  fine, if the function does not need to do anything else.&#x20;
+  fine, if the function does not need to do anything else.
+
+
+  &#x20;
 
 
   Here is a validation example from Lesson 3, showing this technique.
@@ -108,10 +119,32 @@ content: >
   ```
 
 
-  <br />
+  ### The **break** keyword
 
 
-  Beyond the spec with break and continue
+  Or we could use the Python keyword `break` which says "exit the current
+  loop". 
+
+
+  ```python
+
+  def get_score():
+    score = int(input("Enter a score between 1 and 100: "))
+    while True:
+        if score < 1 or score > 100:
+            print("Invalid input. Please try again.")
+            score = int(input("Enter a score between 1 and 100: "))
+        else:
+            break # break out of the loop
+    return score 
+  ```
+
+
+  > These techniques are beyond the AQA specification, so will not be expected
+  in exams, but they are valid if used.
+
+
+  Now answer these questions:
 showEditor: true
 editors:
   - course1/unit5/lesson4/lessonpart6/countdown_buggy.py

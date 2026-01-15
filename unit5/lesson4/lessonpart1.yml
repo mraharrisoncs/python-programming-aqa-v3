@@ -176,3 +176,12 @@ showEditor: true
 editors:
   - course1/unit5/lesson4/lessonpart1/test_marker.py
   - course1/unit5/lesson4/lessonpart1/word_game.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on the PRIMM exercise here.  What variable controls the outer
+          loop, and what is its data type? What is the purpose of the inner
+          while loop? The input value -1 indicates that the loop should end,
+          what do we call a special value like this?
