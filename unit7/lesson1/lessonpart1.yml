@@ -62,14 +62,70 @@ content: >+
   ```
 
 
+  ```
+
+  apple
+
+  banana
+
+  cherry
+
+  ```
+
+
   ### Uses of a for loop
 
 
   * **Iterating over a sequence of numbers**: You might want to perform an
-  action a fixed number of times, such as printing numbers from 1 to 10,
-  displaying the times table or allowing three password attempts.
+  action a fixed number of times, such as
 
+    * displaying a times table for a given number
+
+    * allowing a finite number of password attempts
 
   * **Processing items in a list**: You can iterate over each item in a **list**
-  to perform operations like summing values or modifying elements. 
+  to perform operations like:
+
+    * calculating the sum or average of a list of numbers
+
+    * searching or sorting a list of data 
+
+    * modifying every element in a list such as adding 10% for inflation!
+
+  ### Definite versus indefinite
+
+
+  Here is a reminder of when to use definite iteration (e.g. `for`) and when to
+  use indefinite iteration (e.g. `while`):
+
+
+  | Definite iteration                                  | Indefinite
+  iteration                                  |        |
+
+  | --------------------------------------------------- |
+  ----------------------------------------------------- | ------ |
+
+  | Also known as count-controlled iteration            | Also known as
+  condition-controlled iteration.         |        |
+
+  | Iterates over a list or a range of numbers.         | Loops until a
+  condition is met or becomes unmet.      |        |
+
+  | Runs a fixed number of times                        | Number of iterations
+  is unknown on entry to the loop  | <br /> |
+
+  | **Use cases**                                       | **Use
+  cases**                                         |        |
+
+  | Performing an action a set number of times.         | Continuously checking
+  for a condition to become true. |        |
+
+  | Input validation with a fixed number of attempts.   | Waiting for user input
+  to match a specific condition. |        |
+
+  | Sorting a list of known length.                     | Monitoring a sensor
+  until a threshold is reached.     |        |
+
+  | Updating a list with a 20% reduction for each item. | Repeatedly prompting
+  for correct input until valid.   |        |
 
