@@ -31,76 +31,12 @@ content: >
   called **iterating** over the string.
 
 
-  ### Indexing through a string with range()
-
-
-  &#x20;
-
-
-  We know that each character in `greeting` has an index, you can see them
-  above, for example, greeting\[0] is "H". We know that the index goes from 0 to
-  11. So we can iterate over the string by the index value using range(12) -
-  adding 1 because the Python range function excludes the last number.
-
-
-  ```python
-
-  greeting = "Hello World!"
-
-  for index in range(12):
-    print(greeting[index])
-  H
-
-  e
-
-  l
-
-  l
-
-  o
-   
-  W
-
-  o
-
-  r
-
-  l
-
-  d
-
-  !
-
-  ```
-
-
-  But that **12** is just the length of the string, which we can get from
-  len(greeting), so we can **generalise** this program to work with any length
-  string:
-
-
-  ```python
-
-  name = "Ada"
-
-  for index in range(len(name)):
-    print(name[index])
-  A
-
-  d
-
-  a
-
-  ```
-
-
   ### Iterating over a string
 
 
-  Finally, we can make this program **even simpler** thanks to Python's concept
-  of **iterating over a data structure.** Instead of indexing the string using
-  **range()**, we can just ask Python to give us each character in turn, by
-  **iterating over the string:**
+  We will look at** `for`** loops in much more detail in Unit 7, but here is a
+  quick look at a vital string handling technique. We can ask Python to give us
+  each character in turn, by **iterating over the string:**
 
 
   ```python
@@ -118,35 +54,9 @@ content: >
   ```
 
 
-  This simplified version is very useful if we know we are just going to process
-  the characters in the string, and we don't need their index values.
-
-
   Now check your understanding:
 questionGroups:
   - id: "1"
-    questions:
-      - id: "1"
-        type: choice
-        content: If we have a string variable called message and we want to iterate over
-          it using the index, what is the correct Python code for this?
-        options:
-          - id: "1"
-            value: for index in range(len(message))
-            explanation: Yes, this is the indexing method for iterating over a string.
-            isCorrect: true
-          - id: "2"
-            value: for index in range(7)
-            explanation: No, the identifier is message but the value stored might have a
-              different length.
-          - id: "3"
-            value: for char in message
-            explanation: No, the question asks you to iterate using index values.
-          - id: "4"
-            value: for index in range(len(message) + 1)
-            explanation: No, this will increase the index beyond the last character of the
-              string by 1.
-  - id: "2"
     questions:
       - id: "1"
         type: choice

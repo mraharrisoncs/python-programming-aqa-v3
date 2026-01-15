@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Iterating over a string
-content: >+
+content: >
   ## Iterating Over a String
 
 
-  A `for` loop can also be used to iterate over each character in a string. Here
-  is an example:
+  We met this technique briefly in Unit 3. A `for` loop can also be used to
+  iterate over each character in a string. Here is an example:
 
 
   ```python
@@ -20,3 +20,85 @@ content: >+
 
   This loop will print each character in the string `word`.
 
+
+  ---
+
+
+  ## A Simple Caesar Cipher
+
+
+  A **Caesar cipher** is one of the oldest and simplest ways to encode a
+  message. It works by **shifting each letter** forward in the alphabet by a
+  fixed number of places. Because a string is just a sequence of characters, a
+  `for` loop is perfect for processing each one.
+
+
+  Below is a **beginner‑friendly** version of a Caesar cipher encoder written as
+  a function. It uses only lowercase letters and keeps spaces and punctuation
+  unchanged.
+
+
+  ### Caesar Cipher Encoder Function
+
+
+  ```python
+
+  def caesar_encode(message, shift):
+      alphabet = "abcdefghijklmnopqrstuvwxyz"
+      result = ""
+
+      for char in message:
+          if char in alphabet:
+              position = alphabet.index(char)
+              new_position = (position + shift) % 26
+              result += alphabet[new_position]
+          else:
+              result += char
+
+      return result
+
+  # Example use
+
+  print(caesar_encode("hello world", 3))
+
+  ```
+
+
+  ### How it works
+
+
+  - **`alphabet`** is a simple string containing all lowercase letters.
+
+  - The loop processes the message **one character at a time**.
+
+  - If the character is a letter:
+    - `.index(char)` finds its position in the alphabet.
+    - `(position + shift) % 26` moves it forward and wraps around if needed.
+    - The new shifted letter is added to the result.
+  - If the character is **not** a letter (space, punctuation), it is copied
+  unchanged.
+
+  - The function returns the encoded message so it can be reused anywhere.
+
+
+  ### Example output
+
+
+  ```
+
+  khoor zruog
+
+  ```
+
+
+  This is `"hello world"` shifted by 3 places.
+
+
+  ---
+
+
+  If you want, I can add a matching **decoder**, an **extension task**, or a
+  version that handles **uppercase letters**.
+showEditor: true
+editors:
+  - course1/unit7/lesson1/lessonpart4/caesar_cipher.py
