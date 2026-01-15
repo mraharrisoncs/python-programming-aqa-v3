@@ -21,7 +21,7 @@ content: >
   This loop will print each character in the string `word`.
 
 
-  ---
+  ***
 
 
   ## A Simple Caesar Cipher
@@ -67,18 +67,25 @@ content: >
   ### How it works
 
 
-  - **`alphabet`** is a simple string containing all lowercase letters.
+  * **`alphabet`** is a simple string containing all lowercase letters.
 
-  - The loop processes the message **one character at a time**.
 
-  - If the character is a letter:
-    - `.index(char)` finds its position in the alphabet.
-    - `(position + shift) % 26` moves it forward and wraps around if needed.
-    - The new shifted letter is added to the result.
-  - If the character is **not** a letter (space, punctuation), it is copied
+  * The loop processes the message **one character at a time**.
+
+
+  * If the character is a letter:
+
+    * `.index(char)` finds its position in the alphabet.
+
+    * `(position + shift) % 26` moves it forward and wraps around if needed.
+
+    * The new shifted letter is added to the result.
+
+  * If the character is **not** a letter (space, punctuation), it is copied
   unchanged.
 
-  - The function returns the encoded message so it can be reused anywhere.
+
+  * The function returns the encoded message so it can be reused anywhere.
 
 
   ### Example output
@@ -92,13 +99,6 @@ content: >
 
 
   This is `"hello world"` shifted by 3 places.
-
-
-  ---
-
-
-  If you want, I can add a matching **decoder**, an **extension task**, or a
-  version that handles **uppercase letters**.
 showEditor: true
 editors:
   - course1/unit7/lesson1/lessonpart4/caesar_cipher.py
