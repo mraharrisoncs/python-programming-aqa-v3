@@ -29,8 +29,8 @@ content: >+
   >
 
   > When you see `>>>` in  this course, as above, it means code typed into the
-  console, also called the Python ***REPL*** or Shell. Output from the command
-  is shown below the code.
+  console, also called the Python ***REPL*** or Shell. The code is executed
+  **immediately** and output displayed.
 
   >
 
@@ -71,8 +71,10 @@ content: >+
 
 
   Notice that the commas are **not displayed**. These are used
-  as **separators** inside the **print()** statement. We can output any kind of
-  data, and even mix up data types:
+  as **separators** inside the **print()** statement.&#x20;
+
+
+  We can output any kind of data, and even mix up data types:
 
 
   ### Outputting strings and numbers
