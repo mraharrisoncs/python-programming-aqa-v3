@@ -40,10 +40,11 @@ content: >+
 
 
   * **`sequence`**: This is the collection of items you want to iterate over.
+  Usually this is a list **literal** or list **variable.**
 
 
   * **Code block**: This is the block of code that will be executed on each
-  iteration. It is indented to indicate that it belongs to the loop.
+  iteration. It is indented to show that it belongs to the loop.
 
 
   ### Example for loop
