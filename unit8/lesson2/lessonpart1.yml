@@ -1,6 +1,71 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Traversing a 2D array
-content: |
-  tbc
-showTerminal: true
+content: >+
+  In this section, we'll explore how to traverse a 2D array using a for loop in
+  Python. We'll start by examining the `view_students` function from the
+  previous lesson, which demonstrates how to iterate over a list of lists.
+
+
+  ### Traversing a 2D Array
+
+
+  A 2D array, or a list of lists in Python, can be thought of as a table with
+  rows and columns. To traverse a 2D array, you typically use nested for loops:
+  one loop to iterate over the rows and another loop to iterate over the
+  elements within each row.
+
+
+  Here's how the `view_students` function works:
+
+
+  ```python
+
+  def view_students(students):
+      for student in students:
+          print(student)
+  ```
+
+
+  In this function, `students` is a 2D list where each element is a list
+  representing a student's record. The function uses a single for loop to
+  iterate over each student (or row) in the `students` list and prints the
+  entire student record.
+
+
+  If we want to lay out this data in a neat table, we need to traverse each
+  **element** within the student records using a nested for loop:
+
+
+  ```python
+
+  def view_students_detailed(students):
+      for student in students:
+          for detail in student:
+              print(f"{detail:<15}", end=' ')
+          print()  # Move to the next line after printing all details of a student
+  ```
+
+
+  ### Explanation
+
+
+  * **Outer Loop**: The outer loop iterates over each student (or row) in the
+  `students` list.
+
+
+  * **Inner Loop**: The inner loop iterates over each detail (or column) within
+  a student's record, printing each detail on the same line with a fixed width
+  for neat alignment\*
+
+
+  * **End of Line**: After printing all details of a student, `print()` is
+  called to move to the next line for the next student.
+
+
+  > \*In the code `print(f"{detail:<15}", end=' ')`, the `:<15` is a
+  **formatting code** that tells Python to align the field to the left (hence
+  the `<` symbol) and pad to 15 characters on the right with spaces, and `end='
+  '` means "at the end of this output print a space, **not** a newline
+  character" - this keeps all the output on one line.
+
