@@ -1,5 +1,361 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
 title: Capstone project - Text adventure game
-content: |
-  tbc
+content: >+
+  # Capstone Project: Text Adventure Using 2D Arrays
+
+
+  In this project, you will build a text‑adventure game using:
+
+
+  * 2D arrays (lists of lists)
+
+
+  * iteration (loops)
+
+
+  * slicing
+
+
+  * append/remove
+
+
+  * functions
+
+
+  * game state stored in data structures
+
+
+  You will start with a working skeleton and extend it into a full adventure
+  game.
+
+
+  ***
+
+
+  # Starter Code (Skeleton)
+
+
+  ```python
+
+  """
+
+  Text Adventure – Capstone Project Skeleton
+
+  You will complete and extend this program.
+
+  """
+
+
+  # -----------------------------------------
+
+  # GLOBAL CONSTANTS AND GAME DATA STRUCTURES
+
+  # -----------------------------------------
+
+
+  # Index positions for room fields
+
+  RM_NAME = 0
+
+  RM_DESC = 1
+
+  RM_OBJECTS = 2
+
+  RM_DESTS = 3
+
+
+  # Directions: N, S, E, W, U, D
+
+  COMPASS = "NSEWUD"
+
+
+  # Player inventory
+
+  backpack = []
+
+
+  # Starting room and winning room
+
+  current_room = 0
+
+  winning_room = 3
+
+
+  # 2D array of rooms:
+
+  # [name, description, [objects], [destinations]]
+
+  rooms = [
+      ["lobby", "a hotel lobby", ["note"], [1, -1, -1, -1, -1, -1]],
+      ["hallway", "a long corridor", ["key"], [-1, 0, 2, -1, -1, -1]],
+      ["office", "a dusty office", ["torch"], [-1, -1, -1, 1, -1, -1]],
+      ["darkroom", "a mysterious darkroom", [], [-1, -1, -1, -1, -1, -1]],
+  ]
+
+
+
+  # -------------------------
+
+  # FUNCTION DEFINITIONS
+
+  # -------------------------
+
+
+  def show_room(room_num):
+      """Display the room name, description, objects, and exits."""
+      room = rooms[room_num]
+
+      print(f"\nYou are in the {room[RM_NAME]}")
+      print(room[RM_DESC])
+      print("You can see:", room[RM_OBJECTS])
+      print("You are carrying:", backpack)
+
+      print("Exits:", end=" ")
+      for i, dest in enumerate(room[RM_DESTS]):
+          if dest != -1:
+              print(COMPASS[i], end=" ")
+      print()
+
+
+  def move_player(room_num, direction):
+      """Return the new room number if movement is possible."""
+      dir_index = COMPASS.find(direction.upper())
+      destination = rooms[room_num][RM_DESTS][dir_index]
+
+      if destination == -1:
+          print("You can't go that way.")
+          return room_num
+
+      return destination
+
+
+  def take_object(room_num, obj_name):
+      """Move an object from the room into the backpack."""
+      room_objects = rooms[room_num][RM_OBJECTS]
+
+      if obj_name in room_objects:
+          backpack.append(obj_name)
+          room_objects.remove(obj_name)
+          print(f"You picked up the {obj_name}.")
+      else:
+          print("That object is not here.")
+
+
+  def win_banner():
+      """Display a simple win message."""
+      print("\n====================")
+      print("   YOU ESCAPED!")
+      print("====================\n")
+
+
+  # -------------------------
+
+  # MAIN GAME LOOP
+
+  # -------------------------
+
+
+  print("Welcome to the Text Adventure!")
+
+  print("Find the darkroom to win.\n")
+
+
+  playing = True
+
+
+  while playing:
+      show_room(current_room)
+
+      if current_room == winning_room:
+          win_banner()
+          break
+
+      command = input("What next? ").strip().lower()
+
+      # Movement command: single letter
+      if len(command) == 1 and command.upper() in COMPASS:
+          current_room = move_player(current_room, command)
+
+      # Two‑word commands: get/drop
+      else:
+          parts = command.split()
+          if len(parts) == 2:
+              action, item = parts[0], parts[1]
+
+              if action == "get":
+                  take_object(current_room, item)
+
+              elif action == "drop":
+                  # TODO: Students implement dropping items
+                  print("Drop not implemented yet.")
+
+              else:
+                  print("Unknown command.")
+          else:
+              print("I don't understand that command.")
+  ```
+
+
+  ***
+
+
+  # Student Tasks (Capstone Requirements)
+
+
+  You must extend the skeleton into a complete adventure game.\
+
+  Your project must demonstrate:
+
+
+  ### 2D Arrays
+
+
+  * Rooms stored as a list of lists
+
+
+  * Objects stored as lists inside rooms
+
+
+  * Slicing used at least once (e.g., copying part of a list)
+
+
+  ### Iteration
+
+
+  * Nested loops for printing or searching
+
+
+  * Loops for processing inventory or room objects
+
+
+  ### append/remove
+
+
+  * Picking up objects
+
+
+  * Dropping objects
+
+
+  * Moving objects between rooms
+
+
+  ### Functions
+
+
+  * At least three new functions you design
+
+
+  * Clear parameters and return values
+
+
+  ***
+
+
+  # Required Features to Implement
+
+
+  ### 1. Drop items
+
+
+  Write a function:
+
+
+  ```python
+
+  def drop_object(room_num, obj_name):
+      ...
+  ```
+
+
+  ### 2. Add more rooms
+
+
+  At least three new rooms, connected properly.
+
+
+  ### 3. Add tasks or puzzles
+
+
+  Examples:
+
+
+  * A locked door requiring a key
+
+
+  * A dark room requiring a torch
+
+
+  * A guard who blocks the way unless you give them an item
+
+
+  ### 4. Add an autonomous character
+
+
+  A simple NPC who:
+
+
+  * Moves between rooms
+
+
+  * Or reacts to items
+
+
+  * Or gives clues
+
+
+  ### 5. Add a win condition
+
+
+  Not just reaching a room — require completing a task.
+
+
+  ***
+
+
+  # Optional Stretch Goals
+
+
+  * Add health/lives
+
+
+  * Add random events
+
+
+  * Add a map command
+
+
+  * Add save/load using slicing or copying lists
+
+
+  * Add ASCII art for rooms
+
+
+  ***
+
+
+  # Submission Requirements
+
+
+  Your final submission must include:
+
+
+  * A working Python program
+
+
+  * A short design document explaining:
+
+    * Your room layout
+
+    * Your puzzles
+
+    * Your functions
+
+    * How you used slicing
+
+    * How you used iteration
+
+showEditor: true
+editors:
+  - course1/unit8/lesson2/lessonpart5/text_adventure.py

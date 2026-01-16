@@ -3059,6 +3059,260 @@ files:
       print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
 
       print(f\"Calories per person = {cals_per_person}\")"
+  - path: course1/unit8/lesson2/lessonpart5/text_adventure.py
+    content: "\"\"\"\r
+
+      Text Adventure – Capstone Project Skeleton\r
+
+      You will complete and extend this program.\r
+
+      \"\"\"\r
+
+      \r
+
+      # -----------------------------------------\r
+
+      # GLOBAL CONSTANTS AND GAME DATA STRUCTURES\r
+
+      # -----------------------------------------\r
+
+      \r
+
+      # Index positions for room fields\r
+
+      RM_NAME = 0\r
+
+      RM_DESC = 1\r
+
+      RM_OBJECTS = 2\r
+
+      RM_DESTS = 3\r
+
+      \r
+
+      # Directions: N, S, E, W, U, D\r
+
+      COMPASS = \"NSEWUD\"\r
+
+      \r
+
+      # Player inventory\r
+
+      backpack = []\r
+
+      \r
+
+      # Starting room and winning room\r
+
+      current_room = 0\r
+
+      winning_room = 3\r
+
+      \r
+
+      # 2D array of rooms:\r
+
+      # [name, description, [objects], [destinations]]\r
+
+      rooms = [\r
+
+      \    [\"lobby\", \"a hotel lobby\", [\"note\"], [1, -1, -1, -1, -1,
+      -1]],\r
+
+      \    [\"hallway\", \"a long corridor\", [\"key\"], [-1, 0, 2, -1, -1,
+      -1]],\r
+
+      \    [\"office\", \"a dusty office\", [\"torch\"], [-1, -1, -1, 1, -1,
+      -1]],\r
+
+      \    [\"darkroom\", \"a mysterious darkroom\", [], [-1, -1, -1, -1, -1,
+      -1]],\r
+
+      ]\r
+
+      \r
+
+      \r
+
+      # -------------------------\r
+
+      # FUNCTION DEFINITIONS\r
+
+      # -------------------------\r
+
+      \r
+
+      def show_room(room_num):\r
+
+      \    \"\"\"Display the room name, description, objects, and exits.\"\"\"\r
+
+      \    room = rooms[room_num]\r
+
+      \r
+
+      \    print(f\"\\nYou are in the {room[RM_NAME]}\")\r
+
+      \    print(room[RM_DESC])\r
+
+      \    print(\"You can see:\", room[RM_OBJECTS])\r
+
+      \    print(\"You are carrying:\", backpack)\r
+
+      \r
+
+      \    print(\"Exits:\", end=\" \")\r
+
+      \    for i, dest in enumerate(room[RM_DESTS]):\r
+
+      \        if dest != -1:\r
+
+      \            print(COMPASS[i], end=\" \")\r
+
+      \    print()\r
+
+      \r
+
+      \r
+
+      def move_player(room_num, direction):\r
+
+      \    \"\"\"Return the new room number if movement is possible.\"\"\"\r
+
+      \    dir_index = COMPASS.find(direction.upper())\r
+
+      \    destination = rooms[room_num][RM_DESTS][dir_index]\r
+
+      \r
+
+      \    if destination == -1:\r
+
+      \        print(\"You can't go that way.\")\r
+
+      \        return room_num\r
+
+      \r
+
+      \    return destination\r
+
+      \r
+
+      \r
+
+      def take_object(room_num, obj_name):\r
+
+      \    \"\"\"Move an object from the room into the backpack.\"\"\"\r
+
+      \    room_objects = rooms[room_num][RM_OBJECTS]\r
+
+      \r
+
+      \    if obj_name in room_objects:\r
+
+      \        backpack.append(obj_name)\r
+
+      \        room_objects.remove(obj_name)\r
+
+      \        print(f\"You picked up the {obj_name}.\")\r
+
+      \    else:\r
+
+      \        print(\"That object is not here.\")\r
+
+      \r
+
+      \r
+
+      def win_banner():\r
+
+      \    \"\"\"Display a simple win message.\"\"\"\r
+
+      \    print(\"\\n====================\")\r
+
+      \    print(\"   YOU ESCAPED!\")\r
+
+      \    print(\"====================\\n\")\r
+
+      \r
+
+      \r
+
+      # -------------------------\r
+
+      # MAIN GAME LOOP\r
+
+      # -------------------------\r
+
+      \r
+
+      print(\"Welcome to the Text Adventure!\")\r
+
+      print(\"Find the darkroom to win.\\n\")\r
+
+      \r
+
+      playing = True\r
+
+      \r
+
+      while playing:\r
+
+      \    show_room(current_room)\r
+
+      \r
+
+      \    if current_room == winning_room:\r
+
+      \        win_banner()\r
+
+      \        break\r
+
+      \r
+
+      \    command = input(\"What next? \").strip().lower()\r
+
+      \r
+
+      \    # Movement command: single letter\r
+
+      \    if len(command) == 1 and command.upper() in COMPASS:\r
+
+      \        current_room = move_player(current_room, command)\r
+
+      \r
+
+      \    # Two‑word commands: get/drop\r
+
+      \    else:\r
+
+      \        parts = command.split()\r
+
+      \        if len(parts) == 2:\r
+
+      \            action, item = parts[0], parts[1]\r
+
+      \r
+
+      \            if action == \"get\":\r
+
+      \                take_object(current_room, item)\r
+
+      \r
+
+      \            elif action == \"drop\":\r
+
+      \                # TODO: Students implement dropping items\r
+
+      \                print(\"Drop not implemented yet.\")\r
+
+      \r
+
+      \            else:\r
+
+      \                print(\"Unknown command.\")\r
+
+      \        else:\r
+
+      \            print(\"I don't understand that command.\")"
 units:
   - unit1/index.yml
   - unit2/index.yml
