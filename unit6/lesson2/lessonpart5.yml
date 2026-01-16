@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
-title: "Python practical: lists"
+title: "Python practical: more lists"
 content: >+
   ## 🔢 Question 1 – Split Even and Odd Numbers
 

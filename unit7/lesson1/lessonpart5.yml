@@ -1,4 +1,144 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
 title: "Python practical: iterating over a list"
-content: Enter your content here
+content: >+
+  Here are three examples of simple programs that iterate over lists:
+
+
+  ### Example 1: Sum of Numbers in a List
+
+
+  ```python
+
+  def sum_of_numbers(numbers):
+      total = 0
+      for number in numbers:
+          total += number
+      return total
+
+  # Example use
+
+  numbers = [5, 10, 15, 20]
+
+  print("Sum of numbers:", sum_of_numbers(numbers))
+
+  ```
+
+
+  ### Explanation
+
+
+  * The function `sum_of_numbers` takes a list of numbers as its parameter.
+
+
+  * It initializes a variable `total` to 0, which will hold the sum of the
+  numbers.
+
+
+  * The `for` loop iterates over each `number` in the `numbers` list.
+
+
+  * During each iteration, the current `number` is added to `total`.
+
+
+  * After the loop completes, the function returns the `total` sum of the
+  numbers.
+
+
+  * The example use demonstrates calling the function with a list `[5, 10, 15,
+  20]` and printing the result.
+
+
+  ### Example 2: Make Words Uppercase in a List
+
+
+  ```python
+
+  def make_uppercase(words):
+      upper_words = []
+      for word in words:
+          upper_words.append(word.upper())
+      return upper_words
+
+  # Example use
+
+  words = ["python", "loop", "iteration", "code"]
+
+  print("Uppercase words:", make_uppercase(words))
+
+  ```
+
+
+  ### Explanation
+
+
+  * The function `make_uppercase` takes a list of words as its parameter.
+
+
+  * It initializes an empty list `upper_words` to store the uppercase versions
+  of the words.
+
+
+  * The `for` loop iterates over each `word` in the `words` list.
+
+
+  * During each iteration, the `word.upper()` method is called to convert the
+  word to uppercase, and the result is appended to `upper_words`.
+
+
+  * After the loop completes, the function returns the list `upper_words`
+  containing all the uppercase words.
+
+
+  * The example use demonstrates calling the function with a list `["python",
+  "loop", "iteration", "code"]` and printing the result.
+
+
+  ### Example 3: Filter Even Numbers from a List
+
+
+  ```python
+
+  def filter_even_numbers(numbers):
+      even_numbers = []
+      for number in numbers:
+          if number % 2 == 0:
+              even_numbers.append(number)
+      return even_numbers
+
+  # Example use
+
+  numbers = [1, 2, 3, 4, 5, 6]
+
+  print("Even numbers:", filter_even_numbers(numbers))
+
+  ```
+
+
+  ### Explanation
+
+
+  * The function `filter_even_numbers` takes a list of numbers as its parameter.
+
+
+  * It initializes an empty list `even_numbers` to store the even numbers.
+
+
+  * The `for` loop iterates over each `number` in the `numbers` list.
+
+
+  * During each iteration, it checks if the `number` is even by using the
+  condition `number % 2 == 0`.
+
+
+  * If the condition is true, the `number` is appended to the `even_numbers`
+  list.
+
+
+  * After the loop completes, the function returns the list `even_numbers`
+  containing all the even numbers.
+
+
+  * The example use demonstrates calling the function with a list `[1, 2, 3, 4,
+  5, 6]` and printing the result.
+
