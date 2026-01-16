@@ -1,5 +1,173 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: "Python practical: 2D arrays"
-content: |
-  tbc
+content: >
+  ## PRIMM Exercise: Working With a 2D Bitmap
+
+
+  In this activity, you will explore how nested loops can be used to process a
+  **2D array** (a list of lists). You’ll begin by examining code that increases
+  the brightness of a bitmap, and then work with a **new function** that applies
+  a different transformation.
+
+
+  ***
+
+
+  ## 🟦 Starter Code
+
+
+  ```python
+
+  # Creating a 6x6 bitmap with float values
+
+  bitmap = [
+      [0.0, 1.1, 2.2, 3.3, 4.4, 5.5],
+      [6.6, 7.7, 8.8, 9.9, 0.0, 1.1],
+      [2.2, 3.3, 4.4, 5.5, 6.6, 7.7],
+      [8.8, 9.9, 0.0, 1.1, 2.2, 3.3],
+      [4.4, 5.5, 6.6, 7.7, 8.8, 9.9],
+      [0.0, 1.1, 2.2, 3.3, 4.4, 5.5]
+  ]
+
+
+  # Function to increase brightness by 10%
+
+  def increase_brightness(bitmap):
+      for i in range(len(bitmap)):
+          for j in range(len(bitmap[i])):
+              bitmap[i][j] *= 1.1
+
+  increase_brightness(bitmap)
+
+
+  print("Bitmap with increased brightness:")
+
+  for row in bitmap:
+      print(row)
+  ```
+
+
+  ***
+
+
+  ## 🟩 P — Predict
+
+
+  Before running the code:
+
+
+  1. What do you think the bitmap will look like after increasing brightness by
+  10%?
+
+  2. Which part of the code actually changes the values?
+
+  3. Why do we need **two** loops?
+
+
+  Write your predictions.
+
+
+  ***
+
+
+  ## 🟦 R — Run
+
+
+  Run the program.
+
+
+  * Compare the output to your prediction.
+
+
+  * Did every value change in the way you expected?
+
+
+  ***
+
+
+  ## 🟨 I — Investigate
+
+
+  Study this new function:
+
+
+  ```python
+
+  def clamp_values(bitmap):
+      for i in range(len(bitmap)):
+          for j in range(len(bitmap[i])):
+              if bitmap[i][j] > 5.0:
+                  bitmap[i][j] = 5.0
+  ```
+
+
+  This function **clamps** (limits) all values above `5.0` so they cannot exceed
+  that threshold.
+
+
+  ### Investigate questions
+
+
+  1. What will happen to values like `7.7`, `8.8`, or `9.9`?
+
+  2. What will happen to values below `5.0`?
+
+  3. Why does the function need nested loops?
+
+  4. How does the `if` statement change the behaviour?
+
+
+  ***
+
+
+  ## 🟧 M — Modify
+
+
+  Add this line **after** the brightness increase:
+
+
+  ```python
+
+  clamp_values(bitmap)
+
+  ```
+
+
+  Then print the bitmap again.
+
+
+  ### Modify tasks
+
+
+  1. Change the clamp limit from `5.0` to `3.0`.
+
+
+  2. Change the function so it clamps **both** ends:
+
+     * values above 5.0 become 5.0
+
+     * values below 1.0 become 1.0
+
+  3. Try clamping only the **first three rows**.
+
+
+  ***
+
+
+  ## 🟥 M — Make
+
+
+  Create your own bitmap‑processing function. Some ideas:
+
+
+  * **invert\_bitmap(bitmap)**\
+    Replace each value with `10.0 - value`.
+
+  * **add\_noise(bitmap)**\
+    Add a small random amount (e.g., between −0.5 and +0.5) to each pixel.
+
+  * **threshold(bitmap, limit)**\
+    Set values above the limit to 1.0 and below to 0.0.
+
+  Write your function, apply it to the bitmap, and print the result.
