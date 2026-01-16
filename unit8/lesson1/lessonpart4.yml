@@ -1,5 +1,161 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Simple programming with 2D arrays
-content: |
-  tbc
+content: >
+  In this section, we'll explore some basic programming tasks using 2D arrays in
+  Python. We'll use the `temperatures` and `students` arrays from the previous
+  examples.
+
+
+  ## Student Records Program
+
+
+  Let's create a simple student records program with functions to view, append,
+  and remove student records.
+
+
+  ```python
+
+  def view_students(students):
+      for student in students:
+          print(student)
+
+  def append_student(students, new_student):
+      students.append(new_student)
+
+  def remove_student(students, student_to_remove):
+      students.remove(student_to_remove)
+
+  # MAIN PROGRAM
+
+  students = [
+      ["Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False],
+      ["Aisha", "Khan", 9, "Nightingale", 91, 88.0, True],
+      ["Leo", "Morgan", 11, "Wilberforce", 112, 76.5, False]
+  ]
+
+
+  # View students
+
+  view_students(students)
+
+
+  # Append a new student
+
+  append_student(students, ["Nina", "Patel", 12, "Curie", 115, 89.0, True])
+
+  print("\nAfter appending a new student:")
+
+  view_students(students)
+
+
+  # Remove a student
+
+  remove_student(students, ["Aisha", "Khan", 9, "Nightingale", 91, 88.0, True])
+
+  print("\nAfter removing a student:")
+
+  view_students(students)
+
+  ```
+
+
+  ### Explanation
+
+
+  * The `view_students` function iterates over the list of students and prints
+  each student's details (see next lesson!)
+
+
+  * The `append_student` function adds a new student's details to the end of the
+  list.
+
+
+  * The `remove_student` function removes a specific student's details from the
+  list based on the provided information.
+
+
+  * The main program initializes a list of students and demonstrates viewing,
+  appending, and removing student records.
+
+
+  > Note: In Python, arrays (or lists) are **passed by reference**, meaning that
+  when you pass a list to a function, you are passing a **reference** to the
+  original list, not a copy. This means any changes within the function **modify
+  the original list**.
+
+
+  ## Temperature Analysis Program
+
+
+  Now, let's create a temperature analysis program with functions to view,
+  append, and remove temperature records.
+
+
+  ```python
+
+  def view_temperatures(temperatures):
+      for week in temperatures:
+          print(week)
+
+  def append_temperature(temperatures, new_week):
+      temperatures.append(new_week)
+
+  def remove_temperature(temperatures, week_index):
+      del temperatures[week_index]
+
+  # MAIN PROGRAM
+
+  temperatures = [
+      [24, 26, 31, 26, 21, 18, 22],
+      [30, 32, 33, 31, 29, 28, 27],
+      [20, 22, 25, 23, 21, 19, 18]
+  ]
+
+
+  # View temperatures
+
+  view_temperatures(temperatures)
+
+
+  # Append a new week's temperatures
+
+  append_temperature(temperatures, [25, 27, 29, 28, 26, 24, 23])
+
+  print("\nAfter appending a new week's temperatures:")
+
+  view_temperatures(temperatures)
+
+
+  # Remove a week's temperatures
+
+  remove_temperature(temperatures, 1)
+
+  print("\nAfter removing a week's temperatures:")
+
+  view_temperatures(temperatures)
+
+  ```
+
+
+  ### Explanation
+
+
+  * The `view_temperatures` function iterates over the list of weekly
+  temperatures and prints each week's data.
+
+
+  * The `append_temperature` function adds a new week's temperature data to the
+  end of the list.
+
+
+  * The `remove_temperature` function deletes a week's temperature data from the
+  list based on the specified index.
+
+
+  * The main program initializes a list of weekly temperatures and demonstrates
+  viewing, appending, and removing temperature records.
+
+
+  Try these examples in your Python environment to practice working with 2D
+  arrays!
