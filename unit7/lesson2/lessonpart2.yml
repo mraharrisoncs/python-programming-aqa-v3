@@ -27,12 +27,12 @@ content: >
   ```
 
 
-  \*\*Explanation: \*\*
+  ### Explanation:
 
 
-  The function `range(1,11)` makes a range of numbers from 1 to 10 (not
-  including 11), which creates the list `[1,2,3,4,5,6,7,8,9,10]` on our behalf!
-  We then use this in the `for` statement just like before. 
+  The function `range(1, 11)` makes a range of numbers from 1 to 10 (not
+  including 11), which creates the list `[1,2,3,4,5,6,7,8,9,10]` for us! We then
+  use this in the `for` statement just like before. 
 
 
   Try this now in the attached program `five_times_table_range.py` and try
@@ -116,6 +116,9 @@ content: >
 
   for i in range(2, 6):
       print(i)
+
+  # outputs 2, 3, 4, 5, 6 on separate lines
+
   ```
 
 
@@ -130,6 +133,9 @@ content: >
 
   for i in range(0, 10, 2):
       print(i)
+
+  # outputs 0, 1, 2, 3, 4, 5, 6, 7, 8 on separate lines
+
   ```
 
 
@@ -144,6 +150,9 @@ content: >
 
   for i in range(5, 0, -1):
       print(i)
+
+  # outputs 5, 4, 3, 2, 1 on separate lines
+
   ```
 
 

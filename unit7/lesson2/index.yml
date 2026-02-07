@@ -9,6 +9,7 @@ objectives: |-
 lessonParts:
   - lessonpart1.yml
   - lessonpart2.yml
+  - lessonpart6.yml
   - lessonpart3.yml
   - lessonpart4.yml
   - lessonpart5.yml
