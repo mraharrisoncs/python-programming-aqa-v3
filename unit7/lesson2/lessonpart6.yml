@@ -2,26 +2,37 @@
 id: lessonpart6
 title: The structure of a for loop
 content: |+
-  # Structure of a while loop
+  # Structure of a for loop
 
-  Remember this program?
+  Remember this code?
 
   ```python
-  password = ""
-  while len(password) < 10:
-    password = input("type a new password, minimum length 10 characters: ")
-  print(f"your new password is {password}")
+  for counter in range(10, 0, -1):
+      print(f"{counter} !")
+  print("lift-off !")
   ```
 
-  Let's look at this code in more detail.
+  Let's look at this in more detail:
 
   &#x20;
 
   ```python
-  password = ""
+  for counter in range(10, 0, -1):
   ```
 
-  First we set password to the empty string with `password = ""`. If we didn't do this, the condition on the next line would fail trying to use the variable `password` before is has been assigned a value. This would throw a **Name Error** at runtime in Python.
+  * The `for` statement sets up the **for** loop, also known as a **count-controlled iteration**. 
+
+  * The variable `counter` is called the **loop variable**, it controls the loop.
+
+  * `range(10, 0, -1)` generates a list of integers starting at 10, ending before 0 and stepping by -1. This creates the list of integers `[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]`
+
+  * The keyword `in` tells Python to assign `counter` to **every value in this list**, in turn.
+
+  * Python will therefore run the loop **body** - the indented block after the colon `:` - for every value of `counter` from 10 down to 1.
+
+  * <br />
+
+  <br />
 
   ```python
   while len(password) < 10:
