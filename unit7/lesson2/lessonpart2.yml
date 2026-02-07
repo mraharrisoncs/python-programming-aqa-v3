@@ -193,7 +193,6 @@ content: >
     # count down from 10
     for counter in range(10, 0, -1):
       print(f"{counter} !")
-      counter -= 1
     print("lift-off !")
 
   # MAIN PROGRAM
