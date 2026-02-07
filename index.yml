@@ -3385,6 +3385,42 @@ files:
       display_temps(week_temps)\r
 
       count_hot_days(week_temps, 18)"
+  - path: course1/unit7/lesson1/lessonpart5/q1.py
+    content: "def filter_even_numbers(numbers):\r
+
+      \    even_numbers = []\r
+
+      \    #TODO write code here and delete 'pass'\r
+
+      \    pass\r
+
+      \    return even_numbers\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      numbers = [1, 2, 3, 4, 5, 6]\r
+
+      print(\"Even numbers:\", filter_even_numbers(numbers))"
+  - path: course1/unit7/lesson1/lessonpart5/q2.py
+    content: "def count_vowels(text):\r
+
+      \    vowels = \"aeiou\"\r
+
+      \    #TODO write your code here and delete 'pass'\r
+
+      \    pass\r
+
+      \    return count\r
+
+      \r
+
+      # Example use\r
+
+      message = \"Iteration makes you better at Python\"\r
+
+      print(\"Number of vowels:\", count_vowels(message))"
 units:
   - unit1/index.yml
   - unit2/index.yml

@@ -2,7 +2,8 @@
 id: lessonpart5
 title: "Python practical: iterating over a list"
 content: >+
-  Here are three examples of simple programs that iterate over lists:
+  Let's look at some examples of simple programs that iterate over lists, then
+  you can write your own!
 
 
   ### Example 1: Sum of Numbers in a List
@@ -94,51 +95,45 @@ content: >+
   "loop", "iteration", "code"]` and printing the result.
 
 
-  ### Example 3: Filter Even Numbers from a List
+  ***
 
 
-  ```python
-
-  def filter_even_numbers(numbers):
-      even_numbers = []
-      for number in numbers:
-          if number % 2 == 0:
-              even_numbers.append(number)
-      return even_numbers
-
-  # Example use
-
-  numbers = [1, 2, 3, 4, 5, 6]
-
-  print("Even numbers:", filter_even_numbers(numbers))
-
-  ```
+  ### Question 1: Filter Even Numbers from a List
 
 
-  ### Explanation
+  Open file **q1.py** and complete the function to filter even numbers from a
+  list.  The function should&#x20;
 
 
-  * The function `filter_even_numbers` takes a list of numbers as its parameter.
+  * take a list of numbers as a parameter
 
 
-  * It initializes an empty list `even_numbers` to store the even numbers.
+  * return another list made up of just the even numbers in the original list.
 
 
-  * The `for` loop iterates over each `number` in the `numbers` list.
+  ***
 
 
-  * During each iteration, it checks if the `number` is even by using the
-  condition `number % 2 == 0`.
+  ### Question 2: Count vowels in a string
 
 
-  * If the condition is true, the `number` is appended to the `even_numbers`
-  list.
+  Open file **q2.py** and complete the function to count the vowels in a given
+  string.  The function should&#x20;
 
 
-  * After the loop completes, the function returns the list `even_numbers`
-  containing all the even numbers.
+  * take a string parameter
 
 
-  * The example use demonstrates calling the function with a list `[1, 2, 3, 4,
-  5, 6]` and printing the result.
+  * return an integer which is the number of vowels in the string. Vowels are
+  'a', 'e', 'i', 'o', 'u'.
 
+showEditor: true
+editors:
+  - course1/unit7/lesson1/lessonpart5/q1.py
+  - course1/unit7/lesson1/lessonpart5/q2.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on your achievements here!
