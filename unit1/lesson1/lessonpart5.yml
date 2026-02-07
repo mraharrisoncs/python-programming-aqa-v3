@@ -14,8 +14,11 @@ content: >
 
   In Python, **data types** are essential for defining the kind of data a
   variable can hold. Understanding these types helps us perform operations
-  correctly and avoid errors. Let's explore the **primitive** data types:
-  **integer**, **float**, **string**, and **Boolean**.
+  correctly and avoid errors.&#x20;
+
+
+  Let's explore the **primitive** data types: **integer**, **float**,
+  **string**, and **Boolean**.
 
 
   ### 🔢 Integer

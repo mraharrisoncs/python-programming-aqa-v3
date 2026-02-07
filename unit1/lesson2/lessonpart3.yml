@@ -13,9 +13,9 @@ content: >
   ```
 
 
-  This gives the `print("Hello World!")` statement the name or **identifier** of
+  This gives the `print("Hello World!")` statement the  **identifier** of
   `hello_world`. Any time we want this subroutine to run and output "Hello
-  World!" we just **call**  it by using its identifier, like this:
+  World!" we just **call** it by using its identifier, like this:
 
 
   ```python
@@ -66,7 +66,7 @@ content: >
 
 
   If we wanted to change the greeting that is output by the `hello_world()
-  `   subroutine, we can do that easily:
+  `    subroutine, we can do that easily:
 
 
   ```python

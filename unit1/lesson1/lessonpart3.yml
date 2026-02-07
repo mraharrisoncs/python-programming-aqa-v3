@@ -2,18 +2,19 @@
 id: lessonpart3
 title: Variables in Python
 content: >+
-  Let's take a look at variables in Python.
+  Let's take a look at **variables** in Python, and how they differ from
+  **literals**.
 
 
   ### Literals
 
 
-  So far we have just printed ***literals***. As their name suggests, when you
-  print ***literals***, Python just outputs ***literally*** what you give it.
+  So far we have just printed **literals**. As their name suggests, when you
+  print **literals**, Python just outputs **literally** what you give it.
 
 
-  Anything inside a pair of quotes, such as `"Hello World!"` is a ***string
-  literal***, and a number like `5` or `3.14` is a ***numeric literal***.
+  Anything inside a pair of quotes, such as `"Hello World!"` is a **string
+  literal**, and a number like `5` or `3.14` is a **numeric literal**.
 
 
   ```python
@@ -38,16 +39,16 @@ content: >+
   ### Variables are names for things
 
 
-  In programming, a ***variable*** is a ***named storage location in memory***
-  that holds a value. Think of it as a container where you can store data that
-  you want to use later in your program. Variables allow you to label and
-  manipulate data easily.
+  In programming, a **variable** is a **named storage location in memory** that
+  holds a value. Think of it as a container where you can store data that you
+  want to use later in your program. Variables allow you to label and manipulate
+  data easily.
 
 
   ### Assigning Variables
 
 
-  To create a variable in Python, you use the ***assignment*** operator
+  To create a variable in Python, you use the **assignment** operator
   **`=`** like this:
 
 
@@ -59,7 +60,7 @@ content: >+
 
 
   * `variable_name` is the name you give to the variable, also called its
-  ***identifier***.
+  **identifier**.
 
 
   * `value` is the data you want to store in the variable.

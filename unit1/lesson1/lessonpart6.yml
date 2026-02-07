@@ -4,7 +4,7 @@ title: Casting functions
 content: >
   Sometimes, you need to convert data from one type to another. For example,
   `input()` always returns a **string** so we need to cast this with `int()` or
-  `float()` if we want to save as a number. Python provides **casting
+  `float()` if we want to save it as a number. Python provides **casting
   functions** to do this.
 
 
