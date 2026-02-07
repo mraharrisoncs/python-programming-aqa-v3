@@ -172,8 +172,9 @@ questionGroups:
           Which of these for statements would behave like this while loop? 
           counter = 1 
           while counter \< 6: 
-              # body of loop 
+              # body of loop
               counter += 2
+          # main program
         options:
           - id: "1"
             value: "for counter in [1, 3, 5]:"
