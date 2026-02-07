@@ -19,17 +19,17 @@ content: |+
   password = ""
   ```
 
-  First we set password to the empty string with `password = ""`. If we didn't do this, the conditional on the next line would fail trying to use the variable `password` before is has been assigned a value. This would throw a **Name Error** at runtime in Python.
+  First we set password to the empty string with `password = ""`. If we didn't do this, the condition on the next line would fail trying to use the variable `password` before is has been assigned a value. This would throw a **Name Error** at runtime in Python.
 
   ```python
   while len(password) < 10:
   ```
 
-  &#x20;After the `while` keyword is a conditional or **Boolean expression,** `len(password) < 10`. We met Boolean expressions in Unit 4, they evaluate to either `True` or `False`. 
+  &#x20;After the `while` keyword is a **conditional** or **Boolean expression,** `len(password) < 10`. We met Boolean expressions in Unit 4, they always evaluate to either `True` or `False`. 
 
-  Also we met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if string stored in the `password` variable is **less than ten characters long**.
+  Also we met `len()` in unit 3, it returns the length of a string. So the expression `len(password) < 10` will be `True` if the string stored in the `password` variable is **less than ten characters long**.
 
-  If this condition is `True` then Python will  execute the **indented code block** that follows the colon `:  `otherwise this block will be **skipped** until the next line that is not **indented.**
+  If this condition is `True` then Python will  execute the **indented code block** that follows the colon `: ` but if the condition is `False` this block will be **skipped** until the next line that is not **indented.**
 
   When this program runs for the first time, we know that password is set to `""` which has **length of zero**. Zero is less than ten, so the expression evaluates to `True` and the indented code block is executed.
 
@@ -43,7 +43,9 @@ content: |+
   while len(password) < 10:
   ```
 
-  If the password is still too short, the condition evaluates to `True` again, and the indented code block is executed once more. However once the new password has **ten characters or more**, the expression `len(password) < 10` will evaluate to `False` and the while loop will `terminate` - this means it will skip the indented code block and execute the next line that is not indented, the `print()` statement. 
+  If the password is still too short, the condition evaluates to `True` again, and the indented code block is executed once more. 
+
+  However, once the new password has **ten characters or more**, the expression `len(password) < 10` will evaluate to `False` and the while loop will `terminate` - this means it will skip the indented code block and skip to the next line that is not indented, the `print()` statement. 
 
   ```python
   print(f"your new password is {password}")

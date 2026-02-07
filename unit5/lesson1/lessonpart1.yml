@@ -64,6 +64,9 @@ content: >
   ```
 
 
+  ### Explanation
+
+
   The line `while len(password) < 10:` can be read aloud as "while length of
   password is less than 10".&#x20;
 
