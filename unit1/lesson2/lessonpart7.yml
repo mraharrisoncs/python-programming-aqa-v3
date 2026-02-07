@@ -2,17 +2,14 @@
 id: lessonpart7
 title: Why subroutines?
 content: >
-  ## Why do we need subroutines?
-
-
   Subroutines help us organize programs into chunks that match how we think
   about the solution to the problem. Programming is problem-solving, and the
-  first step is ***decomposition.***
+  first step is **decomposition.**
 
 
-  If we decompose a problem into sub-problems, we can then write
-  a ***subroutine*** to solve each sub-problem. These subroutines come together
-  to make a larger ***program*** which solves the big problem.
+  If we **decompose** a problem into sub-problems, we can then write
+  a **subroutine** to solve each sub-problem. These subroutines come together to
+  make a larger **program** which solves the big problem.
 
 
   Let's revisit the "chatbot" program:
@@ -32,8 +29,8 @@ content: >
 
 
   To demonstrate subroutines we will break this program into chunks, one to ask
-  the users name and say hello, and another to ask favourite subject and respond
-  to that.
+  the users name and say hello, and another to ask their favourite subject and
+  respond to that.
 
 
   ### Python subroutine definition
@@ -63,11 +60,10 @@ content: >
   ```
 
 
-  Remember that **`def`** creates and stores a subroutine for use later, it does
+  Remember that `def` creates and stores a subroutine for use later, it does
   **not** execute straight away. The indented code block below the
-  `def` statement is the subroutine ***body*** which executes when the
-  subroutine is called. As soon as we stop indenting,  the definition is
-  complete. 
+  `def` statement is the subroutine **body** which executes when the subroutine
+  is called. As soon as we stop indenting,  the definition is complete. 
 
 
   The subroutine body - the code block under the `def` statement - will run only
@@ -171,6 +167,7 @@ content: >
 
   5. 🛠️ **Make**: Delete the code and write a program that draws this "I" shape
   using two subroutines.
+
      ```python
      *****
        *
