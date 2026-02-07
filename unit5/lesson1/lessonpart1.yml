@@ -5,13 +5,13 @@ content: >
   ## Iteration
 
 
-  To iterate is to repeat a process. Iterating means repeating or
+  To **iterate** is to repeat a process. Iterating means repeating or
   looping.\*&#x20;
 
 
-  Programs with only sequence and selection must come to an end, they can't
-  repeat steps. This is not very useful when you want keep processing input
-  until some goal is achieved, such as completing a game, calculating the
+  Programs built only of **sequence** and **selection** must come to an end,
+  they can't repeat steps. This is not very useful when you want keep processing
+  input until some goal is achieved, such as completing a game, calculating the
   company payroll or simply getting your password correct after multiple
   attempts.
 
@@ -46,8 +46,11 @@ content: >
   We use a **while** statement in Python, which runs a code block until a
   **condition** becomes False. We met **conditions** in Unit 4, they are
   **Boolean expressions** you can use on an **`if`** or **`elif`** statement,
-  and you can use them after **`while`** too. Here is a short program that uses
-  a simple while loop to ensure a password is at least ten characters long:
+  and you can use them after **`while`** too.&#x20;
+
+
+  Here is a short program that uses a simple while loop to ensure a password is
+  at least ten characters long:
 
 
   ```python
@@ -62,9 +65,11 @@ content: >
 
 
   The line `while len(password) < 10:` can be read aloud as "while length of
-  password is less than 10". Python evaluates the **Boolean
-  expression** `len(password) < 10`, and if this is **`True`** it enters the
-  loop, executing the indented line(s).&#x20;
+  password is less than 10".&#x20;
+
+
+  Python evaluates the **Boolean expression** `len(password) < 10`, and if this
+  is **`True`** it enters the loop and executes the indented line(s).&#x20;
 
 
   After the indented code block finishes, Python returns to the
