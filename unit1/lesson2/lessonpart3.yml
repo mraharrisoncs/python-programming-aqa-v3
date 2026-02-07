@@ -1,11 +1,8 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
-title: Subroutines
+title: What is a subroutine?
 content: >
-  ## What is a subroutine?
-
-
-  A ***subroutine*** is a named statement or sequence of statements that belong
+  A **subroutine** is a named statement or sequence of statements that belong
   together. Here is the "Hello World!" code rewritten as a subroutine.
 
 
@@ -16,10 +13,9 @@ content: >
   ```
 
 
-  This gives the `print("Hello World!")` statement the name or
-  ***identifier*** of `hello_world`. Any time we want this subroutine to run and
-  output "Hello World!" we just ***call***  it by using its identifier, like
-  this:
+  This gives the `print("Hello World!")` statement the name or **identifier** of
+  `hello_world`. Any time we want this subroutine to run and output "Hello
+  World!" we just **call**  it by using its identifier, like this:
 
 
   ```python
@@ -31,14 +27,12 @@ content: >
 
   Notice that we write the identifier of the subroutine followed immediately by
   a pair of brackets.  The pair of brackets, `(),` tells Python that this
-  identifier is the name of a ***subroutine***, not a variable.&#x20;
+  identifier is the name of a **subroutine**, not a variable.&#x20;
 
 
   When Python sees `hello_world()` it will run the code defined earlier by the
   `def hello_world()` instruction. Try this now in the attached **hello.py**
   program.
-
-
 
 
   ### Write once, call many times
@@ -72,7 +66,7 @@ content: >
 
 
   If we wanted to change the greeting that is output by the `hello_world()
-  `  subroutine, we can do that easily:
+  `   subroutine, we can do that easily:
 
 
   ```python
@@ -122,7 +116,7 @@ questionGroups:
     questions:
       - id: "1"
         type: choice
-        content: What is a correct subroutine definition in Python?
+        content: Which is the correct subroutine definition in Python?
         options:
           - id: "1"
             value: "def my_function():"
