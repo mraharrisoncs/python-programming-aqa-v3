@@ -27,36 +27,10 @@ content: >+
   ```
 
 
-  ### Worked Example 2: Generating a Multiplication Table
+  ***
 
 
-  This example demonstrates how to generate a multiplication table for a given
-  number using a count-controlled loop. We'll define a function
-  `multiplication_table` that prints the table for a specified number up to a
-  given range. 
-
-
-  ```python
-
-  def multiplication_table(number, up_to):
-      for i in range(1, up_to + 1):
-          result = number * i
-          print(f"{number} x {i} = {result}")
-
-  # Example usage
-
-  number = 5
-
-  up_to = 10
-
-  print(f"Multiplication table for {number}:")
-
-  multiplication_table(number, up_to)
-
-  ```
-
-
-  ### Worked Example 3: Calculating Factorial
+  ### Worked Example 2: Calculating Factorial
 
 
   In this example, we'll calculate the factorial of a number using a
@@ -80,3 +54,50 @@ content: >+
 
   ```
 
+
+  ***
+
+
+  ## Question 1: Count Multiples of 3
+
+
+  Using **q1.py**, write a function that counts how many numbers between 1 and
+  `n` are **multiples of 3**. 
+
+
+  > Hint, use `%` (modulo) to find the remainder.
+
+
+  ***
+
+
+  ## Question 2: Visual Countdown
+
+
+  In **q2.py**, write a function that takes two parameters: a string, and a
+  number `n` , and counts down from n to zero, displaying a 'bar' of **n**
+  strings for each number.
+
+
+  > Hint: We can 'multiply' a string by an integer `x`, it concatenates the
+  string `x ` times. For example, `char * x` will create a string made up of x
+  copies of `char`.
+
+
+  For example, the output for countdown ("@", 3) should be:
+
+
+  ```
+
+  @@@
+
+  @@
+
+  @
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit7/lesson2/lessonpart4/q1.py
+  - course1/unit7/lesson2/lessonpart4/q2.py

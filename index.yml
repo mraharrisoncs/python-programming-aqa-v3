@@ -3421,6 +3421,37 @@ files:
       message = \"Iteration makes you better at Python\"\r
 
       print(\"Number of vowels:\", count_vowels(message))"
+  - path: course1/unit7/lesson2/lessonpart4/q1.py
+    content: "def count_multiples_of_three(n):\r
+
+      \    #TODO write your code here\r
+
+      \    pass\r
+
+      \    return count\r
+
+      \r
+
+      # Example usage\r
+
+      n = 12\r
+
+      print(f\"There are {count_multiples_of_three(n)} multiples of 3 between 1
+      and {n}.\")"
+  - path: course1/unit7/lesson2/lessonpart4/q2.py
+    content: "def countdown(char, n):\r
+
+      \    #TODO write your code here\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown(\"*\",  10)\r
+
+      countdown(\"go\", 5)"
 units:
   - unit1/index.yml
   - unit2/index.yml
