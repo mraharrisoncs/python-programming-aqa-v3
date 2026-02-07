@@ -135,3 +135,59 @@ content: >
 
 
   Now open the REPL and try the above commands. Then try the questions below.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What element in the students array shown would be returned by
+          students[0][3]?
+        options:
+          - id: "1"
+            value: Pankhurst
+            explanation: Yes, 'Pankhurst' is the house of the first student, students[0][3].
+            isCorrect: true
+          - id: "2"
+            value: Hussain
+            explanation: No, 'Hussain' is students[0][1].
+          - id: "3"
+            value: "10"
+            explanation: No, '10' is students[0][2].
+          - id: "4"
+            value: Sophie
+            explanation: No, 'Sophie' is students[3][0].
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: Given the 2D array matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], what
+          command would return the value 4?
+        options:
+          - id: "1"
+            value: matrix[1][0]
+            explanation: The value 4 is located at row index 1 and column index 0.
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the 2D array matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], what
+          command would change the value of an element from 1 to 0?
+        options:
+          - id: "1"
+            value: matrix[0][0] = 0
+            explanation: This command accesses the first element in the first row and
+              changes its value to 0.
+            isCorrect: true
+          - id: "2"
+            value: matrix[1][0] = 0
+            explanation: This command would change the first element in the second row,
+              which is 4, not 1.
+          - id: "3"
+            value: matrix[2][2] = 0
+            explanation: This command changes the last element in the last row, which is 9,
+              not 1.
+          - id: "4"
+            value: matrix[0][1] = 0
+            explanation: This command would change the second element in the first row,
+              which is 2, not 1.
