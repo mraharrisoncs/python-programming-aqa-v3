@@ -3313,6 +3313,52 @@ files:
       greet(\"Hello World!\")    # \"Hello World!\" is passed \r
 
       greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
+  - path: course1/unit7/lesson1/lessonpart3/prices.py
+    content: "prices = [1.20, 2.50, 3.99, 0.99]\r
+
+      \r
+
+      for price in prices:\r
+
+      \    new_price = price * 1.10\r
+
+      \    print(\"New price:\", round(new_price, 2))\r
+
+      \    "
+  - path: course1/unit7/lesson1/lessonpart3/wordlengths.py
+    content: "def word_lengths(words):\r
+
+      \    for word in words:\r
+
+      \        length = len(word)\r
+
+      \        print(word, \"has\", length, \"letters\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      word_lengths([\"python\", \"loop\", \"iteration\", \"code\"])"
+  - path: course1/unit7/lesson1/lessonpart3/steps.py
+    content: "def check_steps(steps, goal):\r
+
+      \    for day in range(len(steps)):\r
+
+      \        if steps[day] >= goal:\r
+
+      \            print(\"Day\", day + 1, \"✔ Goal met!\")\r
+
+      \        else:\r
+
+      \            print(\"Day\", day + 1, \"✘ Goal not met.\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      daily_steps = [4500, 10200, 8700, 12000, 3000, 9800, 11000]\r
+
+      check_steps(daily_steps, 8000)\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml

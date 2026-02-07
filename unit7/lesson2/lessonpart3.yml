@@ -29,6 +29,12 @@ content: >
   each number in the range from 1 to 10, adding each number to `total`.
 
 
+  > Tip: the symbol `+=` in Python is a shorthand way of saying *'add this to my
+  variable'*. The line `total += number` is  actually short for `total = total +
+  number`, in other words *'add the value of* *`number` to the variable*
+  *`total.`'*
+
+
   ### Example 2: Product of Numbers
 
 
@@ -49,6 +55,11 @@ content: >
 
   Here, `product` is initialized to 1. The `for` loop multiplies each number in
   the range from 1 to 5 with `product`.
+
+
+  > Tip: we have used the shorthand again, this time to multiply our variable
+  `product` by `number`. Just as before, `product *= number` is short for
+  `product = product * number`
 
 
   ### Example 3: Sum of Even Numbers
@@ -97,3 +108,50 @@ content: >
 
   Here, the `for` loop iterates over each element in the list `numbers`, adding
   each element to `total`.
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: When is the accumulator pattern useful in a program?
+        options:
+          - id: "1"
+            value: When you need to calculate a total or product of a series of numbers.
+            explanation: Yes, the accumulator pattern is used to calculate totals or
+              products by iterating over a series of numbers.
+            isCorrect: true
+          - id: "2"
+            value: When you need to sort a list of numbers.
+            explanation: No, sorting a list is not typically done using the accumulator
+              pattern.
+          - id: "3"
+            value: When you need to find a value in a list.
+            explanation: No, finding a value is not a use of the accumulator pattern.
+          - id: "4"
+            value: When you need to reverse a list.
+            explanation: No, reversing a string is not related to the accumulator pattern.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          What is the output of this code? 
+          product = 1 
+          for number in range(1, 3): 
+             product *= number 
+          print(product)
+        options:
+          - id: "1"
+            value: "2"
+            explanation: Yes, the loop multiplies 1 by 1 and then by 2, resulting in 2.
+            isCorrect: true
+          - id: "2"
+            value: "3"
+            explanation: No, the loop does not include 3 in the range.
+          - id: "3"
+            value: "6"
+            explanation: No, the loop only multiplies numbers 1 and 2.
+          - id: "4"
+            value: "1"
+            explanation: No, the initial value is 1, but it is multiplied by the numbers in
+              the range.

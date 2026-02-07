@@ -1,24 +1,21 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: More iteration over lists
-content: >
-  ***
-
-
+content: >+
   So far, we’ve iterated over simple lists of strings such as fruit names.
-  Python lists, however, can store **any kind of data** — numbers, strings, or
+  Python lists, however, can store **any kind of data**: numbers, strings, or
   even a mixture. A `for` loop works the same way no matter what the list
   contains.
 
 
-  ## Iterating Over a List of Numbers (Floats)
+  ## Processing a list of numbers
 
 
   Lists often contain **numeric data**, such as prices, temperatures, or
   measurements. A `for` loop lets us process each number in turn.
 
 
-  ### Example: Increasing prices by 10%
+  ### Example 1: Increasing prices by 10%
 
 
   ```python
@@ -47,90 +44,74 @@ content: >
   ***
 
 
-  ## Iterating Over a List of Strings
+  ### Example 2: Iterating Over a List of Strings
 
 
   You’ve already seen this with fruits, but here’s a different example that
   *uses* the string data rather than just printing it.
 
 
-  ### Example: Counting the length of each word
-
-
   ```python
 
-  words = ["python", "loop", "iteration", "code"]
+  def word_lengths(words):
+      for word in words:
+          length = len(word)
+          print(word, "has", length, "letters")
 
+  # MAIN PROGRAM
 
-  for word in words:
-      length = len(word)
-      print(word, "has", length, "letters")
+  word_lengths(["python", "loop", "iteration", "code"])
+
   ```
 
 
-  ## Iterating Over a Mixed List
+  ### Explanation
 
 
-  Python lists can contain **different data types at the same time**. This is
-  unusual in some languages, but perfectly normal in Python.
+  * The `word_lengths()` function takes one parameter, a list called `words`.
 
 
-  ### Example: Identifying the type of each item
+  * The `for` loop iterates over the list of words, assigning each word to the
+  variable `word` in turn.
 
 
-  ```python
-
-  items = ["apple", 3.14, 42, "banana", True]
-
-
-  for item in items:
-      print(item, "is a", type(item))
-  ```
+  * Inside the loop, we calculate the length of the word, and output this in a
+  message.
 
 
-  ### What this shows
-
-
-  * The loop doesn’t care what type each element is.
-
-
-  * `type(item)` reveals whether it’s a string, float, integer, or boolean.
-
-
-  * This is useful when processing unpredictable or user‑generated data.
+  * In the main program we call the function with a list of words. 
 
 
   ***
 
 
-  ## Using a Loop to Build a New List
+  ## PRIMM Activities
 
 
-  A common pattern is to iterate over a list and create a **new** list based on
-  the original.
+  Using the attached **`test_steps.py`**:
 
 
-  ### Example: Converting temperatures from °C to °F
+  1. **🤔 Predict**\
+     What do you think the program will output for each day?
+  2. ▶️ **Run**\
+     Run the program and compare the actual output with your prediction.
+  3. 🔍 **Investigate**
+     * What is the **loop variable** in the `for` loop, and what is its **data type**?
+     * Why does the program use `range(len(steps))` instead of `for s in steps`?
+     * What happens if the goal is set higher than all the values in the list?
+  4. ✏️ **Modify**
 
 
-  ```python
+  * Change the program so it also prints the **actual step count** next to each
+  day.
 
-  temps_c = [0, 10, 20, 30]
+  * **Stretch challenge:**\
+    Add a function `average_steps(steps)` that calculates and prints the average number of steps for the week.
 
-  temps_f = []
+  ##
 
-
-  for c in temps_c:
-      f = (c * 9/5) + 32
-      temps_f.append(f)
-
-  print(temps_f)
-
-  ```
-
-
-  ### Why this matters
-
-
-  This pattern — *loop → calculate → append* — is the foundation of many
-  data‑processing tasks.
+showEditor: true
+editors:
+  - course1/unit7/lesson1/lessonpart3/prices.py
+  - course1/unit7/lesson1/lessonpart3/wordlengths.py
+  - course1/unit7/lesson1/lessonpart3/steps.py
