@@ -33,7 +33,7 @@ content: >
   respond to that.
 
 
-  ### Python subroutine definition
+  ### Python `def` keyword
 
 
   We define a subroutine in Python with the **def** keyword, followed by a name
@@ -60,7 +60,10 @@ content: >
   ```
 
 
-  Remember that `def` creates and stores a subroutine for use later, it does
+  ### Explanation
+
+
+  Remember that `def` creates and stores a subroutine for use **later**, it does
   **not** execute straight away. The indented code block below the
   `def` statement is the subroutine **body** which executes when the subroutine
   is called. As soon as we stop indenting,  the definition is complete. 
@@ -124,7 +127,6 @@ content: >
   vertical()
 
   horizontal()
-
 
   ```
 
