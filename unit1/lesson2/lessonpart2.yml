@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Structured programming
-content: |+
+content: |
   **Structured programming** is a method of designing and writing programs that are easy to understand, debug, and maintain, by using a **modular** approach. This means breaking down a program into **modules** - smaller, manageable parts - and coding these separately. In Python we use **functions** to help us write modular code.
 
   ### Why Use structured programming?
@@ -59,6 +59,7 @@ content: |+
 
   * &#x20; Then the main program prompts the user to input a radius, then calls these functions to compute and print the area and circumference.&#x20;
 
+  Now answer these questions to check your understanding.
 questionGroups:
   - id: "1"
     questions:

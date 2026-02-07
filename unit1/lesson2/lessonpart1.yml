@@ -57,3 +57,9 @@ showEditor: true
 editors:
   - course1/unit1/lesson2/lessonpart1/area_calc.py
   - course1/unit1/lesson2/lessonpart1/cuboid.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on the PRIMM activity here. How did you get on?
