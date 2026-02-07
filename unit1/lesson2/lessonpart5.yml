@@ -2,14 +2,14 @@
 id: lessonpart5
 title: Procedures and functions
 content: >+
-  To recap, a ***subroutine***, also called a ***subprogram*** is any block of
-  code with a name or ***identifier*** that performs a single process within a
-  larger program.
+  To recap, a **subroutine**, also called a **subprogram** is any block of code
+  with a name or **identifier** that performs a single process within a larger
+  program.
 
 
-  There are two types of subroutines: ***procedures*** and ***functions***. A
-  ***function*** **returns** a value, while a ***procedure*** does not, but
-  otherwise they are the same.&#x20;
+  There are two types of subroutines: **procedures** and **functions**. A
+  **function** **returns** a value, while a **procedure** does not, but
+  otherwise they are the same.
 
 
   ## Procedures
@@ -64,19 +64,26 @@ content: >+
   ```
 
 
-  In this example, `get_name()` is defined as a subroutine just as we did
-  before, but inside the ***body*** of the function (the indented block), we see
-  a `return` statement, meaning this is a ***function***.&#x20;
+  ### Explanation
 
 
-  In the main program, `get_name()`  _**calls**_ the function. The function then
-  executes, inputting the user's name and assigning this to a variable called
-  `ans`.&#x20;
+  * We define, `get_name()` as a subroutine just like before, but inside the
+  **body** of the function (the indented block), we see a `return` statement,
+  meaning this is a **function**.
 
+  * In the main program, `get_name()`  **calls** the function. The function then
+  executes
 
-  It then passes this value back through the `return ans` statement. In the main
-  program, `get_name()` becomes this value, which is then stored in the variable
-  `name`.
+  * Inside the function, we input the user's name and assign it to a variable
+  called `ans`.
+
+  * The function passes this value back through the `return
+  ans` statement.&#x20;
+
+  * In the main program, `get_name()` becomes this value, which is then stored
+  in the variable `name`.
+
+  * The `print` statement prints the greeting, using the `name` variable again.
 
 
   You can try out this code in the attached **func.py**.
