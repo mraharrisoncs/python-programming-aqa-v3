@@ -2,9 +2,6 @@
 id: lessonpart5
 title: Programming if-else
 content: >
-  #### Using Boolean expressions in programs
-
-
   Boolean expressions are often used in `if-else` statements to decide which
   block of code should be executed. Here's another example that uses
   `>=` (greater than or equal to), and this time we have wrapped the code in a
