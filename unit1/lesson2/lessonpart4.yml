@@ -9,8 +9,8 @@ content: >
 
 
   A maths teacher wants a game to quiz students on their times tables. The game
-  should display a question in the form of a multiplication problem, such as 4
-  \* 8 or 9 \* 3, using random integers between 1 and 10 inclusive.&#x20;
+  should display a question in the form of a multiplication problem, such as `4
+  * 8` or `9 * 3`, using random integers between 1 and 10 inclusive.&#x20;
 
 
   The user inputs their answer and the program checks the answer and adds 1 to
@@ -21,8 +21,8 @@ content: >
   We can decompose this problem into these sub-problems:
 
 
-  * generate a question in the form a \* b where a and b are random integers
-  between 1 and 10 and display it
+  * generate a question in the form `a * b` where a and b are random integers
+  between 1 and 10, and display it
 
 
   * ask for the user's answer
@@ -37,10 +37,13 @@ content: >
   * output the final score.
 
 
-  We won't meet repetition (iteration) until a later unit, so let's do this with
-  sequence only! You can start by writing the **main program** section like
-  this, just by giving reasonable **identifiers** (function names) to the list
-  of sub-problems we wrote above:
+  > Hint: we won't meet repetition (iteration) until a later unit, so let's do
+  this with sequence only!&#x20;
+
+
+  You can start by writing the **main program** section like this, just by
+  giving reasonable **identifiers** (function names) to the list of sub-problems
+  we wrote above:
 
 
   ```python
@@ -135,3 +138,9 @@ content: >
 showEditor: true
 editors:
   - course1/unit1/lesson2/lessonpart4/capstone_quiz.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: How did you get on? Reflect on this task here.

@@ -2796,11 +2796,11 @@ files:
 
       def ask_question():\r
 
-      \  generate_question()\r
+      \    generate_question()\r
 
-      \  get_answer()\r
+      \    get_answer()\r
 
-      \  check_answer()\r
+      \    check_answer()\r
 
       \r
 
