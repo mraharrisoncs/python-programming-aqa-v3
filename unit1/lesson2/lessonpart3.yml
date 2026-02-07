@@ -26,13 +26,15 @@ content: >
 
 
   Notice that we write the identifier of the subroutine followed immediately by
-  a pair of brackets.  The pair of brackets, `(),` tells Python that this
+  a pair of brackets.  The pair of brackets, `()`, tells Python that this
   identifier is the name of a **subroutine**, not a variable.&#x20;
 
 
   When Python sees `hello_world()` it will run the code defined earlier by the
-  `def hello_world()` instruction. Try this now in the attached **hello.py**
-  program.
+  `def hello_world()` instruction.&#x20;
+
+
+  Try this now in the attached **hello.py** program.
 
 
   ### Write once, call many times
@@ -58,8 +60,8 @@ content: >
   ```
 
 
-  Try this in the attached file **hello.py** by repeating the subroutine call
-  `hello_world()` many times.
+  Try this in the attached file **hello.py** by copying and pasting the
+  subroutine call `hello_world()` many times.
 
 
   ### Change one line, not many lines
@@ -86,9 +88,9 @@ content: >
 
 
   Notice that we changed the **subroutine** and left the **main program** alone.
-  If you use subroutines in your code, then code changes can be made easily to
-  individual routines, without affecting the rest of the code. Try this in the
-  attached file **hello.py** now.
+  If you use subroutines in your code, then you can change the code easily in
+  individual subroutines, without affecting the rest of the code. Try this in
+  the attached file **hello.py** now.
 showEditor: true
 editors:
   - course1/unit1/lesson2/lessonpart3/hello.py
