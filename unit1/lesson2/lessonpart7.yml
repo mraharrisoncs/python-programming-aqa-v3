@@ -2,12 +2,14 @@
 id: lessonpart7
 title: Why subroutines?
 content: >
-  <br />
-
-
   Subroutines help us organize programs into chunks that match how we think
-  about the solution to the problem. Programming is problem-solving, and the
-  first step is **decomposition.**
+  about the solution to the problem.
+
+
+  ## Decomposing a problem
+
+
+  &#x20;Programming is problem-solving, and the first step is **decomposition.**
 
 
   If we **decompose** a problem into sub-problems, we can then write
