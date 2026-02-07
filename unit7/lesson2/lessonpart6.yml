@@ -35,9 +35,10 @@ content: |+
   ```
 
   * This line simply prints the value of `counter` followed by a space and exclamation mark.
-  * It uses an **f-string** which is a Python formatted string, where expressions inside the curly brackets `{}` are evaluated before printing, in this case the variable `counter` becomes its current value.
 
-  ## Flowchart for for
+  > Tip: this line uses an **f-string** which is a Python formatted string. In an f-string, expressions inside the curly brackets `{}` are evaluated before printing. In this case the variable `counter` becomes its current value.
+
+  ## Flowchart for `for`
 
   Here is a flowchart to illustrate what is going on. It's very similar to the `while` loop flowchart.
 
