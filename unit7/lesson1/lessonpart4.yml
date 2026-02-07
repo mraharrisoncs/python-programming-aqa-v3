@@ -24,7 +24,7 @@ content: >
   ***
 
 
-  ## A Simple Caesar Cipher
+  ### A Simple Caesar Cipher
 
 
   A **Caesar cipher** is one of the oldest and simplest ways to encode a
@@ -59,7 +59,7 @@ content: >
   ```
 
 
-  ### How it works
+  ### Explanation
 
 
   * **`alphabet`** is a simple string containing all lowercase letters.
@@ -98,3 +98,48 @@ content: >
 showEditor: true
 editors:
   - course1/unit7/lesson1/lessonpart4/caesar_cipher.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: If a string is stored in the variable 'passcode', what is the correct
+          syntax to iterate over this string?
+        options:
+          - id: "1"
+            value: "for char in passcode:"
+            explanation: Yes, this syntax correctly iterates over each character in the
+              string 'passcode'.
+            isCorrect: true
+          - id: "2"
+            value: "for passcode in char:"
+            explanation: No, this syntax is incorrect because 'passcode' should be the
+              iterable, not the loop variable.
+          - id: "3"
+            value: "while char in passcode:"
+            explanation: No, a 'while' loop is not used for iterating over each character in
+              a string.
+          - id: "4"
+            value: "for each char in passcode:"
+            explanation: No, Python does not use 'each' in the 'for' loop syntax.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: In 'new_position = (position + shift) % 26', what arithmetic operation
+          is being performed by '%'?
+        options:
+          - id: "1"
+            value: Modulo operation
+            explanation: Yes, the '%' operator performs the modulo operation, which gives
+              the remainder of a division.
+            isCorrect: true
+          - id: "2"
+            value: Addition
+            explanation: No, addition is performed by the '+' operator, not '%'.
+          - id: "3"
+            value: Subtraction
+            explanation: No, subtraction is performed by the '-' operator, not '%'.
+          - id: "4"
+            value: Division
+            explanation: No, division is performed by the '/' operator, not '%'.
