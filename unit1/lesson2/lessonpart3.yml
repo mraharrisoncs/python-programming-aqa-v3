@@ -98,3 +98,81 @@ content: >
 showEditor: true
 editors:
   - course1/unit1/lesson2/lessonpart3/hello.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of using subroutines in programming?
+        options:
+          - id: "1"
+            value: To allow code to be reused and easily modified without affecting the main
+              program.
+            explanation: Yes, subroutines enable code reuse and easy modification.
+            isCorrect: true
+          - id: "2"
+            value: To make the program run faster by reducing the number of lines of code.
+            explanation: No, subroutines do not make programs run faster; they organize code
+              for reuse and maintainability.
+          - id: "3"
+            value: To ensure that the program only runs once.
+            explanation: No, subroutines can be called multiple times, allowing the program
+              to execute the same code repeatedly.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is a correct subroutine definition in Python?
+        options:
+          - id: "1"
+            value: "def my_function():"
+            explanation: Yes, this is the correct syntax to define a subroutine in Python
+            isCorrect: true
+          - id: "2"
+            value: function my_function()
+            explanation: No, this is not the correct syntax in Python; 'def' is used instead
+              of 'function'.
+          - id: "3"
+            value: subroutine my_function()
+            explanation: No, Python uses 'def' to define a subroutine, not 'subroutine'.
+          - id: "4"
+            value: create my_function()
+            explanation: No, 'create' is not used in Python to define a subroutine; 'def' is
+              the correct keyword.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: |-
+          Which line is part of the function body in this code? 
+
+          def hello_world():   
+              print("Hello World!")
+          # main program
+          hello_world()
+        options:
+          - id: "1"
+            value: "def hello_world():"
+            explanation: No, this line is the function definition, not the body.
+          - id: "2"
+            value: print("Hello World!")
+            explanation: Yes, this line is the function body where the action of the
+              function is defined.
+            isCorrect: true
+          - id: "3"
+            value: hello_world()
+            explanation: No, this line is a function call, not part of the function body.
+          - id: "4"
+            value: "# main program"
+            explanation: No, this is a comment and not part of the function body.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: string
+        content: Write a call to execute the subroutine named hello_world.
+        options:
+          - id: "1"
+            value: hello_world()
+            explanation: This calls the subroutine using its identifier followed by
+              parentheses.
+            isCorrect: true
