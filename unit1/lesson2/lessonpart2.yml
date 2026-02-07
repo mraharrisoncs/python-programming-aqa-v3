@@ -81,18 +81,30 @@ questionGroups:
   - id: "2"
     questions:
       - id: "1"
-        type: choice
-        content: What is one benefit of using structured programming?
+        type: string
+        content: Structured program design takes place during which part of the
+          computational thinking process?
         options:
           - id: "1"
-            value: Improved readability of code
-            explanation: Structured programming divides code into modules, making it easier
-              to read.
+            value: Decomposition
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which Python keyword defines a function, which can be used to create a
+          single module in a modular design?
+        options:
+          - id: "1"
+            value: def
+            explanation: Yes, 'def' is used to define a function in Python.
             isCorrect: true
           - id: "2"
-            value: Increased execution speed
-            explanation: Structured programming focuses on code organization, not execution
-              speed.
+            value: function
+            explanation: No, 'function' is not a keyword in Python.
           - id: "3"
-            value: Reduced memory usage
-            explanation: Structured programming does not inherently reduce memory usage.
+            value: module
+            explanation: No, 'module' is not used to define a function in Python.
+          - id: "4"
+            value: while
+            explanation: No, 'while' is used for condition-controlled loops.
