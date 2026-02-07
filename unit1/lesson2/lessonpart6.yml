@@ -19,8 +19,11 @@ content: >
 
 
   We changed the greeting from "Hello World" to "Witaj świecie!" earlier by
-  editing the code. But what if we want to say both "Hello World!" and "Witaj
-  świecie!"? we *could* include both lines in the function, like this:
+  editing the code.
+
+
+  But what if we want to say both "Hello World!" and "Witaj świecie!"? We
+  *could* include both lines in the function, like this:
 
 
   ```python
@@ -36,9 +39,14 @@ content: >
   ```
 
 
-  Or we could do something else. We could make a general purpose function called
-  `greet()` that outputs any greeting **passed** to it as a **parameter**. Like
-  this:
+  Or we could do something else...
+
+
+  ## Generalisation using parameters
+
+
+  We could make a general purpose function called `greet()` that outputs any
+  greeting **passed** to it as a **parameter**. Like this:
 
 
   ```python
