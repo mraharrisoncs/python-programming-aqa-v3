@@ -2,10 +2,15 @@
 id: lessonpart5
 title: Programming if-else
 content: >
-  Boolean expressions are often used in `if-else` statements to decide which
-  block of code should be executed. Here's another example that uses
-  `>=` (greater than or equal to), and this time we have wrapped the code in a
-  procedure definition:
+  A **Boolean expression** is used in an `if-else` statement to decide which
+  block of code should be executed.&#x20;
+
+
+  ### Can you vote?
+
+
+  Here's another example that uses `>=` (greater than or equal to), and this
+  time we have wrapped the code in a function definition with `def`:
 
 
   ```python
@@ -25,9 +30,15 @@ content: >
   ```
 
 
-  In this example, the Boolean expression `age >= 18` is evaluated. If it is
-  `True`, the program prints "You are eligible to vote". Otherwise, it prints
-  "You are not eligible to vote".&#x20;
+  In this example, the Boolean expression `age >= 18` is evaluated. If `True`,
+  the program prints "You are eligible to vote". Otherwise, it prints "You are
+  not eligible to vote".
+
+
+  ### Speed warning function
+
+
+  &#x20;
 
 
   Here is another example, this time with a function that returns a string
@@ -56,10 +67,14 @@ content: >
 
 
   This time, the Boolean expression has two **variables** as the operands, and
-  `less than or equal to` as the comparison operator  The
-  expression `current_speed <= speed_limit` is evaluated. If `True`, the program
-  outputs "Safe driving, keep going." Otherwise, it prints "Too fast, slow
-  down!"
+  `less than or equal to` as the comparison operator. The
+  expression `current_speed <= speed_limit` is evaluated. If `True`, the
+  **function** will return the string "Safe driving, keep going." Otherwise, it
+  returns "Too fast, slow down!"
+
+
+  Back in the main program, the return value is printed, because we
+  wrote `print(speed_check(speed)).`
 
 
   ### Pseudocode notes
