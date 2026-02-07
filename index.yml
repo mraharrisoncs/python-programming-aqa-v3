@@ -3359,6 +3359,32 @@ files:
       daily_steps = [4500, 10200, 8700, 12000, 3000, 9800, 11000]\r
 
       check_steps(daily_steps, 8000)\r\n"
+  - path: course1/unit7/lesson1/lessonpart3/temps.py
+    content: "def display_temps(temps):\r
+
+      \    # TODO: loop through the list and print each temperature\r
+
+      \    pass\r
+
+      \r
+
+      def count_hot_days(temps, threshold):\r
+
+      \    # TODO: count how many temperatures are above the threshold\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      week_temps = [12, 15, 18, 21, 17, 19, 22]\r
+
+      \r
+
+      display_temps(week_temps)\r
+
+      count_hot_days(week_temps, 18)"
 units:
   - unit1/index.yml
   - unit2/index.yml

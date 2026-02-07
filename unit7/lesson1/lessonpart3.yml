@@ -91,27 +91,31 @@ content: >+
   Using the attached **`test_steps.py`**:
 
 
-  1. **🤔 Predict**\
+  1. 🤔 **Predict**
      What do you think the program will output for each day?
-  2. ▶️ **Run**\
+  2. ▶️ **Run**
      Run the program and compare the actual output with your prediction.
   3. 🔍 **Investigate**
+
      * What is the **loop variable** in the `for` loop, and what is its **data type**?
+
      * Why does the program use `range(len(steps))` instead of `for s in steps`?
+
      * What happens if the goal is set higher than all the values in the list?
   4. ✏️ **Modify**
-
-
-  * Change the program so it also prints the **actual step count** next to each
-  day.
-
-  * **Stretch challenge:**\
-    Add a function `average_steps(steps)` that calculates and prints the average number of steps for the week.
-
-  ##
+     Change the program so it also prints the **actual step count** next to each day.
+  5. 🛠️ **Make**
+     Open **temps.py** and write a new program that processes temperatures. Finish the functions given, to display all temperatures, and to count the days above a given threshold.
 
 showEditor: true
 editors:
   - course1/unit7/lesson1/lessonpart3/prices.py
   - course1/unit7/lesson1/lessonpart3/wordlengths.py
   - course1/unit7/lesson1/lessonpart3/steps.py
+  - course1/unit7/lesson1/lessonpart3/temps.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on the PRIMM exercise here
