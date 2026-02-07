@@ -102,7 +102,7 @@ content: >
 
   But if we use the **computational thinking** skill of **pattern matching** to
   notice that the first and last lines are identical, and also that the middle
-  four lines are identical, we could instead write two subrputines, and call
+  four lines are identical, we could instead write two subroutines, and call
   them repeatedly, like this:
 
 
@@ -131,9 +131,26 @@ content: >
   ```
 
 
-  The mechanics of printing the horizontal and vertical edges have been
-  **abstracted** away from the main program into the subroutines. You can try
-  this out in the attached **draw\_square.py** program file.
+  ### Explanation
+
+
+  The first subroutine `horizontal()` defines how to draw a horizontal line of
+  asterisks. The second subroutine `vertical()` defines how to draw one pair of
+  asterisks to represent one section of the vertical lines. In the main program
+  we call these two subroutines repeatedly to draw the square.
+
+
+  ## Link to Abstraction
+
+
+  When we hide the details of how something works, this is **abstraction**.
+  Subroutines allow us to squirrel away code behind a meaningful identifier, so
+  we don't have to think about it any more! 
+
+
+  In this program the details of how to print the horizontal and vertical edges
+  have been **abstracted** away from the main program into the
+  subroutines.&#x20;
 
 
   This might not save any lines of code in this example but:
@@ -145,11 +162,14 @@ content: >
 
   * it allows us to change the shape of the figure easily by editing the
   subroutines, for example we can make the shape wider by just adding asterisks
-  or spaces to the print statements, while the main program stays the same.
+  or spaces to a single print statement, while the main program stays the same.
 
 
   * in a later unit we will see how to repeat lines of code, so we don't need to
   code `vertical()` multiple times in our program, saving lots of coding.
+
+
+  The above code can be found in the attached **draw\_square.py** program file.
 
 
   ## PRIMM activities
