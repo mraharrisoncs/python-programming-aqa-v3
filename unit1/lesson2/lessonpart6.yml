@@ -61,9 +61,10 @@ content: >
   ## Useful functions
 
 
-  Now we can **pass parameters** and obtain **return values** we can code useful
-  functions. The word *function* comes from maths, and you will be familiar with
-  mathematical functions like **square root**. Let's code this now:
+  Now that we can **pass parameters** and obtain **return values,** we can code
+  useful functions. The word *function* comes from maths, and you will be
+  familiar with mathematical functions like **square root**. Let's code this
+  now:
 
 
   ```python

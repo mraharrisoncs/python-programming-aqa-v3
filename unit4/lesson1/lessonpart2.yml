@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
-title: IF-ELSE statements
+title: Structure of IF-ELSE
 content: |
-  ## Python if-else 
+  <br />
 
-  Remember this program?
+  Remember this program? Let's look at this code in more detail. 
 
   ```python
   weather = input("What is the weather today? ")
@@ -14,11 +14,13 @@ content: |
       print("Good to go!")
   ```
 
-  Let's look at this code in more detail. The second line tells Python we need to evaluate the **expression** `weather == "raining"` to decide which line to execute next &#x20;
+  ### Explanation
 
-  Remember, an **expression** is any valid sequence of **terms** and **operators** that can be **evaluated** to obtain a result. We met **arithmetic expressions** earlier in the course, which always evaluate to numbers. Here we have a **Boolean expression**, which evaluates to either **True** or **False.**
+  The second line tells Python we need to evaluate the **expression** `weather == "raining"` to decide which line to execute next &#x20;
 
-  The expression, `weather == "raining"` will evaluate to **True** if the variable `weather` contains the string "raining". If the expression is **True**, Python executes the next line. If the expression is **False**, Python skips all the indented code, and because it finds an **else:** keyword it executes the code block after this. (**else:** is optional, as we will see later.)
+  > Tip: remember an **expression** is any valid sequence of **terms** and **operators** that can be **evaluated** to obtain a **result**. We met **arithmetic expressions** earlier in the course, which always evaluate to numbers. Here we have a **Boolean expression**, which evaluates to either **True** or **False.**
+
+  The expression, `weather == "raining"` will evaluate to `True` if the variable `weather` holds the string "raining". If the expression is `True`, Python executes the next line. If the expression is `False`, Python skips all the indented code, and because it finds an `else:` keyword it executes the code block after this. (`else:` is optional, as we will see later.)
 
   > Going beyond the GCSE spec for a moment... this is called a **binary** conditional statement, because there are two branches of code to choose from, and binary means *two-ness*. But you can call it an "if-else" statement!
 

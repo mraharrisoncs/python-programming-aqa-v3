@@ -6,11 +6,11 @@ content: >
   block of code should be executed.&#x20;
 
 
-  ### Can you vote?
+  ## Can you vote?
 
 
   Here's another example that uses `>=` (greater than or equal to), and this
-  time we have wrapped the code in a function definition with `def`:
+  time we have wrapped the code in a **function** definition with `def`:
 
 
   ```python
@@ -30,20 +30,23 @@ content: >
   ```
 
 
+  ### Explanation
+
+
   In this example, the Boolean expression `age >= 18` is evaluated. If `True`,
   the program prints "You are eligible to vote". Otherwise, it prints "You are
   not eligible to vote".
 
 
-  ### Speed warning function
+  ## Speed warning function
 
 
   &#x20;
 
 
-  Here is another example, this time with a function that returns a string
-  describing how someone is driving. I've also used a constant at the top of the
-  code, so we can easily change the `speed_limit` later.
+  Here is another example, a **function** that takes speed as a parameter, and
+  returns a string. I've also used a **constant** at the top of the code, so we
+  can easily change the `speed_limit` later.
 
 
   ```python
@@ -66,6 +69,9 @@ content: >
   ```
 
 
+  ### Explanation
+
+
   This time, the Boolean expression has two **variables** as the operands, and
   `less than or equal to` as the comparison operator. The
   expression `current_speed <= speed_limit` is evaluated. If `True`, the
@@ -77,10 +83,10 @@ content: >
   wrote `print(speed_check(speed)).`
 
 
-  ### Pseudocode notes
+  ## Pseudocode notes
 
 
-  Programming languages use combinations of basic symbols such as != and <=
+  Programming languages use combinations of basic symbols such as `!=` and `<=`
   because these symbols are available in ASCII and can be entered directly on
   computer keyboards. In AQA exams, however, we use the standard mathematical
   symbols for comparison operators. Also we use the keywords IF, THEN, ELSE and

@@ -32,6 +32,8 @@ content: |
   greet("Alice")
   ```
 
+  ### Explanation
+
   In this example, the function `greet` takes one parameter, `name`, and prints a greeting message. The function is defined using `def`, followed by the function name `greet`, and the parameter `name` inside parentheses. The code inside the function is indented, indicating that it belongs to the function.
 
   By using functions, you can create structured programs that are easier to manage and understand. As you continue learning Python, you'll find that functions are a powerful tool for writing efficient and organized code.
