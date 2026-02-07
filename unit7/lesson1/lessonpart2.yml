@@ -68,7 +68,8 @@ content: >
   of vowels.
 
 
-  > In English, the *articles* are the words `a` ,`an` and `the`.&#x20;
+  > Tip: in English, the basic *articles* are the words `a` ,`an` and
+  `the`.&#x20;
 
 
   ```python
