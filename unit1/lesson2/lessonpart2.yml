@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
-title: Structured approach to programming
+title: Structured programming
 content: |+
   **Structured programming** is a method of designing and writing programs that are easy to understand, debug, and maintain, by using a **modular** approach. This means breaking down a program into **modules** - smaller, manageable parts - and coding these separately. In Python we use **functions** to help us write modular code.
 
@@ -52,8 +52,11 @@ content: |+
   ### Explanation
 
   * We define a constant `pi` to be `3.1415`, an approximation of pi (later we will see how to use the `math` library to use a more accurate value for pi).
+
   * We define a function `area` that takes the `radius` of a circle as a parameter and calculates and returns the area.
+
   * We define a function `circumference` to take  `radius` and calculates and return the circumference.
+
   * &#x20; Then the main program prompts the user to input a radius, then calls these functions to compute and print the area and circumference.&#x20;
 
 questionGroups:
