@@ -38,6 +38,12 @@ content: |+
 
   > Tip: this line uses an **f-string** which is a Python formatted string. In an f-string, expressions inside the curly brackets `{}` are evaluated before printing. In this case the variable `counter` becomes its current value.
 
+  ```python
+  print("lift-off !")
+  ```
+
+  As this line is **not indented** it is **not part of the loop body** so it will run only after the loop ends. 
+
   ## Flowchart for `for`
 
   Here is a flowchart to illustrate what is going on. It's very similar to the `while` loop flowchart.
