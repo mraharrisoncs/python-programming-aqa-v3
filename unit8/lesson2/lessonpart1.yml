@@ -134,3 +134,25 @@ questionGroups:
           - id: "4"
             value: A list of student names
             explanation: No, each sublist contains more than just names.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: When using a nested loop to traverse a 2D list, what is the order in
+          which the elements are visited?
+        options:
+          - id: "1"
+            value: Row by row, visiting each element in a row before moving to the next row.
+            explanation: Yes, the outer loop iterates over rows and the inner loop iterates
+              over elements within each row.
+            isCorrect: true
+          - id: "2"
+            value: Column by column, visiting each element in a column before moving to the
+              next column.
+            explanation: No, the traversal is done row by row, not column by column.
+          - id: "3"
+            value: Diagonally, starting from the top-left to the bottom-right.
+            explanation: No, the traversal is not done diagonally.
+          - id: "4"
+            value: Randomly, visiting elements in no particular order.
+            explanation: "No, the traversal follows a specific order: row by row."
