@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Simple programming with 2D arrays
-content: >+
+content: >
   In this section, we'll explore some basic programming tasks using 2D arrays in
   Python. We'll use the `temperatures` and `students` arrays from the previous
   examples.
@@ -157,10 +157,199 @@ content: >+
   viewing, appending, and removing temperature records.
 
 
-  Try out these examples in the attached Python files, then do this PRIMM
+  Try out these examples in the attached Python files, then attempt this PRIMM
   exercise.
 
+
+  ***
+
+
+  ## PRIMM Activity — Weekly Timetable (2D Arrays)
+
+
+  ### **Example timetable**
+
+
+  ```
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Day       | P1     | P2     | P3     | P4     | P5     |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Monday    | ENG    | MATH   | SCI    | GEO    | COMP   |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Tuesday   | HIST   | ENG    | MATH   | ART    | COMP   |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Wednesday | MATH   | SCI    | ENG    | COMP   | HIST   |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Thursday  | SCI    | GEO    | MATH   | ENG    | ART    |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  | Friday    | COMP   | ENG    | SCI    | MATH   | PE     |
+
+  +-----------+--------+--------+--------+--------+--------+
+
+  ```
+
+
+  ```python
+
+  #STARTER CODE in timetable_2D.py
+
+  timetable = [
+      ["ENG",  "MATH", "SCI",  "GEO",  "COMP"],   # Monday
+      ["HIST", "ENG",  "MATH", "ART",  "COMP"],   # Tuesday
+      ["MATH", "SCI",  "ENG",  "COMP", "HIST"],   # Wednesday
+      ["SCI",  "GEO",  "MATH", "ENG",  "ART"],    # Thursday
+      ["COMP", "ENG",  "SCI",  "MATH", "PE"],     # Friday
+  ]
+
+
+  days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+
+  def update_lesson(timetable, day_name, period_number, new_subject):
+      day_index = days.index(day_name)
+      period_index = period_number - 1
+      timetable[day_index][period_index] = new_subject
+
+  # Example use
+
+  update_lesson(timetable, "Thursday", 3, "COMP")
+
+  print(timetable)
+
+  ```
+
+
+  ***
+
+
+  ### 1. 🤔 Predict
+
+
+  Before running the program:
+
+
+  * What do you think the timetable will look like after the update?
+
+
+  * Which lesson on Thursday is being changed?
+
+
+  * Why does the code use `period_number - 1`?
+
+
+  Write down your predictions.
+
+
+  ***
+
+
+  ### 2. ▶️ Run
+
+
+  Run the program in your Python environment.
+
+
+  * Compare the printed timetable with your prediction.
+
+
+  * Did the update happen where you expected?
+
+
+  ***
+
+
+  ### 3. 🔍 Investigate
+
+
+  Answer these questions to understand the program more deeply:
+
+
+  * What does `days.index(day_name)` return?
+
+
+  * Why does `.index()` work here, even though this is a 2D array?
+
+
+  * What are the **rows** and **columns** representing in this structure?
+
+
+  * What happens if you try to update `"Saturday"`?
+
+
+  ***
+
+
+  ### 4. ✏️ Modify
+
+
+  Make the following changes:
+
+
+  * Change Monday Period 1 to `"COMP"`.
+
+
+  * Change Friday Period 5 to `"TUTOR"`.
+
+
+  * Add a new day `"Saturday"` with 5 `"REV"` lessons using `append`.
+
+
+  * Update Saturday Period 3 to `"MATH"`.
+
+
+  Run the program again to check your changes.
+
+
+  ***
+
+
+  ### 5. 🛠️ Make
+
+
+  Write a function called:
+
+
+  ```python
+
+  print_day(timetable, day_name)
+
+  ```
+
+
+  This function should:
+
+
+  * find the correct row for the given day
+
+
+  * print the day name
+
+
+  * print all 5 lessons in order, e.g.:
+
+
+  ```
+
+  Wednesday: MATH, SCI, ENG, COMP, HIST
+
+  ```
+
+
+  Test your function with at least **three** different days.
 showEditor: true
 editors:
   - course1/unit8/lesson1/lessonpart4/student_records.py
   - course1/unit8/lesson1/lessonpart4/temperature_records.py
+  - course1/unit8/lesson1/lessonpart4/timetable_2D.py

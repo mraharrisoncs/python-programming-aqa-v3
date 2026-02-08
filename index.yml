@@ -3637,6 +3637,43 @@ files:
       print(\"After removing a week's temperatures:\")\r
 
       view_temperatures(temperatures)"
+  - path: course1/unit8/lesson1/lessonpart4/timetable_2D.py
+    content: "timetable = [\r
+
+      \    [\"ENG\",  \"MATH\", \"SCI\",  \"GEO\",  \"COMP\"],   # Monday\r
+
+      \    [\"HIST\", \"ENG\",  \"MATH\", \"ART\",  \"COMP\"],   # Tuesday\r
+
+      \    [\"MATH\", \"SCI\",  \"ENG\",  \"COMP\", \"HIST\"],   # Wednesday\r
+
+      \    [\"SCI\",  \"GEO\",  \"MATH\", \"ENG\",  \"ART\"],    # Thursday\r
+
+      \    [\"COMP\", \"ENG\",  \"SCI\",  \"MATH\", \"PE\"],     # Friday\r
+
+      ]\r
+
+      \r
+
+      days = [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\",
+      \"Friday\"]\r
+
+      \r
+
+      def update_lesson(timetable, day_name, period_number, new_subject):\r
+
+      \    day_index = days.index(day_name)\r
+
+      \    period_index = period_number - 1\r
+
+      \    timetable[day_index][period_index] = new_subject\r
+
+      \r
+
+      # Example use\r
+
+      update_lesson(timetable, \"Thursday\", 3, \"COMP\")\r
+
+      print(timetable)"
 units:
   - unit1/index.yml
   - unit2/index.yml
