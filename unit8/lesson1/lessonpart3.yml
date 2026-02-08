@@ -2,6 +2,9 @@
 id: lessonpart3
 title: 2D array operations - append and remove
 content: >
+  All the list operations that work on 1D arrays also work on 2D arrays.
+
+
   ### Append to a 2D Array
 
 
@@ -32,36 +35,15 @@ content: >
   ```
 
 
-  ### Remove from a 2D Array
+  ### Delete row from a 2D Array
 
 
-  To remove a row from a 2D array, you can use the `remove` method or the `del`
-  statement. The `remove` method will remove the first occurrence of a matching
-  row, while `del` can be used to remove a row by its index:
+  To remove a row from a 2D array, you *can* use the `remove` method, but you
+  would need to specify the contents of the **entire row** you want to remove,
+  which is tricky so we don't usually do that.
 
 
-  Using `remove`:
-
-
-  ```python
-
-  >>> students = [
-
-  ...     ["Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False],
-
-  ...     ["Aisha", "Khan", 9, "Nightingale", 91, 88.0, True],
-
-  ...     ["Leo", "Morgan", 11, "Wilberforce", 112, 76.5, False]
-
-  ... ]
-
-  >>> students.remove(["Aisha", "Khan", 9, "Nightingale", 91, 88.0, True])
-
-  >>> students
-
-  [['Taha', 'Hussain', 10, 'Pankhurst', 104, 93.5, False], 
-   ['Leo', 'Morgan', 11, 'Wilberforce', 112, 76.5, False]]
-  ```
+  Instead use the `del` statement with the row's index.
 
 
   Using `del`:
@@ -87,7 +69,5 @@ content: >
   ```
 
 
-
-
-  Try out these operations in your Python environment to get a better
-  understanding of how 2D arrays work!
+  Try these operations in the REPL now, then answer these questions:
+showTerminal: true
