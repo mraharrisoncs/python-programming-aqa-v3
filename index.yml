@@ -3674,6 +3674,71 @@ files:
       update_lesson(timetable, \"Thursday\", 3, \"COMP\")\r
 
       print(timetable)"
+  - path: course1/unit8/lesson2/lessonpart1/student_records2.py
+    content: "def view_students_detailed(students):\r
+
+      \    for student in students:\r
+
+      \        for detail in student:\r
+
+      \            print(f\"{detail:<15}\", end=' ')\r
+
+      \        print()  # Move to the next line after printing all details of a
+      student\r
+
+      \r
+
+      def append_student(students, new_student):\r
+
+      \    students.append(new_student)\r
+
+      \r
+
+      def remove_student(students, student_to_remove):\r
+
+      \    students.remove(student_to_remove)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      students = [\r
+
+      \    [\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5, False],\r
+
+      \    [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True],\r
+
+      \    [\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5, False]\r
+
+      ]\r
+
+      \r
+
+      # View students\r
+
+      view_students(students)\r
+
+      \r
+
+      # Append a new student\r
+
+      append_student(students, [\"Nina\", \"Patel\", 12, \"Curie\", 115, 89.0,
+      True])\r
+
+      print(\"After appending a new student:\")\r
+
+      view_students(students)\r
+
+      \r
+
+      # Remove a student\r
+
+      remove_student(students, [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91,
+      88.0, True])\r
+
+      print(\"After removing a student:\")\r
+
+      view_students(students)"
 units:
   - unit1/index.yml
   - unit2/index.yml

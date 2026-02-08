@@ -69,3 +69,9 @@ content: >+
   '` means "at the end of this output print a space, **not** a newline
   character" - this keeps all the output on one line.
 
+
+  Open the program in the attached file, test it and answer these questions:
+
+showEditor: true
+editors:
+  - course1/unit8/lesson2/lessonpart1/student_records2.py
