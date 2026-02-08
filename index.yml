@@ -3923,6 +3923,159 @@ files:
       remove_song(playlist, \"Song B\")\r
 
       show_playlist(playlist)"
+  - path: course1/unit8/lesson2/lessonpart6/q1.py
+    content: "# q1.py\r
+
+      \r
+
+      # 2D list of weekly temperatures\r
+
+      temperatures = [\r
+
+      \    [24, 26, 31, 26, 21, 18, 22],\r
+
+      \    [30, 32, 33, 31, 29, 28, 27],\r
+
+      \    [20, 22, 25, 23, 21, 19, 18]\r
+
+      ]\r
+
+      \r
+
+      def print_first_column(data):\r
+
+      \    # TODO: print the first value of each row\r
+
+      \    pass\r
+
+      \r
+
+      \r
+
+      # --- MAIN PROGRAM ---\r
+
+      print(\"First column of temperatures:\")\r
+
+      print_first_column(temperatures)\r
+
+      \r
+
+      # Try adding more rows here:\r
+
+      # temperatures.append([...])"
+  - path: course1/unit8/lesson2/lessonpart6/q2.py
+    content: "# q2.py\r
+
+      \r
+
+      # first name, surname, year group, house, form, score, EAL status\r
+
+      students = [\r
+
+      \    [\"Taha\",   \"Hussain\", 10, \"Pankhurst\",   104, 93.5, False],\r
+
+      \    [\"Aisha\",  \"Khan\",     9, \"Nightingale\",  91, 88.0, True],\r
+
+      \    [\"Leo\",    \"Morgan\",  11, \"Wilberforce\", 112, 76.5, False],\r
+
+      \    [\"Sophie\", \"Turner\",   8, \"Barnardo\",     87, 95.0, False],\r
+
+      \    [\"Hannah\", \"Lewis\",    8, \"Barnardo\",     89, 97.0, False]\r
+
+      ]\r
+
+      \r
+
+      def print_first_names(students):\r
+
+      \    # TODO: print only the first names\r
+
+      \    pass\r
+
+      \r
+
+      \r
+
+      def list_house(students, house):\r
+
+      \    # TODO: return a list of \"First Last\" strings for students in the
+      given house\r
+
+      \    pass\r
+
+      \r
+
+      \r
+
+      # --- MAIN PROGRAM ---\r
+
+      print(\"All first names:\")\r
+
+      print_first_names(students)\r
+
+      \r
+
+      print(\"\\nStudents in Barnardo:\")\r
+
+      names = list_house(students, \"Barnardo\")\r
+
+      print(names)"
+  - path: course1/unit8/lesson2/lessonpart6/q3.py
+    content: "# q3.py\r
+
+      \r
+
+      # 4×5 seating plan\r
+
+      plan = [\r
+
+      \    [\"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\"],\r
+
+      \    [\"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\"],\r
+
+      \    [\"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\"],\r
+
+      \    [\"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\", \"EMPTY\"]\r
+
+      ]\r
+
+      \r
+
+      def assign_seat(plan, row, col, name):\r
+
+      \    # TODO: update the seat at (row, col) with the student's name\r
+
+      \    pass\r
+
+      \r
+
+      \r
+
+      def print_plan(plan):\r
+
+      \    # TODO: print the seating plan row by row\r
+
+      \    pass\r
+
+      \r
+
+      \r
+
+      # --- MAIN PROGRAM ---\r
+
+      print(\"Initial seating plan:\")\r
+
+      print_plan(plan)\r
+
+      \r
+
+      # Try assigning some seats:\r
+
+      # assign_seat(plan, 0, 2, \"Taha\")\r
+
+      # assign_seat(plan, 3, 4, \"Aisha\")\r
+
+      # print_plan(plan)"
 units:
   - unit1/index.yml
   - unit2/index.yml

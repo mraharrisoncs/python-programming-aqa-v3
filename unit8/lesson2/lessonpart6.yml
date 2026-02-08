@@ -1,0 +1,146 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: Python practical - 2D array exercises
+content: >+
+  Now try these three exercises that use 2D arrays (lists of lists) in Python.
+
+
+  ## Question 1: Print the First Column of a 2D Array
+
+
+  In **q1.py**, you will see a 2D list called `temperatures` containing **three
+  weeks** of daily temperatures, like this:
+
+
+  ```python
+
+  temperatures = [
+      [24, 26, 31, 26, 21, 18, 22],
+      [30, 32, 33, 31, 29, 28, 27],
+      [20, 22, 25, 23, 21, 19, 18]
+  ]
+
+  ```
+
+
+  Write a function called `print_first_column(data)` which should print the
+  **first value of each row**, one per line, like this:
+
+
+  ```
+
+  24
+
+  30
+
+  20
+
+  ```
+
+
+  Add more rows to the data, and ensure your code works for any size 2D array.
+
+
+  ***
+
+
+  ## Question 2: Display all students in a House
+
+
+  In **q2.py**, you will see a 2D list called `students`, as follows:
+
+
+  ```python
+
+  # first name, surname, year group, house, form, score, EAL status
+
+  students = [
+      ["Taha",     "Hussain",   10, "Pankhurst",   104, 93.5,  False],
+      ["Aisha",    "Khan",       9, "Nightingale",  91, 88.0,  True],
+      ["Leo",      "Morgan",    11, "Wilberforce", 112, 76.5,  False],
+      ["Sophie",   "Turner",     8, "Barnardo",     87, 95.0,  False],
+      ["Hannah",   "Lewis",      8, "Barnardo",     89, 97.0,  False]
+  ]
+
+  ```
+
+
+  Write two functions:
+
+
+  1. `print_first_names(students)`\
+     Traverses the 2D list and prints **only the first names**.
+
+     > Hint: The first name is always at index `0` of each row.
+
+     Example output:
+
+     ```
+     Taha
+     Aisha
+     Leo
+     Sophie
+     Hannah
+     ```
+
+  2. `list_house(students, house)`\
+     **Returns** a list of just the names of students in a given house, as strings, for example
+     `list_house(students, "Barnardo")` should return 
+
+     ```
+     ["Sophie Turner", "Hannah Lewis"]
+     ```
+
+  ***
+
+
+  ## Question 3: Update a 2D Seating Plan
+
+
+  In **q3.py**, you will see a **4×5** seating plan (a 2D list) where each
+  element is either a student name or `"EMPTY"`.
+
+
+  Write a function:
+
+
+  ```python
+
+  assign_seat(plan, row, col, name)
+
+  ```
+
+
+  This function should:
+
+
+  * update the seat at the given row and column
+
+
+  * replace `"EMPTY"` with the student’s name
+
+
+  * leave other seats unchanged
+
+
+  Then write another function:
+
+
+  ```python
+
+  print_plan(plan)
+
+  ```
+
+
+  that prints the seating plan row by row.
+
+
+  > Challenge: After assigning a few seats, print the whole plan to check your
+  updates.
+
+showEditor: true
+editors:
+  - course1/unit8/lesson2/lessonpart6/q1.py
+  - course1/unit8/lesson2/lessonpart6/q2.py
+  - course1/unit8/lesson2/lessonpart6/q3.py
