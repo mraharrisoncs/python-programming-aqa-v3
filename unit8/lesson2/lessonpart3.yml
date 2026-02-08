@@ -1,12 +1,15 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: Programming with 2D arrays
-content: >
-  ## &#x20;Example 1: Printing a Times Table (2D List of Numbers)
+content: >+
+  Let's dive into some more examples of programming with 2D arrays in Python.
 
 
-  This example shows how to generate and display a **multiplication table**,
-  stored as a 2D list.
+  ## Example 1: Printing a Times Table&#x20;
+
+
+  This example shows how to generate and display a **times
+  table** aka **multiplication table**, stored as a 2D list.
 
 
   ```python
@@ -32,7 +35,41 @@ content: >
   ```
 
 
-  <br />
+  ### Explanation
+
+
+  * The function `print_times_table` takes a 2D list (a list of rows) and prints
+  it neatly.
+
+
+  * The **outer loop** goes through each row of the table.
+
+
+  * The **inner loop** goes through each value inside that row.
+
+
+  * `print(f"{value:<4}", end=" ")` prints each number left‑aligned in a
+  4‑character space so the columns line up.
+
+
+  * After printing one full row, `print()` moves to the next line.
+
+
+  * The program then **creates** a 5×5 multiplication table.
+
+
+  * The outer loop (`for i in range(1, 6)`) builds each row for numbers 1 to 5.
+
+
+  * For each row, an inner loop (`for j in range(1, 6)`) calculates `i * j` and
+  appends it to the row.
+
+
+  * Each completed row is appended to `times_table`, forming a 2D list.
+
+
+  * Finally, the program calls `print_times_table(times_table)` to display the
+  whole table.
 
 
   ***
@@ -66,35 +103,78 @@ content: >
   ```
 
 
+  ### Explanation
+
+
+  * The function `count_high_scores` takes a 2D list of marks.
+
+
+  * A variable `count` is set to 0 to keep track of how many marks are above 70.
+
+
+  * The **outer loop** goes through each row of marks (each student’s set of
+  scores).
+
+
+  * The **inner loop** goes through each individual mark inside that row.
+
+
+  * The `if mark > 70:` condition checks whether the current mark meets the
+  requirement.
+
+
+  * If it does, `count += 1` increases the total.
+
+
+  * After all rows and marks have been checked, the function returns the final
+  count.
+
+
+  * The program defines a 3×3 list of marks and calls the function.
+
+
+  * Finally, it prints how many scores in the whole 2D list are above 70.
+
+
   ***
 
 
-  ## Example 3: Finding the Longest String in a 2D List
+  ## PRIMM Activities
 
 
-  This example uses a 2D list of **words** and finds the longest one.
+  Using the attached **`word_lengths.py`**:
 
 
-  ```python
+  1. 🤔 **Predict**\
+     What do you think the program will print as the longest word?\
+     Which row do you think it will come from?
 
-  def longest_word(grid):
-      longest = ""
-      for row in grid:
-          for word in row:
-              if len(word) > len(longest):
-                  longest = word
-      return longest
+  2. ▶️ **Run**\
+     Run the program and compare the actual output with your prediction.
 
-  words = [
-      ["cat", "elephant", "dog"],
-      ["sun", "mountain", "tree"],
-      ["python", "loop", "iteration"]
-  ]
+  3. 🔍 **Investigate**
 
+     * What does the variable `longest` store during the loop?
 
-  print("Longest word:", longest_word(words))
+     * Why does the program need **two** `for` loops to search the whole 2D list?
 
-  ```
+     * What does the condition `len(word) > len(longest)` check?
 
+  4. ✏️ **Modify**\
+     Change the program so it also prints the **length** of the longest word, e.g.\
+     `Longest word: elephant (8 letters)`.
 
-  #
+  5. 🛠️ **Make**\
+     Open **word\_search.py** and write a new function that counts how many words in the 2D list have **more than 5 letters**. Test it using the example grid provided.
+
+showEditor: true
+editors:
+  - course1/unit8/lesson2/lessonpart3/times_tables.py
+  - course1/unit8/lesson2/lessonpart3/count_marks.py
+  - course1/unit8/lesson2/lessonpart3/word_lengths.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "2"
+        type: reflection
+        content: Reflect on the PRIMM activity here.
