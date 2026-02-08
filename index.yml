@@ -3785,6 +3785,54 @@ files:
       for row in bitmap:\r
 
       \    print(row)"
+  - path: course1/unit8/lesson2/lessonpart2/boost_scores.py
+    content: "# A 2D list where each row represents a student\r
+
+      # and each column represents a test score out of 100.\r
+
+      scores = [\r
+
+      \    [55, 72, 88, 90],\r
+
+      \    [40, 65, 70, 75],\r
+
+      \    [95, 98, 92, 88],\r
+
+      \    [60, 58, 62, 64]\r
+
+      ]\r
+
+      \r
+
+      # Increase all scores by 5% (capped at 100)\r
+
+      def boost_scores(scores):\r
+
+      \    for i in range(len(scores)):\r
+
+      \        for j in range(len(scores[i])):\r
+
+      \            new_value = scores[i][j] * 1.05\r
+
+      \            if new_value > 100:\r
+
+      \                new_value = 100\r
+
+      \            scores[i][j] = new_value\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      boost_scores(scores)\r
+
+      \r
+
+      print(\"Boosted scores:\")\r
+
+      for row in scores:\r
+
+      \    print(row)"
 units:
   - unit1/index.yml
   - unit2/index.yml

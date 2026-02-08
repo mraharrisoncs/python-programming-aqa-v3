@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: More traversing - processing numbers
-content: >
+content: >+
   Let's look at some more examples of using nested `for` loops to manipulate 2D
   arrays (lists of lists).
 
@@ -49,6 +49,88 @@ content: >
 
   In this code, the `increase_brightness` function multiplies each pixel value
   by 1.1, effectively increasing the brightness by 10%.
+
+
+  ***
+
+
+  ## PRIMM Activities
+
+
+  Take a look at this program:
+
+
+  ```python
+
+  # A 2D list where each row represents a student
+
+  # and each column represents a test score out of 100.
+
+  scores = [
+      [55, 72, 88, 90],
+      [40, 65, 70, 75],
+      [95, 98, 92, 88],
+      [60, 58, 62, 64]
+  ]
+
+
+  # Increase all scores by 5% (capped at 100)
+
+  def boost_scores(scores):
+      for i in range(len(scores)):
+          for j in range(len(scores[i])):
+              new_value = scores[i][j] * 1.05
+              if new_value > 100:
+                  new_value = 100
+              scores[i][j] = new_value
+
+  # MAIN PROGRAM
+
+  boost_scores(scores)
+
+
+  print("Boosted scores:")
+
+  for row in scores:
+      print(row)
+  ```
+
+
+  Using the attached **`boost_scores.py`**:
+
+
+  1. 🤔 **Predict**\
+     What do you think will happen to the highest scores after the boost?\
+     Will any values go above 100?
+
+  2. ▶️ **Run**\
+     Run the program and compare the actual output with your prediction.
+
+  3. 🔍 **Investigate**
+
+     * What does `scores[i][j]` refer to in the nested loop?
+
+     * Why does the program need **two** `for` loops to update every score?
+
+     * What is the purpose of the line `if new_value > 100:`?
+
+  4. ✏️ **Modify**\
+     Change the program so it boosts scores by **10%** instead of 5%, and prints each score **before and after** boosting.
+
+  5. 🛠️ **Make**\
+     Open **high\_scores.py** and write a new function that counts how many scores in the 2D list are **greater than or equal to** a given threshold. Test it with thresholds of 70, 80 and 90.
+
 showEditor: true
 editors:
   - course1/unit8/lesson2/lessonpart2/bitmap.py
+  - course1/unit8/lesson2/lessonpart2/boost_scores.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: >-
+          What does scores[i][j] refer to in the nested loop?
+
+          Why does the program need two for loops to update every score? How did
+          you get on with the Modify and Make activities?
