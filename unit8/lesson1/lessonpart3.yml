@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: 2D array operations - append and remove
-content: >
+content: >+
   All the list operations that work on 1D arrays also work on 2D arrays.
 
 
@@ -9,28 +9,25 @@ content: >
 
 
   You can append a new row (as a new **sublist**) to a 2D array using the
-  `append` method. Here's an example using our `temperatures` array:
+  `append` method. Here's an example using our `game_grid` array:
 
 
   ```python
 
-  >>> temperatures = [
-
-  ...     [24, 26, 31, 26, 21, 18, 22],
-
-  ...     [30, 32, 33, 31, 29, 28, 27],
-
-  ...     [20, 22, 25, 23, 21, 19, 18]
-
-  ... ]
+  >>> game_grid = [
+      ["Start", "Path", "Treasure"],
+      ["Path", "Enemy", "Path"],
+      ["Path", "Path", "End"]
+  ]
 
 
-  >>> temperatures.append([25, 27, 29, 28, 26, 24, 23])
+  >>> game_grid.append(["House", "Garden", "End"])
 
-  >>> temperatures
+  >>> game_grid
 
-  [[24, 26, 31, 26, 21, 18, 22], [30, 32, 33, 31, 29, 28, 27], [20, 22, 25, 23,
-  21, 19, 18], [25, 27, 29, 28, 26, 24, 23]]
+  [["Start", "Path", "Treasure"],["Path", "Enemy", "Path"],["Path", "Path",
+  "End"],["House", "Garden", "End"])
+
 
   ```
 
@@ -43,10 +40,7 @@ content: >
   which is tricky so we don't usually do that.
 
 
-  Instead use the `del` statement with the row's index.
-
-
-  Using `del`:
+  Instead we use the `del` statement with the row's index: 
 
 
   ```python
@@ -70,4 +64,39 @@ content: >
 
 
   Try these operations in the REPL now, then answer these questions:
+
 showTerminal: true
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given a 2D array register=[[1,1],[1,0]], write an instruction to append
+          a new sublist [0,1] as a row to the 2D array.
+        options:
+          - id: "1"
+            value: register.append([0,1])
+            explanation: Yes, this correctly appends the sublist [0,1] to the 2D array.
+            isCorrect: true
+          - id: "2"
+            value: register.add([0,1])
+            explanation: No, 'add' is not a valid method for lists in Python.
+          - id: "3"
+            value: register([0,1])
+            explanation: No, this is a syntax error, as you have forgotten to use the
+              append() method
+          - id: "4"
+            value: append([0,1]).register
+            explanation: No, append() is a list method, so we write it after the list
+              identifier, register.append(...)
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: Write a command to delete the first row of a 2D array called
+          'temperatures'.
+        options:
+          - id: "1"
+            value: del temperatures[0]
+            explanation: The 'del' statement removes the row at the specified index.
+            isCorrect: true
