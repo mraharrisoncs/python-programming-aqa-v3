@@ -179,3 +179,6 @@ content: >+
 
   ```
 
+showEditor: true
+editors:
+  - course1/unit7/lesson2/lessonpart5/journey_planner.py
