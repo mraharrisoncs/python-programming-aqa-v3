@@ -353,3 +353,9 @@ editors:
   - course1/unit8/lesson1/lessonpart4/student_records.py
   - course1/unit8/lesson1/lessonpart4/temperature_records.py
   - course1/unit8/lesson1/lessonpart4/timetable_2D.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on this page here, how did you get on?
