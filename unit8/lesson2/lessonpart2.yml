@@ -2,16 +2,16 @@
 id: lessonpart2
 title: More traversing - processing numbers
 content: >
-  More examples of using nested for loops to manipulate 2D arrays (lists of
-  lists).
+  Let's look at some more examples of using nested `for` loops to manipulate 2D
+  arrays (lists of lists).
 
 
   ### Increasing Brightness of a Bitmap
 
 
   Let's create a 6x6 list of lists containing float values from 0 to 9.9,
-  representing a bitmap. We will then increase the brightness of all pixels by
-  10%.
+  representing a grayscale bitmap, where the value is the brightness of a pixel.
+  We will then increase the brightness of all pixels by 10%.
 
 
   ```python
@@ -35,6 +35,8 @@ content: >
           for j in range(len(bitmap[i])):
               bitmap[i][j] *= 1.1
 
+  # MAIN PROGRAM
+
   increase_brightness(bitmap)
 
 
@@ -47,3 +49,6 @@ content: >
 
   In this code, the `increase_brightness` function multiplies each pixel value
   by 1.1, effectively increasing the brightness by 10%.
+showEditor: true
+editors:
+  - course1/unit8/lesson2/lessonpart2/bitmap.py
