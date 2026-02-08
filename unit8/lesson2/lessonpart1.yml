@@ -75,3 +75,62 @@ content: >+
 showEditor: true
 editors:
   - course1/unit8/lesson2/lessonpart1/student_records2.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What is the purpose of the inner loop in the `view_students_detailed`
+          function?
+        options:
+          - id: "1"
+            value: To iterate over each student in the 2D list.
+            explanation: No, this describes the purpose of the outer loop.
+          - id: "2"
+            value: To iterate over each detail within a student's record.
+            explanation: Yes, the inner loop iterates over each element in a student's
+              record.
+            isCorrect: true
+          - id: "3"
+            value: To print a newline after each student's details.
+            explanation: No, this is done by the `print()` statement after the inner loop.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does 'for student in students' do in the
+          'view_students_detailed()' function?
+        options:
+          - id: "1"
+            value: It iterates over each student record in the students list.
+            explanation: Yes, it iterates over each student (or row) in the 2D list.
+            isCorrect: true
+          - id: "2"
+            value: It prints each student's details on a new line.
+            explanation: No, it does not print; it only iterates over the student records.
+          - id: "3"
+            value: It formats each student's details for display.
+            explanation: No, formatting is done in the inner loop, not by this statement.
+          - id: "4"
+            value: It initializes the students list.
+            explanation: No, the students list is passed as a parameter, not initialized
+              here.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does each sublist (each row) represent in the students array?
+        options:
+          - id: "1"
+            value: A student's record
+            explanation: Yes, each sublist represents a student's record.
+            isCorrect: true
+          - id: "2"
+            value: A single student's detail
+            explanation: No, each sublist contains multiple details of a student.
+          - id: "3"
+            value: A column of student details such as first name
+            explanation: No, each sublist represents a row, not a column.
+          - id: "4"
+            value: A list of student names
+            explanation: No, each sublist contains more than just names.
