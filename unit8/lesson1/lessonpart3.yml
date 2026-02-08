@@ -93,7 +93,7 @@ questionGroups:
     questions:
       - id: "1"
         type: string
-        content: Write a command to delete the first row of a 2D array called
+        content: Write a statement to delete the first row of a 2D array called
           'temperatures'.
         options:
           - id: "1"
