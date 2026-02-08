@@ -359,3 +359,9 @@ content: >+
 showEditor: true
 editors:
   - course1/unit8/lesson2/lessonpart5/text_adventure.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: reflection
+        content: Reflect on this project here!
