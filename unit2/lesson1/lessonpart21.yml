@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart21
-title: Python practical exercises 1
+title: Python practical 1 - arithmetic
 content: >
   You are provided with skeleton code which you must complete, solving these
   problems:

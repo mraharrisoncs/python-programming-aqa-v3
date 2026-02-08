@@ -80,7 +80,7 @@ content: >+
 
 
   > Hint: We can 'multiply' a string by an integer `x`, it concatenates the
-  string `x ` times. For example, `char * x` will create a string made up of x
+  string `x `  times. For example, `char * x` will create a string made up of x
   copies of `char`.
 
 
