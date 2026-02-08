@@ -3519,6 +3519,124 @@ files:
       \r
 
       print(f\"In {minutes} minutes you can travel from {journey}\")"
+  - path: course1/unit8/lesson1/lessonpart4/student_records.py
+    content: "def view_students(students):\r
+
+      \    for student in students:\r
+
+      \        print(student)\r
+
+      \r
+
+      def append_student(students, new_student):\r
+
+      \    students.append(new_student)\r
+
+      \r
+
+      def remove_student(students, student_to_remove):\r
+
+      \    students.remove(student_to_remove)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      students = [\r
+
+      \    [\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5, False],\r
+
+      \    [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True],\r
+
+      \    [\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5, False]\r
+
+      ]\r
+
+      \r
+
+      # View students\r
+
+      view_students(students)\r
+
+      \r
+
+      # Append a new student\r
+
+      append_student(students, [\"Nina\", \"Patel\", 12, \"Curie\", 115, 89.0,
+      True])\r
+
+      print(\"After appending a new student:\")\r
+
+      view_students(students)\r
+
+      \r
+
+      # Remove a student\r
+
+      remove_student(students, [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91,
+      88.0, True])\r
+
+      print(\"After removing a student:\")\r
+
+      view_students(students)"
+  - path: course1/unit8/lesson1/lessonpart4/temperature_records.py
+    content: "def view_temperatures(temperatures):\r
+
+      \    for week in temperatures:\r
+
+      \        print(week)\r
+
+      \r
+
+      def append_temperature(temperatures, new_week):\r
+
+      \    temperatures.append(new_week)\r
+
+      \r
+
+      def remove_temperature(temperatures, week_index):\r
+
+      \    del temperatures[week_index]\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      temperatures = [\r
+
+      \    [24, 26, 31, 26, 21, 18, 22],\r
+
+      \    [30, 32, 33, 31, 29, 28, 27],\r
+
+      \    [20, 22, 25, 23, 21, 19, 18]\r
+
+      ]\r
+
+      \r
+
+      # View temperatures\r
+
+      view_temperatures(temperatures)\r
+
+      \r
+
+      # Append a new week's temperatures\r
+
+      append_temperature(temperatures, [25, 27, 29, 28, 26, 24, 23])\r
+
+      print(\"After appending a new week's temperatures:\")\r
+
+      view_temperatures(temperatures)\r
+
+      \r
+
+      # Remove a week's temperatures\r
+
+      remove_temperature(temperatures, 1)\r
+
+      print(\"After removing a week's temperatures:\")\r
+
+      view_temperatures(temperatures)"
 units:
   - unit1/index.yml
   - unit2/index.yml

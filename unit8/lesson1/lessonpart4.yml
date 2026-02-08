@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Simple programming with 2D arrays
-content: >
+content: >+
   In this section, we'll explore some basic programming tasks using 2D arrays in
   Python. We'll use the `temperatures` and `students` arrays from the previous
   examples.
 
 
-  ## Student Records Program
+  ## Example 1: Student Records Program
 
 
   Let's create a simple student records program with functions to view, append,
@@ -44,7 +44,7 @@ content: >
 
   append_student(students, ["Nina", "Patel", 12, "Curie", 115, 89.0, True])
 
-  print("\nAfter appending a new student:")
+  print("After appending a new student:")
 
   view_students(students)
 
@@ -53,7 +53,7 @@ content: >
 
   remove_student(students, ["Aisha", "Khan", 9, "Nightingale", 91, 88.0, True])
 
-  print("\nAfter removing a student:")
+  print("After removing a student:")
 
   view_students(students)
 
@@ -82,10 +82,10 @@ content: >
   > Note: In Python, arrays (or lists) are **passed by reference**, meaning that
   when you pass a list to a function, you are passing a **reference** to the
   original list, not a copy. This means any changes within the function **modify
-  the original list**.
+  the original list**. 
 
 
-  ## Temperature Analysis Program
+  ## Example 2: Temperature Analysis Program
 
 
   Now, let's create a temperature analysis program with functions to view,
@@ -122,7 +122,7 @@ content: >
 
   append_temperature(temperatures, [25, 27, 29, 28, 26, 24, 23])
 
-  print("\nAfter appending a new week's temperatures:")
+  print("After appending a new week's temperatures:")
 
   view_temperatures(temperatures)
 
@@ -131,7 +131,7 @@ content: >
 
   remove_temperature(temperatures, 1)
 
-  print("\nAfter removing a week's temperatures:")
+  print("After removing a week's temperatures:")
 
   view_temperatures(temperatures)
 
@@ -157,5 +157,10 @@ content: >
   viewing, appending, and removing temperature records.
 
 
-  Try these examples in your Python environment to practice working with 2D
-  arrays!
+  Try out these examples in the attached Python files, then do this PRIMM
+  exercise.
+
+showEditor: true
+editors:
+  - course1/unit8/lesson1/lessonpart4/student_records.py
+  - course1/unit8/lesson1/lessonpart4/temperature_records.py
