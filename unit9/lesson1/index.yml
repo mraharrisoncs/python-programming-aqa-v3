@@ -8,3 +8,4 @@ objectives: |-
   - Know some Python ways of implementing record-like data structures
 lessonParts:
   - lessonpart1.yml
+  - lessonpart2.yml
