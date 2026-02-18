@@ -100,3 +100,15 @@ questionGroups:
           - id: "4"
             value: Pankhurst
             explanation: No, Pankhurst is accessed by students[0].house
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: Write a line of code to change the 'house' value of the first student
+          to 'Barnardo'.
+        options:
+          - id: "1"
+            value: students[0].house = 'Barnardo'
+            explanation: This line of code accesses the 'house' attribute of the first
+              student and assigns it the new value 'Barnardo'.
+            isCorrect: true
