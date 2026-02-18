@@ -34,9 +34,9 @@ content: >
   ### Iterating over a string
 
 
-  We will look at** `for`** loops in much more detail in Unit 7, but here is a
-  quick look at a vital string handling technique. We can ask Python to give us
-  each character in turn, by **iterating over the string:**
+  We will look at `for` loops in much more detail in Unit 7, but here is a quick
+  look at a vital string handling technique. We can ask Python to give us each
+  character in turn, by **iterating over the string:**
 
 
   ```python
