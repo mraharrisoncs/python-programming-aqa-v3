@@ -1,8 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart7
 title: '"Records" in Python using classes'
-content: >
-  
+content: >+
   Python offers a more reliable way to implement records, but it needs a little
   **Object-Oriented Programming (OOP)** knowledge, which is beyond the scope of
   this course. Here is a brief explanation, for the brave!
@@ -39,7 +38,8 @@ content: >
   #### Creating Instances of the Class
 
 
-  Now, we can create instances of the `Student` class for each student record:
+  Now, we can **instantiate** (create instances of) the `Student` class for each
+  student record:
 
 
   ```python
@@ -76,12 +76,3 @@ content: >
   expression, `students[3].SAT`, making the program more readable and easier to
   understand.
 
-
-  Attached is another version of the student program, this time using
-  **classes**. Open it and try it out.
-
-
-  Add question
-
-
-  Add question with AI
