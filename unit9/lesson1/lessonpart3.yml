@@ -1,0 +1,171 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Accessing and changing records in pseudocode
+content: >
+  Remember our student records:
+
+
+  ```
+
+  | firstname     | surname     |   year |
+  house         |  SAT  |      avg_grade | EAL   |
+
+  | ------------- + ----------- + -------+ ------------- + ----- +
+  -------------- + ------+
+
+  | Taha          | Hussain     |     10 | Pankhurst     |   104
+  |           93.5 | False |
+
+  | Aisha         | Khan        |      9 | Nightingale   |    91
+  |           88.0 | True  |
+
+  ```
+
+
+  We *declared* a record data type for this data:
+
+
+  ```
+
+  RECORD Student
+    firstname : String
+    surname : String
+    year : Integer
+    house : String
+    SAT : integer
+    avg_grade : Real
+    EAL : Boolean
+  ENDRECORD
+
+  ```
+
+
+  and *instantiated* a student like this:
+
+
+  ```
+
+  taha ← Student('Taha', 'Hussain', '10', 'Pankhurst', '104', '93.5', 'False')
+
+  ```
+
+
+  Now we need to know how to access and manipulate this data, otherwise the
+  records are not much use!
+
+
+  ### Accessing values
+
+
+  To access a value from a record, you use the syntax `varName.field`. Here,
+  `varName` is the name of the record variable, and `field` is the specific
+  field you want to access. This allows you to retrieve the value stored in that
+  field.
+
+
+  To access the** **`year` field from our student `taha`, we would write:
+
+
+  ```
+
+  taha.year          // output is 10
+
+  ```
+
+
+  This expression retrieves the value of the `year `field from the
+  `taha` record.
+
+
+  ### Assigning Values
+
+
+  We use a similar syntax for assignment (overwriting a value), we just use the
+  assignment operator `←` and the new value. The syntax is `varName.field ←
+  Exp`, where `Exp` is the expression whose value you want to assign to the
+  field.
+
+
+  So if you want to update Taha's `avg_grade` field to `97.2`, you would write:
+
+
+  ```
+
+  taha.avg_grade ← 97.2
+
+  ```
+
+
+  This statement assigns the value `97.2 `to the `avg_grade` field of the `taha`
+  record.
+
+
+  Let's check you grasped this page!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: How would you access the 'house' field of Taha's student record?
+        options:
+          - id: "1"
+            value: taha.house
+            explanation: Yes, this is the correct syntax to access the 'house' field of the
+              'taha' record.
+            isCorrect: true
+          - id: "2"
+            value: taha['house']
+            explanation: No, this syntax is incorrect for accessing fields in a record.
+          - id: "3"
+            value: house.taha
+            explanation: No, this syntax is incorrect as it reverses the order of the record
+              and field.
+          - id: "4"
+            value: taha.house \<- "Pankhurst"
+            explanation: No, this syntax is used for assignment, we just want to read a
+              value.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Assume that a student record called 'leah' has been instantiated. How
+          would you access leah's surname?
+        options:
+          - id: "1"
+            value: leah.surname
+            explanation: Yes, this is the correct syntax to access the surname field of the
+              leah record.
+            isCorrect: true
+          - id: "2"
+            value: leah-\>surname
+            explanation: No, this syntax is incorrect for accessing fields in a record.
+          - id: "3"
+            value: leah['surname']
+            explanation: No, this syntax is used for accessing dictionary elements, not
+              record fields.
+          - id: "4"
+            value: leah:surname
+            explanation: No, this syntax is not used for accessing fields in a record.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which line of code would assign the value 'Nightingale' to 'house'
+          value of Leah's record?
+        options:
+          - id: "1"
+            value: leah.house ← 'Nightingale'
+            explanation: Yes, this assigns 'Nightingale' to the 'house' field of the 'leah'
+              record.
+            isCorrect: true
+          - id: "2"
+            value: leah.house('Nightingale')
+            explanation: No, this syntax is wrong, don't confuse assignment with
+              instantiation.
+          - id: "3"
+            value: leah['house'] ← 'Nightingale'
+            explanation: No, this syntax is incorrect for updating fields in a record.
+          - id: "4"
+            value: house.leah ← 'Nightingale'
+            explanation: No, this incorrectly attempts to assign a value to a non-existent
+              'house' variable.
