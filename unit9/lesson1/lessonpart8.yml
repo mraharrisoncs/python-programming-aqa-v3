@@ -68,3 +68,80 @@ content: >+
   So below is a knowledge check quiz.
 
 
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Why must the data type of the 'price' field be 'Real'?
+        options:
+          - id: "1"
+            value: To allow for decimal values in the price.
+            explanation: Yes, using 'Real' allows for decimal values, which are necessary
+              for prices.
+            isCorrect: true
+          - id: "2"
+            value: To ensure the price is always a whole number.
+            explanation: No, 'Real' is used for decimal values, not whole numbers.
+          - id: "3"
+            value: To make the price field compatible with string operations.
+            explanation: No, 'Real' is not used for string operations.
+          - id: "4"
+            value: To restrict the price to positive values only.
+            explanation: No, 'Real' does not restrict values to positive numbers.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: Given the data above, what is returned by myCar.noOfDoors?
+        options:
+          - id: "1"
+            value: "5"
+            explanation: The 'noOfDoors' field was set to 5 when the 'myCar' record was
+              instantiated.
+            isCorrect: true
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: anotherCar ← Car('Audi', 'A4', 'MA71 HNK', 24700.00, 4) is an example
+          of what operation?
+        options:
+          - id: "1"
+            value: Instantiation of a record
+            explanation: Yes, this operation creates a new instance of the Car record.
+            isCorrect: true
+          - id: "2"
+            value: Declaration of a record
+            explanation: No, declaration defines the structure of a record, not an instance.
+          - id: "3"
+            value: Accessing a field in a record
+            explanation: No, accessing a field involves retrieving a specific value from a
+              record.
+          - id: "4"
+            value: Updating a field in a record
+            explanation: No, updating a field involves changing the value of an existing
+              field in a record.
+  - id: "4"
+    questions:
+      - id: "1"
+        type: choice
+        content: >-
+          Given the record structure declared above, why would this statement
+          fail? 
+
+          newCar ← Car('Audi', 'A4', 'MA71 HNK', '24700.00', '4')
+        options:
+          - id: "1"
+            value: The 'price' and 'noOfDoors' fields are not of the correct data types.
+            explanation: Yes, 'price' should be a Real and 'noOfDoors' should be an Integer.
+            isCorrect: true
+          - id: "2"
+            value: The 'make' and 'model' fields are missing.
+            explanation: No, 'make' and 'model' fields are present.
+          - id: "3"
+            value: The 'reg' field is not a valid string.
+            explanation: No, 'reg' is a valid string.
+          - id: "4"
+            value: The record structure is not defined.
+            explanation: No, the record structure is defined as 'Car'.
