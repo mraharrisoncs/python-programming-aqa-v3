@@ -1,4 +1,56 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Records in pseudocode
-content: Enter your content here
+content: >+
+  Let's see how to define a record using AQA-style pseudocode
+
+
+  Remembering our **students** table:
+
+
+  ```
+
+  | firstname     | surname     |   year |
+  house         |  SAT  |      avg_grade | EAL   |
+
+  | ------------- + ----------- + -------+ ------------- + ----- +
+  -------------- + ------+
+
+  | Taha          | Hussain     |     10 | Pankhurst     |   104
+  |           93.5 | False |
+
+  | Aisha         | Khan        |      9 | Nightingale   |    91
+  |           88.0 | True  |
+
+  ```
+
+
+  We would define the **student** record like this:
+
+
+  ```
+
+  RECORD Student
+    firstname : String
+    surname : String
+    year : Integer
+    house : String
+    SAT : integer
+    avg_grade : Real
+    EAL : Boolean
+  ENDRECORD
+
+  ```
+
+
+  As you can see, we need to give every field a **data type**, which must be
+  `Integer`, `Real`, `Boolean`, `Character` or `String`. These are the same as
+  Python data types, except:
+
+
+  * `Real` is used for the Python `float` data type
+
+  * `Character` means a single character e.g. `"L"` or `"£"`, which is a data
+  type that Python does not support, in Python we just use the `string` data
+  type.
+
