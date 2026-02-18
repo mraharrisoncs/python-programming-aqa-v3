@@ -4168,6 +4168,85 @@ files:
       greet(\"Hello World!\")    # \"Hello World!\" is passed \r
 
       greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
+  - path: course1/unit9/lesson1/lessonpart7/records_OOP.py
+    content: "# Program to implement student \"records\" using a Python class\r
+
+      # This mirrors the pseudocode Student record declaration.\r
+
+      \r
+
+      class Student:\r
+
+      \    def __init__(self, firstname, surname, year, house, SAT,
+      average_grade, EAL):\r
+
+      \        self.firstname = firstname\r
+
+      \        self.surname = surname\r
+
+      \        self.year = year\r
+
+      \        self.house = house\r
+
+      \        self.SAT = SAT\r
+
+      \        self.average_grade = average_grade\r
+
+      \        self.EAL = EAL\r
+
+      \r
+
+      \r
+
+      # Create a list of Student objects\r
+
+      students = [\r
+
+      \    Student(\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5,
+      False),\r
+
+      \    Student(\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True),\r
+
+      \    Student(\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5,
+      False),\r
+
+      \    Student(\"Sophie\", \"Turner\", 8, \"Barnardo\", 87, 95.0, False),\r
+
+      \    Student(\"Hannah\", \"Lewis\", 8, \"Barnardo\", 89, 97.0, False)\r
+
+      ]\r
+
+      \r
+
+      \r
+
+      # Program to determine who has the highest SAT score\r
+
+      highestSAT = 0\r
+
+      position = 0\r
+
+      \r
+
+      # Iterate over the list of Student objects\r
+
+      # This is the same algorithm as the pseudocode version,\r
+
+      # but we use object attributes instead of list indices.\r
+
+      for i in range(len(students)):\r
+
+      \    if students[i].SAT > highestSAT:\r
+
+      \        highestSAT = students[i].SAT\r
+
+      \        position = i\r
+
+      \r
+
+      # Output the result\r
+
+      print(students[position].firstname, \"has the highest SAT score\")"
 units:
   - unit1/index.yml
   - unit2/index.yml

@@ -76,3 +76,6 @@ content: >+
   expression, `students[3].SAT`, making the program more readable and easier to
   understand.
 
+showEditor: true
+editors:
+  - course1/unit9/lesson1/lessonpart7/records_OOP.py
