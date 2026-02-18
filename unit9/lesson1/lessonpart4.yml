@@ -126,3 +126,66 @@ content: >-
 
 
   Now answer these questions:
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What does this line of code do? students ← [taha, aisha, leah]
+        options:
+          - id: "1"
+            value: It creates a list containing three student records.
+            explanation: Yes, it stores the student records taha, aisha, and leah in a list.
+            isCorrect: true
+          - id: "2"
+            value: It declares a new record type called 'students'.
+            explanation: No, it does not declare a new record type; it creates a list.
+          - id: "3"
+            value: It updates the SAT score for each student in the list.
+            explanation: No, it does not update any SAT scores; it only creates a list.
+          - id: "4"
+            value: It outputs the names of the students in the list.
+            explanation: No, it does not output anything; it creates a list.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the student records above, what would be output of the
+          instruction OUTPUT(leah.year)?
+        options:
+          - id: "1"
+            value: "11"
+            explanation: Yes, Leah's year is 11 as declared in the record.
+            isCorrect: true
+          - id: "2"
+            value: "10"
+            explanation: No, 10 is Taha's year, not Leah's.
+          - id: "3"
+            value: "9"
+            explanation: No, 9 is Aisha's year, not Leah's.
+          - id: "4"
+            value: "12"
+            explanation: No, 12 is not the year for any student in the records.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given a list of students stored in the 'students' list variable, how
+          would we access the third student's SAT score without knowing the
+          record name (remembering that the first student has index 0)?
+        options:
+          - id: "1"
+            value: students[2].SAT
+            explanation: Yes, this accesses the SAT field of the third student in the list.
+            isCorrect: true
+          - id: "2"
+            value: students[2][SAT]
+            explanation: No, this is not the correct syntax for accessing fields of a
+              record.
+          - id: "3"
+            value: students[3].SAT
+            explanation: This accesses the SAT field of the fourth student, not the third.
+          - id: "4"
+            value: students[2]['SAT']
+            explanation: No, this is not the correct syntax for accessing fields of a
+              record.
