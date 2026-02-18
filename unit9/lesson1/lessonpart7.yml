@@ -79,3 +79,24 @@ content: >+
 showEditor: true
 editors:
   - course1/unit9/lesson1/lessonpart7/records_OOP.py
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Given the student records show, what would be the output of
+          print(students[0].surname) ?
+        options:
+          - id: "1"
+            value: Hussain
+            explanation: Yes, the surname of the first student, Taha, is Hussain.
+            isCorrect: true
+          - id: "2"
+            value: Khan
+            explanation: No, Khan is the surname of the second student, Aisha.
+          - id: "3"
+            value: Taha
+            explanation: No, Taha is accessed by students[0].firstname
+          - id: "4"
+            value: Pankhurst
+            explanation: No, Pankhurst is accessed by students[0].house
