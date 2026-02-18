@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart6
+title: '"Records" in Python'
+content: >
+  Python does not have a built-in record data structure. There are a few ways of
+  implementing a record-like structure, and we've met one of them before, the 2D
+  array or **list of lists**. Remember, Python does not care if you mix data
+  types in a list, so a Python 2D array can stand in for a table of records:
+
+
+  ```python
+
+  # create a 2D array of student records, each containing 
+
+  # first name, surname, year group, house, form, score, EAL status
+
+  students = [
+      ["Taha",     "Hussain",   10, "Pankhurst",   104, 93.5,  False],
+      ["Aisha",    "Khan",       9, "Nightingale",  91, 88.0,  True],
+      ["Leo",      "Morgan",    11, "Wilberforce", 112, 76.5,  False],
+      ["Sophie",   "Turner",     8, "Barnardo",     87, 95.0,  False],
+      ["Hannah",   "Lewis",      8, "Barnardo",     89, 97.0,  False]
+  ]
+
+  ```
+
+
+  The drawback of this implementation is that **fields are not named**. 
