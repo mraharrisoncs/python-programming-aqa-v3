@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: '"Records" in Python using classes'
+content: >
+  
+  Python offers a more reliable way to implement records, but it needs a little
+  **Object-Oriented Programming (OOP)** knowledge, which is beyond the scope of
+  this course. Here is a brief explanation, for the brave!
+
+
+  ## Classes in Python
+
+
+  In Python we define new data types using classes. Classes allow us to define a
+  template or **blueprint** for our records, giving each field a name, like we
+  did in our pseudocode declarations earlier.
+
+
+  #### Defining a Record Class
+
+
+  Let's define our `Student` class using Python OOP skills:
+
+
+  ```python
+
+  class Student:
+      def __init__(self, firstname, surname, year, house, SAT, average_grade, EAL):
+          self.firstname = firstname
+          self.surname = surname
+          self.year = year
+          self.house = house
+          self.SAT= SAT
+          self.average_grade = average_grade
+          self.EAL = EAL
+  ```
+
+
+  #### Creating Instances of the Class
+
+
+  Now, we can create instances of the `Student` class for each student record:
+
+
+  ```python
+
+  students = [
+      Student("Taha", "Hussain", 10, "Pankhurst", 104, 93.5, False),
+      Student("Aisha", "Khan", 9, "Nightingale", 91, 88.0, True),
+      Student("Leo", "Morgan", 11, "Wilberforce", 112, 76.5, False),
+      Student("Sophie", "Turner", 8, "Barnardo", 87, 95.0, False),
+      Student("Hannah", "Lewis", 8, "Barnardo", 89, 97.0, False)
+  ]
+
+  ```
+
+
+  #### Accessing Attributes
+
+
+  With this class, accessing a student's SAT score is now easy:
+
+
+  ```python
+
+  >>> sophie_sat = students[3].SAT
+
+  >>> print(sophie_sat)
+
+  87
+
+  ```
+
+
+  As you can see, we can now use the **same syntax** as the pseudocode
+  expression, `students[3].SAT`, making the program more readable and easier to
+  understand.
+
+
+  Attached is another version of the student program, this time using
+  **classes**. Open it and try it out.
+
+
+  Add question
+
+
+  Add question with AI
