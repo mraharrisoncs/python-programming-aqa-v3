@@ -11,20 +11,19 @@ content: >
   ### School database
 
 
-  Your school uses a database which represents each student as a record. A
-  student record might include fields such as `name`, `age`, `grade`, and
-  `student_id`.
+  Your school uses a **database** to store information about students. Each
+  student is stored as a **record** in the database. The **fields** in each
+  **record** might include `firstname`, `surname`, `year`, `house`, `SAT`,
+  `avg_grade`, `EAL.`
 
 
-  | Name       | DOB        | Form | House | Student ID |
+  | firstname | surname | year | house       | SAT | avg\_grade | EAL   |
 
-  | ---------- | ---------- | ---- | ----- | ---------- |
+  | --------- | ------- | ---- | ----------- | --- | ---------- | ----- |
 
-  | John Doe   | 2005-06-15 | 10A  | Red   | 12345      |
+  | Taha      | Hussain | 10   | Pankhurst   | 104 | 93.5       | False |
 
-  | Jane Smith | 2006-09-22 | 11B  | Blue  | 67890      |
-
-  | Sam Brown  | 2005-12-05 | 10C  | Green | 11223      |
+  | Aisha     | Khan    | 9    | Nightingale | 91  | 88.0       | True  |
 
 
   <br />
