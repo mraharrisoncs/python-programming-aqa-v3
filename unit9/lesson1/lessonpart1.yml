@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Introduction to records
-content: >
+content: >+
   A record is a data structure that groups together related data items. Each
   item in a record is called a field, and these fields can be of different data
   types. Records are useful for organizing data that belongs together, making it
@@ -17,16 +17,24 @@ content: >
   `avg_grade`, `EAL.`
 
 
-  | firstname | surname | year | house       | SAT | avg\_grade | EAL   |
-
-  | --------- | ------- | ---- | ----------- | --- | ---------- | ----- |
-
-  | Taha      | Hussain | 10   | Pankhurst   | 104 | 93.5       | False |
-
-  | Aisha     | Khan    | 9    | Nightingale | 91  | 88.0       | True  |
+  This **students** table would look something like this:
 
 
-  <br />
+  ```
+
+  | firstname     | surname     |   year |
+  house         |  SAT  |      avg_grade | EAL   |
+
+  | ------------- + ----------- + -------+ ------------- + ----- +
+  -------------- + ------+
+
+  | Taha          | Hussain     |     10 | Pankhurst     |   104
+  |           93.5 | False |
+
+  | Aisha         | Khan        |      9 | Nightingale   |    91
+  |           88.0 | True  |
+
+  ```
 
 
   ### Music App
@@ -35,3 +43,13 @@ content: >
   In a music streaming app, each track can be represented as a record. A track
   record might include fields like `title`, `artist`, `album`, `duration`, and
   `genre`.
+
+
+  <br />
+
+
+  x
+
+
+  x
+
