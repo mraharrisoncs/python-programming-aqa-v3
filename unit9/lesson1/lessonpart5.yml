@@ -1,4 +1,132 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
 title: More pseudocode programming with records
-content: Enter your content here
+content: >
+  In the previous lesson, you learned how to store several records in a list and
+  iterate over them to solve a problem. We will now apply the same idea to a
+  different dataset: **songs**. Here's what we need to do:
+
+
+  * declare a `Song` record type
+
+
+  * instantiate several song records
+
+
+  * store them in a list
+
+
+  * iterate over the list
+
+
+  * **sum the durations** of all tracks
+
+
+  This is our old friend the *accumulator pattern* again, a very common pattern
+  in programming: **loop through a list of records and accumulate a total**.
+
+
+  ***
+
+
+  ### Declare and Instantiate song records
+
+
+  Here is a record type suitable for storing song information:
+
+
+  ```
+
+  RECORD Song
+      title : String
+      artist : String
+      album : String
+      duration : Integer     // duration in seconds
+      genre : String
+  ENDRECORD
+
+  ```
+
+
+  Let’s instantiate two songs from the table:
+
+
+  ```
+
+  imagine ← Song("Imagine", "John Lennon", "Imagine", 184, "Rock")
+
+  halo ← Song("Halo", "Beyoncé", "I Am... Sasha Fierce", 224, "Pop")
+
+  ```
+
+
+  > Note: durations have been stored in **seconds** (184 is three minutes 4
+  seconds, while 224 equates to three minutes 44 seconds). Using an integer
+  number of seconds instead of `mm:ss` makes calculations much easier.
+
+
+  ***
+
+
+  ## Storing songs in a list
+
+
+  Just like before, we place the records into a list:
+
+
+  ```
+
+  songs ← [imagine, halo]
+
+  ```
+
+
+  Now `songs[0]` is the `imagine` record, and `songs[1]` is the `halo` record.
+
+
+  ***
+
+
+  ## Summing the duration of all songs
+
+
+  We can now write a program that **adds up the durations** of all tracks.
+
+
+  ```
+
+  totalDuration ← 0
+
+
+  FOR i ← 0 TO LEN(songs) - 1
+      totalDuration ← totalDuration + songs[i].duration
+  ENDFOR
+
+
+  OUTPUT "Total duration (seconds): ", totalDuration
+
+  ```
+
+
+  ***
+
+
+  ## Explanation
+
+
+  * `songs[i]` gives you the **record** at index `i`.
+
+
+  * `songs[i].duration` accesses the **duration field** of that record.
+
+
+  * `totalDuration` is an **accumulator**:
+
+    * it starts at 0
+
+    * each loop adds the next song’s duration
+
+  * After the loop finishes, `totalDuration` contains the sum of all durations.
+
+
+  Now answer these questions:

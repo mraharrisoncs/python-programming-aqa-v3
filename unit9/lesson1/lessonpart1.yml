@@ -45,7 +45,7 @@ content: >
   `genre`.
 
 
-  For example, the songs table could look like this:
+  For example, the `tracks` table could look like this:
 
 
   ```
@@ -56,10 +56,10 @@ content: >
   | ------------- + ------------- + ------------------------ + -------- +
   ------- |
 
-  | "Imagine"     | "John Lennon" | "Imagine"                |     3:04 |
+  | "Imagine"     | "John Lennon" | "Imagine"                |     184 |
   "Rock"  |
 
-  | "Halo"        | "Beyoncé"     | "I Am... Sasha Fierce"   |     3:44 |
+  | "Halo"        | "Beyoncé"     | "I Am... Sasha Fierce"   |     224 |
   "Pop"   |
 
   ```
