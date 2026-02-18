@@ -87,3 +87,6 @@ content: >
 
   Try the 2D array version of the student records program in the attached Python
   file and answer these questions.
+showEditor: true
+editors:
+  - course1/unit9/lesson1/lessonpart6/records_2D.py

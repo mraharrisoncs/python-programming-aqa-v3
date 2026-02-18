@@ -4076,6 +4076,98 @@ files:
       print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
 
       print(f\"Calories per person = {cals_per_person}\")"
+  - path: course1/unit9/lesson1/lessonpart6/records_2D.py
+    content: "'''\r
+
+      Program to implement student \"records\" in Python as a 2D array\r
+
+      The pseudocode Student record declaration we are approximating is:\r
+
+      \r
+
+      RECORD Student\r
+
+      \    firstname : String\r
+
+      \    surname : String\r
+
+      \    year : Integer\r
+
+      \    house : String\r
+
+      \    SAT : Integer\r
+
+      \    avg_grade : Real\r
+
+      \    EAL : Boolean\r
+
+      ENDRECORD\r
+
+      '''\r
+
+      # Create empty student list\r
+
+      students = []\r
+
+      \r
+
+      # Assign constants for field names\r
+
+      FIRSTNAME = 0\r
+
+      SURNAME = 1\r
+
+      YEAR = 2\r
+
+      HOUSE = 3\r
+
+      SAT = 4\r
+
+      AVERAGE_GRADE = 5\r
+
+      EAL = 6\r
+
+      \r
+
+      # append new students as sublists\r
+
+      students.append(['Taha', 'Hussain', 10, 'Pankhurst', 104, 93.5, False])\r
+
+      students.append(['Aisha', 'Khan', 9, 'Nightingale', 91, 88.0, True])\r
+
+      students.append(['Leah', 'Smith', 11, 'Pankhurst', 120, 95.2, False])\r
+
+      \r
+
+      # Program to determine who has the highest SAT\r
+
+      # initialise variables\r
+
+      highestSAT = 0\r
+
+      position = 0\r
+
+      \r
+
+      # Iterate over list of students\r
+
+      # This algorithm is essentially the same as the pseudocode algorithm
+      earlier\r
+
+      # We have changed only the field referencing style, from .SAT to [SAT].\r
+
+      for i in range(len(students)):\r
+
+      \    if students[i][SAT] > highestSAT:   # use SAT as the second index,
+      not a dotted field name\r
+
+      \        highestSAT = students[i][SAT]\r
+
+      \        position = i\r
+
+      \r
+
+      print(students[position][FIRSTNAME], ' has the highest SAT score')"
 units:
   - unit1/index.yml
   - unit2/index.yml
