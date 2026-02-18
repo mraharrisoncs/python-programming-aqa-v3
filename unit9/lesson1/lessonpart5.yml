@@ -158,3 +158,15 @@ questionGroups:
               'Pop')
             explanation: No, the record data type 'Song' comes after the assignment arrow,
               and field values as parameters.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: Write the correct reference for the genre of the second song in the
+          list with identifier 'songs'.
+        options:
+          - id: "1"
+            value: songs[1].genre
+            explanation: Yes, the second song in the list is accessed with index 1, and
+              '.genre' accesses the genre field.
+            isCorrect: true
