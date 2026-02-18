@@ -1,18 +1,21 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
-title: '"Records" in Python'
+title: '"Records" in Python using 2D arrays'
 content: >
   Python does not have a built-in record data structure. There are a few ways of
   implementing a record-like structure, and we've met one of them before, the 2D
   array or **list of lists**. Remember, Python does not care if you mix data
-  types in a list, so a Python 2D array can stand in for a table of records:
+  types in a list, so a Python 2D array can stand in for a table of records.
+
+
+  ### Records as a 2D array
 
 
   ```python
 
   # create a 2D array of student records, each containing 
 
-  # first name, surname, year group, house, form, score, EAL status
+  # first name, surname, year group, house, SAT, average grade, EAL status
 
   students = [
       ["Taha",     "Hussain",   10, "Pankhurst",   104, 93.5,  False],
@@ -25,4 +28,62 @@ content: >
   ```
 
 
-  The drawback of this implementation is that **fields are not named**. 
+  The drawback of this implementation is that **fields don't have names**, only
+  indices. For example, to display the SAT score of Sophie's record, we would
+  write `students[3][4]`:
+
+
+  ```python
+
+  >>> students[3][4]
+
+  87
+
+  ```
+
+
+  But we can make this more readable if we store the indices of the field names
+  in constants, like this:
+
+
+  ```python
+
+  FIRSTNAME = 0
+
+  SURNAME = 1
+
+  YEAR = 2
+
+  HOUSE = 3
+
+  SAT = 4
+
+  AVERAGE_GRADE = 5
+
+  EAL = 6
+
+  ```
+
+
+  > Tip: Python doesn't have true constants, so we use ALL CAPS to indicate
+  these variables must never be changed!
+
+
+  Now the expression to access Sophies SAT score looks like this:
+
+
+  ```python
+
+  >>> students[3][SAT]
+
+  87
+
+  ```
+
+
+  This looks similar to the pseudocode expression `students[3].SAT` and makes
+  the program much more readable.
+
+
+  Try the 2D array version of the student records program in the attached Python
+  file and answer these questions.
