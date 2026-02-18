@@ -104,3 +104,52 @@ questionGroups:
             value: Compilation
             explanation: No, compilation is the process of converting code into executable
               form.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Looking at the student record declaration above, which of these are
+          declared as integer fields?
+        options:
+          - id: "1"
+            value: year
+            explanation: Yes, 'year' is declared as an Integer field.
+            isCorrect: true
+          - id: "2"
+            value: SAT
+            explanation: Yes, 'SAT' is declared as an Integer field.
+            isCorrect: true
+          - id: "3"
+            value: avg_grade
+            explanation: No, 'avg_grade' is declared as a Real field.
+          - id: "4"
+            value: EAL
+            explanation: No, 'EAL' is declared as a Boolean field.
+          - id: "5"
+            value: firstname
+            explanation: No, 'firstname' is declared as a String field.
+          - id: "6"
+            value: house
+            explanation: No, 'house' is declared as a String field.
+  - id: "3"
+    questions:
+      - id: "1"
+        type: multiple
+        content: Which of these statements would instantiate a new student?
+        options:
+          - id: "1"
+            value: aisha ← Student('Aisha', 'Khan', '9', 'Nightingale', '91', '88.0',
+              'True')
+            explanation: Yes, this statement correctly creates a new Student record with the
+              given values.
+            isCorrect: true
+          - id: "2"
+            value: Student aisha = new Student('Aisha', 'Khan', '9', 'Nightingale', '91',
+              '88.0', 'True')
+            explanation: No, this syntax resembles Java, not AQA pseudocode.
+          - id: "3"
+            value: aisha ← ('Aisha', 'Khan', '9', 'Nightingale', '91', '88.0', 'True')
+            explanation: No, this statement lacks the Student record type declaration.
+          - id: "4"
+            value: "RECORD aisha : Student"
+            explanation: No, this statement is a record declaration, not an instantiation.
