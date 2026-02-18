@@ -2,8 +2,8 @@
 id: lessonpart12
 title: Pseudocode example - division
 content: >
-  Remember, the pseudocode symbol for real division is "/", while integer
-  division uses "DIV"
+  Remember, the pseudocode symbol for real division is `/`, while integer
+  division uses `DIV`
 
 
   ```
@@ -15,7 +15,7 @@ content: >
   ```
 
 
-  The output from this algorithm would be **3.5**
+  The output from this algorithm would be `3.5`
 
 
   ```
@@ -27,7 +27,7 @@ content: >
   ```
 
 
-  The output from this algorithm would be **3**
+  The output from this algorithm would be `3`
 questionGroups:
   - id: "1"
     questions:
