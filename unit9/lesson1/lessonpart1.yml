@@ -4,8 +4,8 @@ title: Introduction to records
 content: >
   A **record** is a data structure that groups together related data items. Each
   item in a record is called a **field**, and these fields can be of different
-  data types. A collection of records is called a **table.** Here are some
-  example uses of records and tables.
+  data types. Here are some example uses of records. You can gather records
+  together into **lists** or **tables**.
 
 
   ### School database
@@ -40,12 +40,12 @@ content: >
   ### Music App
 
 
-  In a music streaming app, each track can be represented as a record. A track
+  In a music streaming app, each song can be represented as a record. A song
   record might include fields like `title`, `artist`, `album`, `duration`, and
   `genre`.
 
 
-  For example, the `tracks` table could look like this:
+  For example, the `songs `list could look like this:
 
 
   ```
