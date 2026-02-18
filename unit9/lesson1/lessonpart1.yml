@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Introduction to records
-content: >+
+content: >
   A **record** is a data structure that groups together related data items. Each
   item in a record is called a **field**, and these fields can be of different
   data types. A collection of records is called a **table.** Here are some
@@ -64,3 +64,37 @@ content: >+
 
   ```
 
+
+  Now check your understanding!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: multiple
+        content: In the students app, 'house' is an example of what?
+        options:
+          - id: "1"
+            value: field
+            explanation: Yes, 'house' is a field within a record.
+            isCorrect: true
+          - id: "2"
+            value: record
+            explanation: No, 'house' is not a record; it is a field within a record.
+          - id: "3"
+            value: table
+            explanation: No, 'house' is not a table; it is a field within a record.
+          - id: "4"
+            value: database
+            explanation: No, 'house' is not a database; it is a field within a record.
+  - id: "2"
+    questions:
+      - id: "1"
+        type: string
+        content: What do we call a collection of fields belonging to a single person,
+          object or idea?
+        options:
+          - id: "1"
+            value: record
+            explanation: Yes, a record is a data structure that groups together related data
+              items belonging to a single entity.
+            isCorrect: true
