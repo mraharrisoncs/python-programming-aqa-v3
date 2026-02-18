@@ -1,5 +1,70 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart8
 title: Records - Summary
-content: |
-  In this unit we have learned about records. A record is a 
+content: >+
+  In this unit we have learned about records. We learned that a **record** is a
+  data structure that groups together related data items. Each item in a record
+  is called a **field**, and these fields can be of different data types.  You
+  can gather records together into **lists** or **tables**.
+
+
+  ## Pseudocode for Records
+
+
+  In AQA exams, you will see this pseudocode used to declare, instantiate and
+  access records.
+
+
+  ### Declaring a record
+
+
+  This is an example pseudocode definition for a record. This one defines the
+  structure of a **car** record. This might be used in a database at a car
+  retailer.
+
+
+  ```
+
+  RECORD Car
+    make : String
+    model : String
+    reg : String
+    price : Real
+    noOfDoors : Integer
+  ENDRECORD
+
+  ```
+
+
+  ### Instantiation
+
+
+  We create new instances of cars like this:
+
+
+  ```
+
+  myCar ← Car('Ford', 'Focus', 'DX17 GYT', 1399.99, 5)
+
+  ```
+
+
+  ### Accessing fields
+
+
+  And we can access fields from a record like this:
+
+
+  ```
+
+  >>> myCar.model
+
+  'Focus'
+
+  ```
+
+
+  There is no capstone project for this unit, because it's mostly theoretical!
+  So below is a knowledge check quiz.
+
+

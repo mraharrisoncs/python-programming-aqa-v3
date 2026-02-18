@@ -4,8 +4,8 @@ title: Introduction to records
 content: >
   A **record** is a data structure that groups together related data items. Each
   item in a record is called a **field**, and these fields can be of different
-  data types. Here are some example uses of records. You can gather records
-  together into **lists** or **tables**.
+  data types. You can gather records together into **lists** or **tables**. Here
+  are some example uses of records.&#x20;
 
 
   ### School database
