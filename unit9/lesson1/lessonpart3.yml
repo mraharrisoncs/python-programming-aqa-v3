@@ -128,8 +128,9 @@ questionGroups:
     questions:
       - id: "1"
         type: choice
-        content: Assume that a student record called 'leah' has been instantiated. How
-          would you access leah's surname?
+        content: Assume that a student called "Leah" has joined the school and a student
+          record called 'leah' has been instantiated. How would you access
+          leah's surname?
         options:
           - id: "1"
             value: leah.surname
