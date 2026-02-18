@@ -71,7 +71,7 @@ questionGroups:
     questions:
       - id: "1"
         type: multiple
-        content: In the students app, 'house' is an example of what?
+        content: In the students database, 'house' is an example of what?
         options:
           - id: "1"
             value: field
