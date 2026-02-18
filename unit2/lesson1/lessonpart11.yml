@@ -2,14 +2,18 @@
 id: lessonpart11
 title: Division and Modulus
 content: >
-  Real Division (/): Performs division and returns a **floating-point integer**
+  **Real Division,** `/` performs division and returns a **floating-point
+  number** which may have a decimal part.
 
-  Integer Division (DIV or //): Performs division and **discards the remainder**
-  returning an **integer**
 
-  Modulus (MOD or %): Returns **the remainder** after division
+  **Integer Division,** `DIV` or `//` performs division and **discards the
+  remainder** returning an **integer**
 
-  Example operations and their results.
+
+  **Modulus,** `MOD` or `%` returns **the remainder** after division
+
+
+  ### Example operations and their results
 
 
   ```python
