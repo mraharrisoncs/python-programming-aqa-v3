@@ -130,3 +130,31 @@ content: >
 
 
   Now answer these questions:
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: Which line of code correctly instantiates a Song record for 'Let it Go'
+          by James Bay?
+        options:
+          - id: "1"
+            value: letItGo ← Song('Let it Go', 'James Bay', 'Chaos and the Calm', 261,
+              'Pop')
+            explanation: Yes, this line correctly uses the Song record structure to
+              instantiate the record with the given details.
+            isCorrect: true
+          - id: "2"
+            value: letItGo ← Song('Let it Go', 'James Bay', 'Chaos and the Calm', '261',
+              'Pop')
+            explanation: No, the duration should be an integer, not a string. All values
+              must match the declared field data types.
+          - id: "3"
+            value: letItGo ← Song('Let it Go', 'James Bay', 'Chaos and the Calm', 261)
+            explanation: No, this line is missing the genre field, you must specifiy values
+              for all fields.
+          - id: "4"
+            value: letItGo.Song ← ('Let it Go', 'James Bay', 'Chaos and the Calm', 261,
+              'Pop')
+            explanation: No, the record data type 'Song' comes after the assignment arrow,
+              and field values as parameters.
