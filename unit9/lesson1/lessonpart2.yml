@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Records in pseudocode
-content: >+
+content: >
   Let's see how to define and use a record using AQA-style
   pseudocode. Remembering our **students** table:
 
@@ -77,3 +77,30 @@ content: >+
   > This instruction says "create a new Student record with these values, and
   assign to a new variable called `taha`."
 
+
+  Check your understanding of declaration and instantiation of records now!
+questionGroups:
+  - id: "1"
+    questions:
+      - id: "1"
+        type: choice
+        content: What do we call the process of specifying the record identifier and the
+          names and data types of all of its fields?
+        options:
+          - id: "1"
+            value: Declaration
+            explanation: Yes, declaration involves specifying the record identifier and the
+              names and data types of all its fields.
+            isCorrect: true
+          - id: "2"
+            value: Instantiation
+            explanation: No, instantiation is the process of creating an instance of a
+              record.
+          - id: "3"
+            value: Initialization
+            explanation: No, initialization typically refers to assigning an initial value
+              to a variable.
+          - id: "4"
+            value: Compilation
+            explanation: No, compilation is the process of converting code into executable
+              form.
