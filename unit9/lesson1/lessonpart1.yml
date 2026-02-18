@@ -1,3 +1,38 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
-title: Page
+title: Introduction to records
+content: >
+  A record is a data structure that groups together related data items. Each
+  item in a record is called a field, and these fields can be of different data
+  types. Records are useful for organizing data that belongs together, making it
+  easier to manage and access.
+
+
+  ### School database
+
+
+  Your school uses a database which represents each student as a record. A
+  student record might include fields such as `name`, `age`, `grade`, and
+  `student_id`.
+
+
+  | Name       | DOB        | Form | House | Student ID |
+
+  | ---------- | ---------- | ---- | ----- | ---------- |
+
+  | John Doe   | 2005-06-15 | 10A  | Red   | 12345      |
+
+  | Jane Smith | 2006-09-22 | 11B  | Blue  | 67890      |
+
+  | Sam Brown  | 2005-12-05 | 10C  | Green | 11223      |
+
+
+  <br />
+
+
+  ### Music App
+
+
+  In a music streaming app, each track can be represented as a record. A track
+  record might include fields like `title`, `artist`, `album`, `duration`, and
+  `genre`.

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: unit9
 title: Unit 9 - Records
-description: Brief unit looking at records
+description: Brief unit on records as a theoretical data structure
 objectives: |-
   - Know the purpose and structure of records
   - Read and write AQA pseudocode for records

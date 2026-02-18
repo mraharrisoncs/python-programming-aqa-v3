@@ -1,5 +1,10 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lesson1
-title: Lesson
+title: Lesson 1 - Records
+description: Lesson on records as a theoretical data structure
+objectives: |-
+  - Know the purpose and structure of records
+  - Read and write AQA pseudocode for records
+  - Know some Python ways of implementing record-like data structures
 lessonParts:
   - lessonpart1.yml
