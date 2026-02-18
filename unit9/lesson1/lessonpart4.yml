@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart4
+title: Using records in a pseudocode program
+content: >-
+  You now know how to declare a record type and how to access or update
+  individual fields. The next step is learning how to **use records inside a
+  program**, especially when you have **several records stored in a list**. We
+  will:
+
+
+  * create several student records
+
+
+  * store them in a list
+
+
+  * iterate over the list
+
+
+  * use fields inside each record to solve a problem
+
+
+  ***
+
+
+  ### Declaring and instantiating:
+
+
+  Just as before, we will declare the `Student` record type, and then
+  instantiate some students:
+
+
+  ```
+
+  RECORD Student
+      firstname : String
+      surname : String
+      year : Integer
+      house : String
+      SAT : Integer
+      avg_grade : Real
+      EAL : Boolean
+  ENDRECORD
+
+
+  taha ← Student('Taha', 'Hussain', 10, 'Pankhurst', 104, 93.5, False)
+
+  aisha ← Student('Aisha', 'Khan', 9, 'Nightingale', 91, 88.0, True)
+
+  leah ← Student('Leah', 'Smith', 11, 'Pankhurst', 120, 95.2, False)
+
+  ```
+
+
+  ### Storing records in a list
+
+
+  To make it easier to process multiple student records we can then store them
+  in a **list** (1D array):
+
+
+  ```
+
+  students ← [taha, aisha, leah]
+
+  ```
+
+
+  This gives us a list in which **each element is a record.**
+
+
+  ### Iterating over a list of records
+
+
+  Just like any other list, we can iterate over it, processing individual
+  elements. Because each element is a **record**, we can use our record-handling
+  syntax on it, specifying field names we wish to access or update.
+
+
+  Let’s write a program that finds the student with the **highest SAT score**.
+
+
+  ```
+
+  highestSAT ← 0
+
+  position ← 0
+
+
+  FOR i ← 0 TO LEN(students) - 1
+      IF students[i].SAT > highestSAT THEN
+          highestSAT ← students[i].SAT
+          position ← i
+      ENDIF
+  ENDFOR
+
+
+  OUTPUT students[position].firstname, ' has the highest SAT score'
+
+  ```
+
+
+  ### Explanation
+
+
+  * `students[i]` gives you the **record** at index `i`.
+
+
+  * `students[i].SAT` accesses the **SAT field** of that record.
+
+
+  * We track:
+
+    * `highestSAT` → the best score seen so far
+
+    * `position` → the index of the record with that score
+
+  * After the loop, we output the name of the student with the highest SAT
+  score.
+
+
+  > This is a commonly used algorithm, it's a variation on
+  the **accumulator pattern** - looping through a list and processing each item
+  in turn to calculate a value - in this case the highest value of a certain
+  field.
+
+
+  Now answer these questions:
