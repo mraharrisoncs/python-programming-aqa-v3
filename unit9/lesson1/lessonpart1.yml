@@ -2,10 +2,10 @@
 id: lessonpart1
 title: Introduction to records
 content: >+
-  A record is a data structure that groups together related data items. Each
-  item in a record is called a field, and these fields can be of different data
-  types. Records are useful for organizing data that belongs together, making it
-  easier to manage and access.
+  A **record** is a data structure that groups together related data items. Each
+  item in a record is called a **field**, and these fields can be of different
+  data types. A collection of records is called a **table.** Here are some
+  example uses of records and tables.
 
 
   ### School database
@@ -45,11 +45,22 @@ content: >+
   `genre`.
 
 
-  <br />
+  For example, the songs table could look like this:
 
 
-  x
+  ```
 
+  | title         | artist        | album                    | duration |
+  genre   |
 
-  x
+  | ------------- + ------------- + ------------------------ + -------- +
+  ------- |
+
+  | "Imagine"     | "John Lennon" | "Imagine"                |     3:04 |
+  "Rock"  |
+
+  | "Halo"        | "Beyoncé"     | "I Am... Sasha Fierce"   |     3:44 |
+  "Pop"   |
+
+  ```
 
