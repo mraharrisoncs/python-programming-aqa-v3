@@ -2,10 +2,8 @@
 id: lessonpart2
 title: Records in pseudocode
 content: >+
-  Let's see how to define a record using AQA-style pseudocode
-
-
-  Remembering our **students** table:
+  Let's see how to define and use a record using AQA-style
+  pseudocode. Remembering our **students** table:
 
 
   ```
@@ -25,7 +23,12 @@ content: >+
   ```
 
 
-  We would define the **student** record like this:
+  ## Record declaration
+
+
+  We would **declare** the **student** record like this, before using it.
+  **Declaration** means describing a variable or data structure before using it,
+  so the environment can allocate storage of the correct size and structure.
 
 
   ```
@@ -53,4 +56,24 @@ content: >+
   * `Character` means a single character e.g. `"L"` or `"£"`, which is a data
   type that Python does not support, in Python we just use the `string` data
   type.
+
+
+  ### Instantiating a record
+
+
+  Declaring a record just creates a **template** for the record, we have not
+  created any actual records yet. A new record is called an **instance** of the
+  record, and the process of creating one is called **instantiation**. This is
+  how we instantiate a student:
+
+
+  ```
+
+  taha ← Student('Taha', 'Hussain', '10', 'Pankhurst', '104', '93.5', 'False')
+
+  ```
+
+
+  > This instruction says "create a new Student record with these values, and
+  assign to a new variable called `taha`."
 
