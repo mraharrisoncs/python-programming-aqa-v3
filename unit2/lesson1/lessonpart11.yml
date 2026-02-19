@@ -3,7 +3,7 @@ id: lessonpart11
 title: Division and Modulus
 content: >
   **Real Division,** `/` performs division and returns a **floating-point
-  number** which may have a decimal part, such as `13.0` or `-1.17.`
+  number** which may have a decimal part, such as `13.0` or `-1.17`.
 
 
   **Integer Division,** `DIV` or `//` performs division and **discards the
