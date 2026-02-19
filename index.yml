@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: course1
-title: Python Programming for AQA GCSE Computer Science
+title: Python Programming for AQA GCSE Computer Science - V3
 level: beginner
 description: Python programming course suitable for students of the AQA GCSE in
   Computer Science
@@ -19,12 +19,14 @@ prerequisites: Know that a computer is a machine that takes input, processes it
   and produces output. Know that an algorithm is a sequence of steps needed to
   solve a problem, and a program is a representation of an algorithm that can be
   executed by a computer.
-cardImageUrl: https://vscodeedu.com/assets/course-cards/card5.png
+cardImageUrl: https://vscodeedu.com/assets/course-cards/card9.png
 contacts:
   - displayName: Alan Harrison
     affiliation: AQA
     homePageUrl: https://github.com/mraharrisoncs
 files:
+  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
+    content: "print(\"Hello World!\")\r\n"
   - path: course1/unit1/lesson1/lessonpart2/printing.py
     content: "print(\"Greetings!\")\r
 
@@ -369,6 +371,25 @@ files:
       result = 8 % 2\r
 
       print(result)"
+  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
+    content: "slices = 40\r
+
+      people = 12\r
+
+      cal_per_slice = 120\r
+
+      slices_each = slices // people                 # DIV to get whole number
+      of slices each\r
+
+      slices_left = slices %  people                 # MOD to get remaining
+      slices\r
+
+      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
+      per person\r
+
+      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
+
+      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit2/lesson1/lessonpart21/q1.py
     content: "'''\r
 
@@ -1017,6 +1038,36 @@ files:
       # main program\r
 
       print(sum_of_ascii(\"Cat\")) # should print 280"
+  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
+    content: "full_name = input(\"Enter your full name: \")   \r
+
+      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
+
+      \r
+
+      # Split the full name into first and surname\r
+
+      space_index = full_name.find(\" \")\r
+
+      first_name = full_name[:space_index]\r
+
+      surname = full_name[space_index + 1:]\r
+
+      \r
+
+      # Get the first initial and last two digits of the year\r
+
+      initial = first_name[0]\r
+
+      year_suffix = str(year)[-2:]\r
+
+      \r
+
+      # Build the username\r
+
+      username = surname + \"_\" + initial + \"_\" + year_suffix\r
+
+      print(\"Your username is:\", username)\r\n"
   - path: course1/unit3/lesson2/lessonpart3/q1.py
     content: "'''\r
 
@@ -2017,8 +2068,6 @@ files:
     content: "def get_code():\r
 
       \    pass # delete this and write your code here"
-  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
-    content: "print(\"Hello World!\")\r\n"
   - path: course1/unit5/lesson3/lessonpart3/sum_scores.py
     content: "def sum_scores():\r
 
@@ -4203,55 +4252,6 @@ files:
       # Output the result\r
 
       print(students[position].firstname, \"has the highest SAT score\")"
-  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
-    content: "slices = 40\r
-
-      people = 12\r
-
-      cal_per_slice = 120\r
-
-      slices_each = slices // people                 # DIV to get whole number
-      of slices each\r
-
-      slices_left = slices %  people                 # MOD to get remaining
-      slices\r
-
-      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
-      per person\r
-
-      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
-
-      print(f\"Calories per person = {cals_per_person}\")"
-  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
-    content: "full_name = input(\"Enter your full name: \")   \r
-
-      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
-
-      \r
-
-      # Split the full name into first and surname\r
-
-      space_index = full_name.find(\" \")\r
-
-      first_name = full_name[:space_index]\r
-
-      surname = full_name[space_index + 1:]\r
-
-      \r
-
-      # Get the first initial and last two digits of the year\r
-
-      initial = first_name[0]\r
-
-      year_suffix = str(year)[-2:]\r
-
-      \r
-
-      # Build the username\r
-
-      username = surname + \"_\" + initial + \"_\" + year_suffix\r
-
-      print(\"Your username is:\", username)\r\n"
 units:
   - unit1/index.yml
   - unit2/index.yml
