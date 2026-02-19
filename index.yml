@@ -19,7 +19,7 @@ prerequisites: Know that a computer is a machine that takes input, processes it
   and produces output. Know that an algorithm is a sequence of steps needed to
   solve a problem, and a program is a representation of an algorithm that can be
   executed by a computer.
-cardImageUrl: https://vscodeedu.com/assets/course-cards/card9.png
+cardImageUrl: https://raw.githubusercontent.com/mraharrisoncs/python-programming-aqa-v3/main/_assets/aqa_520px.png
 contacts:
   - displayName: Alan Harrison
     affiliation: AQA
