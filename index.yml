@@ -25,322 +25,6 @@ contacts:
     affiliation: AQA
     homePageUrl: https://github.com/mraharrisoncs
 files:
-  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
-    content: "print(\"Hello World!\")\r\n"
-  - path: course1/unit1/lesson1/lessonpart2/printing.py
-    content: "print(\"Greetings!\")\r
-
-      print(\"I like\", \"vege\", \"tables!\")\r
-
-      print(\"I eat\", 5, \"a day!\")\r
-
-      \r\n"
-  - path: course1/unit1/lesson1/lessonpart3/variables.py
-    content: "age = 14\r
-
-      name = \"Ahmed\"\r
-
-      print(\"Hello, my name is\", name, \"and I am\", age, \"years old.\")"
-  - path: course1/unit1/lesson1/lessonpart4/input_output.py
-    content: "print(\"Enter your name:\")\r
-
-      name = input()\r
-
-      print(\"Hello\", name, \"!\")\r
-
-      print(\"What is your favourite subject\")\r
-
-      subject = input()\r
-
-      print(subject, \"is a great subject!\")\r\n"
-  - path: course1/unit1/lesson1/lessonpart4/chatbot.py
-    content: "'''\r
-
-      Make a new \"chatbot\" program.\r
-
-      Use input, output and variables. \r
-
-      For example you might ask someone what pizza topping they like, \r
-
-      and respond saying I like that topping too!\r
-
-      '''\r
-
-      \r
-
-      # write your code here"
-  - path: course1/unit1/lesson1/lessonpart7/age.py
-    content: "print(\"How old are you?: \")\r
-
-      age = input()\r
-
-      print(\"In five years time you will be\", age + 5)"
-  - path: course1/unit1/lesson1/lessonpart7/age2.py
-    content: "print(\"How old are you?: \")\r
-
-      age = input()\r
-
-      age_integer = int(age)\r
-
-      print(\"In five years time you will be\", age_integer + 5)"
-  - path: course1/unit1/lesson1/lessonpart7/age3.py
-    content: "print(\"How old are you?: \")\r
-
-      age = int(input()) # input age, cast to integer and save\r
-
-      print(\"In five years time you will be\", age + 5)"
-  - path: course1/unit1/lesson1/lessonpart7/age4.py
-    content: "age = int(input(\"How old are you?: \")) \r
-
-      print(\"In five years time you will be\", age + 5)"
-  - path: course1/unit1/lesson1/lessonpart8/bmi.py
-    content: "# Input height and weight, casting to floats\r
-
-      height = float(input(\"Enter your height in metres: \"))\r
-
-      weight = float(input(\"Enter your weight in kilograms: \"))\r
-
-      \r
-
-      # Calculate and print BMI\r
-
-      bmi = weight / (height * height)\r
-
-      print(\"Your BMI is: \", bmi)"
-  - path: course1/unit1/lesson1/lessonpart8/favourites.py
-    content: "fav_number = int(input(\"What is your favourite number? \"))\r
-
-      fav_colour = input(\"What is your favourite colour? \"))\r
-
-      print(\"Your favorite number is \", fav_number)\r
-
-      print(\"Your favorite colour is \", fav_colour)"
-  - path: course1/unit1/lesson1/lessonpart9/q1.py
-    content: "'''\r
-
-      input the radius of the circle, \r
-
-      cast this to a float, and then calculate the area \r
-
-      using the formula: area = 3.142 * radius * radius\r
-
-      '''\r\n"
-  - path: course1/unit1/lesson1/lessonpart9/q2.py
-    content: "'''\r
-
-      ask the user for the principal amount, \r
-
-      the rate of interest, and the time in whole years. \r
-
-      Use the formula: \r
-
-      \  simple interest = (principal * rate * time) / 100\r
-
-      '''\r\n"
-  - path: course1/unit1/lesson2/lessonpart3/hello.py
-    content: "def hello_world():\r
-
-      \  print(\"Hello World!\")\r
-
-      \r
-
-      # main program\r
-
-      hello_world()"
-  - path: course1/unit1/lesson2/lessonpart7/chatbot_sub.py
-    content: "def say_hello():\r
-
-      \  name = input(\"What is your name? \")\r
-
-      \  print(\"Hello, \", name, \"!\")\r
-
-      \r
-
-      def fav_subject():\r
-
-      \  subject = input(\"What is your favourite subject\")\r
-
-      \  print(subject, \"is a great subject!\")\r
-
-      \r
-
-      # main program\r
-
-      say_hello()\r
-
-      fav_subject()"
-  - path: course1/unit1/lesson2/lessonpart7/draw_square.py
-    content: "def horizontal():\r
-
-      \  print(\"******\")\r
-
-      \r
-
-      def vertical():\r
-
-      \  print(\"*    *\")\r
-
-      \r
-
-      # main program\r
-
-      horizontal()\r
-
-      vertical()\r
-
-      vertical()\r
-
-      vertical()\r
-
-      vertical()\r
-
-      horizontal()"
-  - path: course1/unit1/lesson2/lessonpart5/proc.py
-    content: "def say_hello():\r
-
-      \  name = input(\"What is your name? \")\r
-
-      \  print(\"Hello, \", name, \"!\")\r
-
-      \r
-
-      def fav_subject():\r
-
-      \  subject = input(\"What is your favourite subject\")\r
-
-      \  print(subject, \"is a great subject!\")\r
-
-      \r
-
-      # main program\r
-
-      say_hello()\r
-
-      fav_subject()"
-  - path: course1/unit1/lesson2/lessonpart5/func.py
-    content: "def get_name():\r
-
-      \  ans = input(\"What is your name? \")\r
-
-      \  return ans\r
-
-      \r
-
-      # main program\r
-
-      name = get_name()\r
-
-      print(\"Hello, \", name, \"!\")"
-  - path: course1/unit1/lesson2/lessonpart6/sq_root.py
-    content: "def square_root(x):\r
-
-      \  return x ** 0.5\r
-
-      \r
-
-      print(square_root(9))  "
-  - path: course1/unit1/lesson2/lessonpart6/bmi_calc.py
-    content: "def calc_bmi(height, weight):\r
-
-      \  bmi = weight / (height * height)\r
-
-      \  return bmi\r
-
-      \r
-
-      # main program\r
-
-      height = float(input(\"Enter your height in metres: \"))\r
-
-      weight = float(input(\"Enter your weight in kilograms: \"))\r
-
-      bmi = calc_bmi(height, weight)\r
-
-      print(\"Your BMI is: \", bmi)"
-  - path: course1/unit1/lesson2/lessonpart6/greet.py
-    content: "def greet(greeting): # greeting is a 'parameter'\r
-
-      \  print(greeting)    # output the value of the greeting parameter\r
-
-      \r
-
-      # main program\r
-
-      greet(\"Hello World!\")    # \"Hello World!\" is passed \r
-
-      greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
-  - path: course1/unit1/lesson2/lessonpart1/area_calc.py
-    content: "def calc_area(width, height):\r
-
-      \  return width * height\r
-
-      \r
-
-      # main program\r
-
-      w = float(input(\"Enter the width in metres: \"))\r
-
-      h = float(input(\"Enter the height in metres: \"))\r
-
-      area = calc_area(w, h)\r
-
-      print(\"The area is:\", area, \"square metres\")"
-  - path: course1/unit1/lesson2/lessonpart1/cuboid.py
-    content: "'''\r
-
-      Calculate the volume of a cuboid \r
-
-      using width, height, and depth\r
-
-      '''\r
-
-      \r
-
-      # write your code here\r\n"
-  - path: course1/unit1/lesson2/lessonpart4/capstone_quiz.py
-    content: "import random\r
-
-      \r
-
-      def generate_question():\r
-
-      \    a = random.randint(1,10)\r
-
-      \    b = random.randint(1,10)\r
-
-      \    print(\"what is\", a, \"*\", b, \"?\")\r
-
-      \    return a * b\r
-
-      \r
-
-      def ask_question():\r
-
-      \    generate_question()\r
-
-      \    get_answer()\r
-
-      \    check_answer()\r
-
-      \r
-
-      # main program\r
-
-      ask_question()\r
-
-      ask_question()\r
-
-      ask_question()\r
-
-      output_score()"
-  - path: course1/unit2/lesson1/lessonpart5/a1_simple.py
-    content: "x = 10\r
-
-      y = 5\r
-
-      z = x + y\r
-
-      print(z)"
   - path: course1/unit2/lesson1/lessonpart6/a2_simplepractice.py
     content: "print(7 + 3)\r
 
@@ -371,25 +55,6 @@ files:
       result = 8 % 2\r
 
       print(result)"
-  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
-    content: "slices = 40\r
-
-      people = 12\r
-
-      cal_per_slice = 120\r
-
-      slices_each = slices // people                 # DIV to get whole number
-      of slices each\r
-
-      slices_left = slices %  people                 # MOD to get remaining
-      slices\r
-
-      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
-      per person\r
-
-      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
-
-      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit2/lesson1/lessonpart21/q1.py
     content: "'''\r
 
@@ -664,302 +329,10 @@ files:
       \    finished = True\r
 
       print(\"Average = \", total / count)  "
-  - path: course1/unit2/lesson2/lessonpart12/b6_exercises.py
-    content: "''' 1. Shopping Bill\r
-
-      Input the prices of three items. Calculate the total and output it.\r
-
-      '''\r
-
-      item1 = None\r
-
-      item2 = None\r
-
-      item3 = None\r
-
-      total = None\r
-
-      print(total)\r
-
-      \r
-
-      ''' 2. Weekly Pay\r
-
-      Input the hourly pay rate and hours worked. Calculate the weekly gross pay
-      by multiplying hourly pay rate by hours worked.\r
-
-      Then take off 20% for tax (or calculate 80% of the gross value, which is
-      the same thing) to get net pay.\r
-
-      Round this to 2 decimal places.\r
-
-      Example: If hourly rate is 14.00 and hours worked is 20, then net pay is
-      (14 * 20) * 80/100 = £224.00\r
-
-      '''\r
-
-      hourly_rate = None\r
-
-      hours_worked = None\r
-
-      net_pay = None\r
-
-      print(net_pay)\r
-
-      \r
-
-      ''' 3. Movie Duration\r
-
-      Write a function that takes as a parameter the length of a movie in
-      minutes.\r
-
-      Calculate the duration in hours and minutes, returning a string containing
-      hours:minutes.\r
-
-      '''\r
-
-      def movie(minutes):\r
-
-      \    hours = None\r
-
-      \    mins = None\r
-
-      \    result = None\r
-
-      \    return result\r
-
-      # main program\r
-
-      print(movie(123))\r
-
-      \r
-
-      ''' 4. Loan Interest\r
-
-      You have borrowed money from a bank. The bank has loaned you an amount,
-      with a fixed rate of interest per year, given as a percentage.\r
-
-      Input the amount, percentage interest rate and years elapsed.\r
-
-      The program will calculate simple interest using formula: interest =
-      (amount × rate × years) / 100.\r
-
-      Output the interest to 2 decimal places.\r
-
-      '''\r
-
-      amount = None\r
-
-      rate = None\r
-
-      years = None\r
-
-      interest = None\r
-
-      print(interest)\r
-
-      \r
-
-      ''' 5. Energy Bill\r
-
-      An energy bill consists of an amount for the energy used at cheap rate,
-      plus an amount for the energy used at peak rate.\r
-
-      Input the cheap rate cost per unit and units used at cheap rate, then
-      input peak rate cost per unit and units used at peak rate.\r
-
-      For each rate, the cost is calculated by: cost = units × rate\r
-
-      Example: (0.15 * 245) + (0.49 * 180) = £124.95\r
-
-      Calculate the cost and output the value. Round the cost to 2 decimal
-      places.\r
-
-      '''\r
-
-      cheap_rate = None\r
-
-      cheap_units = None\r
-
-      peak_rate = None\r
-
-      peak_units = None\r
-
-      total_cost = None\r
-
-      print(total_cost)\r
-
-      \r
-
-      ''' 6. Change Calculator\r
-
-      Write a program to output the quantity and value of each coin you need to
-      use to give someone the correct change.\r
-
-      Coins available are £1 (100p), 50p, 20p, 10p, 5p, 2p and 1p.\r
-
-      Example input: £3.48\r
-
-      Example output: 3 x £1, 2 x 20p, 1 x 5p, 1 x 2p, 1 x 1p\r
-
-      Hint: use floor division and possibly modulus\r
-
-      '''\r
-
-      amount = 3.71 # try different values here\r
-
-      # Logic to calculate coins goes here\r
-
-      \r\n"
-  - path: course1/unit2/lesson2/lessonpart12/q1.py
-    content: "''' 1. Shopping Bill\r
-
-      Input the prices of three items. \r
-
-      Calculate the total and output it.\r
-
-      Replace None below with your code.\r
-
-      '''\r
-
-      item1 = None\r
-
-      item2 = None\r
-
-      item3 = None\r
-
-      total = None\r
-
-      print(total)"
-  - path: course1/unit2/lesson2/lessonpart12/q2.py
-    content: "''' 2. Weekly Pay\r
-
-      Input the hourly pay rate and hours worked. \r
-
-      Calculate the weekly gross pay \r
-
-      by multiplying hourly pay rate by hours worked.\r
-
-      Then take off 20% for tax (or calculate 80% of the gross value, \r
-
-      which is the same thing) to get net pay.\r
-
-      Example: If hourly rate is 14.00 and hours worked is 20, \r
-
-      then net pay is (14 * 20) * 80/100 = £224.00\r
-
-      Replace None in the code below with your code.\r
-
-      '''\r
-
-      hourly_rate = None\r
-
-      hours_worked = None\r
-
-      net_pay = None\r
-
-      print(net_pay)"
-  - path: course1/unit2/lesson2/lessonpart12/q3.py
-    content: "''' 3. Movie Duration\r
-
-      Write a function that takes as a parameter the length of a movie in
-      minutes.\r
-
-      Calculate the duration in hours and minutes, returning a string containing
-      hours:minutes.\r
-
-      '''\r
-
-      def movie(minutes):\r
-
-      \    hours = None\r
-
-      \    mins = None\r
-
-      \    result = None\r
-
-      \    return result\r
-
-      # main program\r
-
-      print(movie(123))"
-  - path: course1/unit2/lesson2/lessonpart12/q4.py
-    content: "''' 4. Loan Interest\r
-
-      You have borrowed money from a bank. The bank has loaned you an amount,
-      with a fixed rate of interest per year, given as a percentage.\r
-
-      Input the amount, percentage interest rate and years elapsed.\r
-
-      The program will calculate simple interest using formula: interest =
-      (amount × rate × years) / 100.\r
-
-      Output the interest to 2 decimal places.\r
-
-      '''\r
-
-      amount = None\r
-
-      rate = None\r
-
-      years = None\r
-
-      interest = None\r
-
-      print(interest)"
-  - path: course1/unit2/lesson2/lessonpart12/q5.py
-    content: "''' 5. Energy Bill\r
-
-      An energy bill consists of an amount for the energy used at cheap rate,
-      plus an amount for the energy used at peak rate.\r
-
-      Input the cheap rate cost per unit and units used at cheap rate, then
-      input peak rate cost per unit and units used at peak rate.\r
-
-      For each rate, the cost is calculated by: cost = units × rate\r
-
-      Example: (0.15 * 245) + (0.49 * 180) = £124.95\r
-
-      Calculate the cost and output the value. Round the cost to 2 decimal
-      places.\r
-
-      '''\r
-
-      cheap_rate = None\r
-
-      cheap_units = None\r
-
-      peak_rate = None\r
-
-      peak_units = None\r
-
-      total_cost = None\r
-
-      print(total_cost)"
   - path: course1/unit2/lesson2/lessonpart13/vending.py
     content: "def calc_change(amount):\r
 
       \    # write your code here"
-  - path: course1/unit3/lesson1/lessonpart7/a2_length_max.py
-    content: "# password length checker\r
-
-      password = input(\"password\")\r
-
-      pw_length = 10 # change this line\r
-
-      print(\"Your password has\", 10, \"characters\") # change this line"
-  - path: course1/unit3/lesson1/lessonpart6/a1_length_pwd.py
-    content: "# word game scorer\r
-
-      word = input(\"Enter a word\")\r
-
-      word_length = len(word)\r
-
-      score = word_length * 5\r
-
-      print(\"That word is worth\", score, \"points!\")\r
-
-      \r\n"
   - path: course1/unit3/lesson1/lessonpart10/a3_substrings.py
     content: "# substrings practical exercise\r
 
@@ -1258,44 +631,6 @@ files:
       # TODO: write a statement here to call the function\r
 
       # and print the return value"
-  - path: course1/unit4/lesson2/lessonpart1/scores.py
-    content: "'''\r
-
-      The function is designed to check test scores. \r
-
-      The student will pass only if both score1 and score2 are more than 50.\r
-
-      Extension: improve the program so that it only returns \"pass\" \r
-
-      if both scores are over 50 and the total is at least 120.\r
-
-      '''\r
-
-      def checker(score1, score2):\r
-
-      \    if True:\r
-
-      \    # TODO: delete 'True' and write your condition above\r
-
-      \        return \"pass\"\r
-
-      \    else:\r
-
-      \        return \"fail\"\r
-
-      \r
-
-      # main program\r
-
-      print(checker(45,51))\r
-
-      print(checker(52,51))\r
-
-      print(checker(61,63))\r
-
-      \r
-
-      \r\n"
   - path: course1/unit4/lesson2/lessonpart5/example1.py
     content: "def check_number(num):\r
 
@@ -1349,133 +684,6 @@ files:
       Invalid\r
 
       print(is_valid_next_word(\"avocado\", \"orange\"))      # Output: Invalid"
-  - path: course1/unit4/lesson2/lessonpart6/q1.py
-    content: "'''\r
-
-      The student must be at least 18 years old.\r
-
-      One of their three exam grades must be an A.\r
-
-      '''\r
-
-      def eligible(age, grades):\r
-
-      \    pass\r
-
-      # delete 'pass' and write your code here\r
-
-      \r
-
-      \r
-
-      # main program\r
-
-      print(eligible(18, \"ACC\"))    # prints Eligible\r
-
-      print(eligible(17, \"ACC\"))    # prints Not eligible\r
-
-      print(eligible(19, \"BCD\"))    # prints Not eligible\r
-
-      print(eligible(19, \"BCA\"))    # prints Eligible\r
-
-      \r
-
-      \r
-
-      \r\n"
-  - path: course1/unit4/lesson2/lessonpart6/q2.py
-    content: "'''\r
-
-      print \"Safe\" if the dish does not contain the \r
-
-      customer's allergens, otherwise print \"Not safe\".\r
-
-      '''\r
-
-      def safe_to_eat(ingredients, allergen1, allergen2):\r
-
-      \    pass\r
-
-      # delete 'pass' and write your code here\r
-
-      \r
-
-      # main program\r
-
-      safe_to_eat(\"milk, peanuts, sugar\", \"peanuts\", \"wheat\")      #
-      prints Not safe\r
-
-      safe_to_eat(\"milk, sugar, fruit\", \"peanuts\", \"wheat\")        #
-      prints Safe\r
-
-      safe_to_eat(\"wheat, peanuts, butter\", \"shellfish\", \"wheat\")  #
-      prints Not safe\r
-
-      safe_to_eat(\"wheat, peanuts, butter\", \"\", \"\")                #
-      prints Safe\r
-
-      \r
-
-      \r\n"
-  - path: course1/unit4/lesson2/lessonpart7/q1solution.py
-    content: "'''\r
-
-      The student must be at least 18 years old.\r
-
-      One of their three exam grades must be an A.\r
-
-      '''\r
-
-      def eligible(age, grades):\r
-
-      \    if age >= 18 and \"A\" in grades:\r
-
-      \        return \"Eligible\"\r
-
-      \    else:\r
-
-      \        return \"Not eligible\"\r
-
-      \r
-
-      # main program\r
-
-      print(eligible(18, \"ACC\"))    # prints Eligible\r
-
-      print(eligible(17, \"ACC\"))    # prints Not eligible\r
-
-      print(eligible(19, \"BCD\"))    # prints Not eligible\r
-
-      print(eligible(19, \"BCA\"))    # prints Eligible\r
-
-      \r
-
-      \r\n"
-  - path: course1/unit4/lesson2/lessonpart7/q2solution.py
-    content: "def safe_to_eat(ingredients, allergen1, allergen2):\r
-
-      \    if allergen1 in ingredients or allergen2 in ingredients:\r
-
-      \        print(\"Not safe\")\r
-
-      \    else:\r
-
-      \        print(\"Safe\")\r
-
-      \r
-
-      # Test cases\r
-
-      safe_to_eat(\"milk, peanuts, sugar\", \"peanuts\", \"wheat\")      # Not
-      safe\r
-
-      safe_to_eat(\"milk, sugar, fruit\", \"peanuts\", \"wheat\")        #
-      Safe\r
-
-      safe_to_eat(\"wheat, peanuts, butter\", \"shellfish\", \"wheat\")  # Not
-      safe\r
-
-      safe_to_eat(\"wheat, peanuts, butter\", \"\", \"\")                # Safe"
   - path: course1/unit4/lesson3/lessonpart2/coffee.py
     content: "# Ask for drink choice\r
 
@@ -1655,320 +863,6 @@ files:
       \r
 
       \    "
-  - path: course1/unit4/lesson4/lessonpart3/grades.py
-    content: "def categorize_grade(grade):\r
-
-      \    match grade:\r
-
-      \        case 'A':\r
-
-      \            return \"Distinction\"\r
-
-      \        case 'B':\r
-
-      \            return \"Merit\"\r
-
-      \        case 'C':\r
-
-      \            return \"Pass\"\r
-
-      \        case 'D':\r
-
-      \            return \"Fail\"\r
-
-      \        case _:\r
-
-      \            return \"Invalid grade\"\r
-
-      \r
-
-      print(categorize_grade(\"A\"))\r\n"
-  - path: course1/unit4/lesson4/lessonpart4/q1.py
-    content: "'''\r
-
-      If the animal is \"dog\", print \"Mammal\"\r
-
-      If the animal is \"snake\", print \"Reptile\"\r
-
-      If the animal is \"carp\", print \"Fish\"\r
-
-      If the animal is \"eagle\", print \"Bird\"\r
-
-      For any other animal, print \"Unknown\"\r
-
-      '''\r
-
-      def classify(animal):\r
-
-      \    match animal:\r
-
-      \        case 'dog':\r
-
-      \            print(\"Mammal\") \r
-
-      \    # TODO - write your code here\r
-
-      \r
-
-      \r
-
-      # main program\r
-
-      classify(\"dog\")       # prints \"Mammal\"\r
-
-      classify(\"snake\")     # prints \"Reptile\"\r
-
-      classify(\"carp\")      # prints \"Fish\"\r
-
-      classify(\"eagle\")     # prints \"Bird\"\r
-
-      classify(\"capybara\")  # prints \"Unknown\"\r
-
-      \r
-
-      \r
-
-      \r\n"
-  - path: course1/unit4/lesson4/lessonpart4/q2.py
-    content: "'''\r
-
-      If the zone is 1 or 2 return \"Central fare\"\r
-
-      If the zone is 3 or 4, return \"Suburban fare\"\r
-
-      If the zone is 5 or 6, return \"Outer fare\"\r
-
-      For any other zone, return \"Invalid zone\"\r
-
-      '''\r
-
-      def check_zone(zone):\r
-
-      \   # write your code here\r
-
-      \r
-
-      \r
-
-      # main program\r
-
-      print(check_zone(1))       # prints \"Central fare\"\r
-
-      print(check_zone(2))       # prints \"Central fare\"\r
-
-      print(check_zone(4))       # prints \"Suburban fare\"\r
-
-      print(check_zone(5))       # prints \"Outer fare\"\r
-
-      print(check_zone(7))       # prints \"Invalid zone\"\r
-
-      \r
-
-      \r
-
-      \r
-
-      \r\n"
-  - path: course1/unit4/lesson4/lessonpart5/q1solution.py
-    content: "def classify(animal):\r
-
-      \    match animal:\r
-
-      \        case 'dog':\r
-
-      \            print(\"Mammal\")\r
-
-      \        case 'snake':\r
-
-      \            print(\"Reptile\")\r
-
-      \        case 'carp':\r
-
-      \            print(\"Fish\")\r
-
-      \        case 'eagle':\r
-
-      \            print(\"Bird\")\r
-
-      \        case _:\r
-
-      \            print(\"Unknown\")\r
-
-      \r
-
-      # main program\r
-
-      classify(\"dog\")       # prints \"Mammal\"\r
-
-      classify(\"snake\")     # prints \"Reptile\"\r
-
-      classify(\"carp\")      # prints \"Fish\"\r
-
-      classify(\"eagle\")     # prints \"Bird\"\r
-
-      classify(\"capybara\")  # prints \"Unknown\""
-  - path: course1/unit4/lesson4/lessonpart5/q2solution.py
-    content: "def check_zone(zone):\r
-
-      \    match zone:\r
-
-      \        case 1 | 2:\r
-
-      \            return \"Central fare\"\r
-
-      \        case 3 | 4:\r
-
-      \            return \"Suburban fare\"\r
-
-      \        case 5 | 6:\r
-
-      \            return \"Outer fare\"\r
-
-      \        case _:\r
-
-      \            return \"Invalid zone\"\r
-
-      \r
-
-      # main program\r
-
-      print(check_zone(1))       # prints \"Central fare\"\r
-
-      print(check_zone(2))       # prints \"Central fare\"\r
-
-      print(check_zone(4))       # prints \"Suburban fare\"\r
-
-      print(check_zone(5))       # prints \"Outer fare\"\r
-
-      print(check_zone(7))       # prints \"Invalid zone\""
-  - path: course1/unit5/lesson1/lessonpart1/password_while.py
-    content: "password = \"\"\r
-
-      while len(password) < 10:\r
-
-      \  password = input(\"type a new password, minimum length 10 characters:
-      \")\r
-
-      print(f\"your new password is {password}\")"
-  - path: course1/unit5/lesson1/lessonpart3/get_password1.py
-    content: "def get_password():\r
-
-      \  \r
-
-      \  # input password repeatedly until length at least 10 characters\r
-
-      \  password = \"\"\r
-
-      \  while len(password) < 10:\r
-
-      \    password = input(\"type a new password, minimum length 10 characters:
-      \")\r
-
-      \  \r
-
-      \  # input password again until it matches first password\r
-
-      \  password_repeat = \"\"\r
-
-      \  while password_repeat != password:\r
-
-      \    password_repeat = input(\"type your new password again: \")\r
-
-      \  \r
-
-      \  # return the new password (either variable will do as they are the
-      same!)\r
-
-      \  return password\r
-
-      \r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      print(\"Let's set your password!\")\r
-
-      password = get_password()\r
-
-      print(f\"your new password is {password}\")"
-  - path: course1/unit5/lesson1/lessonpart4/fivextable_while.py
-    content: "def five_times_table():\r
-
-      \  # five times table\r
-
-      \  counter = 1\r
-
-      \  while counter < 11:\r
-
-      \    print(f\"5 x {counter} = {5 * counter}\")\r
-
-      \    counter += 1\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      five_times_table()"
-  - path: course1/unit5/lesson1/lessonpart4/countdown_while.py
-    content: "def countdown():\r
-
-      \  # count down from 10\r
-
-      \  counter = 12\r
-
-      \  while counter >= 1:\r
-
-      \    print(f\"{counter} !\")\r
-
-      \    counter -= 1\r
-
-      \  print(\"lift-off !\")\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      countdown()"
-  - path: course1/unit5/lesson2/lessonpart1/password2.py
-    content: "def get_password():\r
-
-      \    # input password repeatedly until it meets all criteria\r
-
-      \    password = \"\"\r
-
-      \    while len(password) < 10 or not password[0].isupper() or '#' not in
-      password:\r
-
-      \        password = input(\"Type new password, min length 10,\" \\\r
-
-      \                          + \" first uppercase, include #: \")\r
-
-      \    \r
-
-      \    # input password again until it matches the first password\r
-
-      \    password_repeat = \"\"\r
-
-      \    while password_repeat != password:\r
-
-      \        password_repeat = input(\"Type your new password again: \")\r
-
-      \    \r
-
-      \    # return the new password\r
-
-      \    return password\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      print(\"Let's set your password!\")\r
-
-      password = get_password()\r
-
-      print(f\"your new password is {password}\")"
   - path: course1/unit5/lesson2/lessonpart2/check_password1.py
     content: "def check_password():\r
 
@@ -2094,444 +988,6 @@ files:
       # main program\r
 
       print(\"total = \",sum_scores()) "
-  - path: course1/unit5/lesson4/lessonpart2/post_conditioned.py
-    content: "# Python 'fake' post-conditioned loop\r
-
-      price = 150\r
-
-      total = 0\r
-
-      looping = True\r
-
-      while looping:\r
-
-      \    coin = int(input())\r
-
-      \    total = total + coin\r
-
-      \    if total >= price:\r
-
-      \        looping = False \r
-
-      \r
-
-      print(total)"
-  - path: course1/unit5/lesson4/lessonpart1/test_marker.py
-    content: "def test_marker():\r
-
-      \    total = 0\r
-
-      \    count = 0\r
-
-      \    highest = -1\r
-
-      \    lowest = 101\r
-
-      \    finished = False\r
-
-      \    while not finished:\r
-
-      \        score = int(input(\"Enter a test score (0-100) -1 to end: \"))\r
-
-      \        while score < -1 or score > 100:\r
-
-      \            score = int(input(\"Invalid, retry: \"))\r
-
-      \        if score == -1:\r
-
-      \            finished = True\r
-
-      \        else:\r
-
-      \            total = total + score\r
-
-      \            count = count + 1\r
-
-      \            if score > highest:\r
-
-      \                highest = score\r
-
-      \            if score < lowest:\r
-
-      \                lowest = score\r
-
-      \    print(f\"Highest was: {highest}, lowest was: {lowest}\")\r
-
-      \    print(f\"Average was: {total/count}\")\r
-
-      \    return \r
-
-      \r
-
-      # main program\r
-
-      test_marker()"
-  - path: course1/unit5/lesson4/lessonpart1/word_game.py
-    content: "def word_score():\r
-
-      \    # initialise total score \r
-
-      \    # initialise Boolean flag (if using)\r
-
-      \    # while ...\r
-
-      \        # input letter\r
-
-      \        # check for sentinel\r
-
-      \        # calculate letter score\r
-
-      \        # add to total score\r
-
-      \    # return total score\r
-
-      \r
-
-      # main program\r
-
-      print(\"Enter a word, letter by letter,\")\r
-
-      print(\"full stop to finish.\")\r
-
-      print(f\"Your word scored: {word_score()}\")\r\n"
-  - path: course1/unit5/lesson4/lessonpart3/word_game_solution.py
-    content: "def word_score():\r
-
-      \    # initialise total score \r
-
-      \    total_score = 0\r
-
-      \    # initialise Boolean flag (if using)\r
-
-      \    done = False\r
-
-      \    while not done:\r
-
-      \        # input letter\r
-
-      \        letter = input(\"Enter a letter: \")\r
-
-      \        # check for sentinel\r
-
-      \        if letter == \".\":\r
-
-      \            done = True\r
-
-      \        # calculate letter score\r
-
-      \        else:\r
-
-      \            if letter in \"aeiou\":\r
-
-      \                score = 1\r
-
-      \            elif letter in \"qxz\":\r
-
-      \                score = 3\r
-
-      \            else:\r
-
-      \                score = 2\r
-
-      \        # add to total score\r
-
-      \            total_score += score\r
-
-      \    # return total score\r
-
-      \    return total_score\r
-
-      \r
-
-      # main program\r
-
-      print(\"Enter a word, letter by letter,\")\r
-
-      print(\"full stop to finish.\")\r
-
-      print(f\"Your word scored: {word_score()}\")"
-  - path: course1/unit5/lesson4/lessonpart3/word_game_solution_structured.py
-    content: "# New version with separate functions\r
-
-      # for input & score calculation and main loop\r
-
-      \r
-
-      def get_letter():\r
-
-      \    # input letter and score it\r
-
-      \    letter = input(\"Enter a letter: \")\r
-
-      \    if letter == \".\":\r
-
-      \        return -1 # sentinel value\r
-
-      \    elif letter in \"aeiou\":\r
-
-      \        return 1\r
-
-      \    elif letter in \"qxz\":\r
-
-      \        return 3\r
-
-      \    else:\r
-
-      \        return 2\r
-
-      \    \r
-
-      def word_score():\r
-
-      \    # calculate word score\r
-
-      \    total_score = 0\r
-
-      \    done = False\r
-
-      \    while not done:\r
-
-      \        score = get_letter()\r
-
-      \        if score == -1: # input was \".\"\r
-
-      \            done = True\r
-
-      \        else:\r
-
-      \            total_score += score\r
-
-      \    return total_score\r
-
-      \r
-
-      # main program\r
-
-      print(\"Enter a word, letter by letter,\")\r
-
-      print(\"full stop to finish.\")\r
-
-      print(f\"Your word scored: {word_score()}\")"
-  - path: course1/unit5/lesson4/lessonpart6/countdown_buggy.py
-    content: "def countdown():\r
-
-      \  # count down from 10 in twos\r
-
-      \  counter = 10\r
-
-      \  while counter != 1:\r
-
-      \    print(f\"{counter} !\")\r
-
-      \    counter -= 2\r
-
-      \  print(\"lift-off !\")\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      countdown()"
-  - path: course1/unit5/lesson4/lessonpart6/while_true.py
-    content: "def get_score():\r
-
-      \  score = int(input(\"Enter a score between 1 and 100: \"))\r
-
-      \  while True:\r
-
-      \      if score < 1 or score > 100:\r
-
-      \          print(\"Invalid input. Please try again.\")\r
-
-      \          score = int(input(\"Enter a score between 1 and 100: \"))\r
-
-      \      else:\r
-
-      \          return score\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      print(get_score())"
-  - path: course1/unit5/lesson4/lessonpart4/q1.py
-    content: "'''\r
-
-      Print a countdown from the given number down to 1,\r
-
-      then print 'Lift off!'.\r
-
-      '''\r
-
-      def countdown(start):\r
-
-      \    pass # TODO: delete 'pass' and write your code here\r
-
-      \r
-
-      # main program\r
-
-      countdown(5)\r
-
-      countdown(10)\r\n"
-  - path: course1/unit5/lesson4/lessonpart4/q2.py
-    content: "'''\r
-
-      Repeatedly ask the user for their age until they enter\r
-
-      a valid value between 0 and 120. Then print 'Age accepted'.\r
-
-      '''\r
-
-      def get_valid_age():\r
-
-      \    pass  # TODO: delete 'pass' and write your code here\r
-
-      \r
-
-      # main program\r
-
-      get_valid_age()"
-  - path: course1/unit5/lesson4/lessonpart4/q3.py
-    content: "'''\r
-
-      Write a function 'get_price' that returns the price of an item:\r
-
-      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
-
-      Then write the 'run_machine' function that repeatedly\r
-
-      inputs items and calls 'get_price' to get the price of the item\r
-
-      until the user types 'quit', and then outputs the total cost.\r
-
-      '''\r
-
-      def get_price(item):\r
-
-      \    pass  # TODO: delete 'pass' and write your code here\r
-
-      \r
-
-      \r
-
-      def run_machine():\r
-
-      \    pass  # TODO: delete 'pass' and write your code here\r
-
-      \r
-
-      # main program\r
-
-      run_machine()"
-  - path: course1/unit5/lesson4/lessonpart5/q1_solution.py
-    content: "'''\r
-
-      Print a countdown from the given number down to 1,\r
-
-      then print 'Lift off!'.\r
-
-      '''\r
-
-      def countdown(start):\r
-
-      \    while start > 0:\r
-
-      \        print(start)\r
-
-      \        start -= 1\r
-
-      \    print(\"Lift off!\")\r
-
-      \r
-
-      # main program\r
-
-      countdown(5)\r
-
-      countdown(10)"
-  - path: course1/unit5/lesson4/lessonpart5/q2_solution.py
-    content: "'''\r
-
-      Repeatedly ask the user for their age until they enter\r
-
-      a valid value between 0 and 120. Then print 'Age accepted'.\r
-
-      '''\r
-
-      def get_valid_age():\r
-
-      \    age = int(input(\"Enter your age: \"))\r
-
-      \    while age < 0 or age > 120:\r
-
-      \        age = int(input(\"Invalid age. Enter your age: \"))\r
-
-      \    print(\"Age accepted\")\r
-
-      \r
-
-      # main program\r
-
-      get_valid_age()"
-  - path: course1/unit5/lesson4/lessonpart5/q3_solution.py
-    content: "'''\r
-
-      Write a function 'get_price' that returns the price of an item:\r
-
-      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
-
-      Then write the 'run_machine' function that repeatedly\r
-
-      inputs items and calls 'get_price' to get the price of the item\r
-
-      until the user types 'quit', and then outputs the total cost.\r
-
-      '''\r
-
-      def get_price(item):\r
-
-      \    if item == \"cola\":\r
-
-      \        return 2.00\r
-
-      \    elif item == \"crisps\":\r
-
-      \        return 1.20\r
-
-      \    elif item == \"water\":\r
-
-      \        return 1.00\r
-
-      \    else:\r
-
-      \        return 0\r
-
-      \r
-
-      def run_machine():\r
-
-      \    total = 0\r
-
-      \    item = input(\"Enter an item (or 'quit' to finish): \")\r
-
-      \r
-
-      \    while item != \"quit\":\r
-
-      \        total += get_price(item)\r
-
-      \        item = input(\"Enter an item (or 'quit' to finish): \")\r
-
-      \r
-
-      \    print(f\"Total: £{total:.2f}\")\r
-
-      \r
-
-      # main program\r
-
-      run_machine()"
   - path: course1/unit6/lesson1/lessonpart6/shopping_list_app.py
     content: "# Shopping List Program\r
 
@@ -3108,6 +1564,335 @@ files:
       message = \"Iteration makes you better at Python\"\r
 
       print(\"Number of vowels:\", count_vowels(message))"
+  - path: course1/unit2/lesson1/lessonpart5/a1_simple.py
+    content: "x = 10\r
+
+      y = 5\r
+
+      z = x + y\r
+
+      print(z)"
+  - path: course1/unit3/lesson1/lessonpart6/a1_length_pwd.py
+    content: "# word game scorer\r
+
+      word = input(\"Enter a word\")\r
+
+      word_length = len(word)\r
+
+      score = word_length * 5\r
+
+      print(\"That word is worth\", score, \"points!\")\r
+
+      \r\n"
+  - path: course1/unit4/lesson2/lessonpart1/scores.py
+    content: "'''\r
+
+      The function is designed to check test scores. \r
+
+      The student will pass only if both score1 and score2 are more than 50.\r
+
+      Extension: improve the program so that it only returns \"pass\" \r
+
+      if both scores are over 50 and the total is at least 120.\r
+
+      '''\r
+
+      def checker(score1, score2):\r
+
+      \    if True:\r
+
+      \    # TODO: delete 'True' and write your condition above\r
+
+      \        return \"pass\"\r
+
+      \    else:\r
+
+      \        return \"fail\"\r
+
+      \r
+
+      # main program\r
+
+      print(checker(45,51))\r
+
+      print(checker(52,51))\r
+
+      print(checker(61,63))\r
+
+      \r
+
+      \r\n"
+  - path: course1/unit4/lesson4/lessonpart3/grades.py
+    content: "def categorize_grade(grade):\r
+
+      \    match grade:\r
+
+      \        case 'A':\r
+
+      \            return \"Distinction\"\r
+
+      \        case 'B':\r
+
+      \            return \"Merit\"\r
+
+      \        case 'C':\r
+
+      \            return \"Pass\"\r
+
+      \        case 'D':\r
+
+      \            return \"Fail\"\r
+
+      \        case _:\r
+
+      \            return \"Invalid grade\"\r
+
+      \r
+
+      print(categorize_grade(\"A\"))\r\n"
+  - path: course1/unit4/lesson4/lessonpart5/q1solution.py
+    content: "def classify(animal):\r
+
+      \    match animal:\r
+
+      \        case 'dog':\r
+
+      \            print(\"Mammal\")\r
+
+      \        case 'snake':\r
+
+      \            print(\"Reptile\")\r
+
+      \        case 'carp':\r
+
+      \            print(\"Fish\")\r
+
+      \        case 'eagle':\r
+
+      \            print(\"Bird\")\r
+
+      \        case _:\r
+
+      \            print(\"Unknown\")\r
+
+      \r
+
+      # main program\r
+
+      classify(\"dog\")       # prints \"Mammal\"\r
+
+      classify(\"snake\")     # prints \"Reptile\"\r
+
+      classify(\"carp\")      # prints \"Fish\"\r
+
+      classify(\"eagle\")     # prints \"Bird\"\r
+
+      classify(\"capybara\")  # prints \"Unknown\""
+  - path: course1/unit4/lesson4/lessonpart5/q2solution.py
+    content: "def check_zone(zone):\r
+
+      \    match zone:\r
+
+      \        case 1 | 2:\r
+
+      \            return \"Central fare\"\r
+
+      \        case 3 | 4:\r
+
+      \            return \"Suburban fare\"\r
+
+      \        case 5 | 6:\r
+
+      \            return \"Outer fare\"\r
+
+      \        case _:\r
+
+      \            return \"Invalid zone\"\r
+
+      \r
+
+      # main program\r
+
+      print(check_zone(1))       # prints \"Central fare\"\r
+
+      print(check_zone(2))       # prints \"Central fare\"\r
+
+      print(check_zone(4))       # prints \"Suburban fare\"\r
+
+      print(check_zone(5))       # prints \"Outer fare\"\r
+
+      print(check_zone(7))       # prints \"Invalid zone\""
+  - path: course1/unit9/lesson1/lessonpart6/records_2D.py
+    content: "'''\r
+
+      Program to implement student \"records\" in Python as a 2D array\r
+
+      The pseudocode Student record declaration we are approximating is:\r
+
+      \r
+
+      RECORD Student\r
+
+      \    firstname : String\r
+
+      \    surname : String\r
+
+      \    year : Integer\r
+
+      \    house : String\r
+
+      \    SAT : Integer\r
+
+      \    avg_grade : Real\r
+
+      \    EAL : Boolean\r
+
+      ENDRECORD\r
+
+      '''\r
+
+      # Create empty student list\r
+
+      students = []\r
+
+      \r
+
+      # Assign constants for field names\r
+
+      FIRSTNAME = 0\r
+
+      SURNAME = 1\r
+
+      YEAR = 2\r
+
+      HOUSE = 3\r
+
+      SAT = 4\r
+
+      AVERAGE_GRADE = 5\r
+
+      EAL = 6\r
+
+      \r
+
+      # append new students as sublists\r
+
+      students.append(['Taha', 'Hussain', 10, 'Pankhurst', 104, 93.5, False])\r
+
+      students.append(['Aisha', 'Khan', 9, 'Nightingale', 91, 88.0, True])\r
+
+      students.append(['Leah', 'Smith', 11, 'Pankhurst', 120, 95.2, False])\r
+
+      \r
+
+      # Program to determine who has the highest SAT\r
+
+      # initialise variables\r
+
+      highestSAT = 0\r
+
+      position = 0\r
+
+      \r
+
+      # Iterate over list of students\r
+
+      # This algorithm is essentially the same as the pseudocode algorithm
+      earlier\r
+
+      # We have changed only the field referencing style, from .SAT to [SAT].\r
+
+      for i in range(len(students)):\r
+
+      \    if students[i][SAT] > highestSAT:   # use SAT as the second index,
+      not a dotted field name\r
+
+      \        highestSAT = students[i][SAT]\r
+
+      \        position = i\r
+
+      \r
+
+      print(students[position][FIRSTNAME], ' has the highest SAT score')"
+  - path: course1/unit9/lesson1/lessonpart7/records_OOP.py
+    content: "# Program to implement student \"records\" using a Python class\r
+
+      # This mirrors the pseudocode Student record declaration.\r
+
+      \r
+
+      class Student:\r
+
+      \    def __init__(self, firstname, surname, year, house, SAT,
+      average_grade, EAL):\r
+
+      \        self.firstname = firstname\r
+
+      \        self.surname = surname\r
+
+      \        self.year = year\r
+
+      \        self.house = house\r
+
+      \        self.SAT = SAT\r
+
+      \        self.average_grade = average_grade\r
+
+      \        self.EAL = EAL\r
+
+      \r
+
+      \r
+
+      # Create a list of Student objects\r
+
+      students = [\r
+
+      \    Student(\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5,
+      False),\r
+
+      \    Student(\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True),\r
+
+      \    Student(\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5,
+      False),\r
+
+      \    Student(\"Sophie\", \"Turner\", 8, \"Barnardo\", 87, 95.0, False),\r
+
+      \    Student(\"Hannah\", \"Lewis\", 8, \"Barnardo\", 89, 97.0, False)\r
+
+      ]\r
+
+      \r
+
+      \r
+
+      # Program to determine who has the highest SAT score\r
+
+      highestSAT = 0\r
+
+      position = 0\r
+
+      \r
+
+      # Iterate over the list of Student objects\r
+
+      # This is the same algorithm as the pseudocode version,\r
+
+      # but we use object attributes instead of list indices.\r
+
+      for i in range(len(students)):\r
+
+      \    if students[i].SAT > highestSAT:\r
+
+      \        highestSAT = students[i].SAT\r
+
+      \        position = i\r
+
+      \r
+
+      # Output the result\r
+
+      print(students[position].firstname, \"has the highest SAT score\")"
   - path: course1/unit7/lesson2/lessonpart1/five_times_table_for.py
     content: "def five_times_table():\r
 
@@ -3203,73 +1988,642 @@ files:
       countdown(\"*\",  10)\r
 
       countdown(\"go\", 5)"
-  - path: course1/unit7/lesson2/lessonpart5/journey_planner.py
-    content: "# Railway Journey Planner — Starter Program\r
+  - path: course1/unit5/lesson4/lessonpart2/post_conditioned.py
+    content: "# Python 'fake' post-conditioned loop\r
+
+      price = 150\r
+
+      total = 0\r
+
+      looping = True\r
+
+      while looping:\r
+
+      \    coin = int(input())\r
+
+      \    total = total + coin\r
+
+      \    if total >= price:\r
+
+      \        looping = False \r
 
       \r
 
-      # List of station names\r
+      print(total)"
+  - path: course1/unit5/lesson4/lessonpart1/test_marker.py
+    content: "def test_marker():\r
 
-      stations = [\"Aldford\", \"Bramley\", \"Croxley\", \"Dunford\",
-      \"Elmstead\", \"Fenton\"]\r
+      \    total = 0\r
 
-      \r
+      \    count = 0\r
 
-      # List of journey times between each pair of stations\r
+      \    highest = -1\r
 
-      times = [3, 12, 8, 21, 11]\r
+      \    lowest = 101\r
 
-      \r
+      \    finished = False\r
 
-      def max_station(minutes):\r
+      \    while not finished:\r
 
-      \    \"\"\"\r
+      \        score = int(input(\"Enter a test score (0-100) -1 to end: \"))\r
 
-      \    Returns the index of the last station you can reach\r
+      \        while score < -1 or score > 100:\r
 
-      \    starting from station 0 within the given number of minutes.\r
+      \            score = int(input(\"Invalid, retry: \"))\r
 
-      \    \"\"\"\r
+      \        if score == -1:\r
 
-      \    #TODO Write this function\r
+      \            finished = True\r
 
-      \    pass\r
+      \        else:\r
 
-      \r
+      \            total = total + score\r
 
-      def journey_to(station):\r
+      \            count = count + 1\r
 
-      \    \"\"\"\r
+      \            if score > highest:\r
 
-      \    Returns a string describing the journey from station 0\r
+      \                highest = score\r
 
-      \    up to the station number given.\r
+      \            if score < lowest:\r
 
-      \    Example: \"Aldford through Bramley to Croxley.\"\r
+      \                lowest = score\r
 
-      \    \"\"\"\r
+      \    print(f\"Highest was: {highest}, lowest was: {lowest}\")\r
 
-      \    #TODO Write this function\r
+      \    print(f\"Average was: {total/count}\")\r
 
-      \    pass \r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      print(\"Enter your available minutes:\")\r
-
-      minutes = int(input())\r
+      \    return \r
 
       \r
 
-      last_station = max_station(minutes)\r
+      # main program\r
 
-      journey = journey_to(last_station)\r
+      test_marker()"
+  - path: course1/unit5/lesson4/lessonpart1/word_game.py
+    content: "def word_score():\r
+
+      \    # initialise total score \r
+
+      \    # initialise Boolean flag (if using)\r
+
+      \    # while ...\r
+
+      \        # input letter\r
+
+      \        # check for sentinel\r
+
+      \        # calculate letter score\r
+
+      \        # add to total score\r
+
+      \    # return total score\r
 
       \r
 
-      print(f\"In {minutes} minutes you can travel from {journey}\")"
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")\r\n"
+  - path: course1/unit5/lesson4/lessonpart3/word_game_solution.py
+    content: "def word_score():\r
+
+      \    # initialise total score \r
+
+      \    total_score = 0\r
+
+      \    # initialise Boolean flag (if using)\r
+
+      \    done = False\r
+
+      \    while not done:\r
+
+      \        # input letter\r
+
+      \        letter = input(\"Enter a letter: \")\r
+
+      \        # check for sentinel\r
+
+      \        if letter == \".\":\r
+
+      \            done = True\r
+
+      \        # calculate letter score\r
+
+      \        else:\r
+
+      \            if letter in \"aeiou\":\r
+
+      \                score = 1\r
+
+      \            elif letter in \"qxz\":\r
+
+      \                score = 3\r
+
+      \            else:\r
+
+      \                score = 2\r
+
+      \        # add to total score\r
+
+      \            total_score += score\r
+
+      \    # return total score\r
+
+      \    return total_score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")"
+  - path: course1/unit5/lesson4/lessonpart3/word_game_solution_structured.py
+    content: "# New version with separate functions\r
+
+      # for input & score calculation and main loop\r
+
+      \r
+
+      def get_letter():\r
+
+      \    # input letter and score it\r
+
+      \    letter = input(\"Enter a letter: \")\r
+
+      \    if letter == \".\":\r
+
+      \        return -1 # sentinel value\r
+
+      \    elif letter in \"aeiou\":\r
+
+      \        return 1\r
+
+      \    elif letter in \"qxz\":\r
+
+      \        return 3\r
+
+      \    else:\r
+
+      \        return 2\r
+
+      \    \r
+
+      def word_score():\r
+
+      \    # calculate word score\r
+
+      \    total_score = 0\r
+
+      \    done = False\r
+
+      \    while not done:\r
+
+      \        score = get_letter()\r
+
+      \        if score == -1: # input was \".\"\r
+
+      \            done = True\r
+
+      \        else:\r
+
+      \            total_score += score\r
+
+      \    return total_score\r
+
+      \r
+
+      # main program\r
+
+      print(\"Enter a word, letter by letter,\")\r
+
+      print(\"full stop to finish.\")\r
+
+      print(f\"Your word scored: {word_score()}\")"
+  - path: course1/unit5/lesson4/lessonpart4/q1.py
+    content: "'''\r
+
+      Print a countdown from the given number down to 1,\r
+
+      then print 'Lift off!'.\r
+
+      '''\r
+
+      def countdown(start):\r
+
+      \    pass # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      countdown(5)\r
+
+      countdown(10)\r\n"
+  - path: course1/unit5/lesson4/lessonpart4/q2.py
+    content: "'''\r
+
+      Repeatedly ask the user for their age until they enter\r
+
+      a valid value between 0 and 120. Then print 'Age accepted'.\r
+
+      '''\r
+
+      def get_valid_age():\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      get_valid_age()"
+  - path: course1/unit5/lesson4/lessonpart4/q3.py
+    content: "'''\r
+
+      Write a function 'get_price' that returns the price of an item:\r
+
+      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
+
+      Then write the 'run_machine' function that repeatedly\r
+
+      inputs items and calls 'get_price' to get the price of the item\r
+
+      until the user types 'quit', and then outputs the total cost.\r
+
+      '''\r
+
+      def get_price(item):\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      \r
+
+      def run_machine():\r
+
+      \    pass  # TODO: delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      run_machine()"
+  - path: course1/unit5/lesson4/lessonpart5/q1_solution.py
+    content: "'''\r
+
+      Print a countdown from the given number down to 1,\r
+
+      then print 'Lift off!'.\r
+
+      '''\r
+
+      def countdown(start):\r
+
+      \    while start > 0:\r
+
+      \        print(start)\r
+
+      \        start -= 1\r
+
+      \    print(\"Lift off!\")\r
+
+      \r
+
+      # main program\r
+
+      countdown(5)\r
+
+      countdown(10)"
+  - path: course1/unit5/lesson4/lessonpart5/q2_solution.py
+    content: "'''\r
+
+      Repeatedly ask the user for their age until they enter\r
+
+      a valid value between 0 and 120. Then print 'Age accepted'.\r
+
+      '''\r
+
+      def get_valid_age():\r
+
+      \    age = int(input(\"Enter your age: \"))\r
+
+      \    while age < 0 or age > 120:\r
+
+      \        age = int(input(\"Invalid age. Enter your age: \"))\r
+
+      \    print(\"Age accepted\")\r
+
+      \r
+
+      # main program\r
+
+      get_valid_age()"
+  - path: course1/unit5/lesson4/lessonpart5/q3_solution.py
+    content: "'''\r
+
+      Write a function 'get_price' that returns the price of an item:\r
+
+      \"cola\" → 2.00, \"crisps\" → 1.20, \"water\" → 1.00\r
+
+      Then write the 'run_machine' function that repeatedly\r
+
+      inputs items and calls 'get_price' to get the price of the item\r
+
+      until the user types 'quit', and then outputs the total cost.\r
+
+      '''\r
+
+      def get_price(item):\r
+
+      \    if item == \"cola\":\r
+
+      \        return 2.00\r
+
+      \    elif item == \"crisps\":\r
+
+      \        return 1.20\r
+
+      \    elif item == \"water\":\r
+
+      \        return 1.00\r
+
+      \    else:\r
+
+      \        return 0\r
+
+      \r
+
+      def run_machine():\r
+
+      \    total = 0\r
+
+      \    item = input(\"Enter an item (or 'quit' to finish): \")\r
+
+      \r
+
+      \    while item != \"quit\":\r
+
+      \        total += get_price(item)\r
+
+      \        item = input(\"Enter an item (or 'quit' to finish): \")\r
+
+      \r
+
+      \    print(f\"Total: £{total:.2f}\")\r
+
+      \r
+
+      # main program\r
+
+      run_machine()"
+  - path: course1/unit1/lesson1/lessonpart2/printing.py
+    content: "print(\"Greetings!\")\r
+
+      print(\"I like\", \"vege\", \"tables!\")\r
+
+      print(\"I eat\", 5, \"a day!\")\r
+
+      \r\n"
+  - path: course1/unit1/lesson1/lessonpart3/variables.py
+    content: "age = 14\r
+
+      name = \"Ahmed\"\r
+
+      print(\"Hello, my name is\", name, \"and I am\", age, \"years old.\")"
+  - path: course1/unit1/lesson1/lessonpart4/input_output.py
+    content: "print(\"Enter your name:\")\r
+
+      name = input()\r
+
+      print(\"Hello\", name, \"!\")\r
+
+      print(\"What is your favourite subject\")\r
+
+      subject = input()\r
+
+      print(subject, \"is a great subject!\")\r\n"
+  - path: course1/unit1/lesson1/lessonpart4/chatbot.py
+    content: "'''\r
+
+      Make a new \"chatbot\" program.\r
+
+      Use input, output and variables. \r
+
+      For example you might ask someone what pizza topping they like, \r
+
+      and respond saying I like that topping too!\r
+
+      '''\r
+
+      \r
+
+      # write your code here"
+  - path: course1/unit1/lesson1/lessonpart7/age.py
+    content: "print(\"How old are you?: \")\r
+
+      age = input()\r
+
+      print(\"In five years time you will be\", age + 5)"
+  - path: course1/unit1/lesson1/lessonpart7/age2.py
+    content: "print(\"How old are you?: \")\r
+
+      age = input()\r
+
+      age_integer = int(age)\r
+
+      print(\"In five years time you will be\", age_integer + 5)"
+  - path: course1/unit1/lesson1/lessonpart7/age3.py
+    content: "print(\"How old are you?: \")\r
+
+      age = int(input()) # input age, cast to integer and save\r
+
+      print(\"In five years time you will be\", age + 5)"
+  - path: course1/unit1/lesson1/lessonpart7/age4.py
+    content: "age = int(input(\"How old are you?: \")) \r
+
+      print(\"In five years time you will be\", age + 5)"
+  - path: course1/unit1/lesson1/lessonpart8/bmi.py
+    content: "# Input height and weight, casting to floats\r
+
+      height = float(input(\"Enter your height in metres: \"))\r
+
+      weight = float(input(\"Enter your weight in kilograms: \"))\r
+
+      \r
+
+      # Calculate and print BMI\r
+
+      bmi = weight / (height * height)\r
+
+      print(\"Your BMI is: \", bmi)"
+  - path: course1/unit1/lesson1/lessonpart8/favourites.py
+    content: "fav_number = int(input(\"What is your favourite number? \"))\r
+
+      fav_colour = input(\"What is your favourite colour? \"))\r
+
+      print(\"Your favorite number is \", fav_number)\r
+
+      print(\"Your favorite colour is \", fav_colour)"
+  - path: course1/unit1/lesson1/lessonpart9/q1.py
+    content: "'''\r
+
+      input the radius of the circle, \r
+
+      cast this to a float, and then calculate the area \r
+
+      using the formula: area = 3.142 * radius * radius\r
+
+      '''\r\n"
+  - path: course1/unit1/lesson1/lessonpart9/q2.py
+    content: "'''\r
+
+      ask the user for the principal amount, \r
+
+      the rate of interest, and the time in whole years. \r
+
+      Use the formula: \r
+
+      \  simple interest = (principal * rate * time) / 100\r
+
+      '''\r\n"
+  - path: course1/unit1/lesson2/lessonpart3/hello.py
+    content: "def hello_world():\r
+
+      \  print(\"Hello World!\")\r
+
+      \r
+
+      # main program\r
+
+      hello_world()"
+  - path: course1/unit1/lesson2/lessonpart7/chatbot_sub.py
+    content: "def say_hello():\r
+
+      \  name = input(\"What is your name? \")\r
+
+      \  print(\"Hello, \", name, \"!\")\r
+
+      \r
+
+      def fav_subject():\r
+
+      \  subject = input(\"What is your favourite subject\")\r
+
+      \  print(subject, \"is a great subject!\")\r
+
+      \r
+
+      # main program\r
+
+      say_hello()\r
+
+      fav_subject()"
+  - path: course1/unit1/lesson2/lessonpart7/draw_square.py
+    content: "def horizontal():\r
+
+      \  print(\"******\")\r
+
+      \r
+
+      def vertical():\r
+
+      \  print(\"*    *\")\r
+
+      \r
+
+      # main program\r
+
+      horizontal()\r
+
+      vertical()\r
+
+      vertical()\r
+
+      vertical()\r
+
+      vertical()\r
+
+      horizontal()"
+  - path: course1/unit1/lesson2/lessonpart5/proc.py
+    content: "def say_hello():\r
+
+      \  name = input(\"What is your name? \")\r
+
+      \  print(\"Hello, \", name, \"!\")\r
+
+      \r
+
+      def fav_subject():\r
+
+      \  subject = input(\"What is your favourite subject\")\r
+
+      \  print(subject, \"is a great subject!\")\r
+
+      \r
+
+      # main program\r
+
+      say_hello()\r
+
+      fav_subject()"
+  - path: course1/unit1/lesson2/lessonpart5/func.py
+    content: "def get_name():\r
+
+      \  ans = input(\"What is your name? \")\r
+
+      \  return ans\r
+
+      \r
+
+      # main program\r
+
+      name = get_name()\r
+
+      print(\"Hello, \", name, \"!\")"
+  - path: course1/unit1/lesson2/lessonpart4/capstone_quiz.py
+    content: "import random\r
+
+      \r
+
+      def generate_question():\r
+
+      \    a = random.randint(1,10)\r
+
+      \    b = random.randint(1,10)\r
+
+      \    print(\"what is\", a, \"*\", b, \"?\")\r
+
+      \    return a * b\r
+
+      \r
+
+      def ask_question():\r
+
+      \    generate_question()\r
+
+      \    get_answer()\r
+
+      \    check_answer()\r
+
+      \r
+
+      # main program\r
+
+      ask_question()\r
+
+      ask_question()\r
+
+      ask_question()\r
+
+      output_score()"
   - path: course1/unit8/lesson1/lessonpart4/student_records.py
     content: "def view_students(students):\r
 
@@ -3674,6 +3028,823 @@ files:
       \r
 
       print(\"Longest word:\", longest_word(words))"
+  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
+    content: "slices = 40\r
+
+      people = 12\r
+
+      cal_per_slice = 120\r
+
+      slices_each = slices // people                 # DIV to get whole number
+      of slices each\r
+
+      slices_left = slices %  people                 # MOD to get remaining
+      slices\r
+
+      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
+      per person\r
+
+      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
+
+      print(f\"Calories per person = {cals_per_person}\")"
+  - path: course1/unit4/lesson4/lessonpart4/q1.py
+    content: "'''\r
+
+      If the animal is \"dog\", print \"Mammal\"\r
+
+      If the animal is \"snake\", print \"Reptile\"\r
+
+      If the animal is \"carp\", print \"Fish\"\r
+
+      If the animal is \"eagle\", print \"Bird\"\r
+
+      For any other animal, print \"Unknown\"\r
+
+      '''\r
+
+      def classify(animal):\r
+
+      \    match animal:\r
+
+      \        case 'dog':\r
+
+      \            print(\"Mammal\") \r
+
+      \    # TODO - write your code here\r
+
+      \r
+
+      \r
+
+      # main program\r
+
+      classify(\"dog\")       # prints \"Mammal\"\r
+
+      classify(\"snake\")     # prints \"Reptile\"\r
+
+      classify(\"carp\")      # prints \"Fish\"\r
+
+      classify(\"eagle\")     # prints \"Bird\"\r
+
+      classify(\"capybara\")  # prints \"Unknown\"\r
+
+      \r
+
+      \r
+
+      \r\n"
+  - path: course1/unit4/lesson4/lessonpart4/q2.py
+    content: "'''\r
+
+      If the zone is 1 or 2 return \"Central fare\"\r
+
+      If the zone is 3 or 4, return \"Suburban fare\"\r
+
+      If the zone is 5 or 6, return \"Outer fare\"\r
+
+      For any other zone, return \"Invalid zone\"\r
+
+      '''\r
+
+      def check_zone(zone):\r
+
+      \   # write your code here\r
+
+      \r
+
+      \r
+
+      # main program\r
+
+      print(check_zone(1))       # prints \"Central fare\"\r
+
+      print(check_zone(2))       # prints \"Central fare\"\r
+
+      print(check_zone(4))       # prints \"Suburban fare\"\r
+
+      print(check_zone(5))       # prints \"Outer fare\"\r
+
+      print(check_zone(7))       # prints \"Invalid zone\"\r
+
+      \r
+
+      \r
+
+      \r
+
+      \r\n"
+  - path: course1/unit2/lesson2/lessonpart12/b6_exercises.py
+    content: "''' 1. Shopping Bill\r
+
+      Input the prices of three items. Calculate the total and output it.\r
+
+      '''\r
+
+      item1 = None\r
+
+      item2 = None\r
+
+      item3 = None\r
+
+      total = None\r
+
+      print(total)\r
+
+      \r
+
+      ''' 2. Weekly Pay\r
+
+      Input the hourly pay rate and hours worked. Calculate the weekly gross pay
+      by multiplying hourly pay rate by hours worked.\r
+
+      Then take off 20% for tax (or calculate 80% of the gross value, which is
+      the same thing) to get net pay.\r
+
+      Round this to 2 decimal places.\r
+
+      Example: If hourly rate is 14.00 and hours worked is 20, then net pay is
+      (14 * 20) * 80/100 = £224.00\r
+
+      '''\r
+
+      hourly_rate = None\r
+
+      hours_worked = None\r
+
+      net_pay = None\r
+
+      print(net_pay)\r
+
+      \r
+
+      ''' 3. Movie Duration\r
+
+      Write a function that takes as a parameter the length of a movie in
+      minutes.\r
+
+      Calculate the duration in hours and minutes, returning a string containing
+      hours:minutes.\r
+
+      '''\r
+
+      def movie(minutes):\r
+
+      \    hours = None\r
+
+      \    mins = None\r
+
+      \    result = None\r
+
+      \    return result\r
+
+      # main program\r
+
+      print(movie(123))\r
+
+      \r
+
+      ''' 4. Loan Interest\r
+
+      You have borrowed money from a bank. The bank has loaned you an amount,
+      with a fixed rate of interest per year, given as a percentage.\r
+
+      Input the amount, percentage interest rate and years elapsed.\r
+
+      The program will calculate simple interest using formula: interest =
+      (amount × rate × years) / 100.\r
+
+      Output the interest to 2 decimal places.\r
+
+      '''\r
+
+      amount = None\r
+
+      rate = None\r
+
+      years = None\r
+
+      interest = None\r
+
+      print(interest)\r
+
+      \r
+
+      ''' 5. Energy Bill\r
+
+      An energy bill consists of an amount for the energy used at cheap rate,
+      plus an amount for the energy used at peak rate.\r
+
+      Input the cheap rate cost per unit and units used at cheap rate, then
+      input peak rate cost per unit and units used at peak rate.\r
+
+      For each rate, the cost is calculated by: cost = units × rate\r
+
+      Example: (0.15 * 245) + (0.49 * 180) = £124.95\r
+
+      Calculate the cost and output the value. Round the cost to 2 decimal
+      places.\r
+
+      '''\r
+
+      cheap_rate = None\r
+
+      cheap_units = None\r
+
+      peak_rate = None\r
+
+      peak_units = None\r
+
+      total_cost = None\r
+
+      print(total_cost)\r
+
+      \r
+
+      ''' 6. Change Calculator\r
+
+      Write a program to output the quantity and value of each coin you need to
+      use to give someone the correct change.\r
+
+      Coins available are £1 (100p), 50p, 20p, 10p, 5p, 2p and 1p.\r
+
+      Example input: £3.48\r
+
+      Example output: 3 x £1, 2 x 20p, 1 x 5p, 1 x 2p, 1 x 1p\r
+
+      Hint: use floor division and possibly modulus\r
+
+      '''\r
+
+      amount = 3.71 # try different values here\r
+
+      # Logic to calculate coins goes here\r
+
+      \r\n"
+  - path: course1/unit2/lesson2/lessonpart12/q1.py
+    content: "''' 1. Shopping Bill\r
+
+      Input the prices of three items. \r
+
+      Calculate the total and output it.\r
+
+      Replace None below with your code.\r
+
+      '''\r
+
+      item1 = None\r
+
+      item2 = None\r
+
+      item3 = None\r
+
+      total = None\r
+
+      print(total)"
+  - path: course1/unit2/lesson2/lessonpart12/q2.py
+    content: "''' 2. Weekly Pay\r
+
+      Input the hourly pay rate and hours worked. \r
+
+      Calculate the weekly gross pay \r
+
+      by multiplying hourly pay rate by hours worked.\r
+
+      Then take off 20% for tax (or calculate 80% of the gross value, \r
+
+      which is the same thing) to get net pay.\r
+
+      Example: If hourly rate is 14.00 and hours worked is 20, \r
+
+      then net pay is (14 * 20) * 80/100 = £224.00\r
+
+      Replace None in the code below with your code.\r
+
+      '''\r
+
+      hourly_rate = None\r
+
+      hours_worked = None\r
+
+      net_pay = None\r
+
+      print(net_pay)"
+  - path: course1/unit2/lesson2/lessonpart12/q3.py
+    content: "''' 3. Movie Duration\r
+
+      Write a function that takes as a parameter the length of a movie in
+      minutes.\r
+
+      Calculate the duration in hours and minutes, returning a string containing
+      hours:minutes.\r
+
+      '''\r
+
+      def movie(minutes):\r
+
+      \    hours = None\r
+
+      \    mins = None\r
+
+      \    result = None\r
+
+      \    return result\r
+
+      # main program\r
+
+      print(movie(123))"
+  - path: course1/unit2/lesson2/lessonpart12/q4.py
+    content: "''' 4. Loan Interest\r
+
+      You have borrowed money from a bank. The bank has loaned you an amount,
+      with a fixed rate of interest per year, given as a percentage.\r
+
+      Input the amount, percentage interest rate and years elapsed.\r
+
+      The program will calculate simple interest using formula: interest =
+      (amount × rate × years) / 100.\r
+
+      Output the interest to 2 decimal places.\r
+
+      '''\r
+
+      amount = None\r
+
+      rate = None\r
+
+      years = None\r
+
+      interest = None\r
+
+      print(interest)"
+  - path: course1/unit2/lesson2/lessonpart12/q5.py
+    content: "''' 5. Energy Bill\r
+
+      An energy bill consists of an amount for the energy used at cheap rate,
+      plus an amount for the energy used at peak rate.\r
+
+      Input the cheap rate cost per unit and units used at cheap rate, then
+      input peak rate cost per unit and units used at peak rate.\r
+
+      For each rate, the cost is calculated by: cost = units × rate\r
+
+      Example: (0.15 * 245) + (0.49 * 180) = £124.95\r
+
+      Calculate the cost and output the value. Round the cost to 2 decimal
+      places.\r
+
+      '''\r
+
+      cheap_rate = None\r
+
+      cheap_units = None\r
+
+      peak_rate = None\r
+
+      peak_units = None\r
+
+      total_cost = None\r
+
+      print(total_cost)"
+  - path: course1/unit5/lesson4/lessonpart6/countdown_buggy.py
+    content: "def countdown():\r
+
+      \  # count down from 10 in twos\r
+
+      \  counter = 10\r
+
+      \  while counter != 1:\r
+
+      \    print(f\"{counter} !\")\r
+
+      \    counter -= 2\r
+
+      \  print(\"lift-off !\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown()"
+  - path: course1/unit5/lesson4/lessonpart6/while_true.py
+    content: "def get_score():\r
+
+      \  score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \  while True:\r
+
+      \      if score < 1 or score > 100:\r
+
+      \          print(\"Invalid input. Please try again.\")\r
+
+      \          score = int(input(\"Enter a score between 1 and 100: \"))\r
+
+      \      else:\r
+
+      \          return score\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(get_score())"
+  - path: course1/unit3/lesson1/lessonpart7/a2_length_max.py
+    content: "# password length checker\r
+
+      password = input(\"password\")\r
+
+      pw_length = 10 # change this line\r
+
+      print(\"Your password has\", 10, \"characters\") # change this line"
+  - path: course1/unit4/lesson2/lessonpart7/q1solution.py
+    content: "'''\r
+
+      The student must be at least 18 years old.\r
+
+      One of their three exam grades must be an A.\r
+
+      '''\r
+
+      def eligible(age, grades):\r
+
+      \    if age >= 18 and \"A\" in grades:\r
+
+      \        return \"Eligible\"\r
+
+      \    else:\r
+
+      \        return \"Not eligible\"\r
+
+      \r
+
+      # main program\r
+
+      print(eligible(18, \"ACC\"))    # prints Eligible\r
+
+      print(eligible(17, \"ACC\"))    # prints Not eligible\r
+
+      print(eligible(19, \"BCD\"))    # prints Not eligible\r
+
+      print(eligible(19, \"BCA\"))    # prints Eligible\r
+
+      \r
+
+      \r\n"
+  - path: course1/unit4/lesson2/lessonpart7/q2solution.py
+    content: "def safe_to_eat(ingredients, allergen1, allergen2):\r
+
+      \    if allergen1 in ingredients or allergen2 in ingredients:\r
+
+      \        print(\"Not safe\")\r
+
+      \    else:\r
+
+      \        print(\"Safe\")\r
+
+      \r
+
+      # Test cases\r
+
+      safe_to_eat(\"milk, peanuts, sugar\", \"peanuts\", \"wheat\")      # Not
+      safe\r
+
+      safe_to_eat(\"milk, sugar, fruit\", \"peanuts\", \"wheat\")        #
+      Safe\r
+
+      safe_to_eat(\"wheat, peanuts, butter\", \"shellfish\", \"wheat\")  # Not
+      safe\r
+
+      safe_to_eat(\"wheat, peanuts, butter\", \"\", \"\")                # Safe"
+  - path: course1/unit4/lesson2/lessonpart6/q1.py
+    content: "'''\r
+
+      The student must be at least 18 years old.\r
+
+      One of their three exam grades must be an A.\r
+
+      '''\r
+
+      def eligible(age, grades):\r
+
+      \    pass\r
+
+      # delete 'pass' and write your code here\r
+
+      \r
+
+      \r
+
+      # main program\r
+
+      print(eligible(18, \"ACC\"))    # prints Eligible\r
+
+      print(eligible(17, \"ACC\"))    # prints Not eligible\r
+
+      print(eligible(19, \"BCD\"))    # prints Not eligible\r
+
+      print(eligible(19, \"BCA\"))    # prints Eligible\r
+
+      \r
+
+      \r
+
+      \r\n"
+  - path: course1/unit4/lesson2/lessonpart6/q2.py
+    content: "'''\r
+
+      print \"Safe\" if the dish does not contain the \r
+
+      customer's allergens, otherwise print \"Not safe\".\r
+
+      '''\r
+
+      def safe_to_eat(ingredients, allergen1, allergen2):\r
+
+      \    pass\r
+
+      # delete 'pass' and write your code here\r
+
+      \r
+
+      # main program\r
+
+      safe_to_eat(\"milk, peanuts, sugar\", \"peanuts\", \"wheat\")      #
+      prints Not safe\r
+
+      safe_to_eat(\"milk, sugar, fruit\", \"peanuts\", \"wheat\")        #
+      prints Safe\r
+
+      safe_to_eat(\"wheat, peanuts, butter\", \"shellfish\", \"wheat\")  #
+      prints Not safe\r
+
+      safe_to_eat(\"wheat, peanuts, butter\", \"\", \"\")                #
+      prints Safe\r
+
+      \r
+
+      \r\n"
+  - path: course1/unit5/lesson1/lessonpart1/password_while.py
+    content: "password = \"\"\r
+
+      while len(password) < 10:\r
+
+      \  password = input(\"type a new password, minimum length 10 characters:
+      \")\r
+
+      print(f\"your new password is {password}\")"
+  - path: course1/unit5/lesson1/lessonpart3/get_password1.py
+    content: "def get_password():\r
+
+      \  \r
+
+      \  # input password repeatedly until length at least 10 characters\r
+
+      \  password = \"\"\r
+
+      \  while len(password) < 10:\r
+
+      \    password = input(\"type a new password, minimum length 10 characters:
+      \")\r
+
+      \  \r
+
+      \  # input password again until it matches first password\r
+
+      \  password_repeat = \"\"\r
+
+      \  while password_repeat != password:\r
+
+      \    password_repeat = input(\"type your new password again: \")\r
+
+      \  \r
+
+      \  # return the new password (either variable will do as they are the
+      same!)\r
+
+      \  return password\r
+
+      \r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(\"Let's set your password!\")\r
+
+      password = get_password()\r
+
+      print(f\"your new password is {password}\")"
+  - path: course1/unit5/lesson1/lessonpart4/fivextable_while.py
+    content: "def five_times_table():\r
+
+      \  # five times table\r
+
+      \  counter = 1\r
+
+      \  while counter < 11:\r
+
+      \    print(f\"5 x {counter} = {5 * counter}\")\r
+
+      \    counter += 1\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      five_times_table()"
+  - path: course1/unit5/lesson1/lessonpart4/countdown_while.py
+    content: "def countdown():\r
+
+      \  # count down from 10\r
+
+      \  counter = 12\r
+
+      \  while counter >= 1:\r
+
+      \    print(f\"{counter} !\")\r
+
+      \    counter -= 1\r
+
+      \  print(\"lift-off !\")\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      countdown()"
+  - path: course1/unit5/lesson2/lessonpart1/password2.py
+    content: "def get_password():\r
+
+      \    # input password repeatedly until it meets all criteria\r
+
+      \    password = \"\"\r
+
+      \    while len(password) < 10 or not password[0].isupper() or '#' not in
+      password:\r
+
+      \        password = input(\"Type new password, min length 10,\" \\\r
+
+      \                          + \" first uppercase, include #: \")\r
+
+      \    \r
+
+      \    # input password again until it matches the first password\r
+
+      \    password_repeat = \"\"\r
+
+      \    while password_repeat != password:\r
+
+      \        password_repeat = input(\"Type your new password again: \")\r
+
+      \    \r
+
+      \    # return the new password\r
+
+      \    return password\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(\"Let's set your password!\")\r
+
+      password = get_password()\r
+
+      print(f\"your new password is {password}\")"
+  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
+    content: "print(\"Hello World!\")\r\n"
+  - path: course1/unit7/lesson2/lessonpart5/journey_planner.py
+    content: "# Railway Journey Planner — Starter Program\r
+
+      \r
+
+      # List of station names\r
+
+      stations = [\"Aldford\", \"Bramley\", \"Croxley\", \"Dunford\",
+      \"Elmstead\", \"Fenton\"]\r
+
+      \r
+
+      # List of journey times between each pair of stations\r
+
+      times = [3, 12, 8, 21, 11]\r
+
+      \r
+
+      def max_station(minutes):\r
+
+      \    \"\"\"\r
+
+      \    Returns the index of the last station you can reach\r
+
+      \    starting from station 0 within the given number of minutes.\r
+
+      \    \"\"\"\r
+
+      \    #TODO Write this function\r
+
+      \    pass\r
+
+      \r
+
+      def journey_to(station):\r
+
+      \    \"\"\"\r
+
+      \    Returns a string describing the journey from station 0\r
+
+      \    up to the station number given.\r
+
+      \    Example: \"Aldford through Bramley to Croxley.\"\r
+
+      \    \"\"\"\r
+
+      \    #TODO Write this function\r
+
+      \    pass \r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      print(\"Enter your available minutes:\")\r
+
+      minutes = int(input())\r
+
+      \r
+
+      last_station = max_station(minutes)\r
+
+      journey = journey_to(last_station)\r
+
+      \r
+
+      print(f\"In {minutes} minutes you can travel from {journey}\")"
+  - path: course1/unit1/lesson2/lessonpart1/area_calc.py
+    content: "def calc_area(width, height):\r
+
+      \  return width * height\r
+
+      \r
+
+      # main program\r
+
+      w = float(input(\"Enter the width in metres: \"))\r
+
+      h = float(input(\"Enter the height in metres: \"))\r
+
+      area = calc_area(w, h)\r
+
+      print(\"The area is:\", area, \"square metres\")"
+  - path: course1/unit1/lesson2/lessonpart1/cuboid.py
+    content: "'''\r
+
+      Calculate the volume of a cuboid \r
+
+      using width, height, and depth\r
+
+      '''\r
+
+      \r
+
+      # write your code here\r\n"
+  - path: course1/unit1/lesson2/lessonpart6/sq_root.py
+    content: "def square_root(x):\r
+
+      \  return x ** 0.5\r
+
+      \r
+
+      print(square_root(9))  "
+  - path: course1/unit1/lesson2/lessonpart6/bmi_calc.py
+    content: "def calc_bmi(height, weight):\r
+
+      \  bmi = weight / (height * height)\r
+
+      \  return bmi\r
+
+      \r
+
+      # main program\r
+
+      height = float(input(\"Enter your height in metres: \"))\r
+
+      weight = float(input(\"Enter your weight in kilograms: \"))\r
+
+      bmi = calc_bmi(height, weight)\r
+
+      print(\"Your BMI is: \", bmi)"
+  - path: course1/unit1/lesson2/lessonpart6/greet.py
+    content: "def greet(greeting): # greeting is a 'parameter'\r
+
+      \  print(greeting)    # output the value of the greeting parameter\r
+
+      \r
+
+      # main program\r
+
+      greet(\"Hello World!\")    # \"Hello World!\" is passed \r
+
+      greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
   - path: course1/unit8/lesson2/lessonpart6/q1.py
     content: "# q1.py\r
 
@@ -4081,177 +4252,6 @@ files:
       \        else:\r
 
       \            print(\"I don't understand that command.\")"
-  - path: course1/unit9/lesson1/lessonpart6/records_2D.py
-    content: "'''\r
-
-      Program to implement student \"records\" in Python as a 2D array\r
-
-      The pseudocode Student record declaration we are approximating is:\r
-
-      \r
-
-      RECORD Student\r
-
-      \    firstname : String\r
-
-      \    surname : String\r
-
-      \    year : Integer\r
-
-      \    house : String\r
-
-      \    SAT : Integer\r
-
-      \    avg_grade : Real\r
-
-      \    EAL : Boolean\r
-
-      ENDRECORD\r
-
-      '''\r
-
-      # Create empty student list\r
-
-      students = []\r
-
-      \r
-
-      # Assign constants for field names\r
-
-      FIRSTNAME = 0\r
-
-      SURNAME = 1\r
-
-      YEAR = 2\r
-
-      HOUSE = 3\r
-
-      SAT = 4\r
-
-      AVERAGE_GRADE = 5\r
-
-      EAL = 6\r
-
-      \r
-
-      # append new students as sublists\r
-
-      students.append(['Taha', 'Hussain', 10, 'Pankhurst', 104, 93.5, False])\r
-
-      students.append(['Aisha', 'Khan', 9, 'Nightingale', 91, 88.0, True])\r
-
-      students.append(['Leah', 'Smith', 11, 'Pankhurst', 120, 95.2, False])\r
-
-      \r
-
-      # Program to determine who has the highest SAT\r
-
-      # initialise variables\r
-
-      highestSAT = 0\r
-
-      position = 0\r
-
-      \r
-
-      # Iterate over list of students\r
-
-      # This algorithm is essentially the same as the pseudocode algorithm
-      earlier\r
-
-      # We have changed only the field referencing style, from .SAT to [SAT].\r
-
-      for i in range(len(students)):\r
-
-      \    if students[i][SAT] > highestSAT:   # use SAT as the second index,
-      not a dotted field name\r
-
-      \        highestSAT = students[i][SAT]\r
-
-      \        position = i\r
-
-      \r
-
-      print(students[position][FIRSTNAME], ' has the highest SAT score')"
-  - path: course1/unit9/lesson1/lessonpart7/records_OOP.py
-    content: "# Program to implement student \"records\" using a Python class\r
-
-      # This mirrors the pseudocode Student record declaration.\r
-
-      \r
-
-      class Student:\r
-
-      \    def __init__(self, firstname, surname, year, house, SAT,
-      average_grade, EAL):\r
-
-      \        self.firstname = firstname\r
-
-      \        self.surname = surname\r
-
-      \        self.year = year\r
-
-      \        self.house = house\r
-
-      \        self.SAT = SAT\r
-
-      \        self.average_grade = average_grade\r
-
-      \        self.EAL = EAL\r
-
-      \r
-
-      \r
-
-      # Create a list of Student objects\r
-
-      students = [\r
-
-      \    Student(\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5,
-      False),\r
-
-      \    Student(\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True),\r
-
-      \    Student(\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5,
-      False),\r
-
-      \    Student(\"Sophie\", \"Turner\", 8, \"Barnardo\", 87, 95.0, False),\r
-
-      \    Student(\"Hannah\", \"Lewis\", 8, \"Barnardo\", 89, 97.0, False)\r
-
-      ]\r
-
-      \r
-
-      \r
-
-      # Program to determine who has the highest SAT score\r
-
-      highestSAT = 0\r
-
-      position = 0\r
-
-      \r
-
-      # Iterate over the list of Student objects\r
-
-      # This is the same algorithm as the pseudocode version,\r
-
-      # but we use object attributes instead of list indices.\r
-
-      for i in range(len(students)):\r
-
-      \    if students[i].SAT > highestSAT:\r
-
-      \        highestSAT = students[i].SAT\r
-
-      \        position = i\r
-
-      \r
-
-      # Output the result\r
-
-      print(students[position].firstname, \"has the highest SAT score\")"
 units:
   - unit1/index.yml
   - unit2/index.yml
