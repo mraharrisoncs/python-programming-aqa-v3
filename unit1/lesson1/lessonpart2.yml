@@ -24,7 +24,7 @@ content: >+
   This example prints a simple string to the console. 
 
 
-  > A note about the **REPL.**
+  > **Useful Note:**
 
   >
 
@@ -39,8 +39,8 @@ content: >+
 
   >
 
-  > You can open a REPL on the right of the course, on some course pages like
-  this one.
+  > You can see a **REPL** on the right, and it will appear on any pages where
+  you need to write or edit programs.
 
 
   ### Printing Multiple Strings
