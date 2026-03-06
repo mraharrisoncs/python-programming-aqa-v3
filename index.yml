@@ -25,8 +25,6 @@ contacts:
     affiliation: AQA
     homePageUrl: https://github.com/mraharrisoncs
 files:
-  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
-    content: "print(\"Hello World!\")\r\n"
   - path: course1/unit1/lesson1/lessonpart2/printing.py
     content: "print(\"Greetings!\")\r
 
@@ -41,6 +39,34 @@ files:
       name = \"Ahmed\"\r
 
       print(\"Hello, my name is\", name, \"and I am\", age, \"years old.\")"
+  - path: course1/unit1/lesson1/lessonpart4/input_output.py
+    content: "print(\"Enter your name:\")\r
+
+      name = input()\r
+
+      print(\"Hello\", name, \"!\")\r
+
+      print(\"What is your favourite subject\")\r
+
+      subject = input()\r
+
+      print(subject, \"is a great subject!\")\r\n"
+  - path: course1/unit1/lesson1/lessonpart4/chatbot.py
+    content: "'''\r
+
+      Make a new \"chatbot\" program.\r
+
+      Use input, output and variables. \r
+
+      For example you might ask someone what pizza topping they like, \r
+
+      and respond saying I like that topping too!\r
+
+      '''\r
+
+      \r
+
+      # write your code here"
   - path: course1/unit1/lesson1/lessonpart7/age.py
     content: "print(\"How old are you?: \")\r
 
@@ -109,6 +135,8 @@ files:
       \  simple interest = (principal * rate * time) / 100\r
 
       '''\r\n"
+  - path: course1/unit1/lesson1/lessonpart1/helloworld.py
+    content: "print(\"Hello World!\")\r\n"
   - path: course1/unit1/lesson2/lessonpart3/hello.py
     content: "def hello_world():\r
 
@@ -343,25 +371,6 @@ files:
       result = 8 % 2\r
 
       print(result)"
-  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
-    content: "slices = 40\r
-
-      people = 12\r
-
-      cal_per_slice = 120\r
-
-      slices_each = slices // people                 # DIV to get whole number
-      of slices each\r
-
-      slices_left = slices %  people                 # MOD to get remaining
-      slices\r
-
-      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
-      per person\r
-
-      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
-
-      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit2/lesson1/lessonpart21/q1.py
     content: "'''\r
 
@@ -1010,36 +1019,6 @@ files:
       # main program\r
 
       print(sum_of_ascii(\"Cat\")) # should print 280"
-  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
-    content: "full_name = input(\"Enter your full name: \")   \r
-
-      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
-
-      \r
-
-      # Split the full name into first and surname\r
-
-      space_index = full_name.find(\" \")\r
-
-      first_name = full_name[:space_index]\r
-
-      surname = full_name[space_index + 1:]\r
-
-      \r
-
-      # Get the first initial and last two digits of the year\r
-
-      initial = first_name[0]\r
-
-      year_suffix = str(year)[-2:]\r
-
-      \r
-
-      # Build the username\r
-
-      username = surname + \"_\" + initial + \"_\" + year_suffix\r
-
-      print(\"Your username is:\", username)\r\n"
   - path: course1/unit3/lesson2/lessonpart3/q1.py
     content: "'''\r
 
@@ -1822,34 +1801,6 @@ files:
       \")\r
 
       print(f\"your new password is {password}\")"
-  - path: course1/unit1/lesson1/lessonpart4/input_output.py
-    content: "print(\"Enter your name:\")\r
-
-      name = input()\r
-
-      print(\"Hello\", name, \"!\")\r
-
-      print(\"What is your favourite subject\")\r
-
-      subject = input()\r
-
-      print(subject, \"is a great subject!\")\r\n"
-  - path: course1/unit1/lesson1/lessonpart4/chatbot.py
-    content: "'''\r
-
-      Make a new \"chatbot\" program.\r
-
-      Use input, output and variables. \r
-
-      For example you might ask someone what pizza topping they like, \r
-
-      and respond saying I like that topping too!\r
-
-      '''\r
-
-      \r
-
-      # write your code here"
   - path: course1/unit5/lesson1/lessonpart3/get_password1.py
     content: "def get_password():\r
 
@@ -2002,6 +1953,25 @@ files:
       else:\r
 
       \    print(\"Incorrect.\")\r\n"
+  - path: course1/unit2/lesson1/lessonpart23/a4a_workedeg_cake.py
+    content: "slices = 40\r
+
+      people = 12\r
+
+      cal_per_slice = 120\r
+
+      slices_each = slices // people                 # DIV to get whole number
+      of slices each\r
+
+      slices_left = slices %  people                 # MOD to get remaining
+      slices\r
+
+      cals_per_person = slices_each * cal_per_slice  # Multiply to get calories
+      per person\r
+
+      print(f\"Slices each = {slices_each}, slices left = {slices_left}\")\r
+
+      print(f\"Calories per person = {cals_per_person}\")"
   - path: course1/unit5/lesson2/lessonpart3/get_password_flag.py
     content: "def get_password():\r
 
@@ -2532,6 +2502,371 @@ files:
       # main program\r
 
       run_machine()"
+  - path: course1/unit6/lesson1/lessonpart6/shopping_list_app.py
+    content: "# Shopping List Program\r
+
+      \r
+
+      def add_item(shopping_list, item):\r
+
+      \    shopping_list.append(item)\r
+
+      \    print(f\"Added {item} to the shopping list.\")\r
+
+      \r
+
+      def remove_item(shopping_list, item):\r
+
+      \    if item in shopping_list:\r
+
+      \        shopping_list.remove(item)\r
+
+      \        print(f\"Removed {item} from the shopping list.\")\r
+
+      \    else:\r
+
+      \        print(f\"{item} not found in the shopping list.\")\r
+
+      \r
+
+      def display_list(shopping_list):\r
+
+      \    print(\"Shopping List:\")\r
+
+      \    print(shopping_list)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      shopping_list = []\r
+
+      \r
+
+      add_item(shopping_list, \"Apples\")\r
+
+      add_item(shopping_list, \"Bananas\")\r
+
+      display_list(shopping_list)\r
+
+      remove_item(shopping_list, \"Bananas\")\r
+
+      display_list(shopping_list)\r\n"
+  - path: course1/unit6/lesson1/lessonpart7/q1.py
+    content: "'''\r
+
+      Return the total number of steps in the list\r
+
+      by adding each value using a while loop.\r
+
+      '''\r
+
+      def total_steps(steps_list):\r
+
+      \    # TODO: delete 'pass' and write code here\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      steps = []\r
+
+      # TODO: add some step values to the list\r
+
+      # TODO: print the total using the function"
+  - path: course1/unit6/lesson1/lessonpart7/q2.py
+    content: "'''\r
+
+      Repeatedly ask the user to choose a menu item.\r
+
+      Only accept items that appear in the menu list.\r
+
+      Allow the user to add multiple valid items to an order\r
+
+      and return the completed order list.\r
+
+      Hint: take_order() needs a while loop that calls get_valid_item() \r
+
+      repeatedly and asking if more items are needed, if not it should end.\r
+
+      '''\r
+
+      \r
+
+      def get_valid_item(menu):\r
+
+      \    # TODO: display menu, ask for input and validate using while loop\r
+
+      \    pass\r
+
+      \r
+
+      def take_order(menu):\r
+
+      \    # TODO: allow multiple valid items to be added to an order list\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
+
+      order = []\r
+
+      \r
+
+      # TODO: call take_order and display the final order"
+  - path: course1/unit6/lesson1/lessonpart7/q3.py
+    content: "'''\r
+
+      Write a playlist program with four functions\r
+
+      add_song(playlist, song) → adds a song only if it isn't already in the
+      list\r
+
+      remove_song(playlist, song) → removes a song if it exists\r
+
+      move_song(playlist, old_index, new_index) → moves a song to a new
+      position\r
+
+      show_playlist(playlist) → prints the playlist\r
+
+      '''\r
+
+      \r
+
+      def add_song(playlist, song):\r
+
+      \    # TODO: add only if not already in the list\r
+
+      \    pass\r
+
+      \r
+
+      def remove_song(playlist, song):\r
+
+      \    # TODO: remove only if it exists\r
+
+      \    pass\r
+
+      \r
+
+      def move_song(playlist, old_index, new_index):\r
+
+      \    # TODO: move a song to a new position\r
+
+      \    pass\r
+
+      \r
+
+      def show_playlist(playlist):\r
+
+      \    # TODO: print the playlist\r
+
+      \    pass\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      playlist = []\r
+
+      \r
+
+      # TODO: test your functions here"
+  - path: course1/unit6/lesson1/lessonpart8/q1_solution.py
+    content: "'''\r
+
+      Return the total number of steps in the list\r
+
+      by adding each value using a while loop.\r
+
+      '''\r
+
+      def total_steps(steps_list):\r
+
+      \    total = 0\r
+
+      \    index = 0\r
+
+      \r
+
+      \    while index < len(steps_list):\r
+
+      \        total += steps_list[index]\r
+
+      \        index += 1\r
+
+      \r
+
+      \    return total\r
+
+      \r
+
+      # main program\r
+
+      steps = [4500, 6200, 7000, 8000]\r
+
+      print(\"Total steps:\", total_steps(steps))"
+  - path: course1/unit6/lesson1/lessonpart8/q2_solution.py
+    content: "'''\r
+
+      Repeatedly ask the user to choose a menu item.\r
+
+      Only accept items that appear in the menu list.\r
+
+      Allow the user to add multiple valid items to an order\r
+
+      and return the completed order list.\r
+
+      '''\r
+
+      def get_valid_item(menu):\r
+
+      \    item = input(\"Choose an item: \")\r
+
+      \    while item not in menu:\r
+
+      \        item = input(\"Not on the menu. Choose an item: \")\r
+
+      \    return item\r
+
+      \r
+
+      def take_order(menu):\r
+
+      \    order = []\r
+
+      \    add_more = \"yes\"\r
+
+      \r
+
+      \    while add_more == \"yes\":\r
+
+      \        item = get_valid_item(menu)\r
+
+      \        order.append(item)\r
+
+      \        add_more = input(\"Add another item? (yes/no): \")\r
+
+      \r
+
+      \    return order\r
+
+      \r
+
+      # main program\r
+
+      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
+
+      final_order = take_order(menu)\r
+
+      print(\"Your order:\", final_order)"
+  - path: course1/unit6/lesson1/lessonpart8/q3_solution.py
+    content: "'''\r
+
+      Manage a playlist by adding unique songs,\r
+
+      removing songs that exist, moving songs to new positions,\r
+
+      and displaying the playlist.\r
+
+      '''\r
+
+      def add_song(playlist, song):\r
+
+      \    if song not in playlist:\r
+
+      \        playlist.append(song)\r
+
+      \    else:\r
+
+      \        print(\"Song already in playlist.\")\r
+
+      \r
+
+      def remove_song(playlist, song):\r
+
+      \    if song in playlist:\r
+
+      \        playlist.remove(song)\r
+
+      \    else:\r
+
+      \        print(\"Song not found.\")\r
+
+      \r
+
+      def move_song(playlist, old_index, new_index):\r
+
+      \    if 0 <= old_index < len(playlist) and 0 <= new_index <
+      len(playlist):\r
+
+      \        song = playlist.pop(old_index)\r
+
+      \        playlist.insert(new_index, song)\r
+
+      \    else:\r
+
+      \        print(\"Invalid index.\")\r
+
+      \r
+
+      def show_playlist(playlist):\r
+
+      \    print(\"Playlist:\", playlist)\r
+
+      \r
+
+      # main program\r
+
+      playlist = []\r
+
+      add_song(playlist, \"Song A\")\r
+
+      add_song(playlist, \"Song B\")\r
+
+      add_song(playlist, \"Song C\")\r
+
+      move_song(playlist, 0, 2)\r
+
+      remove_song(playlist, \"Song B\")\r
+
+      show_playlist(playlist)"
+  - path: course1/unit3/lesson2/lessonpart1/q2_username_solution.py
+    content: "full_name = input(\"Enter your full name: \")   \r
+
+      year = int(input(\"Enter your year of birth (4-digit integer): \"))   \r
+
+      \r
+
+      # Split the full name into first and surname\r
+
+      space_index = full_name.find(\" \")\r
+
+      first_name = full_name[:space_index]\r
+
+      surname = full_name[space_index + 1:]\r
+
+      \r
+
+      # Get the first initial and last two digits of the year\r
+
+      initial = first_name[0]\r
+
+      year_suffix = str(year)[-2:]\r
+
+      \r
+
+      # Build the username\r
+
+      username = surname + \"_\" + initial + \"_\" + year_suffix\r
+
+      print(\"Your username is:\", username)\r\n"
   - path: course1/unit6/lesson2/lessonpart5/q1.py
     content: "'''\r
 
@@ -2935,6 +3270,161 @@ files:
       \r
 
       print(f\"In {minutes} minutes you can travel from {journey}\")"
+  - path: course1/unit8/lesson1/lessonpart4/student_records.py
+    content: "def view_students(students):\r
+
+      \    for student in students:\r
+
+      \        print(student)\r
+
+      \r
+
+      def append_student(students, new_student):\r
+
+      \    students.append(new_student)\r
+
+      \r
+
+      def remove_student(students, student_to_remove):\r
+
+      \    students.remove(student_to_remove)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      students = [\r
+
+      \    [\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5, False],\r
+
+      \    [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True],\r
+
+      \    [\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5, False]\r
+
+      ]\r
+
+      \r
+
+      # View students\r
+
+      view_students(students)\r
+
+      \r
+
+      # Append a new student\r
+
+      append_student(students, [\"Nina\", \"Patel\", 12, \"Curie\", 115, 89.0,
+      True])\r
+
+      print(\"After appending a new student:\")\r
+
+      view_students(students)\r
+
+      \r
+
+      # Remove a student\r
+
+      remove_student(students, [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91,
+      88.0, True])\r
+
+      print(\"After removing a student:\")\r
+
+      view_students(students)"
+  - path: course1/unit8/lesson1/lessonpart4/temperature_records.py
+    content: "def view_temperatures(temperatures):\r
+
+      \    for week in temperatures:\r
+
+      \        print(week)\r
+
+      \r
+
+      def append_temperature(temperatures, new_week):\r
+
+      \    temperatures.append(new_week)\r
+
+      \r
+
+      def remove_temperature(temperatures, week_index):\r
+
+      \    del temperatures[week_index]\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      temperatures = [\r
+
+      \    [24, 26, 31, 26, 21, 18, 22],\r
+
+      \    [30, 32, 33, 31, 29, 28, 27],\r
+
+      \    [20, 22, 25, 23, 21, 19, 18]\r
+
+      ]\r
+
+      \r
+
+      # View temperatures\r
+
+      view_temperatures(temperatures)\r
+
+      \r
+
+      # Append a new week's temperatures\r
+
+      append_temperature(temperatures, [25, 27, 29, 28, 26, 24, 23])\r
+
+      print(\"After appending a new week's temperatures:\")\r
+
+      view_temperatures(temperatures)\r
+
+      \r
+
+      # Remove a week's temperatures\r
+
+      remove_temperature(temperatures, 1)\r
+
+      print(\"After removing a week's temperatures:\")\r
+
+      view_temperatures(temperatures)"
+  - path: course1/unit8/lesson1/lessonpart4/timetable_2D.py
+    content: "timetable = [\r
+
+      \    [\"ENG\",  \"MATH\", \"SCI\",  \"GEO\",  \"COMP\"],   # Monday\r
+
+      \    [\"HIST\", \"ENG\",  \"MATH\", \"ART\",  \"COMP\"],   # Tuesday\r
+
+      \    [\"MATH\", \"SCI\",  \"ENG\",  \"COMP\", \"HIST\"],   # Wednesday\r
+
+      \    [\"SCI\",  \"GEO\",  \"MATH\", \"ENG\",  \"ART\"],    # Thursday\r
+
+      \    [\"COMP\", \"ENG\",  \"SCI\",  \"MATH\", \"PE\"],     # Friday\r
+
+      ]\r
+
+      \r
+
+      days = [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\",
+      \"Friday\"]\r
+
+      \r
+
+      def update_lesson(timetable, day_name, period_number, new_subject):\r
+
+      \    day_index = days.index(day_name)\r
+
+      \    period_index = period_number - 1\r
+
+      \    timetable[day_index][period_index] = new_subject\r
+
+      \r
+
+      # Example use\r
+
+      update_lesson(timetable, \"Thursday\", 3, \"COMP\")\r
+
+      print(timetable)"
   - path: course1/unit8/lesson2/lessonpart1/student_records2.py
     content: "def view_students_detailed(students):\r
 
@@ -3000,6 +3490,100 @@ files:
       print(\"After removing a student:\")\r
 
       view_students(students)"
+  - path: course1/unit8/lesson2/lessonpart2/bitmap.py
+    content: "# Creating a 6x6 bitmap with float values\r
+
+      bitmap = [\r
+
+      \    [0.0, 1.1, 2.2, 3.3, 4.4, 5.5],\r
+
+      \    [6.6, 7.7, 8.8, 9.9, 0.0, 1.1],\r
+
+      \    [2.2, 3.3, 4.4, 5.5, 6.6, 7.7],\r
+
+      \    [8.8, 9.9, 0.0, 1.1, 2.2, 3.3],\r
+
+      \    [4.4, 5.5, 6.6, 7.7, 8.8, 9.9],\r
+
+      \    [0.0, 1.1, 2.2, 3.3, 4.4, 5.5]\r
+
+      ]\r
+
+      \r
+
+      # Function to increase brightness by 10%\r
+
+      # rounded to two decimal places\r
+
+      def increase_brightness(bitmap):\r
+
+      \    for i in range(len(bitmap)):\r
+
+      \        for j in range(len(bitmap[i])):\r
+
+      \            bitmap[i][j] = round(bitmap[i][j] * 1.1, 2)\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      increase_brightness(bitmap)\r
+
+      \r
+
+      print(\"Bitmap with increased brightness:\")\r
+
+      for row in bitmap:\r
+
+      \    print(row)"
+  - path: course1/unit8/lesson2/lessonpart2/boost_scores.py
+    content: "# A 2D list where each row represents a student\r
+
+      # and each column represents a test score out of 100.\r
+
+      scores = [\r
+
+      \    [55, 72, 88, 90],\r
+
+      \    [40, 65, 70, 75],\r
+
+      \    [95, 98, 92, 88],\r
+
+      \    [60, 58, 62, 64]\r
+
+      ]\r
+
+      \r
+
+      # Increase all scores by 5% (capped at 100)\r
+
+      def boost_scores(scores):\r
+
+      \    for i in range(len(scores)):\r
+
+      \        for j in range(len(scores[i])):\r
+
+      \            new_value = scores[i][j] * 1.05\r
+
+      \            if new_value > 100:\r
+
+      \                new_value = 100\r
+
+      \            scores[i][j] = new_value\r
+
+      \r
+
+      # MAIN PROGRAM\r
+
+      boost_scores(scores)\r
+
+      \r
+
+      print(\"Boosted scores:\")\r
+
+      for row in scores:\r
+
+      \    print(row)"
   - path: course1/unit8/lesson2/lessonpart3/times_tables.py
     content: "def print_times_table(table):\r
 
@@ -3668,590 +4252,6 @@ files:
       # Output the result\r
 
       print(students[position].firstname, \"has the highest SAT score\")"
-  - path: course1/unit8/lesson1/lessonpart4/student_records.py
-    content: "def view_students(students):\r
-
-      \    for student in students:\r
-
-      \        print(student)\r
-
-      \r
-
-      def append_student(students, new_student):\r
-
-      \    students.append(new_student)\r
-
-      \r
-
-      def remove_student(students, student_to_remove):\r
-
-      \    students.remove(student_to_remove)\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      students = [\r
-
-      \    [\"Taha\", \"Hussain\", 10, \"Pankhurst\", 104, 93.5, False],\r
-
-      \    [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91, 88.0, True],\r
-
-      \    [\"Leo\", \"Morgan\", 11, \"Wilberforce\", 112, 76.5, False]\r
-
-      ]\r
-
-      \r
-
-      # View students\r
-
-      view_students(students)\r
-
-      \r
-
-      # Append a new student\r
-
-      append_student(students, [\"Nina\", \"Patel\", 12, \"Curie\", 115, 89.0,
-      True])\r
-
-      print(\"After appending a new student:\")\r
-
-      view_students(students)\r
-
-      \r
-
-      # Remove a student\r
-
-      remove_student(students, [\"Aisha\", \"Khan\", 9, \"Nightingale\", 91,
-      88.0, True])\r
-
-      print(\"After removing a student:\")\r
-
-      view_students(students)"
-  - path: course1/unit8/lesson1/lessonpart4/temperature_records.py
-    content: "def view_temperatures(temperatures):\r
-
-      \    for week in temperatures:\r
-
-      \        print(week)\r
-
-      \r
-
-      def append_temperature(temperatures, new_week):\r
-
-      \    temperatures.append(new_week)\r
-
-      \r
-
-      def remove_temperature(temperatures, week_index):\r
-
-      \    del temperatures[week_index]\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      temperatures = [\r
-
-      \    [24, 26, 31, 26, 21, 18, 22],\r
-
-      \    [30, 32, 33, 31, 29, 28, 27],\r
-
-      \    [20, 22, 25, 23, 21, 19, 18]\r
-
-      ]\r
-
-      \r
-
-      # View temperatures\r
-
-      view_temperatures(temperatures)\r
-
-      \r
-
-      # Append a new week's temperatures\r
-
-      append_temperature(temperatures, [25, 27, 29, 28, 26, 24, 23])\r
-
-      print(\"After appending a new week's temperatures:\")\r
-
-      view_temperatures(temperatures)\r
-
-      \r
-
-      # Remove a week's temperatures\r
-
-      remove_temperature(temperatures, 1)\r
-
-      print(\"After removing a week's temperatures:\")\r
-
-      view_temperatures(temperatures)"
-  - path: course1/unit8/lesson1/lessonpart4/timetable_2D.py
-    content: "timetable = [\r
-
-      \    [\"ENG\",  \"MATH\", \"SCI\",  \"GEO\",  \"COMP\"],   # Monday\r
-
-      \    [\"HIST\", \"ENG\",  \"MATH\", \"ART\",  \"COMP\"],   # Tuesday\r
-
-      \    [\"MATH\", \"SCI\",  \"ENG\",  \"COMP\", \"HIST\"],   # Wednesday\r
-
-      \    [\"SCI\",  \"GEO\",  \"MATH\", \"ENG\",  \"ART\"],    # Thursday\r
-
-      \    [\"COMP\", \"ENG\",  \"SCI\",  \"MATH\", \"PE\"],     # Friday\r
-
-      ]\r
-
-      \r
-
-      days = [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\",
-      \"Friday\"]\r
-
-      \r
-
-      def update_lesson(timetable, day_name, period_number, new_subject):\r
-
-      \    day_index = days.index(day_name)\r
-
-      \    period_index = period_number - 1\r
-
-      \    timetable[day_index][period_index] = new_subject\r
-
-      \r
-
-      # Example use\r
-
-      update_lesson(timetable, \"Thursday\", 3, \"COMP\")\r
-
-      print(timetable)"
-  - path: course1/unit8/lesson2/lessonpart2/bitmap.py
-    content: "# Creating a 6x6 bitmap with float values\r
-
-      bitmap = [\r
-
-      \    [0.0, 1.1, 2.2, 3.3, 4.4, 5.5],\r
-
-      \    [6.6, 7.7, 8.8, 9.9, 0.0, 1.1],\r
-
-      \    [2.2, 3.3, 4.4, 5.5, 6.6, 7.7],\r
-
-      \    [8.8, 9.9, 0.0, 1.1, 2.2, 3.3],\r
-
-      \    [4.4, 5.5, 6.6, 7.7, 8.8, 9.9],\r
-
-      \    [0.0, 1.1, 2.2, 3.3, 4.4, 5.5]\r
-
-      ]\r
-
-      \r
-
-      # Function to increase brightness by 10%\r
-
-      # rounded to two decimal places\r
-
-      def increase_brightness(bitmap):\r
-
-      \    for i in range(len(bitmap)):\r
-
-      \        for j in range(len(bitmap[i])):\r
-
-      \            bitmap[i][j] = round(bitmap[i][j] * 1.1, 2)\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      increase_brightness(bitmap)\r
-
-      \r
-
-      print(\"Bitmap with increased brightness:\")\r
-
-      for row in bitmap:\r
-
-      \    print(row)"
-  - path: course1/unit8/lesson2/lessonpart2/boost_scores.py
-    content: "# A 2D list where each row represents a student\r
-
-      # and each column represents a test score out of 100.\r
-
-      scores = [\r
-
-      \    [55, 72, 88, 90],\r
-
-      \    [40, 65, 70, 75],\r
-
-      \    [95, 98, 92, 88],\r
-
-      \    [60, 58, 62, 64]\r
-
-      ]\r
-
-      \r
-
-      # Increase all scores by 5% (capped at 100)\r
-
-      def boost_scores(scores):\r
-
-      \    for i in range(len(scores)):\r
-
-      \        for j in range(len(scores[i])):\r
-
-      \            new_value = scores[i][j] * 1.05\r
-
-      \            if new_value > 100:\r
-
-      \                new_value = 100\r
-
-      \            scores[i][j] = new_value\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      boost_scores(scores)\r
-
-      \r
-
-      print(\"Boosted scores:\")\r
-
-      for row in scores:\r
-
-      \    print(row)"
-  - path: course1/unit6/lesson1/lessonpart6/shopping_list_app.py
-    content: "# Shopping List Program\r
-
-      \r
-
-      def add_item(shopping_list, item):\r
-
-      \    shopping_list.append(item)\r
-
-      \    print(f\"Added {item} to the shopping list.\")\r
-
-      \r
-
-      def remove_item(shopping_list, item):\r
-
-      \    if item in shopping_list:\r
-
-      \        shopping_list.remove(item)\r
-
-      \        print(f\"Removed {item} from the shopping list.\")\r
-
-      \    else:\r
-
-      \        print(f\"{item} not found in the shopping list.\")\r
-
-      \r
-
-      def display_list(shopping_list):\r
-
-      \    print(\"Shopping List:\")\r
-
-      \    print(shopping_list)\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      shopping_list = []\r
-
-      \r
-
-      add_item(shopping_list, \"Apples\")\r
-
-      add_item(shopping_list, \"Bananas\")\r
-
-      display_list(shopping_list)\r
-
-      remove_item(shopping_list, \"Bananas\")\r
-
-      display_list(shopping_list)\r\n"
-  - path: course1/unit6/lesson1/lessonpart7/q1.py
-    content: "'''\r
-
-      Return the total number of steps in the list\r
-
-      by adding each value using a while loop.\r
-
-      '''\r
-
-      def total_steps(steps_list):\r
-
-      \    # TODO: delete 'pass' and write code here\r
-
-      \    pass\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      steps = []\r
-
-      # TODO: add some step values to the list\r
-
-      # TODO: print the total using the function"
-  - path: course1/unit6/lesson1/lessonpart7/q2.py
-    content: "'''\r
-
-      Repeatedly ask the user to choose a menu item.\r
-
-      Only accept items that appear in the menu list.\r
-
-      Allow the user to add multiple valid items to an order\r
-
-      and return the completed order list.\r
-
-      Hint: take_order() needs a while loop that calls get_valid_item() \r
-
-      repeatedly and asking if more items are needed, if not it should end.\r
-
-      '''\r
-
-      \r
-
-      def get_valid_item(menu):\r
-
-      \    # TODO: display menu, ask for input and validate using while loop\r
-
-      \    pass\r
-
-      \r
-
-      def take_order(menu):\r
-
-      \    # TODO: allow multiple valid items to be added to an order list\r
-
-      \    pass\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
-
-      order = []\r
-
-      \r
-
-      # TODO: call take_order and display the final order"
-  - path: course1/unit6/lesson1/lessonpart7/q3.py
-    content: "'''\r
-
-      Write a playlist program with four functions\r
-
-      add_song(playlist, song) → adds a song only if it isn't already in the
-      list\r
-
-      remove_song(playlist, song) → removes a song if it exists\r
-
-      move_song(playlist, old_index, new_index) → moves a song to a new
-      position\r
-
-      show_playlist(playlist) → prints the playlist\r
-
-      '''\r
-
-      \r
-
-      def add_song(playlist, song):\r
-
-      \    # TODO: add only if not already in the list\r
-
-      \    pass\r
-
-      \r
-
-      def remove_song(playlist, song):\r
-
-      \    # TODO: remove only if it exists\r
-
-      \    pass\r
-
-      \r
-
-      def move_song(playlist, old_index, new_index):\r
-
-      \    # TODO: move a song to a new position\r
-
-      \    pass\r
-
-      \r
-
-      def show_playlist(playlist):\r
-
-      \    # TODO: print the playlist\r
-
-      \    pass\r
-
-      \r
-
-      # MAIN PROGRAM\r
-
-      playlist = []\r
-
-      \r
-
-      # TODO: test your functions here"
-  - path: course1/unit6/lesson1/lessonpart8/q1_solution.py
-    content: "'''\r
-
-      Return the total number of steps in the list\r
-
-      by adding each value using a while loop.\r
-
-      '''\r
-
-      def total_steps(steps_list):\r
-
-      \    total = 0\r
-
-      \    index = 0\r
-
-      \r
-
-      \    while index < len(steps_list):\r
-
-      \        total += steps_list[index]\r
-
-      \        index += 1\r
-
-      \r
-
-      \    return total\r
-
-      \r
-
-      # main program\r
-
-      steps = [4500, 6200, 7000, 8000]\r
-
-      print(\"Total steps:\", total_steps(steps))"
-  - path: course1/unit6/lesson1/lessonpart8/q2_solution.py
-    content: "'''\r
-
-      Repeatedly ask the user to choose a menu item.\r
-
-      Only accept items that appear in the menu list.\r
-
-      Allow the user to add multiple valid items to an order\r
-
-      and return the completed order list.\r
-
-      '''\r
-
-      def get_valid_item(menu):\r
-
-      \    item = input(\"Choose an item: \")\r
-
-      \    while item not in menu:\r
-
-      \        item = input(\"Not on the menu. Choose an item: \")\r
-
-      \    return item\r
-
-      \r
-
-      def take_order(menu):\r
-
-      \    order = []\r
-
-      \    add_more = \"yes\"\r
-
-      \r
-
-      \    while add_more == \"yes\":\r
-
-      \        item = get_valid_item(menu)\r
-
-      \        order.append(item)\r
-
-      \        add_more = input(\"Add another item? (yes/no): \")\r
-
-      \r
-
-      \    return order\r
-
-      \r
-
-      # main program\r
-
-      menu = [\"Pizza\", \"Pasta\", \"Salad\", \"Soup\"]\r
-
-      final_order = take_order(menu)\r
-
-      print(\"Your order:\", final_order)"
-  - path: course1/unit6/lesson1/lessonpart8/q3_solution.py
-    content: "'''\r
-
-      Manage a playlist by adding unique songs,\r
-
-      removing songs that exist, moving songs to new positions,\r
-
-      and displaying the playlist.\r
-
-      '''\r
-
-      def add_song(playlist, song):\r
-
-      \    if song not in playlist:\r
-
-      \        playlist.append(song)\r
-
-      \    else:\r
-
-      \        print(\"Song already in playlist.\")\r
-
-      \r
-
-      def remove_song(playlist, song):\r
-
-      \    if song in playlist:\r
-
-      \        playlist.remove(song)\r
-
-      \    else:\r
-
-      \        print(\"Song not found.\")\r
-
-      \r
-
-      def move_song(playlist, old_index, new_index):\r
-
-      \    if 0 <= old_index < len(playlist) and 0 <= new_index <
-      len(playlist):\r
-
-      \        song = playlist.pop(old_index)\r
-
-      \        playlist.insert(new_index, song)\r
-
-      \    else:\r
-
-      \        print(\"Invalid index.\")\r
-
-      \r
-
-      def show_playlist(playlist):\r
-
-      \    print(\"Playlist:\", playlist)\r
-
-      \r
-
-      # main program\r
-
-      playlist = []\r
-
-      add_song(playlist, \"Song A\")\r
-
-      add_song(playlist, \"Song B\")\r
-
-      add_song(playlist, \"Song C\")\r
-
-      move_song(playlist, 0, 2)\r
-
-      remove_song(playlist, \"Song B\")\r
-
-      show_playlist(playlist)"
 units:
   - unit1/index.yml
   - unit2/index.yml
