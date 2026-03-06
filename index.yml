@@ -32,9 +32,7 @@ files:
 
       print(\"I like\", \"vege\", \"tables!\")\r
 
-      print(\"I eat\", 5, \"a day!\")\r
-
-      \r\n"
+      print(\"I eat\", 5, \"a day!\")"
   - path: course1/unit1/lesson1/lessonpart3/variables.py
     content: "age = 14\r
 
@@ -610,6 +608,42 @@ files:
       result = num1 + num2 - \r
 
       print(\"Result is:\", result)"
+  - path: course1/unit2/lesson2/lessonpart6/b2_debug.py
+    content: "# calculate area of a rectangle\r
+
+      length = 7\r
+
+      width = 3\r
+
+      area = length x width\r
+
+      print(\"Area:\", area)"
+  - path: course1/unit2/lesson2/lessonpart7/b3_debug.py
+    content: "# find average of two numbers \r
+
+      num1 = input(\"Enter first number: \")\r
+
+      num2 = input(\"Enter second number: \")\r
+
+      total = num1 + num1\r
+
+      average = total // 2\r
+
+      print(\"Average is: \" + average)"
+  - path: course1/unit2/lesson2/lessonpart8/b4_debug.py
+    content: "# convert temperature from f to c\r
+
+      def f_to_c(fahrenheit):\r
+
+      \    celsius = fahrenheit - 32 ** 5 / 9\r
+
+      \    return celsius\r
+
+      \r
+
+      #main program\r
+
+      print(f_to_c(70))"
   - path: course1/unit2/lesson2/lessonpart11/b5_debug.py
     content: "count = 0\r
 
@@ -900,42 +934,6 @@ files:
       total_cost = None\r
 
       print(total_cost)"
-  - path: course1/unit2/lesson2/lessonpart6/b2_debug.py
-    content: "# calculate area of a rectangle\r
-
-      length = 7\r
-
-      width = 3\r
-
-      area = length x width\r
-
-      print(\"Area:\", area)"
-  - path: course1/unit2/lesson2/lessonpart7/b3_debug.py
-    content: "# find average of two numbers \r
-
-      num1 = input(\"Enter first number: \")\r
-
-      num2 = input(\"Enter second number: \")\r
-
-      total = num1 + num1\r
-
-      average = total // 2\r
-
-      print(\"Average is: \" + average)"
-  - path: course1/unit2/lesson2/lessonpart8/b4_debug.py
-    content: "# convert temperature from f to c\r
-
-      def f_to_c(fahrenheit):\r
-
-      \    celsius = fahrenheit - 32 ** 5 / 9\r
-
-      \    return celsius\r
-
-      \r
-
-      #main program\r
-
-      print(f_to_c(70))"
   - path: course1/unit2/lesson2/lessonpart13/vending.py
     content: "def calc_change(amount):\r
 
