@@ -20,15 +20,15 @@ questionGroups:
         content: The _____ operator is used to calculate the total of two values.
         options:
           - id: "1"
-            value: +
+            value: \+
             explanation: The '+' operator is used for addition, which calculates the total
               of two values.
             isCorrect: true
           - id: "2"
-            value: "-"
+            value: \-
             explanation: The '-' operator is used for subtraction, not addition.
           - id: "3"
-            value: "*"
+            value: \*
             explanation: The '*' operator is used for multiplication, not addition.
           - id: "4"
             value: /
