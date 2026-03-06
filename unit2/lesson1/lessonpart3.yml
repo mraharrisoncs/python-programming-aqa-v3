@@ -14,14 +14,14 @@ questionGroups:
         content: Addition uses which symbol?
         options:
           - id: "1"
-            value: +
+            value: \+
             explanation: Correct, + is the addition operator
             isCorrect: true
           - id: "2"
-            value: "-"
+            value: \-
             explanation: Wrong, - is used for subtraction
           - id: "3"
-            value: /
+            value: \/
             explanation: Wrong, / is used for division
   - id: "2"
     questions:
@@ -30,14 +30,14 @@ questionGroups:
         content: Subtraction uses which symbol?
         options:
           - id: "1"
-            value: +
+            value: \+
             explanation: Wrong, + is used for addition
           - id: "2"
-            value: "-"
+            value: \-
             explanation: Correct, - is the subtraction operator
             isCorrect: true
           - id: "3"
-            value: /
+            value: \/
             explanation: Wrong, / is used for division
   - id: "3"
     questions:
@@ -46,14 +46,14 @@ questionGroups:
         content: Multiplication uses which symbol?
         options:
           - id: "1"
-            value: +
+            value: \+
             explanation: Wrong, + is used for addition
           - id: "2"
-            value: "*"
+            value: \*
             explanation: Correct, * is the multiplication operator
             isCorrect: true
           - id: "3"
-            value: "**"
+            value: \**
             explanation: Wrong, ** is used for exponentiation
   - id: "4"
     questions:

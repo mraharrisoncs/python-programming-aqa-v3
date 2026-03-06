@@ -135,6 +135,72 @@ files:
       \  simple interest = (principal * rate * time) / 100\r
 
       '''\r\n"
+  - path: course1/unit1/lesson2/lessonpart6/sq_root.py
+    content: "def square_root(x):\r
+
+      \  return x ** 0.5\r
+
+      \r
+
+      print(square_root(9))  "
+  - path: course1/unit1/lesson2/lessonpart6/bmi_calc.py
+    content: "def calc_bmi(height, weight):\r
+
+      \  bmi = weight / (height * height)\r
+
+      \  return bmi\r
+
+      \r
+
+      # main program\r
+
+      height = float(input(\"Enter your height in metres: \"))\r
+
+      weight = float(input(\"Enter your weight in kilograms: \"))\r
+
+      bmi = calc_bmi(height, weight)\r
+
+      print(\"Your BMI is: \", bmi)"
+  - path: course1/unit1/lesson2/lessonpart6/greet.py
+    content: "def greet(greeting): # greeting is a 'parameter'\r
+
+      \  print(greeting)    # output the value of the greeting parameter\r
+
+      \r
+
+      # main program\r
+
+      greet(\"Hello World!\")    # \"Hello World!\" is passed \r
+
+      greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
+  - path: course1/unit1/lesson2/lessonpart1/area_calc.py
+    content: "def calc_area(width, height):\r
+
+      \  return width * height\r
+
+      \r
+
+      # main program\r
+
+      w = float(input(\"Enter the width in metres: \"))\r
+
+      h = float(input(\"Enter the height in metres: \"))\r
+
+      area = calc_area(w, h)\r
+
+      print(\"The area is:\", area, \"square metres\")"
+  - path: course1/unit1/lesson2/lessonpart1/cuboid.py
+    content: "'''\r
+
+      Calculate the volume of a cuboid \r
+
+      using width, height, and depth\r
+
+      '''\r
+
+      \r
+
+      # write your code here\r\n"
   - path: course1/unit1/lesson2/lessonpart3/hello.py
     content: "def hello_world():\r
 
@@ -229,72 +295,6 @@ files:
       name = get_name()\r
 
       print(\"Hello, \", name, \"!\")"
-  - path: course1/unit1/lesson2/lessonpart6/sq_root.py
-    content: "def square_root(x):\r
-
-      \  return x ** 0.5\r
-
-      \r
-
-      print(square_root(9))  "
-  - path: course1/unit1/lesson2/lessonpart6/bmi_calc.py
-    content: "def calc_bmi(height, weight):\r
-
-      \  bmi = weight / (height * height)\r
-
-      \  return bmi\r
-
-      \r
-
-      # main program\r
-
-      height = float(input(\"Enter your height in metres: \"))\r
-
-      weight = float(input(\"Enter your weight in kilograms: \"))\r
-
-      bmi = calc_bmi(height, weight)\r
-
-      print(\"Your BMI is: \", bmi)"
-  - path: course1/unit1/lesson2/lessonpart6/greet.py
-    content: "def greet(greeting): # greeting is a 'parameter'\r
-
-      \  print(greeting)    # output the value of the greeting parameter\r
-
-      \r
-
-      # main program\r
-
-      greet(\"Hello World!\")    # \"Hello World!\" is passed \r
-
-      greet(\"Witaj świecie!\")  # \"Witaj świecie!\" is passed "
-  - path: course1/unit1/lesson2/lessonpart1/area_calc.py
-    content: "def calc_area(width, height):\r
-
-      \  return width * height\r
-
-      \r
-
-      # main program\r
-
-      w = float(input(\"Enter the width in metres: \"))\r
-
-      h = float(input(\"Enter the height in metres: \"))\r
-
-      area = calc_area(w, h)\r
-
-      print(\"The area is:\", area, \"square metres\")"
-  - path: course1/unit1/lesson2/lessonpart1/cuboid.py
-    content: "'''\r
-
-      Calculate the volume of a cuboid \r
-
-      using width, height, and depth\r
-
-      '''\r
-
-      \r
-
-      # write your code here\r\n"
   - path: course1/unit1/lesson2/lessonpart4/capstone_quiz.py
     content: "import random\r
 
