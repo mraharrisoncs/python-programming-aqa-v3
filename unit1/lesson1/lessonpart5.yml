@@ -6,19 +6,18 @@ content: >
   Because the name contains a string of characters, we call this a
   **string** variable. Their age was a whole number, and this is called an
   **integer.** Together, these different kinds of data are called **data
-  types.**
-
-
-  # 🔢   🧮   📜    ✅/❌
+  types.**&#x20;
 
 
   In Python, **data types** are essential for defining the kind of data a
-  variable can hold. Understanding these types helps us perform operations
-  correctly and avoid errors.&#x20;
+  variable can hold. There are four main data types in Python, known as the
+  **primitive** data types. These are:
 
 
-  Let's explore the **primitive** data types: **integer**, **float**,
-  **string**, and **Boolean**.
+  #### 🔢Integer 🧮Float 📜String ✅/❌Boolean
+
+
+  Let's explore these data types in more detail.
 
 
   ### 🔢 Integer
@@ -61,9 +60,6 @@ content: >
   A string is a **sequence of characters**. Strings store text such as names,
   addresses, post codes, anything that might contain letters, numbers and
   symbols.
-
-
-  **Example Use Case:**
 
 
   ```python
